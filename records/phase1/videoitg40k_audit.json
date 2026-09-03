@@ -1,0 +1,79 @@
+{
+  "input": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/annotations/VideoITG-40K/video_itg_data.json",
+  "record_count": 474354,
+  "video_count": 42519,
+  "source_group_record_counts": {
+    "1_2_m_academic_v0_1": 16438,
+    "1_2_m_activitynetqa": 3713,
+    "1_2_m_nextqa": 4669,
+    "1_2_m_youtube_v0_1": 131702,
+    "2_3_m_academic_v0_1": 26916,
+    "2_3_m_activitynetqa": 4032,
+    "2_3_m_nextqa": 86,
+    "2_3_m_youtube_v0_1": 142364,
+    "30_60_s_academic_v0_1": 48814,
+    "30_60_s_activitynetqa": 1587,
+    "30_60_s_nextqa": 5865,
+    "30_60_s_perceptiontest": 985,
+    "30_60_s_youtube_v0_1": 87183
+  },
+  "split_record_counts": {
+    "dev": 47291,
+    "test": 47406,
+    "train": 379657
+  },
+  "split_video_counts": {
+    "dev": 4217,
+    "test": 4258,
+    "train": 34044
+  },
+  "duplicate_checks": {
+    "id": {
+      "unique": 474354,
+      "duplicate_records": 0,
+      "max_count": 1
+    },
+    "video": {
+      "unique": 42519,
+      "duplicate_records": 431835,
+      "max_count": 15
+    },
+    "video_question": {
+      "unique": 474354,
+      "duplicate_records": 0,
+      "max_count": 1
+    }
+  },
+  "split_video_overlap_examples": {
+    "train_vs_dev": [],
+    "train_vs_test": [],
+    "dev_vs_test": []
+  },
+  "label_counts": {
+    "motion": {
+      "No": 474354
+    },
+    "existence": {
+      "No": 474354
+    }
+  },
+  "frame_count": {
+    "min": 1,
+    "max": 86,
+    "median": 4
+  },
+  "clip_count": {
+    "min": 1,
+    "max": 39,
+    "median": 2
+  },
+  "raw_media": {
+    "raw_root": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/raw/LLaVA-Video-178K",
+    "expected_paths": 42519,
+    "missing_annotation_media_paths": 42154
+  },
+  "validation_errors": [],
+  "validation_error_count": 0,
+  "pilot_count": 50,
+  "pilot_is_metadata_only": true
+}

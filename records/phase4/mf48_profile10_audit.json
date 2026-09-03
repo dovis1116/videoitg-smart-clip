@@ -1,0 +1,23 @@
+{
+  "candidate": "B1 max_frames=48, 5-second output interval",
+  "implementation_command": "scripts/run_baseline.py --baseline B1 --max-frames 48 --segment-seconds 5 --limit 10",
+  "scope": {
+    "rows": 10,
+    "output": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/outputs/phase4_B1_mf48_profile10_20260715_0200/summary.json"
+  },
+  "metrics": {
+    "recall_at_1_iou_0.3": 0.60,
+    "recall_at_1_iou_0.5": 0.60,
+    "topk_hit_iou_0.3": 0.70,
+    "topk_hit_iou_0.5": 0.70,
+    "boundary_error_s_topk": 5.1359
+  },
+  "reference": {
+    "candidate": "B1 max_frames=32, 5-second output interval, same first 10 rows",
+    "topk_hit_iou_0.3": 0.80,
+    "topk_hit_iou_0.5": 0.70
+  },
+  "runtime_observation": "The run completed without OOM on the single GPU; peak allocation was not separately persisted in this run.",
+  "gate_decision": "discard_without_full_pilot",
+  "reason": "48 frames did not improve Top-k IoU>=0.5 on the 10-row profile, reduced Top-k IoU>=0.3, and increased boundary error; no full pilot expansion is justified."
+}

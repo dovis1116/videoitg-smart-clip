@@ -1,0 +1,21 @@
+{
+  "reviewer": "Codex visual full-video sampled review",
+  "review_type": "candidate_interval_review",
+  "source_candidates": "records/phase4/temporal_hard_negative_candidates.jsonl",
+  "rows": [
+    {"candidate_id": "videoitg40k:media_pilot:145887:before_gt", "status": "confirmed_adjacent_non_target", "rationale": "10–15 s shows the room/people before the localized camera-covering event; it does not contain the reviewed 15–20 s interaction."},
+    {"candidate_id": "videoitg40k:media_pilot:145887:after_gt", "status": "confirmed_adjacent_non_target", "rationale": "20–25 s moves to people/TV/room views after the localized camera-covering event."},
+    {"candidate_id": "videoitg40k:media_pilot:208227:before_gt", "status": "not_safe_same_event", "rationale": "60–65 s still contains the red-clothed child in the same snow-play sequence immediately before the GT; do not use as a semantic negative."},
+    {"candidate_id": "videoitg40k:media_pilot:208227:after_gt", "status": "confirmed_adjacent_non_target", "rationale": "70–75 s shifts to the blue-clothed child after the red-child event; suitable only as a reviewed same-video subject/temporal hard negative."},
+    {"candidate_id": "videoitg40k:media_pilot:253712:after_gt", "status": "confirmed_boundary_hard_negative", "rationale": "5–10 s shows the same stage arrangement as the 0–5 s GT; this is a boundary-ranking negative, not a semantic no-target negative."},
+    {"candidate_id": "videoitg40k:media_pilot:287250:after_gt", "status": "confirmed_boundary_hard_negative", "rationale": "5–10 s shows the same panel arrangement as the 0–5 s GT; this is a boundary-ranking negative, not a semantic no-target negative."}
+  ],
+  "summary": {
+    "candidate_count": 6,
+    "confirmed_adjacent_non_target": 3,
+    "confirmed_boundary_hard_negative": 2,
+    "not_safe_same_event": 1,
+    "all_remain_not_for_training": true,
+    "next_step": "Use only the three adjacent non-target and two boundary-ranking candidates in a Phase 4 train/dev prototype after attaching explicit candidate type; exclude the unsafe same-event row."
+  }
+}

@@ -1,0 +1,235 @@
+{
+  "gate": "G4 candidate audit",
+  "scope": {
+    "ordinary_pilot": 50,
+    "expanded_clean97": 97,
+    "additional_heldout_manual_reviewed": 27,
+    "final_test_regression_pool": 18,
+    "manual_reviewed_categories": {"boundary_shift": 4, "short_event_miss": 1, "other_or_uncertain": 3},
+    "controls": 10,
+    "all_regression_rows_not_for_training": true
+  },
+  "candidates": {
+    "B1A": {
+      "policy": "5-second interval unless narrow top-1 score < 0.6, then 8-second interval",
+      "pilot_topk_iou_0.5": {"B1": 0.68, "B1A": 0.72, "delta": 0.04},
+      "heldout7_topk_iou_0.5": {"B1": 0.5714285714, "B1A": 0.7142857143, "delta": 0.1428571429},
+      "clean97_test_topk_iou_0.5": {"B1": 0.5555555556, "B1A": 0.6666666667, "delta": 0.1111111111},
+      "final_pool_by_category_topk_iou_0.5": {
+        "boundary_shift": {"B1": 0.25, "B1A": 0.25, "delta": 0.0},
+        "short_event_miss": {"B1": 0.0, "B1A": 0.0, "delta": 0.0},
+        "other_or_uncertain": {"B1": 0.0, "B1A": 0.3333333333, "delta": 0.3333333333},
+        "control_correct": {"B1": 0.9, "B1A": 1.0, "delta": 0.1}
+      },
+      "cost": "one full-video VideoITG call per sample; interval mapping is post-processing",
+      "decision": "retain_candidate_not_default"
+    },
+    "B1_8s": {
+      "policy": "8-second output intervals for all rows",
+      "pilot_topk_iou_0.5": {"B1": 0.68, "B1_8s": 0.66, "delta": -0.02},
+      "heldout7_topk_iou_0.5": {"B1": 0.5714285714, "B1_8s": 0.8571428571, "delta": 0.2857142857},
+      "clean97_test_topk_iou_0.5": {"B1": 0.5555555556, "B1_8s": 0.7777777778, "delta": 0.2222222222},
+      "final_pool_by_category_topk_iou_0.5": {
+        "boundary_shift": {"B1": 0.25, "B1_8s": 0.75, "delta": 0.5},
+        "short_event_miss": {"B1": 0.0, "B1_8s": 0.0, "delta": 0.0},
+        "other_or_uncertain": {"B1": 0.0, "B1_8s": 0.3333333333, "delta": 0.3333333333},
+        "control_correct": {"B1": 0.9, "B1_8s": 1.0, "delta": 0.1}
+      },
+      "cost": "same model call; wider returned intervals may reduce boundary precision",
+      "decision": "do_not_promote_due_to_ordinary_pilot_regression"
+    },
+    "B1_mf32": {
+      "policy": "B1 with max_frames=32",
+      "pilot_topk_iou_0.5": {"B1": 0.68, "B1_mf32": 0.76, "delta": 0.08},
+      "clean97_test_topk_iou_0.5": {"B1": 0.5555555556, "B1_mf32": 0.6666666667, "delta": 0.1111111111},
+      "final_pool_by_category_topk_iou_0.5": {
+        "boundary_shift": {"B1": 0.25, "B1_mf32": 1.0, "delta": 0.75},
+        "short_event_miss": {"B1": 0.0, "B1_mf32": 0.0, "delta": 0.0},
+        "control_correct": {"B1": 0.9, "B1_mf32": 0.8, "delta": -0.1}
+      },
+      "mean_rerank_seconds": {"B1": 2.4253, "B1_mf32": 3.1327, "relative_increase": 0.2916},
+      "repeatability": "50/50 rows, prediction and metric differences 0",
+      "decision": "retain_candidate_not_default"
+    },
+    "B1_mf64": {
+      "policy": "B1 with max_frames=64 and 5-second output intervals",
+      "pilot_topk_iou_0.5": {"B1": 0.68, "B1_mf64": 0.78, "delta": 0.10},
+      "clean97_overall_topk_iou_0.5": {"B1": 0.6495, "B1_mf64": 0.7320, "delta": 0.0825},
+      "heldout7_topk_iou_0.5": {"B1": 0.5714, "B1_mf64": 0.5714, "delta": 0.0},
+      "final_pool_by_category_topk_iou_0.5": {
+        "boundary_shift": {"B1": 0.25, "B1_mf64": 0.5, "delta": 0.25},
+        "short_event_miss": {"B1": 0.0, "B1_mf64": 1.0, "delta": 1.0},
+        "control_correct": {"B1": 0.9, "B1_mf64": 1.0, "delta": 0.1}
+      },
+      "mean_rerank_seconds": {"B1": 2.4253, "B1_mf64": 4.1152, "relative_increase": 0.6978},
+      "repeatability": "50/50 rows, prediction and metric differences 0",
+      "decision": "strong_candidate_not_default"
+    },
+    "B1C_direct_mf32_seg8": {
+      "policy": "max_frames=32 with 8-second output intervals, selected by the unified runner",
+      "pilot_topk_iou_0.5": {"B1": 0.68, "B1C": 0.74, "delta": 0.06},
+      "clean97_test_topk_iou_0.5": {"B1": 0.5555555556, "B1C": 0.6111111111, "delta": 0.0555555555},
+      "heldout7_topk_iou_0.5": {"B1": 0.5714285714, "B1C": 0.5714285714, "delta": 0.0},
+      "final_pool_by_category_topk_iou_0.5": {
+        "boundary_shift": {"B1": 0.25, "B1C": 0.5, "delta": 0.25},
+        "short_event_miss": {"B1": 0.0, "B1C": 0.0, "delta": 0.0},
+        "control_correct": {"B1": 0.9, "B1C": 0.8, "delta": -0.1}
+      },
+      "cost": "approximately 29% higher mean rerank time",
+      "decision": "retain_candidate_not_default"
+    },
+    "B1D_mf32_score_gated_seg8": {
+      "policy": "max_frames=32; use 8-second output intervals only when 5-second top-1 score < 0.6",
+      "pilot_rows": 50,
+      "selected_variants": {
+        "narrow_5s": 48,
+        "wide_8s": 2
+      },
+      "pilot_topk_iou_0.5": {
+        "B1_mf32": 0.76,
+        "B1D": 0.76,
+        "delta": 0.0
+      },
+      "mean_rerank_seconds": {
+        "B1_mf32": 3.1327,
+        "B1D": 3.1758
+      },
+      "decision": "retain_candidate_not_default"
+    },
+    "B1_mf64_additional_heldout27": {
+      "policy": "B1 with max_frames=64 and 5-second output intervals on 27 unused hash=test media-backed rows",
+      "base": "B1 max_frames=16",
+      "topk_iou_0.5": {"B1_mf16": 0.7777777778, "B1_mf64": 0.8148148148, "delta": 0.0370370370},
+      "recall_at_1_iou_0.5": {"B1_mf16": 0.5185185185, "B1_mf64": 0.5925925926, "delta": 0.0740740741},
+      "paired_topk_iou_0.5": {"gains": 4, "losses": 3, "unchanged": 20},
+      "source_group_topk_iou_0.5": {
+        "30_60_s_activitynetqa": {"count": 15, "B1_mf16": 0.8, "B1_mf64": 1.0, "delta": 0.2},
+        "30_60_s_nextqa": {"count": 12, "B1_mf16": 0.75, "B1_mf64": 0.5833333333, "delta": -0.1666666667}
+      },
+      "mean_rerank_seconds": {"B1_mf16": 2.5938, "B1_mf64": 3.6567, "relative_increase": 0.4098},
+      "manual_reviewed_categories": {
+        "boundary_shift": {"count": 7, "B1_mf16_topk_iou_0.5": 0.5714285714, "B1_mf64_topk_iou_0.5": 0.5714285714, "delta": 0.0},
+        "control_correct": {"count": 18, "B1_mf16_topk_iou_0.5": 0.8333333333, "B1_mf64_topk_iou_0.5": 0.8888888889, "delta": 0.0555555556},
+        "other_or_uncertain": {"count": 2, "B1_mf16_topk_iou_0.5": 1.0, "B1_mf64_topk_iou_0.5": 1.0, "delta": 0.0}
+      },
+      "manual_review": "27/27 sampled-2s full-video scans complete; all rows remain not_for_training",
+      "decision": "retain_candidate_not_default",
+      "reason": "The extra held-out set gives a small aggregate Top-k gain, but the manually confirmed boundary-shift category does not improve, paired gains and losses coexist, the source-group direction reverses, and mean latency increases about 41%; it does not establish a stable universal promotion rule."
+    },
+    "B1_seg8_additional_heldout27": {
+      "policy": "B1 max_frames=16 with 8-second output intervals",
+      "overall_topk_iou_0.5": {"B1_seg5": 0.7777777778, "B1_seg8": 0.7407407407, "delta": -0.0370370371},
+      "manual_boundary_shift_topk_iou_0.5": {"B1_seg5": 0.5714285714, "B1_seg8": 0.4285714286, "delta": -0.1428571428},
+      "decision": "discard_candidate",
+      "reason": "The wider interval lowers overall Top-k and does not repair the manually confirmed boundary-shift category."
+    },
+    "B1_boundary_asym_beta002": {
+      "policy": "B1 max_frames=16 with 5-second intervals; add beta=0.02 times the next sampled frame score before ranking, with alpha=0",
+      "selection_scope": {
+        "manifest": "records/phase4/boundary_train_dev_manifest.jsonl",
+        "train_rows": 71,
+        "dev_rows": 8,
+        "criterion": "no train Top-k@0.5 drop and improved dev Top-k@0.5 with no dev boundary-error increase"
+      },
+      "train_dev_selection": {
+        "train_topk_iou_0.5": {"raw": 0.6619718309859155, "candidate": 0.6619718309859155, "delta": 0.0},
+        "dev_topk_iou_0.5": {"raw": 0.75, "candidate": 0.875, "delta": 0.125},
+        "dev_boundary_error_s_topk": {"raw": 5.0656875, "candidate": 4.74725, "delta": -0.3184375}
+      },
+      "unseen_test_validation": {
+        "final18_topk_iou_0.5": {"raw": 0.5555555556, "candidate": 0.5555555556, "delta": 0.0},
+        "final18_boundary_shift_topk_iou_0.5": {"raw": 0.25, "candidate": 0.25, "delta": 0.0},
+        "final18_control_correct_topk_iou_0.5": {"raw": 0.9, "candidate": 0.9, "delta": 0.0},
+        "extra27_topk_iou_0.5": {"raw": 0.7777777778, "candidate": 0.7777777778, "delta": 0.0},
+        "extra27_boundary_shift_topk_iou_0.5": {"raw": 0.5714285714, "candidate": 0.5714285714, "delta": 0.0},
+        "extra27_control_correct_topk_iou_0.5": {"raw": 0.8333333333, "candidate": 0.8333333333, "delta": 0.0}
+      },
+      "test_manifest": "records/phase4/boundary_eval_test45_manifest.jsonl",
+      "test_predictions": "records/phase4/boundary_eval_test45_asym_beta002.jsonl",
+      "candidate_reports": [
+        "records/phase4/boundary_final18_asym_beta002_report.json",
+        "records/phase4/boundary_extra27_asym_beta002_report.json"
+      ],
+      "decision": "discard_candidate",
+      "reason": "The train/dev improvement did not transfer to either unseen regression pool: overall and manually reviewed boundary/control categories were exactly unchanged."
+    },
+    "B1_boundary_head_v1": {
+      "policy": "Fit a CPU-side ridge boundary head on train-only 5-second candidate IoU labels from frozen 16-frame VideoITG scores; rank the same non-overlapping 5-second intervals.",
+      "model": "records/phase4/boundary_head_v1_train_only.json",
+      "fit_scope": {
+        "input": "records/phase4/boundary_train_dev_frame_scores.jsonl",
+        "split": "train",
+        "rows": 71,
+        "positive_frames": 103,
+        "ridge": 0.1,
+        "test_rows_not_used_for_fit": true
+      },
+      "train_dev": {
+        "train_topk_iou_0.5": {"B1": 0.6619718309859155, "head": 0.7323943661971831, "delta": 0.0704225352112676},
+        "dev_topk_iou_0.5": {"B1": 0.75, "head": 0.875, "delta": 0.125},
+        "dev_boundary_error_s_topk": {"B1": 5.0656875, "head": 4.74725, "delta": -0.3184375}
+      },
+      "ordinary_pilot_50": {
+        "B1_topk_iou_0.5": 0.68,
+        "head_topk_iou_0.5": 0.68,
+        "B1_recall_at_1_iou_0.5": 0.50,
+        "head_recall_at_1_iou_0.5": 0.56,
+        "head_boundary_error_s_topk": 3.7312183163,
+        "cpu_postprocess_mean_ms_per_row": 0.2878
+      },
+      "unseen_regression": {
+        "final18": {
+          "overall_topk_iou_0.5": {"B1": 0.5555555556, "head": 0.6666666667, "delta": 0.1111111111},
+          "boundary_shift_topk_iou_0.5": {"B1": 0.25, "head": 0.75, "delta": 0.5},
+          "short_event_miss_topk_iou_0.5": {"B1": 0.0, "head": 0.0, "delta": 0.0},
+          "control_correct_topk_iou_0.5": {"B1": 0.9, "head": 0.9, "delta": 0.0}
+        },
+        "additional_heldout27": {
+          "overall_topk_iou_0.5": {"B1": 0.7777777778, "head": 0.8518518519, "delta": 0.0740740741},
+          "boundary_shift_topk_iou_0.5": {"B1": 0.5714285714, "head": 0.8571428571, "delta": 0.2857142857},
+          "control_correct_topk_iou_0.5": {"B1": 0.8333333333, "head": 0.8333333333, "delta": 0.0}
+        }
+      },
+      "repeatability": "Applying the frozen JSON model twice to all 45 unseen rows produced byte-identical JSONL.",
+      "reports": [
+        "records/phase4/boundary_head_v1_final18_report.json",
+        "records/phase4/boundary_head_v1_extra27_report.json",
+        "records/phase4/boundary_head_v1_pilot_predictions.jsonl"
+      ],
+      "decision": "promote_for_boundary_shift_scope",
+      "reason": "The boundary-shift category improves in both independent held-out pools, ordinary pilot Top-k@0.5 does not regress, controls do not regress at Top-k@0.5, and the postprocessor adds no VideoITG call. Short-event recovery remains unproven and is explicitly outside this promotion scope."
+    }
+  },
+  "mf24_candidate": "records/phase4/mf24_candidate_audit.json",
+  "gate_decision": "G4 conditionally passed for boundary_shift and short_event quality scopes; fixed16 remains default pending G5",
+  "reason": "The earlier B1A, interval-width, frame-density and asymmetric smoothing candidates did not provide stable target-category evidence. Boundary head v1 improves boundary_shift, while the independently evaluated 24-frame candidate preserves ordinary pilot Top-k and controls, improves boundary_shift on final18 and additional27, and changes the confirmed final18 short_event_miss from 0.0 to 1.0. This satisfies the G4 criteria for the selected quality scopes with a traceable frame-budget candidate. The 24-frame candidate is not the default because it increases latency and G5 remains unpassed.",
+  "evidence": [
+    "records/phase4/b1a_candidate.json",
+    "records/phase4/clean97_candidate_comparison.json",
+    "records/phase3/clean97_test_final_b1_regression_report.json",
+    "records/phase3/clean97_test_final_b1_seg8_regression_report.json",
+    "records/phase3/clean97_test_final_b1a_regression_report.json",
+    "records/phase4/mf32_candidate_audit.json",
+    "records/phase4/b1c_candidate_audit.json",
+    "records/phase4/b1d_candidate_audit.json",
+    "records/phase4/mf32_seg6_candidate_audit.json",
+    "records/phase4/mf48_profile10_audit.json",
+    "records/phase4/b1e_candidate_audit.json",
+    "records/phase4/mf64_candidate_audit.json",
+    "records/phase4/mf64_policy_audit.json",
+    "records/phase4/temporal_hard_negative_score_audit.json",
+    "records/phase4/frame_hard_negative_pool.jsonl",
+    "records/phase4/heldout_extra27_manifest.jsonl",
+    "records/phase4/heldout_extra27_mf64_audit.json",
+    "records/phase4/heldout_extra27_seg8_audit.json",
+    "records/phase4/boundary_postprocess_train_dev_grid.json",
+    "records/phase4/boundary_final18_asym_beta002_report.json",
+    "records/phase4/boundary_extra27_asym_beta002_report.json",
+    "records/phase4/boundary_head_v1_train_only.json",
+    "records/phase4/boundary_head_v1_final18_report.json",
+    "records/phase4/boundary_head_v1_extra27_report.json",
+    "records/phase4/mf16_boundary_head_policy_audit.json",
+    "records/phase4/mf24_candidate_audit.json",
+    "records/phase4/targetfps4_candidate_audit.json"
+  ]
+}

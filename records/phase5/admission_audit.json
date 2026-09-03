@@ -1,0 +1,19 @@
+{
+  "gate": "G5 burst admission audit",
+  "source": "outputs/phase5_multi_gpu_prefetch_50_burst_20260715/e0.json",
+  "scope": {
+    "rows": 50,
+    "devices": ["cuda:0", "cuda:1"],
+    "deadline_ms": 5000,
+    "quality_protocol": "E0 fixed16"
+  },
+  "analysis": {
+    "deadline_accepted_rows": 4,
+    "deadline_rejected_or_late_rows": 46,
+    "accepted_topk_hit_iou_0.5": 0.75,
+    "all_rows_topk_hit_iou_0.5": 0.68
+  },
+  "gate_decision": "rejected",
+  "reason": "Explicitly admitting only requests completed within the 5-second deadline would reject or mark 46/50 burst requests. Although accepted-row quality is preserved, the coverage loss is too severe for a useful quality-preserving G5 promotion.",
+  "next_action": "Do not add admission as a silent degradation. If used later in service, expose overload/rejection explicitly and report coverage separately."
+}

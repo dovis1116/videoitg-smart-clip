@@ -1,0 +1,94 @@
+{
+  "pool": "/home/zjy/projects/videoitg_smart_clip/records/phase3/regression_pool.jsonl",
+  "predictions": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/outputs/phase4_B1_mf64_clean97_20260715_0700/predictions.jsonl",
+  "pool_not_for_training": true,
+  "status_counts": {
+    "pool_count": 4,
+    "evaluated": 4,
+    "missing_prediction": 0
+  },
+  "overall": {
+    "sample_count": 4,
+    "recall_at_1_iou_0.3": 0.5,
+    "recall_at_1_iou_0.5": 0.5,
+    "topk_hit_iou_0.3": 0.75,
+    "topk_hit_iou_0.5": 0.75,
+    "max_iou_topk": 0.7480059785747382
+  },
+  "by_primary_code": {
+    "boundary_shift": {
+      "sample_count": 2,
+      "recall_at_1_iou_0.3": 1.0,
+      "recall_at_1_iou_0.5": 1.0,
+      "topk_hit_iou_0.3": 1.0,
+      "topk_hit_iou_0.5": 1.0,
+      "max_iou_topk": 0.9994997498749374
+    },
+    "short_event_miss": {
+      "sample_count": 2,
+      "recall_at_1_iou_0.3": 0.0,
+      "recall_at_1_iou_0.5": 0.0,
+      "topk_hit_iou_0.3": 0.5,
+      "topk_hit_iou_0.5": 0.5,
+      "max_iou_topk": 0.49651220727453876
+    }
+  },
+  "per_sample": [
+    {
+      "sample_id": "videoitg40k:media_pilot:145887",
+      "primary_code": "short_event_miss",
+      "split": "train",
+      "status": "evaluated",
+      "metrics": {
+        "recall_at_1_iou_0.3": 0,
+        "recall_at_1_iou_0.5": 0,
+        "topk_hit_iou_0.3": 1,
+        "topk_hit_iou_0.5": 1,
+        "max_iou_topk": 0.9930244145490775,
+        "boundary_error_s_topk": 0.017500000000001847
+      }
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:208227",
+      "primary_code": "short_event_miss",
+      "split": "train",
+      "status": "evaluated",
+      "metrics": {
+        "recall_at_1_iou_0.3": 0,
+        "recall_at_1_iou_0.5": 0,
+        "topk_hit_iou_0.3": 0,
+        "topk_hit_iou_0.5": 0,
+        "max_iou_topk": 0.0,
+        "boundary_error_s_topk": 13.58108108108108
+      }
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:253712",
+      "primary_code": "boundary_shift",
+      "split": "train",
+      "status": "evaluated",
+      "metrics": {
+        "recall_at_1_iou_0.3": 1,
+        "recall_at_1_iou_0.5": 1,
+        "topk_hit_iou_0.3": 1,
+        "topk_hit_iou_0.5": 1,
+        "max_iou_topk": 0.9989994997498749,
+        "boundary_error_s_topk": 0.0025025025025025016
+      }
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:287250",
+      "primary_code": "boundary_shift",
+      "split": "train",
+      "status": "evaluated",
+      "metrics": {
+        "recall_at_1_iou_0.3": 1,
+        "recall_at_1_iou_0.5": 1,
+        "topk_hit_iou_0.3": 1,
+        "topk_hit_iou_0.5": 1,
+        "max_iou_topk": 1.0,
+        "boundary_error_s_topk": 0.0
+      }
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "manifest": "/home/zjy/projects/videoitg_smart_clip/records/phase1/videoitg40k_media_pilot.jsonl",
+  "video_count": 50,
+  "exact_duplicate_groups": [],
+  "near_duplicate_threshold": 4,
+  "first_frame_near_duplicate_pairs": [],
+  "note": "Three-position average hashes are only a screening signal; semantic near-duplicate review is still required."
+}

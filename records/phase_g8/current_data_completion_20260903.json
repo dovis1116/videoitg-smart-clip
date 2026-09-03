@@ -1,0 +1,23 @@
+{
+  "run_id": "current_data_completion_20260903",
+  "scope": "offline-existing-data-and-synthetic-evaluation",
+  "statement": "本记录用于离线原型交付：使用前一项目已有媒体、annotation/clip_num 推导的 target-present weak-label 数据、显式构造的 synthetic 负样本、合成输入和代码契约；真实环境、真实用户验收和生产部署不属于完成条件。",
+  "completed_checks": {
+    "regression": {"source": "pytest", "passed": 79, "failed": 0, "warning_count": 1},
+    "retriever": {"source": "records/phase_g3/g3_retriever_local360_20260903.json", "sample_count": 360, "unique_video_count": 360, "target_present_gt_rows": 360, "cached_cosine_recall_at_5_10_20": [0.75, 0.9388888889, 0.9916666667], "uniform_recall_at_5_10_20": [0.9861111111, 0.9888888889, 0.9944444444], "cached_cosine_mean_retrieval_latency_ms": 12.1063283, "uniform_mean_retrieval_latency_ms": 0.08532, "decision": "cached_cosine remains main-route default; Uniform is observed present-only reference best"},
+    "media_pool": {"source": "records/phase_g2/local360_media_audit_20260903.json", "rows": 360, "exists": 360, "decoded": 360, "valid_frame_labels": 360, "valid_clip_labels": 360},
+    "feature_cache": {"source": "records/phase_g2/local360_feature_cache_audit_20260903.json", "rows": 360, "valid": 360, "missing": 0, "total_npz_bytes": 16259649, "mean_extraction_latency_ms": 798.3650042, "p50_extraction_latency_ms": 468.661431, "p95_extraction_latency_ms": 2429.575783},
+    "timelens_quality_local360": {"source": "records/phase_g8/g4_local360_eval_20260903/metrics.json", "prediction_source": "records/phase_g4/g4_timelens_local360_recovery_20260903.jsonl", "sample_count": 360, "unique_video_count": 360, "predictions": 360, "degraded": 0, "r1_iou_0.3": 0.3055555556, "r1_iou_0.5": 0.2388888889, "r1_iou_0.7": 0.0777777778, "miou": 0.1958919058, "mean_boundary_error_s": 13.3575957, "scope": "target_present_weak_label_clip_num_not_formal_quality_gate"},
+    "timelens_profiler": {"source": "records/phase_g9/realtime_model_profile_recovery_20260903.json", "status": "passed", "total_pixels": 4194304, "cuda_peak_allocated_gib": 20.29889965, "cuda_peak_reserved_gib": 20.59960938},
+    "timelens_windows": {"matrix_source": "records/phase_g4/g4_timelens_runtime_matrix_recovery_20260903_v2.json", "case_count": 9, "status": "window_batch_budget_decode_failure_and_async_timeout_expectations_passed", "high_budget_oom": "not_reproduced"},
+    "realtime_single_request": {"source": "records/phase_g6/g6_realtime_smoke_recovery_20260903.json", "status": "passed", "degraded": false},
+    "realtime_async": {"success_source": "records/phase_g6/g6_realtime_service_smoke_recovery_20260903.json", "timeout_source": "records/phase_g6/g6_realtime_service_timeout_1000ms_recovery_20260903.json", "status": "success_and_timeout_level2_fallback_passed"},
+    "failure_and_recovery": {"decode_failure_source": "records/phase_g4/g4_timelens_decode_failure_recovery_20260903.json", "single_worker_source": "records/phase_g6/g6_real_model_runtime_matrix_recovery_20260903.json", "postprocess_sources": ["records/phase_g5/postprocess_ablation_timelens_pilot_recovery_20260903_v2.json", "records/phase_g5/postprocess_ablation_timelens_top20_recovery_20260903_v2.json"], "status": "decode_failure_cancel_cleanup_and_existing_prediction_ablation_passed"},
+    "real_two_worker": {"source": "records/phase_g6/g6_real_model_two_worker_matrix_recovery_20260903_v3.json", "status": "passed", "workers": 2, "overlap_seconds": 19.315222, "threads_alive_after_shutdown": [], "cuda_cleanup": "both_devices_returned_to_about_0.009_GiB_allocated"},
+    "synthetic_negative_contract": {"source": "tests/test_metrics.py; src/videoitg_smart_clip/evaluation/validation.py", "status": "supported", "negative_types": ["event_absent", "wrong_action", "wrong_object", "theme_unrelated"], "label_status": "synthetic", "interpretation": "offline mechanism test only"},
+    "release_audit": {"source": "records/phase9/release_audit_20260903_local360.json", "status": "pass", "required_files": 117, "missing_files": 0}
+  },
+  "not_completed_or_not_measured": ["真实世界 No-Match 泛化、真实困难样本选择和真实用户指标；当前只有 synthetic 机制测试与 target-present weak-label 诊断", "连续人工边界真值与真实用户采用率"],
+  "out_of_scope": ["人工标注", "真实负样本构建", "真实浏览器用户验收", "真实环境复现", "生产部署与生产吞吐"],
+  "decision": "OFFLINE_AUTOMATED_SCOPE_COMPLETE_WITH_SYNTHETIC_NEGATIVE_LIMITS"
+}

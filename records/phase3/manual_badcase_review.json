@@ -1,0 +1,99 @@
+{
+  "reviewer": "Codex visual keyframe review",
+  "review_type": "provisional_manual",
+  "review_scope": "query plus dense exported GT/B1/B2R/B2 keyframes around candidate intervals; full-video temporal replay remains pending",
+  "source_evidence": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/outputs/phase3_badcase_evidence_20260714_0210/index.json",
+  "label_policy": "Use boundary_shift only when adjacent frames show the same scene/state; use short_event_miss only when the GT event is visually localized and no B1 prediction overlaps; otherwise use other_or_uncertain.",
+  "samples": [
+    {
+      "sample_id": "videoitg40k:media_pilot:111414",
+      "primary_code": "other_or_uncertain",
+      "promotion_status": "pending_full_replay",
+      "severity": "medium",
+      "confidence": "low",
+      "rationale": "The query is generic and the sheet contains multiple surfing scenes; keyframes do not establish a unique action boundary or semantic mismatch."
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:127469",
+      "primary_code": "other_or_uncertain",
+      "promotion_status": "pending_full_replay",
+      "severity": "high",
+      "confidence": "medium",
+      "rationale": "The GT frame shows the queried red/green pair, while the highest B1 score is a later visually similar interaction and the GT interval appears in a lower-ranked prediction; this is a ranking regression, not enough evidence for wrong-action labeling."
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:145887",
+      "primary_code": "short_event_miss",
+      "promotion_status": "confirmed_keyframe",
+      "severity": "high",
+      "confidence": "medium",
+      "rationale": "The GT frame is centered on the boy/camera interaction; B1 only clips the GT at its 10.5–15.5 s edge and does not cover the 15–20 s target interval, indicating a localized short-event miss."
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:167155",
+      "primary_code": "other_or_uncertain",
+      "promotion_status": "pending_full_replay",
+      "severity": "medium",
+      "confidence": "medium",
+      "rationale": "The queried panel scene appears in GT and in a lower-ranked B1 prediction; the evidence supports temporal ranking loss, but not a semantic action or subject error."
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:202368",
+      "primary_code": "other_or_uncertain",
+      "promotion_status": "pending_full_replay",
+      "severity": "medium",
+      "confidence": "medium",
+      "rationale": "The dog interaction appears in the GT and a lower-ranked B1 prediction; the top-ranked later dog frame is visually similar, so the error is not safely attributable to wrong subject/action."
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:208227",
+      "primary_code": "short_event_miss",
+      "promotion_status": "confirmed_keyframe",
+      "severity": "high",
+      "confidence": "medium",
+      "rationale": "The GT frame shows the boy kneeling in the snow at 65–70 s, while all B1 predictions are later and non-overlapping; the queried throw-after-pickup event is temporally localized."
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:248981",
+      "primary_code": "other_or_uncertain",
+      "promotion_status": "pending_full_replay",
+      "severity": "medium",
+      "confidence": "medium",
+      "rationale": "The helicopter/people scene is present in the GT and B1 Top-3; the low top-1 score is a ranking issue and the keyframes do not justify a semantic error label."
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:253712",
+      "primary_code": "boundary_shift",
+      "promotion_status": "confirmed_keyframe",
+      "severity": "medium",
+      "confidence": "high",
+      "rationale": "The GT and B1 top-1 frames show the same two-person stage arrangement, but the predicted 8–13 s interval starts after the 0–5 s GT interval; this is an interval-boundary mismatch."
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:26829",
+      "primary_code": "other_or_uncertain",
+      "promotion_status": "pending_full_replay",
+      "severity": "medium",
+      "confidence": "medium",
+      "rationale": "The cat-grooming action appears in the GT and B1 Top-2; the top-ranked title card is a ranking failure, not enough evidence for a wrong-action label."
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:287250",
+      "primary_code": "boundary_shift",
+      "promotion_status": "confirmed_keyframe",
+      "severity": "medium",
+      "confidence": "high",
+      "rationale": "The GT and B1 top-1 frames show the same panel arrangement, but the predicted interval begins at 8 s instead of the 0–5 s GT interval."
+    }
+  ],
+  "summary": {
+    "sample_count": 10,
+    "counts": {
+      "short_event_miss": 2,
+      "boundary_shift": 2,
+      "other_or_uncertain": 6
+    },
+    "not_claimed": ["same_object_wrong_action", "same_action_wrong_subject", "false_positive_no_match", "asr_visual_conflict"],
+    "next_step": "Replay the full ten videos around GT and predicted intervals, then promote only confirmed labels into the immutable regression pool."
+  }
+}

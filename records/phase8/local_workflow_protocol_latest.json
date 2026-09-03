@@ -1,0 +1,22 @@
+{
+  "run_id": "workflow_20260831T173251Z",
+  "scope": "automated_protocol_only",
+  "backend": "stub",
+  "iterations": 2,
+  "successful_tasks": 2,
+  "feedback_events": 2,
+  "sessions": [
+    {
+      "task_id": "60756382f642485d98ab15e18e756f31",
+      "status": "succeeded",
+      "feedback": "accepted"
+    },
+    {
+      "task_id": "07cd18ad6bda421a8d3bd4050fb598ec",
+      "status": "succeeded",
+      "feedback": "start_too_late"
+    }
+  ],
+  "human_user_test": false,
+  "videoitg_quality_evaluation": false
+}

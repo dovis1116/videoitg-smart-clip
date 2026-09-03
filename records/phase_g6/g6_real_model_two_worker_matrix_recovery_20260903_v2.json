@@ -1,0 +1,59 @@
+{
+  "run_id": "g6_real_model_two_worker_matrix_20260903_185335",
+  "video": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/processed/g6/imax10s.mp4",
+  "devices": [
+    "cuda:0",
+    "cuda:1"
+  ],
+  "total_pixels": 4194304,
+  "worker_count": 2,
+  "tasks": [
+    {
+      "task_id": "8125cd14a97842c19c5fe08dee92e883",
+      "status": "succeeded",
+      "current_stage": "SUCCESS",
+      "error_code": null,
+      "degraded": false,
+      "started_at": "2026-09-03T10:53:13.193778+00:00",
+      "finished_at": "2026-09-03T10:53:35.013307+00:00"
+    },
+    {
+      "task_id": "3d1503e91bf646d59ae7527d5f33ba17",
+      "status": "succeeded",
+      "current_stage": "SUCCESS",
+      "error_code": null,
+      "degraded": true,
+      "started_at": "2026-09-03T10:53:13.194888+00:00",
+      "finished_at": "2026-09-03T10:53:32.884791+00:00"
+    }
+  ],
+  "overlap_seconds": 19.689902782440186,
+  "elapsed_ms": 21820.39667799836,
+  "scope": "real_model_two_worker_cross_gpu_concurrency_and_cleanup_not_throughput",
+  "threads_alive_after_shutdown": [],
+  "cleanup": [
+    {
+      "device": "cuda:0",
+      "before": {
+        "cuda_allocated_gib": 17.98054075241089,
+        "cuda_reserved_gib": 20.60546875
+      },
+      "after": {
+        "cuda_allocated_gib": 0.0089111328125,
+        "cuda_reserved_gib": 0.0234375
+      }
+    },
+    {
+      "device": "cuda:1",
+      "before": {
+        "cuda_allocated_gib": 1.6443710327148438,
+        "cuda_reserved_gib": 1.662109375
+      },
+      "after": {
+        "cuda_allocated_gib": 0.0089111328125,
+        "cuda_reserved_gib": 0.0234375
+      }
+    }
+  ],
+  "passed": false
+}

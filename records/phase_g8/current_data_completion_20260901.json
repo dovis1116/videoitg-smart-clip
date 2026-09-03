@@ -1,0 +1,24 @@
+{
+  "run_id": "current_data_completion_20260901",
+  "scope": "existing-data-only",
+  "statement": "只使用现有代码、pilot 记录、合成评测输入和本地运行时 artifact；不把缺失人工标注、负样本或宿主 GPU 条件推断为已完成。",
+  "completed_checks": {
+    "regression": {"command": "PYTHONPATH=src:external/VideoITG /home/zjy/miniconda3/bin/python -m pytest -q", "passed": 77, "failed": 0, "warning_count": 1},
+    "release_audit": {"source": "records/phase9/release_audit_20260901_final.json", "status": "pass", "required_files": 92, "missing_files": 0, "contract_checks": "all_pass"},
+    "feature_cache": {"source": "records/phase_g2/g2_siglip_cache_20260831_222049.json", "video_queries": 2, "extractor_calls": 1, "cache_miss_first_query": true, "cache_hit_second_query": true},
+    "media_pool_audit": {"source": "records/phase_g2/g2_media_pool_audit_20260901.json", "sample_count": 100, "exists_count": 100, "decoded_count": 100, "valid_frame_label_count": 100, "valid_clip_label_count": 100},
+    "feature_cache_audit": {"source": "records/phase_g2/g2_feature_cache_audit_20260901_v2.json", "cache_count": 100, "missing_cache_count": 0, "sampled_frames_mean": 16.0, "total_npz_bytes": 4513344, "feature_extraction_latency": "not_recorded_for_legacy_cache"},
+    "retriever_pilot": {"source": "records/phase_g3/g3_retriever_compare_20260831_224512.json", "sample_count": 100, "scope": "target-present pilot", "cached_cosine": {"recall_at_5": 0.76, "recall_at_10": 0.94, "recall_at_20": 0.99, "mean_retrieval_latency_ms": 19.5935}, "uniform_reference": {"recall_at_5": 0.97, "recall_at_10": 0.98, "recall_at_20": 1.0}, "selection": "pending_full_validation"},
+    "timelens_pilot": {"source": "records/phase_g4/g4_timelens_pilot_query_normalized_eval_v1/metrics.json", "sample_count": 5, "recall_at_1_iou_0_3": 0.2, "recall_at_1_iou_0_5": 0.2, "mean_boundary_error_s": 20.0838, "scope": "diagnostic target-present pilot"},
+    "timelens_contract_matrix": {"source": "records/phase_g4/g4_timelens_contract_matrix_20260901_v2.json", "scope": "fake_inference_adapter_contract", "serial_and_batch_mapping": "passed", "expected_error_cases": 2},
+    "postprocess_ablation": {"sources": ["records/phase_g5/postprocess_ablation_timelens_pilot_20260901_v2.json", "records/phase_g5/postprocess_ablation_timelens_top20_20260901_v2.json"], "scope": "existing_predictions_diagnostic", "observed_metric_change": "none"},
+    "service_contract_matrix": {"source": "records/phase_g6/service_contract_matrix_20260901_v2.json", "scope": "cpu_stub_runtime_contract", "two_worker_success_count": 8, "shutdown_worker_threads": 0, "oom_recovery": "passed"},
+    "evaluation_smoke": {"source": "records/phase_g8/eval_smoke_output_current_20260901/metrics.json", "sample_count": 4, "scope": "synthetic contract smoke", "required_metric_schema": "present", "engineering_unmeasured_fields": "null"},
+    "single_class_no_match_fix": {"source": "records/phase_g8/g4_pilot_eval_current_20260901_v2/metrics.json", "target_present_no_match_metrics": "null"},
+    "validation_manifest": {"source": "records/phase_g8/validation_present_pending_20260901.jsonl", "rows": 79, "files_present": 79, "present_rows": 79, "pending_rows": 79, "negative_families": 0, "strict_gate": "not_ready"},
+    "runtime_artifact": {"source": "records/phase_g9/decord_build_20260901.json", "status": "pass", "platform_scope": "cp313-cp313-manylinux_2_39_x86_64"}
+  },
+  "not_completed": ["Retriever 默认方案的困难/负样本验证集选择", "TimeLens 代表性质量集、真实失败/超时/OOM 矩阵和正式阈值校准", "新缓存 miss 运行的真实特征提取耗时统计", "真实模型并发、P50/P95、Timeout/Failure/Degrade 与 GPU 资源释放统计", "宿主 GPU 驱动恢复后的固定配置 G6/G9 复跑"],
+  "out_of_scope": ["人工标注", "四类真实负样本构建", "真实浏览器用户验收", "用户采用率和人工边界调整统计", "正式 No-Match Accuracy/FPR/FNR 校准"],
+  "decision": "KEEP_IMPLEMENTATION_AUTOMATED_SCOPE"
+}

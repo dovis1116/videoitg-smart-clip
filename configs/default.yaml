@@ -1,0 +1,103 @@
+project:
+  name: videoitg_smart_clip
+  definition: query_aware_coarse_to_fine_temporal_grounding
+  status: architecture_migration
+
+paths:
+  dataset_root: /home/hdd-2t/zjy_dataset/videoitg_smart_clip
+  raw: /home/hdd-2t/zjy_dataset/videoitg_smart_clip/raw
+  annotations: /home/hdd-2t/zjy_dataset/videoitg_smart_clip/annotations
+  processed: /home/hdd-2t/zjy_dataset/videoitg_smart_clip/processed
+  frames: /home/hdd-2t/zjy_dataset/videoitg_smart_clip/frames
+  features: /home/hdd-2t/zjy_dataset/videoitg_smart_clip/features
+  indexes: /home/hdd-2t/zjy_dataset/videoitg_smart_clip/indexes
+  models: /home/hdd-2t/zjy_dataset/videoitg_smart_clip/models
+  cache: /home/hdd-2t/zjy_dataset/videoitg_smart_clip/cache
+
+preprocessing:
+  shot_detector: configurable
+  representative_frames_per_shot: 2
+  feature_cache:
+    enabled: true
+    root: /home/hdd-2t/zjy_dataset/videoitg_smart_clip/features
+    feature_model: google/siglip-so400m-patch14-384
+    feature_model_version: siglip-so400m-patch14-384-v1
+    preprocessing_config: decord-uniform-v1
+    sampling_config: uniform-1fps-max16-v1
+
+retrieval:
+  encoder: google/siglip-so400m-patch14-384
+  candidate_pool_size: 20
+  default: cached_cosine
+  compare: [cached_cosine, uniform]
+  metrics: [recall_at_5, recall_at_10, recall_at_20, latency_ms, gpu_memory_gib, feature_cache_size_bytes]
+
+grounder:
+  backend: timelens
+  model: TimeLens-8B
+  checkpoint: /home/hdd-2t/zjy_dataset/videoitg_smart_clip/models/TimeLens-8B
+  batch_size: 1
+  max_candidate_windows: 20
+  max_new_tokens: 128
+  total_pixels: 4194304
+
+baseline:
+  videoitg:
+    model: VideoITG-8B
+    role: baseline_only
+
+boundary_refinement:
+  enabled: true
+  version: boundary-refinement-v1
+  expansion_seconds: 0.0
+  start_offset_seconds: 0.0
+  end_offset_seconds: 0.0
+  start_padding_seconds: 0.0
+  end_padding_seconds: 0.0
+
+ranking:
+  version: ranking-v1
+  weights: {retrieval: 0.30, grounding: 0.40, boundary: 0.10, completeness: 0.20, duplication: 0.0}
+
+dedup:
+  temporal_iou_threshold: 0.7
+
+no_match:
+  statuses: [CONFIDENT, POSSIBLE, NO_MATCH]
+  retrieval_threshold: pending_validation
+  grounding_threshold: pending_validation
+  margin_threshold: pending_validation
+
+budget_policy:
+  version: phase5-preflight-v0
+  mode: fixed
+  rerank_k: 20
+  sample_fps: 2.0
+  max_frames_per_candidate: 16
+  full_uncertainty_threshold: null
+  queue_reduced_threshold: null
+  queue_bypass_threshold: null
+  request_deadline_ms: null
+
+evaluation:
+  iou_thresholds: [0.3, 0.5, 0.7]
+  output_top_k: 3
+  short_event_max_seconds: 5.0
+  random_seed: 42
+
+service:
+  host: 127.0.0.1
+  port: 8000
+  backend: coarse_to_fine
+  devices: [cuda:0, cuda:1]
+  queue_size: 8
+  deadline_ms: 5000
+  async_timeout_ms: 120000
+  state_path: /home/hdd-2t/zjy_dataset/videoitg_smart_clip/runtime/service_tasks.jsonl
+  max_upload_bytes: 2147483648
+  max_video_duration_seconds: 1800
+  expose_publicly: false
+  steady_contract: dual_gpu_steady_1s
+  burst_contract: asynchronous_bounded_queue
+  admission_prefetch: cpu_frame_prepare
+  task_statuses: [PENDING, PREPROCESSING, INDEXING, RETRIEVING, GROUNDING, POSTPROCESSING, SUCCESS, FAILED, CANCELLED, TIMEOUT]

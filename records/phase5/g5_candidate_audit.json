@@ -1,0 +1,49 @@
+{
+  "gate": "G5 candidate audit",
+  "scope": {
+    "latency_profile_rows": 50,
+    "quality_holdout_extra_rows": 27,
+    "deadline_ms": 5000,
+    "real_service_benchmark": true,
+    "real_single_gpu_benchmark_rows": 50,
+    "real_arrival_patterns": ["burst", "steady_1s"]
+  },
+  "baseline": {
+    "name": "E0_fixed16",
+    "policy": "B1 max_frames=16, 5-second output intervals",
+    "pilot_p95_rerank_ms": 3588.8,
+    "pilot_mean_rerank_ms": 2425.3
+  },
+  "candidate": {
+    "name": "E2_preflight",
+    "policy": "uncertainty proxy with queue thresholds selecting 32/64 frames or retrieval-only",
+    "calibration_status": "not_calibrated",
+    "quality_status": "not_simulated",
+    "simulation_status": "queueing_simulation_only"
+  },
+  "evidence": {
+    "source": "records/phase5/latency_policy_replay_simulation.json",
+    "observation": "The uncalibrated E2 replay selects more high-frame modes in burst scenarios and produces more timeouts than fixed16; the replay does not execute a service and has no quality measurement.",
+    "extra_heldout": "records/phase4/heldout_extra27_mf64_audit.json",
+    "quality_observation": "The 64-frame candidate has a small aggregate Top-k gain but opposite source-group effects and about 41% higher mean rerank time on the additional held-out set.",
+    "real_benchmark": "records/phase5/real_budget_benchmark_audit.json",
+    "real_observation": "E3 queue-bypass reduces service P95 by about 21% in both burst and 1-second steady runs, but selects retrieval-only for 49/50 rows, loses 14 percentage points of pilot Top-k@0.5, and still has 50/50 deadline misses.",
+    "fixed_frame_candidates": "records/phase5/e1_frame_budget_audit.json",
+    "quality_candidate_mf24": "records/phase4/mf24_candidate_audit.json",
+    "runtime_micro_optimization": "records/phase5/no_empty_cache_audit.json",
+    "runtime_micro_optimization_observation": "Retaining the CUDA allocator cache preserves pilot Top-k@0.5=0.68 but has paired service P95 3522.7 ms versus 3519.0 ms with empty_cache, so it is discarded as a G5 latency candidate.",
+    "single_reader": "records/phase5/single_reader_audit.json",
+    "single_reader_observation": "Eliminating the duplicate metadata VideoReader preserves quality and reduces mean/P50 service time, but increases 50-row burst P95 by about 1.1%; retain as an implementation cleanup, not as a G5 pass.",
+    "prefetch": "records/phase5/prefetch_audit.json",
+    "prefetch_observation": "Overlapping the next full-video CPU frame read with the current GPU request preserves fixed16 Top-k@0.5=0.68 and reduces service P95 by 42.8% in burst and 45.7% at 1-second arrivals. However, the queue remains overloaded: 48/50 burst and 44/50 steady requests still miss the 5-second deadline, so this is not a G5 promotion.",
+    "multi_gpu": "records/phase5/multi_gpu_audit.json",
+    "multi_gpu_observation": "Two local GPU workers with one-request lookahead prefetch preserve Top-k@0.5=0.68 and clear the 5-second deadline in the 50-row steady-1s run (0/50 timeouts), but the burst run still has 46/50 timeouts and P95 total latency about 39.9 s. This is capacity evidence, not a burst-safe G5 promotion or a service implementation.",
+    "batch_smoke": "records/phase5/batch_smoke_audit.json",
+    "batch_smoke_observation": "Mixed-length two-request forward fails with FlashAttention index assertions; exact same-length 2x16-frame forward succeeds but takes 18.22 s versus 4.61 s for two sequential requests (peak 18.84 GiB). Restricted rank_batch is retained as a correctness experiment, not a latency candidate.",
+    "admission": "records/phase5/admission_audit.json",
+    "admission_observation": "On the two-GPU prefetch burst run, accepting only requests completed within 5 seconds would retain quality for 4/50 rows but reject or mark 46/50 as late; explicit admission is therefore not a useful quality-preserving G5 promotion."
+  },
+  "gate_decision": "G5 not passed",
+  "default": "E0_fixed16",
+  "next_action": "Keep E0 fixed16; do not start Phase 6 service or pressure testing. A future policy must reduce tail latency without the observed retrieval-only or low-frame quality loss and must be rechecked on an independent quality pool."
+}

@@ -1,0 +1,11 @@
+{
+  "purpose": "Check whether cheap CLIP retrieval confidence can select 16-vs-64-frame VideoITG before the expensive call",
+  "run": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/outputs/phase5_B0_clean97_20260715_0900/summary.json",
+  "scope": {"clean97_rows": 97, "train": 71, "dev": 8, "test": 18},
+  "cheap_signal": "B0 Top-1 score or Top-1 minus Top-2 margin",
+  "fallback_target": "Use B1 max_frames=64 output for selected rows; otherwise B1 16-frame output",
+  "train_dev_result": "No selective threshold was supported: B0 score thresholds are either nearly empty or select almost all rows, while B0 margin thresholds select all rows above the first few cut points; dev has only 8 rows and no discriminating quality signal.",
+  "test_not_used_for_threshold": true,
+  "decision": "discard_cheap_signal_policy",
+  "reason": "The B0 signal cannot reduce 64-frame calls while retaining a train/dev-supported quality benefit. Keep fixed B1 default and the static 64-frame candidate; do not claim a dynamic policy."
+}

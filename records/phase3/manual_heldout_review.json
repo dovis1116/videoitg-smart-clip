@@ -1,0 +1,48 @@
+{
+  "reviewer": "Codex visual keyframe review",
+  "review_type": "provisional_manual",
+  "review_scope": "test-split query plus dense exported GT/B1/B2R/B2 keyframes; full-video temporal replay remains pending",
+  "source_evidence": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/outputs/phase3_test_badcase_evidence_20260714_0500/index.json",
+  "samples": [
+    {
+      "sample_id": "videoitg40k:media_pilot:14517",
+      "primary_code": "boundary_shift",
+      "promotion_status": "confirmed_keyframe",
+      "severity": "medium",
+      "confidence": "medium",
+      "rationale": "The snow/blue-hat activity appears in GT and lower-ranked B1 intervals; B1 top-1 is an adjacent 9.5–14.5 s interval, so the evidence supports a temporal ranking/boundary issue rather than wrong subject."
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:35047",
+      "primary_code": "other_or_uncertain",
+      "promotion_status": "confirmed_keyframe",
+      "severity": "medium",
+      "confidence": "low",
+      "rationale": "The query is a binary indoor/outdoor question with answer 'no'; the keyframes do not establish a positive temporal event or a safe semantic error category under the target-present protocol."
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:435305",
+      "primary_code": "other_or_uncertain",
+      "promotion_status": "confirmed_keyframe",
+      "severity": "medium",
+      "confidence": "low",
+      "rationale": "The query has two GT intervals and B1 overlaps the first interval at IoU≈0.427; the keyframes do not distinguish a boundary shift from a repeated cycling event."
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:93507",
+      "primary_code": "boundary_shift",
+      "promotion_status": "confirmed_keyframe",
+      "severity": "medium",
+      "confidence": "medium",
+      "rationale": "The pope/ceremony scene repeats across nearby intervals; B1 predictions are adjacent ceremony segments, including 15.7–20.7 s next to the 20–25 s GT, so a temporal boundary/ranking issue is more supported than wrong action."
+    }
+  ],
+  "summary": {
+    "sample_count": 4,
+    "split": "test",
+    "counts": {"boundary_shift": 2, "other_or_uncertain": 2},
+    "not_claimed": ["same_object_wrong_action", "same_action_wrong_subject", "short_event_miss", "false_positive_no_match", "asr_visual_conflict"],
+    "next_step": "Superseded for the expanded clean97 pool by clean97_test_manual_review.json; the four rows have sampled-2s full-video evidence, while continuous playback is not claimed.",
+    "superseded_by": "records/phase3/clean97_test_manual_review.json"
+  }
+}

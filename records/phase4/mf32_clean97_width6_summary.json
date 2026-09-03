@@ -1,0 +1,16 @@
+{
+  "source_predictions": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/outputs/phase4_B1_mf32_clean97_20260714_1800/predictions.jsonl",
+  "manifest": "records/phase3/videoitg100_media_pilot_clean.jsonl",
+  "width_s": 6.0,
+  "sample_count": 97,
+  "metrics": {
+    "recall_at_1_iou_0.3": 0.6185567010309279,
+    "recall_at_1_iou_0.5": 0.5154639175257731,
+    "topk_hit_iou_0.3": 0.8556701030927835,
+    "topk_hit_iou_0.5": 0.7525773195876289,
+    "max_iou_topk": 0.5785644002074329,
+    "boundary_error_s_topk": 3.0054806588107024,
+    "sample_count": 97
+  },
+  "output": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/outputs/phase4_B1_mf32_clean97_width6_predictions.jsonl"
+}

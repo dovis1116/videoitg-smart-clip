@@ -1,0 +1,92 @@
+{
+  "run_id": "g6_real_model_runtime_matrix_20260903_184453",
+  "video": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/processed/g6/imax10s.mp4",
+  "total_pixels": 4194304,
+  "worker_count": 1,
+  "before_cancel": {
+    "first": {
+      "task_id": "26d6aca1300745db932119de25bc300c",
+      "status": "running",
+      "current_stage": "GROUNDING",
+      "progress": 0.65,
+      "error_code": null,
+      "cancel_requested": false,
+      "degraded": false,
+      "started": true,
+      "finished": false
+    },
+    "second": {
+      "task_id": "3ad5872702c24eaea9f6153de1e1426c",
+      "status": "queued",
+      "current_stage": "PENDING",
+      "progress": 0.0,
+      "error_code": null,
+      "cancel_requested": false,
+      "degraded": false,
+      "started": false,
+      "finished": false
+    },
+    "first_deduplicated": false,
+    "second_deduplicated": false
+  },
+  "after_cancel": {
+    "first": {
+      "task_id": "26d6aca1300745db932119de25bc300c",
+      "status": "running",
+      "current_stage": "INDEXING",
+      "progress": 0.25,
+      "error_code": null,
+      "cancel_requested": false,
+      "degraded": false,
+      "started": true,
+      "finished": false
+    },
+    "second": {
+      "task_id": "3ad5872702c24eaea9f6153de1e1426c",
+      "status": "cancelled",
+      "current_stage": "PENDING",
+      "progress": 0.0,
+      "error_code": null,
+      "cancel_requested": false,
+      "degraded": false,
+      "started": false,
+      "finished": true
+    }
+  },
+  "first_terminal": {
+    "task_id": "26d6aca1300745db932119de25bc300c",
+    "status": "succeeded",
+    "current_stage": "SUCCESS",
+    "progress": 1.0,
+    "error_code": null,
+    "cancel_requested": false,
+    "degraded": false,
+    "started": true,
+    "finished": true
+  },
+  "second_terminal": {
+    "task_id": "3ad5872702c24eaea9f6153de1e1426c",
+    "status": "cancelled",
+    "current_stage": "PENDING",
+    "progress": 0.0,
+    "error_code": null,
+    "cancel_requested": false,
+    "degraded": false,
+    "started": false,
+    "finished": true
+  },
+  "elapsed_ms": 19876.38843500463,
+  "multi_worker_status": "not_run_single_24GiB_card_cannot_safely_host_two_TimeLens_workers",
+  "scope": "real_model_single_worker_queue_cancel_resource_cleanup_not_multi_gpu_throughput",
+  "threads_alive_after_shutdown": [],
+  "prefetch_executor_shutdown": true,
+  "cleanup_before": {
+    "cuda_allocated_gib": 17.98054075241089,
+    "cuda_reserved_gib": 20.599609375
+  },
+  "cleanup_after": {
+    "cuda_allocated_gib": 0.0089111328125,
+    "cuda_reserved_gib": 0.0234375
+  },
+  "passed": true
+}

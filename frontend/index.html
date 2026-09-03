@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>VideoITG Smart Clip</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <header>
+        <p class="eyebrow">VideoITG Smart Clip · restricted local service</p>
+        <h1>长视频语义片段检索</h1>
+        <p class="muted">上传视频，输入查询，查看候选片段并留下可追溯反馈。</p>
+      </header>
+
+      <section class="panel" aria-labelledby="request-title">
+        <h2 id="request-title">新建任务</h2>
+        <label>服务地址 <input id="api-base" type="url" value="http://127.0.0.1:8000" /></label>
+        <label>视频文件 <input id="video-file" type="file" accept="video/*" /></label>
+        <label>自然语言查询 <textarea id="query" rows="3" placeholder="例如：找到人物展示手机背部摄像头的片段"></textarea></label>
+        <div class="actions">
+          <button id="submit" type="button">提交异步任务</button>
+          <button id="health" class="secondary" type="button">检查服务</button>
+        </div>
+        <p id="message" class="status" role="status">等待提交。</p>
+      </section>
+
+      <section id="result-panel" class="panel hidden" aria-labelledby="result-title">
+        <div class="result-heading">
+          <div>
+            <h2 id="result-title">任务结果</h2>
+            <p id="task-meta" class="muted"></p>
+            <progress id="task-progress" value="0" max="1" aria-label="任务进度"></progress>
+          </div>
+          <button id="cancel" class="danger secondary" type="button">取消任务</button>
+        </div>
+        <video id="preview" controls preload="metadata"></video>
+        <div id="timeline" class="timeline" aria-label="候选片段时间轴"></div>
+        <div id="predictions" class="predictions"></div>
+
+        <div class="feedback" aria-labelledby="feedback-title">
+          <h3 id="feedback-title">结构化反馈</h3>
+          <div class="feedback-grid">
+            <label>调整开始（秒）<input id="adjusted-start" type="number" min="0" step="0.1" /></label>
+            <label>调整结束（秒）<input id="adjusted-end" type="number" min="0" step="0.1" /></label>
+          </div>
+          <label>备注（不填写原始敏感内容）<input id="comment" maxlength="1000" /></label>
+          <div id="feedback-buttons" class="feedback-buttons"></div>
+          <p id="feedback-message" class="status" role="status"></p>
+        </div>
+      </section>
+    </main>
+    <script type="module" src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+{
+  "stage": "G6",
+  "kind": "real_async_smoke_interruption",
+  "task_id": "5e6625be7f7e4f3f9f26c6c66a69f469",
+  "request_id": "g6-real-service-539f33c7954445fe8b813c5369357218",
+  "runtime": {
+    "python": "/home/zjy/miniconda3/bin/python",
+    "timelens_total_pixels": 4194304,
+    "async_timeout_ms": 120000
+  },
+  "observed": {
+    "last_stage_before_interrupt": "INDEXING",
+    "process_rss_gb_approx": 0.95,
+    "process_threads_approx": 260,
+    "nvidia_smi_probe": "timeout",
+    "torch_cuda_probe": "timeout",
+    "process_action": "terminated_after_bounded_probe"
+  },
+  "diagnosis": "Host CUDA driver/device call became unresponsive; no model exception or normal timeout record was produced.",
+  "recovery": {
+    "method": "BoundedTaskManager state reload",
+    "status": "FAILED",
+    "current_stage": "FAILED",
+    "error_code": "SERVICE_RESTART_RECOVERY",
+    "model_version": "TimeLens-8B",
+    "result_preserved": false
+  },
+  "decision": "Keep previous successful smoke evidence; hold fresh GPU async gate pending driver recovery."
+}

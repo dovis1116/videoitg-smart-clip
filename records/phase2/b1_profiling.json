@@ -1,0 +1,80 @@
+{
+  "scope": {
+    "task": "B1 VideoITG frame-density and output-segment profiling",
+    "manifest": "/home/zjy/projects/videoitg_smart_clip/records/phase1/videoitg40k_media_pilot.jsonl",
+    "sample_count": 10,
+    "selection": "first 10 rows of the same pilot manifest",
+    "ground_truth": "clip_num converted to 5-second intervals",
+    "device": "cuda:0",
+    "note": "This is a small profiling subset, not a full-pilot model-selection result."
+  },
+  "variants": [
+    {
+      "name": "mf8",
+      "max_frames": 8,
+      "segment_seconds": 5.0,
+      "summary": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/outputs/phase2_B1_profile_mf8_20260714_0130/summary.json",
+      "metrics": {"recall_at_1_iou_0.3": 0.5, "recall_at_1_iou_0.5": 0.5, "topk_hit_iou_0.3": 0.6, "topk_hit_iou_0.5": 0.6, "max_iou_topk": 0.3296637053063863, "boundary_error_s_topk": 7.855898938938938, "sample_count": 10},
+      "mean_rerank_seconds": 2.324,
+      "peak_cuda_gib": 15.864
+    },
+    {
+      "name": "mf16",
+      "max_frames": 16,
+      "segment_seconds": 5.0,
+      "summary": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/outputs/phase2_B1_profile_mf16_20260714_0130/summary.json",
+      "metrics": {"recall_at_1_iou_0.3": 0.6, "recall_at_1_iou_0.5": 0.5, "topk_hit_iou_0.3": 0.8, "topk_hit_iou_0.5": 0.7, "max_iou_topk": 0.52715474633989, "boundary_error_s_topk": 4.3518960360360355, "sample_count": 10},
+      "mean_rerank_seconds": 3.122,
+      "peak_cuda_gib": 16.456
+    },
+    {
+      "name": "mf32",
+      "max_frames": 32,
+      "segment_seconds": 5.0,
+      "summary": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/outputs/phase2_B1_profile_mf32_20260714_0130/summary.json",
+      "metrics": {"recall_at_1_iou_0.3": 0.7, "recall_at_1_iou_0.5": 0.6, "topk_hit_iou_0.3": 0.8, "topk_hit_iou_0.5": 0.7, "max_iou_topk": 0.5102895851534871, "boundary_error_s_topk": 4.900193433433432, "sample_count": 10},
+      "mean_rerank_seconds": 3.823,
+      "peak_cuda_gib": 16.606
+    },
+    {
+      "name": "seg3",
+      "max_frames": 16,
+      "segment_seconds": 3.0,
+      "summary": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/outputs/phase2_B1_profile_seg3_20260714_0130/summary.json",
+      "metrics": {"recall_at_1_iou_0.3": 0.5, "recall_at_1_iou_0.5": 0.3, "topk_hit_iou_0.3": 0.7, "topk_hit_iou_0.5": 0.3, "max_iou_topk": 0.33923215008918034, "boundary_error_s_topk": 5.301445235235234, "sample_count": 10},
+      "mean_rerank_seconds": 3.128,
+      "peak_cuda_gib": 16.456
+    },
+    {
+      "name": "seg8",
+      "max_frames": 16,
+      "segment_seconds": 8.0,
+      "summary": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/outputs/phase2_B1_profile_seg8_20260714_0130/summary.json",
+      "metrics": {"recall_at_1_iou_0.3": 0.6, "recall_at_1_iou_0.5": 0.5, "topk_hit_iou_0.3": 0.8, "topk_hit_iou_0.5": 0.7, "max_iou_topk": 0.5331780796421271, "boundary_error_s_topk": 3.960945235235234, "sample_count": 10},
+      "mean_rerank_seconds": 3.14,
+      "peak_cuda_gib": 16.456
+    }
+  ],
+  "full_pilot_top_k_replay": {
+    "source": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/outputs/phase2_B1_full_20260714_0200/predictions.jsonl",
+    "sample_count": 50,
+    "top_k_1": {"topk_hit_iou_0.3": 0.58, "topk_hit_iou_0.5": 0.5, "max_iou_topk": 0.4094316956671623, "boundary_error_s_topk": 7.926745493517058},
+    "top_k_2": {"topk_hit_iou_0.3": 0.76, "topk_hit_iou_0.5": 0.66, "max_iou_topk": 0.5085244739239895, "boundary_error_s_topk": 5.641231921921921},
+    "top_k_3": {"topk_hit_iou_0.3": 0.8, "topk_hit_iou_0.5": 0.68, "max_iou_topk": 0.536611133558476, "boundary_error_s_topk": 4.238199787787788}
+  },
+  "full_pilot_mf32": {
+    "source": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/outputs/phase4_B1_mf32_full_20260714_1700/summary.json",
+    "repeat": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/outputs/phase4_B1_mf32_repeat_20260714_1900/summary.json",
+    "sample_count": 50,
+    "metrics": {"recall_at_1_iou_0.3": 0.68, "recall_at_1_iou_0.5": 0.54, "topk_hit_iou_0.3": 0.88, "topk_hit_iou_0.5": 0.76, "max_iou_topk": 0.5782573136513832, "boundary_error_s_topk": 2.8170678458458456},
+    "mean_rerank_seconds": 3.1327,
+    "peak_cuda_gib": 16.6059,
+    "repeat_prediction_differences": 0
+  },
+  "clean97_mf32": {
+    "source": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/outputs/phase4_B1_mf32_clean97_20260714_1800/summary.json",
+    "sample_count": 97,
+    "metrics": {"recall_at_1_iou_0.3": 0.5979381443, "recall_at_1_iou_0.5": 0.4948453608, "topk_hit_iou_0.3": 0.8556701031, "topk_hit_iou_0.5": 0.7216494845, "max_iou_topk": 0.5746478931, "boundary_error_s_topk": 3.0801951443}
+  },
+  "decision": "Keep the existing 16-frame/5-second configuration as the reproducible default. Full-pilot and clean97 32-frame runs are repeatable and improve quality, but the final regression controls lose 1/10 Top-k@0.5 and mean rerank time increases about 29%; retain 32 frames as a Phase 4 candidate pending an explicit quality-latency trade-off."
+}

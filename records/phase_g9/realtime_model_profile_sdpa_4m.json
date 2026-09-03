@@ -1,0 +1,101 @@
+{
+  "run_id": "realtime_model_profile_20260901_004141",
+  "video": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/processed/g6/imax10s.mp4",
+  "query": "a person performing an action",
+  "elapsed_ms": 23599.091397998563,
+  "stages": [
+    {
+      "stage": "INDEXING",
+      "elapsed_ms": 4111.653227999341
+    },
+    {
+      "stage": "RETRIEVING",
+      "elapsed_ms": 341.84871500110603
+    },
+    {
+      "stage": "GROUNDING",
+      "elapsed_ms": 16617.278976998932
+    },
+    {
+      "stage": "POSTPROCESSING",
+      "elapsed_ms": 1817.469934001565
+    }
+  ],
+  "cuda_peak_allocated_gib": 20.29340648651123,
+  "cuda_peak_reserved_gib": 20.619140625,
+  "profiler_top_cuda": "-------------------------------------------------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  \n                                                   Name    Self CPU %      Self CPU   CPU total %     CPU total  CPU time avg     Self CUDA   Self CUDA %    CUDA total  CUDA time avg       CPU Mem  Self CPU Mem      CUDA Mem  Self CUDA Mem    # of Calls  \n-------------------------------------------------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  \n                                               aten::mm         0.32%      83.881ms        13.26%        3.523s     870.268us        5.518s        40.35%        7.266s       1.795ms           0 B           0 B      10.42 GB      10.42 GB          4048  \n                       Memcpy HtoD (Pageable -> Device)         0.00%       0.000us         0.00%       0.000us       0.000us        4.219s        30.85%        4.219s       2.551ms           0 B           0 B           0 B           0 B          1654  \n                                  Lazy Function Loading         0.10%      25.823ms         0.10%      25.823ms      31.568us        3.945s        28.84%        3.945s       4.822ms           0 B           0 B           0 B           0 B           818  \nampere_bf16_s1688gemm_bf16_64x128_sliced1x2_ldg8_f2f...         0.00%       0.000us         0.00%       0.000us       0.000us        3.478s        25.43%        3.478s      16.102ms           0 B           0 B           0 B           0 B           216  \n                                    Command Buffer Full         8.62%        2.292s         8.62%        2.292s       3.477ms        1.803s        13.18%        1.803s       2.736ms           0 B           0 B           0 B           0 B           659  \n                         aten::_flash_attention_forward         0.07%      18.301ms         0.31%      82.304ms     107.587us        1.284s         9.39%        1.307s       1.708ms           0 B           0 B       2.05 GB    -136.05 MB           765  \nampere_bf16_s1688gemm_bf16_128x64_sliced1x2_ldg8_f2f...         0.00%       0.000us         0.00%       0.000us       0.000us        1.216s         8.89%        1.216s      33.778ms           0 B           0 B           0 B           0 B            36  \n                                            aten::addmm         0.79%     210.439ms         1.41%     375.954ms       1.348ms        1.214s         8.88%        4.932s      17.676ms           0 B           0 B       8.14 GB       8.14 GB           279  \nvoid pytorch_flash::flash_fwd_kernel<Flash_fwd_kerne...         0.00%       0.000us         0.00%       0.000us       0.000us     671.668ms         4.91%     671.668ms       4.146ms           0 B           0 B           0 B           0 B           162  \n    ampere_bf16_s16816gemm_bf16_128x64_ldg8_relu_f2f_tn         0.00%       0.000us         0.00%       0.000us       0.000us     635.590ms         4.65%     635.590ms      11.770ms           0 B           0 B           0 B           0 B            54  \nstd::enable_if<!(false), void>::type internal::gemvx...         0.00%       0.000us         0.00%       0.000us       0.000us     620.862ms         4.54%     620.862ms     379.500us           0 B           0 B           0 B           0 B          1636  \nvoid pytorch_flash::flash_fwd_kernel<Flash_fwd_kerne...         0.00%       0.000us         0.00%       0.000us       0.000us     465.166ms         3.40%     465.166ms      12.921ms           0 B           0 B           0 B           0 B            36  \n                                  cudaStreamIsCapturing         0.02%       4.644ms         0.02%       4.649ms       1.850us     409.650ms         3.00%     409.650ms     163.012us           0 B           0 B           0 B           0 B          2513  \nampere_bf16_s1688gemm_bf16_64x128_sliced1x2_ldg8_rel...         0.00%       0.000us         0.00%       0.000us       0.000us     363.608ms         2.66%     363.608ms      13.467ms           0 B           0 B           0 B           0 B            27  \n                                            aten::copy_         0.30%      79.790ms         9.48%        2.518s     375.667us     359.472ms         2.63%     380.908ms      56.818us           0 B           0 B           0 B           0 B          6704  \n                                        cudaMemcpyAsync        68.67%       18.248s        68.93%       18.316s       9.842ms     312.770ms         2.29%     992.481ms     533.305us           0 B           0 B           0 B           0 B          1861  \n                                  cudaStreamSynchronize         4.44%        1.181s         4.44%        1.181s     651.613us     294.955ms         2.16%     295.055ms     162.834us           0 B           0 B           0 B           0 B          1812  \nvoid at::native::unrolled_elementwise_kernel<at::nat...         0.00%       0.000us         0.00%       0.000us       0.000us     274.911ms         2.01%     274.911ms     100.922us           0 B           0 B           0 B           0 B          2724  \n                                              aten::mul         0.30%      80.490ms         2.68%     711.666ms      92.173us     263.043ms         1.92%     302.511ms      39.180us      41.02 KB      41.05 KB      24.02 GB      24.02 GB          7721  \n                                          aten::normal_         0.02%       5.659ms         0.05%      12.172ms      32.460us     209.503ms         1.53%     209.574ms     558.865us           0 B           0 B           0 B           0 B           375  \n-------------------------------------------------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  \nSelf CPU time total: 26.572s\nSelf CUDA time total: 13.676s\n",
+  "result": {
+    "status": "POSSIBLE",
+    "predictions": [
+      {
+        "candidate_id": "imax10s:r0",
+        "coarse_start": 3.0079994201660156,
+        "coarse_end": 10.01,
+        "retrieval_score": 0.09246249496936798,
+        "raw_start": 3.0079994201660156,
+        "raw_end": 5.007999420166016,
+        "grounding_score": 1.0,
+        "refined_start": 3.0079994201660156,
+        "refined_end": 5.007999420166016,
+        "final_score": 0.7277387484908104,
+        "duplication_penalty": 0.0,
+        "rank": 1,
+        "pre_dedup_rank": null,
+        "retriever_version": "cached-cosine-v1",
+        "grounder_version": "TimeLens-8B",
+        "postprocess_version": "boundary-refinement-v1+ranking-v1+temporal-dedup-v1+no-match-v1",
+        "retrieval_latency_ms": 341.8418309993285,
+        "grounding_latency_ms": 10119.007962999603,
+        "postprocess_latency_ms": 0.0,
+        "degraded": false,
+        "degrade_level": 0,
+        "degrade_reason": null,
+        "deduplicated": false,
+        "boundary_confidence": 1.0,
+        "completeness_score": 1.0
+      }
+    ],
+    "candidates": [
+      {
+        "candidate_id": "imax10s:r0",
+        "coarse_start": 3.0079994201660156,
+        "coarse_end": 10.01,
+        "retrieval_score": 0.09246249496936798,
+        "raw_start": 3.0079994201660156,
+        "raw_end": 5.007999420166016,
+        "grounding_score": 1.0,
+        "refined_start": 3.0079994201660156,
+        "refined_end": 5.007999420166016,
+        "final_score": 0.7277387484908104,
+        "duplication_penalty": 0.0,
+        "rank": 1,
+        "pre_dedup_rank": 1,
+        "retriever_version": "cached-cosine-v1",
+        "grounder_version": "TimeLens-8B",
+        "postprocess_version": "boundary-refinement-v1+ranking-v1+temporal-dedup-v1+no-match-v1",
+        "retrieval_latency_ms": 341.8418309993285,
+        "grounding_latency_ms": 10119.007962999603,
+        "postprocess_latency_ms": 0.10893000217038207,
+        "degraded": false,
+        "degrade_level": 0,
+        "degrade_reason": null,
+        "deduplicated": false,
+        "boundary_confidence": 1.0,
+        "completeness_score": 1.0
+      }
+    ],
+    "degraded": false,
+    "degrade_level": 0,
+    "degrade_reason": null,
+    "video_path": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/processed/g6/imax10s.mp4",
+    "runtime": {
+      "backend": "coarse_to_fine",
+      "device": "cuda:0",
+      "cache_hit": 1,
+      "cache_event": "cache_hit",
+      "retrieval_latency_ms": 341.8268530003843,
+      "grounder_attention_implementation": "sdpa"
+    }
+  },
+  "scope": "single_real_model_request_profiler_not_throughput_or_quality_gate"
+}

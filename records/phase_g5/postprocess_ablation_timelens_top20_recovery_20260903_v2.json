@@ -1,0 +1,143 @@
+{
+  "run_id": "postprocess_ablation_20260903_191856_014936",
+  "input": "records/phase_g4/g4_timelens_top20_batch2.jsonl",
+  "sample_count": 1,
+  "prediction_count": 3,
+  "scope": "existing_timelens_predictions_diagnostic_not_quality_gate",
+  "raw_boundary_exact_rows": 0,
+  "refined_boundary_exact_rows": 1,
+  "dedup_threshold": 0.7,
+  "variants": [
+    {
+      "recall_at_1_iou_0.3": 0.0,
+      "recall_at_1_iou_0.5": 0.0,
+      "recall_at_1_iou_0.7": 0.0,
+      "topk_hit_iou_0.3": 0.0,
+      "topk_hit_iou_0.5": 0.0,
+      "max_iou_topk": 0.0,
+      "miou": 0.0,
+      "boundary_error_s_topk": 19.871994018554688,
+      "mean_boundary_error_s": 76.26166375478108,
+      "sample_count": 1,
+      "variant": "boundary_raw",
+      "duplicate_rate_mean": 0.0,
+      "metadata": {
+        "boundary_source": "raw",
+        "exact_field_rows": 0,
+        "fallback_to_preview_bounds": true
+      }
+    },
+    {
+      "recall_at_1_iou_0.3": 0.0,
+      "recall_at_1_iou_0.5": 0.0,
+      "recall_at_1_iou_0.7": 0.0,
+      "topk_hit_iou_0.3": 0.0,
+      "topk_hit_iou_0.5": 0.0,
+      "max_iou_topk": 0.0,
+      "miou": 0.0,
+      "boundary_error_s_topk": 19.871994018554688,
+      "mean_boundary_error_s": 76.26166375478108,
+      "sample_count": 1,
+      "variant": "boundary_refined",
+      "duplicate_rate_mean": 0.0,
+      "metadata": {
+        "boundary_source": "refined",
+        "exact_field_rows": 1,
+        "fallback_to_preview_bounds": true
+      }
+    },
+    {
+      "recall_at_1_iou_0.3": 0.0,
+      "recall_at_1_iou_0.5": 0.0,
+      "recall_at_1_iou_0.7": 0.0,
+      "topk_hit_iou_0.3": 0.0,
+      "topk_hit_iou_0.5": 0.0,
+      "max_iou_topk": 0.0,
+      "miou": 0.0,
+      "boundary_error_s_topk": 19.871994018554688,
+      "mean_boundary_error_s": 76.26166375478108,
+      "sample_count": 1,
+      "variant": "ranking_recorded",
+      "duplicate_rate_mean": 0.0,
+      "metadata": {
+        "ranking_key": "recorded",
+        "boundary_source": "refined_or_preview_proxy"
+      }
+    },
+    {
+      "recall_at_1_iou_0.3": 0.0,
+      "recall_at_1_iou_0.5": 0.0,
+      "recall_at_1_iou_0.7": 0.0,
+      "topk_hit_iou_0.3": 0.0,
+      "topk_hit_iou_0.5": 0.0,
+      "max_iou_topk": 0.0,
+      "miou": 0.0,
+      "boundary_error_s_topk": 19.871994018554688,
+      "mean_boundary_error_s": 76.26166375478108,
+      "sample_count": 1,
+      "variant": "ranking_retrieval",
+      "duplicate_rate_mean": 0.0,
+      "metadata": {
+        "ranking_key": "retrieval",
+        "boundary_source": "refined_or_preview_proxy"
+      }
+    },
+    {
+      "recall_at_1_iou_0.3": 0.0,
+      "recall_at_1_iou_0.5": 0.0,
+      "recall_at_1_iou_0.7": 0.0,
+      "topk_hit_iou_0.3": 0.0,
+      "topk_hit_iou_0.5": 0.0,
+      "max_iou_topk": 0.0,
+      "miou": 0.0,
+      "boundary_error_s_topk": 19.871994018554688,
+      "mean_boundary_error_s": 76.26166375478108,
+      "sample_count": 1,
+      "variant": "ranking_grounding",
+      "duplicate_rate_mean": 0.0,
+      "metadata": {
+        "ranking_key": "grounding",
+        "boundary_source": "refined_or_preview_proxy"
+      }
+    },
+    {
+      "recall_at_1_iou_0.3": 0.0,
+      "recall_at_1_iou_0.5": 0.0,
+      "recall_at_1_iou_0.7": 0.0,
+      "topk_hit_iou_0.3": 0.0,
+      "topk_hit_iou_0.5": 0.0,
+      "max_iou_topk": 0.0,
+      "miou": 0.0,
+      "boundary_error_s_topk": 19.871994018554688,
+      "mean_boundary_error_s": 76.26166375478108,
+      "sample_count": 1,
+      "variant": "dedup_off",
+      "duplicate_rate_mean": 0.0,
+      "metadata": {
+        "threshold": 0.7
+      }
+    },
+    {
+      "recall_at_1_iou_0.3": 0.0,
+      "recall_at_1_iou_0.5": 0.0,
+      "recall_at_1_iou_0.7": 0.0,
+      "topk_hit_iou_0.3": 0.0,
+      "topk_hit_iou_0.5": 0.0,
+      "max_iou_topk": 0.0,
+      "miou": 0.0,
+      "boundary_error_s_topk": 19.871994018554688,
+      "mean_boundary_error_s": 76.26166375478108,
+      "sample_count": 1,
+      "variant": "dedup_on",
+      "duplicate_rate_mean": 0.0,
+      "metadata": {
+        "threshold": 0.7
+      }
+    }
+  ],
+  "limitations": [
+    "No grounder inference is run; this is a post-processing-only replay.",
+    "Legacy pilot rows without raw_start/raw_end use start_s/end_s as an explicit preview-bound proxy.",
+    "The input contains target-present diagnostic pilot rows only and cannot calibrate No-Match thresholds."
+  ]
+}

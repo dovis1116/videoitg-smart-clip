@@ -1,0 +1,68 @@
+{
+  "run_id": "g6_realtime_smoke_20260831_230257",
+  "video": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/processed/g6/imax10s.mp4",
+  "query": "a person performing an action",
+  "stages": [
+    {
+      "stage": "INDEXING",
+      "progress": 0.25,
+      "elapsed_ms": 0.003135999577352777
+    },
+    {
+      "stage": "RETRIEVING",
+      "progress": 0.4,
+      "elapsed_ms": 6634.067741997569
+    },
+    {
+      "stage": "GROUNDING",
+      "progress": 0.62,
+      "elapsed_ms": 6980.961594999826
+    },
+    {
+      "stage": "POSTPROCESSING",
+      "progress": 0.86,
+      "elapsed_ms": 23109.094897998148
+    }
+  ],
+  "elapsed_ms": 23109.209425998415,
+  "result": {
+    "status": "POSSIBLE",
+    "predictions": [
+      {
+        "candidate_id": "imax10s:r0",
+        "coarse_start": 3.0079994201660156,
+        "coarse_end": 10.01,
+        "retrieval_score": 0.09246249496936798,
+        "raw_start": 3.0079994201660156,
+        "raw_end": 5.007999420166016,
+        "grounding_score": 1.0,
+        "refined_start": 3.0079994201660156,
+        "refined_end": 5.007999420166016,
+        "final_score": 0.7277387484908104,
+        "rank": 1,
+        "retriever_version": "cached-cosine-v1",
+        "grounder_version": "TimeLens-8B",
+        "postprocess_version": "boundary-refinement-v1+ranking-v1+temporal-dedup-v1+no-match-v1",
+        "retrieval_latency_ms": 346.89014600007795,
+        "grounding_latency_ms": 11270.947397999407,
+        "postprocess_latency_ms": 0.08161599907907657,
+        "degraded": false,
+        "degrade_level": 0,
+        "degrade_reason": null,
+        "boundary_confidence": 1.0,
+        "completeness_score": 1.0
+      }
+    ],
+    "degraded": false,
+    "degrade_level": 0,
+    "degrade_reason": null,
+    "video_path": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/processed/g6/imax10s.mp4",
+    "runtime": {
+      "backend": "coarse_to_fine",
+      "device": "cuda:0",
+      "cache_hit": 1,
+      "retrieval_latency_ms": 346.8830630008597
+    }
+  },
+  "scope": "single_local_request_smoke_not_throughput_or_quality_gate"
+}

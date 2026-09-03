@@ -1,0 +1,48 @@
+{
+  "reviewer": "Codex visual full-video sampled review",
+  "review_type": "full_video_sampled_2s_scan",
+  "review_scope": "four train-split provisional badcases; labels are eligible for Phase 4 candidate construction but remain separate from the held-out test pool",
+  "source_evidence": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/outputs/phase4_train_badcase_fullscan_20260714_1600/index.json",
+  "samples": [
+    {
+      "sample_id": "videoitg40k:media_pilot:145887",
+      "primary_code": "short_event_miss",
+      "promotion_status": "confirmed_sampled_full_video",
+      "severity": "high",
+      "confidence": "medium",
+      "rationale": "The camera-covering interaction is localized around the 15–20 s GT interval; the full scan shows the relevant child/camera interaction only briefly, while B1 top-3 ends at 15.5 s or selects later unrelated intervals."
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:208227",
+      "primary_code": "short_event_miss",
+      "promotion_status": "confirmed_sampled_full_video",
+      "severity": "high",
+      "confidence": "medium",
+      "rationale": "The red-clothed boy kneeling/throwing snow is localized around 65–70 s; B1 top-3 starts at 76.6 s and later, with no overlap with the localized event."
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:253712",
+      "primary_code": "boundary_shift",
+      "promotion_status": "confirmed_sampled_full_video",
+      "severity": "medium",
+      "confidence": "high",
+      "rationale": "The same two-person stage arrangement persists across the full video; B1 selects 8.0–13.0 s for the 0–5 s GT, so the error is an interval boundary/ranking mismatch rather than a subject/action mismatch."
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:287250",
+      "primary_code": "boundary_shift",
+      "promotion_status": "confirmed_sampled_full_video",
+      "severity": "medium",
+      "confidence": "high",
+      "rationale": "The same panel arrangement persists across the full video; B1 selects 8.0–13.0 s for the 0–5 s GT, supporting a boundary/ranking mismatch."
+    }
+  ],
+  "summary": {
+    "sample_count": 4,
+    "split": "train",
+    "counts": {"short_event_miss": 2, "boundary_shift": 2},
+    "eligible_for_phase4_candidate_construction": true,
+    "used_in_training": false,
+    "replay_limit": "Uniform 2-second scan is complete; continuous playback is not claimed."
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "candidate": "B1 max_frames=64, 5-second output interval",
+  "implementation_command": "scripts/run_baseline.py --baseline B1 --max-frames 64 --segment-seconds 5",
+  "runs": {
+    "pilot_first": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/outputs/phase4_B1_mf64_full_20260715_0600/summary.json",
+    "pilot_repeat": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/outputs/phase4_B1_mf64_repeat_20260715_0800/summary.json",
+    "clean97": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/outputs/phase4_B1_mf64_clean97_20260715_0700/summary.json",
+    "final18_report": "records/phase4/mf64_clean97_final_regression_report.json",
+    "heldout7_report": "records/phase4/mf64_heldout7_regression_report.json",
+    "train4_report": "records/phase4/mf64_train_regression_report.json"
+  },
+  "metrics": {
+    "pilot_50": {
+      "recall_at_1_iou_0.3": 0.62,
+      "recall_at_1_iou_0.5": 0.54,
+      "topk_hit_iou_0.3": 0.82,
+      "topk_hit_iou_0.5": 0.78,
+      "boundary_error_s_topk": 3.8906
+    },
+    "clean97_overall": {
+      "recall_at_1_iou_0.3": 0.6186,
+      "recall_at_1_iou_0.5": 0.5258,
+      "topk_hit_iou_0.3": 0.8144,
+      "topk_hit_iou_0.5": 0.7320,
+      "boundary_error_s_topk": 3.6794
+    },
+    "final_test18_topk_iou_0.5": {
+      "overall": 0.7222,
+      "boundary_shift": 0.5,
+      "short_event_miss": 1.0,
+      "control_correct": 1.0
+    },
+    "heldout7_topk_iou_0.5": {
+      "B1_16_5s": 0.5714,
+      "B1_mf64": 0.5714
+    },
+    "train_badcase_topk_iou_0.5": {
+      "B1_16_5s": 0.0,
+      "B1_mf64": 0.75
+    }
+  },
+  "repeatability": {
+    "rows_first": 50,
+    "rows_repeat": 50,
+    "prediction_differences": 0,
+    "metric_differences": 0
+  },
+  "cost": {
+    "B1_16_mean_rerank_seconds": 2.4253,
+    "B1_mf64_mean_rerank_seconds": 4.1152,
+    "relative_increase": 0.6978,
+    "peak_cuda_allocation_gib": 17.8053
+  },
+  "gate_decision": "strong_candidate_not_default",
+  "reason": "64-frame sampling gives the strongest ordinary-pilot and clean97 metrics, recovers the confirmed short-event row, improves final boundary-shift coverage, and preserves all ten final controls. However, the historical seven-row held-out aggregate is unchanged and mean rerank time increases by about 70%; keep B1 16-frame/5-second as default until a latency-budgeted policy or broader held-out evidence supports promotion."
+}

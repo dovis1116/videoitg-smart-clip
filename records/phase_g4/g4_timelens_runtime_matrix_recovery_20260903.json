@@ -1,0 +1,491 @@
+{
+  "run_id": "g4_timelens_runtime_matrix_20260903_191411",
+  "video": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/processed/g6/imax10s.mp4",
+  "model": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/models/TimeLens-8B",
+  "case_count": 9,
+  "cases": [
+    {
+      "case": {
+        "case_id": "one_window_4m",
+        "count": 1,
+        "batch_size": 1,
+        "total_pixels": 4194304,
+        "max_new_tokens": 128
+      },
+      "video": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/processed/g6/imax10s.mp4",
+      "status": "succeeded",
+      "classification": "succeeded",
+      "return_code": 0,
+      "timed_out": false,
+      "record": {
+        "run_id": "g4_timelens_smoke_20260903_191131",
+        "video": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/processed/g6/imax10s.mp4",
+        "query": "a person performing an action",
+        "candidate_windows": [
+          {
+            "start": 0.0,
+            "end": 10.0,
+            "score": 0.5,
+            "candidate_id": "g4-smoke-0"
+          }
+        ],
+        "batch_size": 1,
+        "max_new_tokens": 128,
+        "total_pixels": 4194304,
+        "predictions": [
+          {
+            "candidate_id": "g4-smoke-0",
+            "raw_start": 0.0,
+            "raw_end": 2.0,
+            "grounding_score": 1.0,
+            "inference_latency_ms": 2537.4215850024484,
+            "model_version": "TimeLens-8B",
+            "boundary_confidence": 1.0,
+            "completeness_score": 1.0,
+            "metadata": {
+              "raw_answer": "The event happens in 0.0 - 2.0 seconds.",
+              "window_start": 0.0,
+              "window_end": 10.0,
+              "batch": false,
+              "batch_size": 1
+            }
+          }
+        ],
+        "error": null,
+        "status": "succeeded",
+        "elapsed_ms": 18233.0044870032,
+        "gpu_peak_memory_allocated_gib": 18.64846658706665,
+        "gpu_peak_memory_reserved_gib": 18.943359375
+      },
+      "stderr_tail": "ights:   8%|▊         | 59/750 [00:00<00:06, 103.16it/s]\nLoading weights:   9%|▉         | 71/750 [00:00<00:06, 103.81it/s]\nLoading weights:  11%|█         | 83/750 [00:00<00:06, 104.26it/s]\nLoading weights:  13%|█▎        | 98/750 [00:01<00:05, 116.21it/s]\nLoading weights:  15%|█▌        | 114/750 [00:01<00:05, 120.71it/s]\nLoading weights:  17%|█▋        | 127/750 [00:01<00:05, 111.10it/s]\nLoading weights:  19%|█▉        | 145/750 [00:01<00:04, 128.67it/s]\nLoading weights:  21%|██        | 159/750 [00:01<00:04, 118.54it/s]\nLoading weights:  23%|██▎       | 172/750 [00:01<00:04, 118.51it/s]\nLoading weights:  25%|██▍       | 186/750 [00:01<00:04, 120.82it/s]\nLoading weights:  27%|██▋       | 202/750 [00:01<00:04, 125.32it/s]\nLoading weights:  29%|██▊       | 215/750 [00:02<00:04, 114.37it/s]\nLoading weights:  31%|███       | 230/750 [00:02<00:04, 123.33it/s]\nLoading weights:  32%|███▏      | 243/750 [00:02<00:04, 124.97it/s]\nLoading weights:  34%|███▍      | 257/750 [00:02<00:03, 123.39it/s]\nLoading weights:  36%|███▌      | 270/750 [00:02<00:04, 112.84it/s]\nLoading weights:  38%|███▊      | 285/750 [00:02<00:03, 122.04it/s]\nLoading weights:  40%|███▉      | 299/750 [00:02<00:03, 126.33it/s]\nLoading weights:  42%|████▏     | 312/750 [00:02<00:03, 122.19it/s]\nLoading weights:  43%|████▎     | 325/750 [00:02<00:03, 112.12it/s]\nLoading weights:  45%|████▌     | 340/750 [00:03<00:03, 119.02it/s]\nLoading weights:  47%|████▋     | 355/750 [00:03<00:03, 121.78it/s]\nLoading weights:  49%|████▉     | 368/750 [00:03<00:03, 118.39it/s]\nLoading weights:  51%|█████     | 380/750 [00:03<00:03, 111.08it/s]\nLoading weights:  53%|█████▎    | 395/750 [00:03<00:03, 117.81it/s]\nLoading weights:  71%|███████   | 533/750 [00:03<00:00, 452.18it/s]\nLoading weights:  89%|████████▉ | 671/750 [00:03<00:00, 704.58it/s]\nLoading weights:  99%|█████████▉| 746/750 [00:03<00:00, 681.59it/s]\nLoading weights: 100%|██████████| 750/750 [00:03<00:00, 192.76it/s]\nqwen-vl-utils using decord to read video.\n",
+      "elapsed_ms": 20275.895479004248
+    },
+    {
+      "case": {
+        "case_id": "two_window_serial_4m",
+        "count": 2,
+        "batch_size": 1,
+        "total_pixels": 4194304,
+        "max_new_tokens": 128
+      },
+      "video": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/processed/g6/imax10s.mp4",
+      "status": "failed",
+      "classification": "failed",
+      "return_code": 0,
+      "timed_out": false,
+      "record": {
+        "run_id": "g4_timelens_smoke_20260903_191151",
+        "video": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/processed/g6/imax10s.mp4",
+        "query": "a person performing an action",
+        "candidate_windows": [
+          {
+            "start": 0.0,
+            "end": 10.0,
+            "score": 0.5,
+            "candidate_id": "g4-smoke-0"
+          },
+          {
+            "start": 10.0,
+            "end": 20.0,
+            "score": 0.5,
+            "candidate_id": "g4-smoke-1"
+          }
+        ],
+        "batch_size": 1,
+        "max_new_tokens": 128,
+        "total_pixels": 4194304,
+        "predictions": [],
+        "error": {
+          "type": "AttributeError",
+          "message": "module 'torchvision.io' has no attribute 'read_video'"
+        },
+        "status": "failed",
+        "elapsed_ms": 18253.895672009094,
+        "gpu_peak_memory_allocated_gib": 18.64846658706665,
+        "gpu_peak_memory_reserved_gib": 18.943359375
+      },
+      "stderr_tail": "[00:00<00:05, 117.80it/s]\nLoading weights:  12%|█▏        | 91/750 [00:00<00:05, 121.16it/s]\nLoading weights:  14%|█▍        | 104/750 [00:01<00:05, 118.56it/s]\nLoading weights:  16%|█▌        | 117/750 [00:01<00:05, 116.55it/s]\nLoading weights:  18%|█▊        | 133/750 [00:01<00:04, 125.98it/s]\nLoading weights:  20%|█▉        | 147/750 [00:01<00:05, 116.45it/s]\nLoading weights:  21%|██▏       | 160/750 [00:01<00:05, 115.45it/s]\nLoading weights:  23%|██▎       | 175/750 [00:01<00:04, 124.16it/s]\nLoading weights:  25%|██▌       | 189/750 [00:01<00:04, 127.96it/s]\nLoading weights:  27%|██▋       | 203/750 [00:01<00:04, 117.84it/s]\nLoading weights:  29%|██▉       | 216/750 [00:01<00:04, 119.92it/s]\nLoading weights:  31%|███▏      | 235/750 [00:02<00:03, 131.45it/s]\nLoading weights:  33%|███▎      | 249/750 [00:02<00:04, 124.96it/s]\nLoading weights:  35%|███▌      | 265/750 [00:02<00:03, 132.25it/s]\nLoading weights:  37%|███▋      | 279/750 [00:02<00:03, 131.83it/s]\nLoading weights:  39%|███▉      | 293/750 [00:02<00:03, 124.72it/s]\nLoading weights:  41%|████▏     | 311/750 [00:02<00:03, 134.76it/s]\nLoading weights:  43%|████▎     | 325/750 [00:02<00:03, 127.18it/s]\nLoading weights:  46%|████▌     | 342/750 [00:02<00:02, 137.19it/s]\nLoading weights:  47%|████▋     | 356/750 [00:03<00:02, 131.69it/s]\nLoading weights:  49%|████▉     | 370/750 [00:03<00:02, 127.62it/s]\nLoading weights:  51%|█████     | 383/750 [00:03<00:02, 127.72it/s]\nLoading weights:  54%|█████▎    | 402/750 [00:03<00:02, 143.57it/s]\nLoading weights:  72%|███████▏  | 540/750 [00:03<00:00, 491.11it/s]\nLoading weights:  91%|█████████ | 682/750 [00:03<00:00, 752.43it/s]\nLoading weights: 100%|██████████| 750/750 [00:03<00:00, 204.22it/s]\nqwen-vl-utils using decord to read video.\nvideo_reader_backend decord error, use torchvision as default, msg: [19:11:51] /tmp/videoitg_decord_src/src/video/video_reader.cc:151: Check failed: st_nb >= 0 (-1381258232 vs. 0) ERROR cannot find video stream with wanted index: -1\n",
+      "elapsed_ms": 20546.329769000295
+    },
+    {
+      "case": {
+        "case_id": "two_window_batch2_4m",
+        "count": 2,
+        "batch_size": 2,
+        "total_pixels": 4194304,
+        "max_new_tokens": 128
+      },
+      "video": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/processed/g6/imax10s.mp4",
+      "status": "failed",
+      "classification": "failed",
+      "return_code": 0,
+      "timed_out": false,
+      "record": {
+        "run_id": "g4_timelens_smoke_20260903_191210",
+        "video": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/processed/g6/imax10s.mp4",
+        "query": "a person performing an action",
+        "candidate_windows": [
+          {
+            "start": 0.0,
+            "end": 10.0,
+            "score": 0.5,
+            "candidate_id": "g4-smoke-0"
+          },
+          {
+            "start": 10.0,
+            "end": 20.0,
+            "score": 0.5,
+            "candidate_id": "g4-smoke-1"
+          }
+        ],
+        "batch_size": 2,
+        "max_new_tokens": 128,
+        "total_pixels": 4194304,
+        "predictions": [],
+        "error": {
+          "type": "AttributeError",
+          "message": "module 'torchvision.io' has no attribute 'read_video'"
+        },
+        "status": "failed",
+        "elapsed_ms": 16623.41089399706,
+        "gpu_peak_memory_allocated_gib": 18.64846658706665,
+        "gpu_peak_memory_reserved_gib": 18.9375
+      },
+      "stderr_tail": "00:01<00:05, 116.52it/s]\nLoading weights:  16%|█▋        | 122/750 [00:01<00:05, 120.07it/s]\nLoading weights:  18%|█▊        | 136/750 [00:01<00:05, 119.54it/s]\nLoading weights:  20%|█▉        | 149/750 [00:01<00:05, 109.91it/s]\nLoading weights:  22%|██▏       | 164/750 [00:01<00:04, 119.67it/s]\nLoading weights:  24%|██▎       | 177/750 [00:01<00:04, 122.14it/s]\nLoading weights:  25%|██▌       | 191/750 [00:01<00:04, 120.97it/s]\nLoading weights:  27%|██▋       | 204/750 [00:02<00:04, 110.95it/s]\nLoading weights:  29%|██▉       | 219/750 [00:02<00:04, 120.59it/s]\nLoading weights:  31%|███       | 233/750 [00:02<00:04, 125.19it/s]\nLoading weights:  33%|███▎      | 246/750 [00:02<00:04, 121.20it/s]\nLoading weights:  35%|███▍      | 259/750 [00:02<00:04, 111.11it/s]\nLoading weights:  36%|███▋      | 273/750 [00:02<00:04, 117.97it/s]\nLoading weights:  38%|███▊      | 286/750 [00:02<00:03, 121.16it/s]\nLoading weights:  40%|████      | 300/750 [00:02<00:03, 120.20it/s]\nLoading weights:  42%|████▏     | 313/750 [00:02<00:03, 117.88it/s]\nLoading weights:  43%|████▎     | 325/750 [00:03<00:03, 113.07it/s]\nLoading weights:  45%|████▌     | 340/750 [00:03<00:03, 122.45it/s]\nLoading weights:  47%|████▋     | 353/750 [00:03<00:03, 119.94it/s]\nLoading weights:  49%|████▉     | 366/750 [00:03<00:03, 116.49it/s]\nLoading weights:  51%|█████     | 379/750 [00:03<00:03, 114.85it/s]\nLoading weights:  52%|█████▏    | 391/750 [00:03<00:03, 111.14it/s]\nLoading weights:  67%|██████▋   | 503/750 [00:03<00:00, 382.20it/s]\nLoading weights:  85%|████████▌ | 640/750 [00:03<00:00, 655.68it/s]\nLoading weights:  98%|█████████▊| 733/750 [00:03<00:00, 732.85it/s]\nLoading weights: 100%|██████████| 750/750 [00:03<00:00, 190.09it/s]\nqwen-vl-utils using decord to read video.\nvideo_reader_backend decord error, use torchvision as default, msg: [19:12:10] /tmp/videoitg_decord_src/src/video/video_reader.cc:151: Check failed: st_nb >= 0 (-1381258232 vs. 0) ERROR cannot find video stream with wanted index: -1\n",
+      "elapsed_ms": 18597.53010199347
+    },
+    {
+      "case": {
+        "case_id": "four_window_batch2_4m",
+        "count": 4,
+        "batch_size": 2,
+        "total_pixels": 4194304,
+        "max_new_tokens": 128
+      },
+      "video": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/processed/g6/imax10s.mp4",
+      "status": "failed",
+      "classification": "failed",
+      "return_code": 0,
+      "timed_out": false,
+      "record": {
+        "run_id": "g4_timelens_smoke_20260903_191229",
+        "video": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/processed/g6/imax10s.mp4",
+        "query": "a person performing an action",
+        "candidate_windows": [
+          {
+            "start": 0.0,
+            "end": 10.0,
+            "score": 0.5,
+            "candidate_id": "g4-smoke-0"
+          },
+          {
+            "start": 10.0,
+            "end": 20.0,
+            "score": 0.5,
+            "candidate_id": "g4-smoke-1"
+          },
+          {
+            "start": 20.0,
+            "end": 30.0,
+            "score": 0.5,
+            "candidate_id": "g4-smoke-2"
+          },
+          {
+            "start": 30.0,
+            "end": 40.0,
+            "score": 0.5,
+            "candidate_id": "g4-smoke-3"
+          }
+        ],
+        "batch_size": 2,
+        "max_new_tokens": 128,
+        "total_pixels": 4194304,
+        "predictions": [],
+        "error": {
+          "type": "AttributeError",
+          "message": "module 'torchvision.io' has no attribute 'read_video'"
+        },
+        "status": "failed",
+        "elapsed_ms": 16458.99173799262,
+        "gpu_peak_memory_allocated_gib": 18.64846658706665,
+        "gpu_peak_memory_reserved_gib": 18.9375
+      },
+      "stderr_tail": "00:01<00:06, 107.68it/s]\nLoading weights:  15%|█▍        | 109/750 [00:01<00:05, 115.75it/s]\nLoading weights:  16%|█▋        | 123/750 [00:01<00:05, 121.74it/s]\nLoading weights:  18%|█▊        | 136/750 [00:01<00:05, 118.81it/s]\nLoading weights:  20%|█▉        | 149/750 [00:01<00:05, 109.92it/s]\nLoading weights:  22%|██▏       | 164/750 [00:01<00:04, 119.84it/s]\nLoading weights:  24%|██▎       | 177/750 [00:01<00:04, 122.51it/s]\nLoading weights:  25%|██▌       | 191/750 [00:01<00:04, 121.26it/s]\nLoading weights:  27%|██▋       | 204/750 [00:01<00:04, 111.39it/s]\nLoading weights:  29%|██▉       | 218/750 [00:02<00:04, 118.37it/s]\nLoading weights:  31%|███       | 232/750 [00:02<00:04, 124.18it/s]\nLoading weights:  33%|███▎      | 246/750 [00:02<00:04, 122.63it/s]\nLoading weights:  35%|███▍      | 259/750 [00:02<00:04, 112.45it/s]\nLoading weights:  37%|███▋      | 274/750 [00:02<00:03, 121.70it/s]\nLoading weights:  38%|███▊      | 287/750 [00:02<00:03, 123.81it/s]\nLoading weights:  40%|████      | 301/750 [00:02<00:03, 122.13it/s]\nLoading weights:  42%|████▏     | 314/750 [00:02<00:03, 112.03it/s]\nLoading weights:  44%|████▍     | 329/750 [00:02<00:03, 118.94it/s]\nLoading weights:  46%|████▌     | 345/750 [00:03<00:03, 123.93it/s]\nLoading weights:  48%|████▊     | 358/750 [00:03<00:03, 113.20it/s]\nLoading weights:  49%|████▉     | 370/750 [00:03<00:03, 113.67it/s]\nLoading weights:  52%|█████▏    | 389/750 [00:03<00:03, 118.92it/s]\nLoading weights:  65%|██████▌   | 489/750 [00:03<00:00, 340.19it/s]\nLoading weights:  84%|████████▍ | 629/750 [00:03<00:00, 617.21it/s]\nLoading weights:  98%|█████████▊| 733/750 [00:03<00:00, 722.93it/s]\nLoading weights: 100%|██████████| 750/750 [00:03<00:00, 195.44it/s]\nqwen-vl-utils using decord to read video.\nvideo_reader_backend decord error, use torchvision as default, msg: [19:12:28] /tmp/videoitg_decord_src/src/video/video_reader.cc:151: Check failed: st_nb >= 0 (-1381258232 vs. 0) ERROR cannot find video stream with wanted index: -1\n",
+      "elapsed_ms": 18444.458510988625
+    },
+    {
+      "case": {
+        "case_id": "one_window_low_pixel",
+        "count": 1,
+        "batch_size": 1,
+        "total_pixels": 2097152,
+        "max_new_tokens": 128
+      },
+      "video": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/processed/g6/imax10s.mp4",
+      "status": "succeeded",
+      "classification": "succeeded",
+      "return_code": 0,
+      "timed_out": false,
+      "record": {
+        "run_id": "g4_timelens_smoke_20260903_191248",
+        "video": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/processed/g6/imax10s.mp4",
+        "query": "a person performing an action",
+        "candidate_windows": [
+          {
+            "start": 0.0,
+            "end": 10.0,
+            "score": 0.5,
+            "candidate_id": "g4-smoke-0"
+          }
+        ],
+        "batch_size": 1,
+        "max_new_tokens": 128,
+        "total_pixels": 2097152,
+        "predictions": [
+          {
+            "candidate_id": "g4-smoke-0",
+            "raw_start": 0.0,
+            "raw_end": 2.0,
+            "grounding_score": 1.0,
+            "inference_latency_ms": 2155.253275996074,
+            "model_version": "TimeLens-8B",
+            "boundary_confidence": 1.0,
+            "completeness_score": 1.0,
+            "metadata": {
+              "raw_answer": "The event happens in 0.0 - 2.0 seconds.",
+              "window_start": 0.0,
+              "window_end": 10.0,
+              "batch": false,
+              "batch_size": 1
+            }
+          }
+        ],
+        "error": null,
+        "status": "succeeded",
+        "elapsed_ms": 17960.571550996974,
+        "gpu_peak_memory_allocated_gib": 18.64846658706665,
+        "gpu_peak_memory_reserved_gib": 18.943359375
+      },
+      "stderr_tail": "ghts:   9%|▉         | 67/750 [00:00<00:06, 107.45it/s]\nLoading weights:  11%|█         | 81/750 [00:00<00:06, 109.78it/s]\nLoading weights:  12%|█▏        | 93/750 [00:01<00:06, 107.33it/s]\nLoading weights:  14%|█▍        | 105/750 [00:01<00:06, 106.05it/s]\nLoading weights:  16%|█▌        | 120/750 [00:01<00:05, 117.44it/s]\nLoading weights:  18%|█▊        | 133/750 [00:01<00:05, 120.44it/s]\nLoading weights:  20%|█▉        | 147/750 [00:01<00:05, 119.85it/s]\nLoading weights:  21%|██▏       | 160/750 [00:01<00:05, 109.56it/s]\nLoading weights:  23%|██▎       | 175/750 [00:01<00:04, 119.54it/s]\nLoading weights:  25%|██▌       | 188/750 [00:01<00:04, 121.77it/s]\nLoading weights:  27%|██▋       | 202/750 [00:01<00:04, 120.77it/s]\nLoading weights:  29%|██▊       | 215/750 [00:02<00:04, 110.52it/s]\nLoading weights:  31%|███       | 229/750 [00:02<00:04, 116.25it/s]\nLoading weights:  33%|███▎      | 246/750 [00:02<00:04, 122.81it/s]\nLoading weights:  35%|███▍      | 259/750 [00:02<00:04, 112.72it/s]\nLoading weights:  37%|███▋      | 274/750 [00:02<00:03, 120.82it/s]\nLoading weights:  38%|███▊      | 287/750 [00:02<00:03, 123.20it/s]\nLoading weights:  40%|████      | 301/750 [00:02<00:03, 121.76it/s]\nLoading weights:  42%|████▏     | 314/750 [00:02<00:03, 111.40it/s]\nLoading weights:  44%|████▍     | 329/750 [00:03<00:03, 120.64it/s]\nLoading weights:  46%|████▌     | 342/750 [00:03<00:03, 122.61it/s]\nLoading weights:  47%|████▋     | 356/750 [00:03<00:03, 113.75it/s]\nLoading weights:  49%|████▉     | 369/750 [00:03<00:03, 112.55it/s]\nLoading weights:  51%|█████     | 384/750 [00:03<00:03, 121.79it/s]\nLoading weights:  53%|█████▎    | 397/750 [00:03<00:02, 123.28it/s]\nLoading weights:  70%|███████   | 527/750 [00:03<00:00, 449.32it/s]\nLoading weights:  88%|████████▊ | 662/750 [00:03<00:00, 704.70it/s]\nLoading weights:  99%|█████████▊| 739/750 [00:03<00:00, 714.87it/s]\nLoading weights: 100%|██████████| 750/750 [00:03<00:00, 189.26it/s]\nqwen-vl-utils using decord to read video.\n",
+      "elapsed_ms": 20021.436675990117
+    },
+    {
+      "case": {
+        "case_id": "one_window_short_generation",
+        "count": 1,
+        "batch_size": 1,
+        "total_pixels": 4194304,
+        "max_new_tokens": 64
+      },
+      "video": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/processed/g6/imax10s.mp4",
+      "status": "succeeded",
+      "classification": "succeeded",
+      "return_code": 0,
+      "timed_out": false,
+      "record": {
+        "run_id": "g4_timelens_smoke_20260903_191309",
+        "video": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/processed/g6/imax10s.mp4",
+        "query": "a person performing an action",
+        "candidate_windows": [
+          {
+            "start": 0.0,
+            "end": 10.0,
+            "score": 0.5,
+            "candidate_id": "g4-smoke-0"
+          }
+        ],
+        "batch_size": 1,
+        "max_new_tokens": 64,
+        "total_pixels": 4194304,
+        "predictions": [
+          {
+            "candidate_id": "g4-smoke-0",
+            "raw_start": 0.0,
+            "raw_end": 2.0,
+            "grounding_score": 1.0,
+            "inference_latency_ms": 2631.6507320007076,
+            "model_version": "TimeLens-8B",
+            "boundary_confidence": 1.0,
+            "completeness_score": 1.0,
+            "metadata": {
+              "raw_answer": "The event happens in 0.0 - 2.0 seconds.",
+              "window_start": 0.0,
+              "window_end": 10.0,
+              "batch": false,
+              "batch_size": 1
+            }
+          }
+        ],
+        "error": null,
+        "status": "succeeded",
+        "elapsed_ms": 18337.823121997644,
+        "gpu_peak_memory_allocated_gib": 18.64846658706665,
+        "gpu_peak_memory_reserved_gib": 18.943359375
+      },
+      "stderr_tail": "ights:   7%|▋         | 56/750 [00:00<00:06, 101.63it/s]\nLoading weights:   9%|▉         | 70/750 [00:00<00:06, 106.97it/s]\nLoading weights:  11%|█         | 82/750 [00:00<00:06, 104.19it/s]\nLoading weights:  13%|█▎        | 94/750 [00:01<00:06, 103.65it/s]\nLoading weights:  15%|█▍        | 109/750 [00:01<00:05, 115.02it/s]\nLoading weights:  16%|█▋        | 122/750 [00:01<00:05, 118.78it/s]\nLoading weights:  18%|█▊        | 136/750 [00:01<00:05, 118.62it/s]\nLoading weights:  20%|█▉        | 149/750 [00:01<00:05, 108.98it/s]\nLoading weights:  22%|██▏       | 164/750 [00:01<00:04, 118.54it/s]\nLoading weights:  24%|██▎       | 177/750 [00:01<00:04, 121.33it/s]\nLoading weights:  25%|██▌       | 191/750 [00:01<00:04, 120.17it/s]\nLoading weights:  27%|██▋       | 204/750 [00:02<00:04, 110.61it/s]\nLoading weights:  29%|██▉       | 219/750 [00:02<00:04, 119.86it/s]\nLoading weights:  31%|███       | 232/750 [00:02<00:04, 122.40it/s]\nLoading weights:  33%|███▎      | 245/750 [00:02<00:04, 118.33it/s]\nLoading weights:  34%|███▍      | 258/750 [00:02<00:04, 116.15it/s]\nLoading weights:  36%|███▌      | 270/750 [00:02<00:04, 111.77it/s]\nLoading weights:  38%|███▊      | 285/750 [00:02<00:03, 121.17it/s]\nLoading weights:  40%|███▉      | 298/750 [00:02<00:03, 123.24it/s]\nLoading weights:  41%|████▏     | 311/750 [00:02<00:03, 119.00it/s]\nLoading weights:  43%|████▎     | 324/750 [00:03<00:03, 116.28it/s]\nLoading weights:  45%|████▍     | 336/750 [00:03<00:03, 113.74it/s]\nLoading weights:  47%|████▋     | 356/750 [00:03<00:02, 133.15it/s]\nLoading weights:  49%|████▉     | 370/750 [00:03<00:03, 121.71it/s]\nLoading weights:  51%|█████     | 384/750 [00:03<00:02, 126.16it/s]\nLoading weights:  53%|█████▎    | 397/750 [00:03<00:02, 127.16it/s]\nLoading weights:  70%|███████   | 525/750 [00:03<00:00, 448.17it/s]\nLoading weights:  90%|████████▉ | 673/750 [00:03<00:00, 742.03it/s]\nLoading weights: 100%|██████████| 750/750 [00:03<00:00, 192.66it/s]\nqwen-vl-utils using decord to read video.\n",
+      "elapsed_ms": 20378.75915999757
+    },
+    {
+      "case": {
+        "case_id": "one_window_high_pixel_14m",
+        "count": 1,
+        "batch_size": 1,
+        "total_pixels": 14680064,
+        "max_new_tokens": 128
+      },
+      "video": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/processed/g6/imax10s.mp4",
+      "status": "succeeded",
+      "classification": "high_budget_oom_not_reproduced",
+      "return_code": 0,
+      "timed_out": false,
+      "record": {
+        "run_id": "g4_timelens_smoke_20260903_191330",
+        "video": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/processed/g6/imax10s.mp4",
+        "query": "a person performing an action",
+        "candidate_windows": [
+          {
+            "start": 0.0,
+            "end": 10.0,
+            "score": 0.5,
+            "candidate_id": "g4-smoke-0"
+          }
+        ],
+        "batch_size": 1,
+        "max_new_tokens": 128,
+        "total_pixels": 14680064,
+        "predictions": [
+          {
+            "candidate_id": "g4-smoke-0",
+            "raw_start": 0.0,
+            "raw_end": 2.0,
+            "grounding_score": 1.0,
+            "inference_latency_ms": 3495.640631997958,
+            "model_version": "TimeLens-8B",
+            "boundary_confidence": 1.0,
+            "completeness_score": 1.0,
+            "metadata": {
+              "raw_answer": "The event happens in 0.0 - 2.0 seconds.",
+              "window_start": 0.0,
+              "window_end": 10.0,
+              "batch": false,
+              "batch_size": 1
+            }
+          }
+        ],
+        "error": null,
+        "status": "succeeded",
+        "elapsed_ms": 19351.2896940083,
+        "gpu_peak_memory_allocated_gib": 18.64846658706665,
+        "gpu_peak_memory_reserved_gib": 18.943359375
+      },
+      "stderr_tail": "ights:   8%|▊         | 57/750 [00:00<00:06, 103.56it/s]\nLoading weights:   9%|▉         | 70/750 [00:00<00:06, 105.79it/s]\nLoading weights:  11%|█         | 82/750 [00:00<00:06, 103.96it/s]\nLoading weights:  13%|█▎        | 94/750 [00:01<00:06, 103.02it/s]\nLoading weights:  15%|█▍        | 109/750 [00:01<00:05, 114.51it/s]\nLoading weights:  16%|█▌        | 121/750 [00:01<00:05, 115.40it/s]\nLoading weights:  18%|█▊        | 136/750 [00:01<00:05, 119.05it/s]\nLoading weights:  20%|█▉        | 149/750 [00:01<00:05, 109.31it/s]\nLoading weights:  22%|██▏       | 164/750 [00:01<00:04, 118.83it/s]\nLoading weights:  24%|██▎       | 177/750 [00:01<00:04, 121.55it/s]\nLoading weights:  25%|██▌       | 191/750 [00:01<00:04, 120.46it/s]\nLoading weights:  27%|██▋       | 204/750 [00:02<00:04, 110.78it/s]\nLoading weights:  29%|██▉       | 219/750 [00:02<00:04, 120.16it/s]\nLoading weights:  31%|███       | 233/750 [00:02<00:04, 125.03it/s]\nLoading weights:  33%|███▎      | 246/750 [00:02<00:04, 120.68it/s]\nLoading weights:  35%|███▍      | 259/750 [00:02<00:04, 110.83it/s]\nLoading weights:  37%|███▋      | 274/750 [00:02<00:04, 117.49it/s]\nLoading weights:  39%|███▊      | 290/750 [00:02<00:03, 122.93it/s]\nLoading weights:  40%|████      | 303/750 [00:02<00:03, 112.66it/s]\nLoading weights:  42%|████▏     | 318/750 [00:02<00:03, 121.59it/s]\nLoading weights:  44%|████▍     | 332/750 [00:03<00:03, 125.86it/s]\nLoading weights:  46%|████▌     | 345/750 [00:03<00:03, 121.38it/s]\nLoading weights:  48%|████▊     | 358/750 [00:03<00:03, 111.09it/s]\nLoading weights:  50%|████▉     | 373/750 [00:03<00:03, 120.02it/s]\nLoading weights:  52%|█████▏    | 389/750 [00:03<00:02, 123.64it/s]\nLoading weights:  59%|█████▊    | 440/750 [00:03<00:01, 226.02it/s]\nLoading weights:  77%|███████▋  | 578/750 [00:03<00:00, 543.31it/s]\nLoading weights:  94%|█████████▍| 707/750 [00:03<00:00, 753.61it/s]\nLoading weights: 100%|██████████| 750/750 [00:03<00:00, 189.95it/s]\nqwen-vl-utils using decord to read video.\n",
+      "elapsed_ms": 21489.113816001918
+    },
+    {
+      "case": {
+        "case_id": "one_window_high_pixel_33m",
+        "count": 1,
+        "batch_size": 1,
+        "total_pixels": 33554432,
+        "max_new_tokens": 128
+      },
+      "video": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/processed/g6/imax10s.mp4",
+      "status": "succeeded",
+      "classification": "high_budget_oom_not_reproduced",
+      "return_code": 0,
+      "timed_out": false,
+      "record": {
+        "run_id": "g4_timelens_smoke_20260903_191352",
+        "video": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/processed/g6/imax10s.mp4",
+        "query": "a person performing an action",
+        "candidate_windows": [
+          {
+            "start": 0.0,
+            "end": 10.0,
+            "score": 0.5,
+            "candidate_id": "g4-smoke-0"
+          }
+        ],
+        "batch_size": 1,
+        "max_new_tokens": 128,
+        "total_pixels": 33554432,
+        "predictions": [
+          {
+            "candidate_id": "g4-smoke-0",
+            "raw_start": 0.0,
+            "raw_end": 2.0,
+            "grounding_score": 1.0,
+            "inference_latency_ms": 3487.7719989890466,
+            "model_version": "TimeLens-8B",
+            "boundary_confidence": 1.0,
+            "completeness_score": 1.0,
+            "metadata": {
+              "raw_answer": "The event happens in 0.0 - 2.0 seconds.",
+              "window_start": 0.0,
+              "window_end": 10.0,
+              "batch": false,
+              "batch_size": 1
+            }
+          }
+        ],
+        "error": null,
+        "status": "succeeded",
+        "elapsed_ms": 19343.761464988347,
+        "gpu_peak_memory_allocated_gib": 18.64846658706665,
+        "gpu_peak_memory_reserved_gib": 18.943359375
+      },
+      "stderr_tail": "ights:   8%|▊         | 57/750 [00:00<00:06, 107.12it/s]\nLoading weights:   9%|▉         | 70/750 [00:00<00:06, 108.96it/s]\nLoading weights:  11%|█         | 82/750 [00:00<00:06, 105.08it/s]\nLoading weights:  13%|█▎        | 94/750 [00:01<00:06, 103.79it/s]\nLoading weights:  15%|█▍        | 109/750 [00:01<00:05, 114.94it/s]\nLoading weights:  16%|█▌        | 121/750 [00:01<00:05, 116.11it/s]\nLoading weights:  18%|█▊        | 136/750 [00:01<00:05, 119.07it/s]\nLoading weights:  20%|█▉        | 149/750 [00:01<00:05, 108.65it/s]\nLoading weights:  22%|██▏       | 164/750 [00:01<00:04, 118.34it/s]\nLoading weights:  24%|██▎       | 177/750 [00:01<00:04, 120.48it/s]\nLoading weights:  25%|██▌       | 190/750 [00:01<00:04, 116.89it/s]\nLoading weights:  27%|██▋       | 203/750 [00:01<00:04, 115.19it/s]\nLoading weights:  29%|██▊       | 215/750 [00:02<00:04, 111.20it/s]\nLoading weights:  31%|███       | 230/750 [00:02<00:04, 120.43it/s]\nLoading weights:  33%|███▎      | 244/750 [00:02<00:04, 125.31it/s]\nLoading weights:  34%|███▍      | 257/750 [00:02<00:04, 120.14it/s]\nLoading weights:  36%|███▌      | 270/750 [00:02<00:04, 109.90it/s]\nLoading weights:  38%|███▊      | 285/750 [00:02<00:03, 117.10it/s]\nLoading weights:  40%|████      | 301/750 [00:02<00:03, 122.03it/s]\nLoading weights:  42%|████▏     | 314/750 [00:02<00:03, 112.10it/s]\nLoading weights:  44%|████▍     | 329/750 [00:03<00:03, 118.70it/s]\nLoading weights:  46%|████▌     | 345/750 [00:03<00:03, 123.50it/s]\nLoading weights:  48%|████▊     | 358/750 [00:03<00:03, 112.37it/s]\nLoading weights:  50%|████▉     | 373/750 [00:03<00:03, 118.58it/s]\nLoading weights:  52%|█████▏    | 389/750 [00:03<00:02, 123.01it/s]\nLoading weights:  59%|█████▉    | 443/750 [00:03<00:01, 231.25it/s]\nLoading weights:  77%|███████▋  | 575/750 [00:03<00:00, 525.62it/s]\nLoading weights:  95%|█████████▌| 713/750 [00:03<00:00, 762.03it/s]\nLoading weights: 100%|██████████| 750/750 [00:03<00:00, 191.23it/s]\nqwen-vl-utils using decord to read video.\n",
+      "elapsed_ms": 21512.65245200193
+    },
+    {
+      "case": {
+        "case_id": "decode_failure_corrupt_video",
+        "count": 1,
+        "batch_size": 1,
+        "total_pixels": 4194304,
+        "max_new_tokens": 128,
+        "corrupt": true
+      },
+      "video": "/home/zjy/projects/videoitg_smart_clip/tests/fixtures/corrupt.mp4",
+      "status": "failed",
+      "classification": "decode_failure_reproduced",
+      "return_code": 0,
+      "timed_out": false,
+      "record": {
+        "run_id": "g4_timelens_smoke_20260903_191409",
+        "video": "/home/zjy/projects/videoitg_smart_clip/tests/fixtures/corrupt.mp4",
+        "query": "a person performing an action",
+        "candidate_windows": [
+          {
+            "start": 0.0,
+            "end": 10.0,
+            "score": 0.5,
+            "candidate_id": "g4-smoke-0"
+          }
+        ],
+        "batch_size": 1,
+        "max_new_tokens": 128,
+        "total_pixels": 4194304,
+        "predictions": [],
+        "error": {
+          "type": "CalledProcessError",
+          "message": "Command '['/home/zjy/miniconda3/lib/python3.13/site-packages/static_ffmpeg/bin/linux/ffmpeg', '-hide_banner', '-loglevel', 'error', '-y', '-ss', '0.0', '-i', '/home/zjy/projects/videoitg_smart_clip/tests/fixtures/corrupt.mp4', '-t', '10.0', '-an', '-c:v', 'libx264', '-preset', 'ultrafast', '-pix_fmt', 'yuv420p', '/tmp/timelens_windows-5bdu82hn/g4-smoke-0.mp4']' returned non-zero exit status 183."
+        },
+        "status": "failed",
+        "elapsed_ms": 15461.223987003905,
+        "gpu_peak_memory_allocated_gib": 18.64846658706665,
+        "gpu_peak_memory_reserved_gib": 18.9375
+      },
+      "stderr_tail": "eights:  17%|█▋        | 125/750 [00:01<00:05, 117.86it/s]\nLoading weights:  18%|█▊        | 137/750 [00:01<00:05, 113.32it/s]\nLoading weights:  20%|█▉        | 149/750 [00:01<00:05, 109.60it/s]\nLoading weights:  22%|██▏       | 164/750 [00:01<00:04, 119.29it/s]\nLoading weights:  24%|██▎       | 177/750 [00:01<00:04, 117.78it/s]\nLoading weights:  25%|██▌       | 190/750 [00:01<00:04, 115.45it/s]\nLoading weights:  27%|██▋       | 203/750 [00:02<00:04, 114.34it/s]\nLoading weights:  29%|██▊       | 215/750 [00:02<00:04, 110.69it/s]\nLoading weights:  31%|███       | 230/750 [00:02<00:04, 120.83it/s]\nLoading weights:  32%|███▏      | 243/750 [00:02<00:04, 123.22it/s]\nLoading weights:  34%|███▍      | 256/750 [00:02<00:04, 118.85it/s]\nLoading weights:  36%|███▌      | 269/750 [00:02<00:04, 115.79it/s]\nLoading weights:  37%|███▋      | 281/750 [00:02<00:04, 111.93it/s]\nLoading weights:  39%|███▉      | 296/750 [00:02<00:03, 118.99it/s]\nLoading weights:  42%|████▏     | 312/750 [00:02<00:03, 123.60it/s]\nLoading weights:  43%|████▎     | 325/750 [00:03<00:03, 113.15it/s]\nLoading weights:  45%|████▌     | 340/750 [00:03<00:03, 122.29it/s]\nLoading weights:  47%|████▋     | 353/750 [00:03<00:03, 124.13it/s]\nLoading weights:  49%|████▉     | 367/750 [00:03<00:03, 121.84it/s]\nLoading weights:  51%|█████     | 380/750 [00:03<00:03, 111.12it/s]\nLoading weights:  53%|█████▎    | 395/750 [00:03<00:02, 119.47it/s]\nLoading weights:  69%|██████▊   | 515/750 [00:03<00:00, 405.96it/s]\nLoading weights:  86%|████████▋ | 647/750 [00:03<00:00, 655.10it/s]\nLoading weights:  98%|█████████▊| 736/750 [00:03<00:00, 709.85it/s]\nLoading weights: 100%|██████████| 750/750 [00:03<00:00, 188.65it/s]\n[mov,mp4,m4a,3gp,3g2,mj2 @ 0x63c261c7ac00] moov atom not found\n[in#0 @ 0x63c261c7a940] Error opening input: Invalid data found when processing input\nError opening input file /home/zjy/projects/videoitg_smart_clip/tests/fixtures/corrupt.mp4.\nError opening input files: Invalid data found when processing input\n",
+      "elapsed_ms": 17373.994195004343
+    }
+  ],
+  "async_timeout_probe": {
+    "source": "/home/zjy/projects/videoitg_smart_clip/records/phase_g6/g6_realtime_service_timeout_1000ms_recovery_20260903.json",
+    "status": "TIMEOUT",
+    "degrade_reason": "async_timeout_coarse_fallback"
+  },
+  "elapsed_ms": 178640.43246000074,
+  "scope": "real_model_window_budget_failure_matrix_not_quality_or_capacity_gate",
+  "passed": true
+}

@@ -1,0 +1,75 @@
+{
+  "gate": "G5 prefetch candidate audit",
+  "scope": {
+    "rows": 50,
+    "policy": "E0_fixed16",
+    "max_frames": 16,
+    "deadline_ms": 5000,
+    "workers": 1,
+    "warmup": true,
+    "prefetch": "one CPU full-video frame read overlapped with the current GPU request",
+    "arrival_patterns": ["burst", "steady_1s"]
+  },
+  "baseline": {
+    "name": "E0_fixed16 without prefetch",
+    "burst": {
+      "source": "outputs/phase5_real_benchmark_50_burst_20260715/e0.json",
+      "p95_service_ms": 3537.22397913225,
+      "p95_total_ms": 114824.38634661958,
+      "timeout_count": 50,
+      "quality_topk_hit_iou_0.5": 0.68
+    },
+    "steady_1s": {
+      "source": "outputs/phase5_real_benchmark_50_steady1s_20260715/e0.json",
+      "p95_service_ms": 3581.8856849800795,
+      "p95_total_ms": 70289.0257940162,
+      "timeout_count": 50,
+      "quality_topk_hit_iou_0.5": 0.68
+    }
+  },
+  "candidate": {
+    "name": "E0_fixed16+prefetch_read",
+    "burst": {
+      "source": "outputs/phase5_prefetch_50_burst_20260715/e0.json",
+      "p95_service_ms": 2023.5455639194697,
+      "p95_total_ms": 76418.13969635405,
+      "timeout_count": 48,
+      "quality_topk_hit_iou_0.5": 0.68,
+      "all_rows_fixed16": true
+    },
+    "steady_1s": {
+      "source": "outputs/phase5_prefetch_50_steady1s_20260715/e0.json",
+      "p95_service_ms": 1945.4143659677356,
+      "p95_total_ms": 30185.262118233368,
+      "timeout_count": 44,
+      "quality_topk_hit_iou_0.5": 0.68,
+      "all_rows_fixed16": true
+    }
+  },
+  "delta_vs_baseline": {
+    "burst": {
+      "p95_service_ms_percent": -42.79,
+      "p95_total_ms_percent": -33.45,
+      "timeout_count_delta": -2
+    },
+    "steady_1s": {
+      "p95_service_ms_percent": -45.69,
+      "p95_total_ms_percent": -57.06,
+      "timeout_count_delta": -6
+    }
+  },
+  "capacity_probe": {
+    "source": "outputs/phase5_prefetch_20_gap1500_20260715/e0.json",
+    "rows": 20,
+    "arrival_gap_ms": 1500.0,
+    "p95_service_ms": 1944.7214980609715,
+    "p95_total_ms": 4383.641614578664,
+    "timeout_count": 0,
+    "quality_topk_hit_iou_0.5": 0.7,
+    "interpretation": "The opt-in path clears the 5-second deadline on this smaller 1.5-second-arrival probe, but this is a capacity characterization rather than a G5 gate result because it changes both arrival rate and row count."
+  },
+  "gate_decision": "G5 not passed",
+  "reason": "Prefetch preserves the fixed16 quality result and improves service P95 by more than 20% in both arrival patterns, but the single-GPU queue remains overloaded at 1-second arrivals and still has 48/50 burst and 44/50 steady deadline misses. This is an offline pipeline optimization, not evidence for a service or pressure-test promotion.",
+  "default": "E0_fixed16",
+  "next_action": "Retain prefetch_read as an opt-in implementation optimization; do not start Phase 6 service or pressure testing until a quality-safe policy also removes the deadline/tail failure."
+}

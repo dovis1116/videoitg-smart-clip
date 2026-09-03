@@ -1,0 +1,16 @@
+{
+  "gate": "G5 batch-forward smoke",
+  "scope": {
+    "model": "VideoITG-8B",
+    "device": "cuda:0",
+    "batch_size": 2,
+    "frames_per_request": 16,
+    "quality_protocol": "E0 fixed16",
+    "inputs": "two real pilot videos and two distinct queries"
+  },
+  "status": "rejected",
+  "observation": "Mixed-length queries fail before logits with upstream FlashAttention scatter/gather assertions, while exact same-length queries can run as a 2x16-frame batch. The successful batch used peak CUDA allocation 18.84 GiB, matched the two sequential runs within max absolute frame-score difference 0.00098, but took 18.22 s versus 4.61 s for two sequential requests.",
+  "implication": "A restricted rank_batch API is technically correct for exact token-length buckets, but it is slower rather than faster on the current 24 GiB setup and is rejected as the burst-tail fix. Mixed-length batching remains unsupported.",
+  "source": "interactive smoke command executed from scripts/benchmark_multi_gpu_workers.py environment",
+  "gate_decision": "not a G5 candidate"
+}

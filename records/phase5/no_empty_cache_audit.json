@@ -1,0 +1,37 @@
+{
+  "gate": "G5 quality-preserving runtime micro-optimization audit",
+  "scope": {
+    "rows": 50,
+    "workers": 1,
+    "arrival_pattern": "burst",
+    "deadline_ms": 5000,
+    "warmup": true,
+    "device": "cuda:2",
+    "manifest": "records/phase1/videoitg40k_media_pilot.jsonl",
+    "budget": "E0 fixed16"
+  },
+  "baseline": {
+    "name": "empty_cache_each_candidate",
+    "output": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/outputs/phase5_real_benchmark_empty_cache_50_burst_20260715/e0.json",
+    "p95_service_ms": 3519.0026070922613,
+    "p95_total_ms": 107592.99558773637,
+    "timeout_count": 48,
+    "topk_iou_0.5": 0.68
+  },
+  "candidate": {
+    "name": "retain_cuda_cache",
+    "output": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/outputs/phase5_real_benchmark_no_empty_cache_50_burst_20260715/e0.json",
+    "p95_service_ms": 3522.6781151723117,
+    "p95_total_ms": 105612.82454268076,
+    "timeout_count": 48,
+    "topk_iou_0.5": 0.68
+  },
+  "delta": {
+    "p95_service_relative": 0.0010,
+    "p95_total_relative": -0.0184,
+    "quality_topk_iou_0.5": 0.0,
+    "timeout_count": 0
+  },
+  "gate_decision": "discard",
+  "reason": "Retaining the CUDA allocator cache preserves quality but does not improve service P95 in a paired same-GPU benchmark; service P95 is 3522.7 ms versus 3519.0 ms with per-candidate empty_cache. The small total-tail difference is queue accumulation noise, not a service-time gain. Keep the switch only as an explicitly measured memory-management option; it is not a G5 promotion candidate."
+}

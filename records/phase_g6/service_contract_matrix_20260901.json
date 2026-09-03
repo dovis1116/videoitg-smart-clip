@@ -1,0 +1,98 @@
+{
+  "run_id": "service_contract_matrix_20260901_152000",
+  "scope": "cpu_stub_runtime_contract_not_real_model_throughput",
+  "results": {
+    "success_and_idempotency": {
+      "status": "succeeded",
+      "current_stage": "SUCCESS",
+      "error_code": null,
+      "degraded": false,
+      "degrade_level": null,
+      "result_present": true,
+      "initial_deduplicated": false,
+      "repeat_deduplicated": true,
+      "same_task_id": true,
+      "worker_threads_alive_after_shutdown": 0,
+      "prefetch_executor_shutdown": true
+    },
+    "backend_failure": {
+      "status": "failed",
+      "current_stage": "FAILED",
+      "error_code": "RUNTIMEERROR",
+      "degraded": false,
+      "degrade_level": null,
+      "result_present": false,
+      "worker_threads_alive_after_shutdown": 0,
+      "prefetch_executor_shutdown": true
+    },
+    "async_timeout": {
+      "status": "timeout",
+      "current_stage": "TIMEOUT",
+      "error_code": "TIMEOUT",
+      "degraded": true,
+      "degrade_level": 2,
+      "result_present": true,
+      "worker_threads_alive_after_shutdown": 0,
+      "prefetch_executor_shutdown": true
+    },
+    "running_cancel": {
+      "status": "cancelled",
+      "current_stage": "CANCELLED",
+      "error_code": "CANCELLED",
+      "degraded": false,
+      "degrade_level": null,
+      "result_present": false,
+      "cancel_requested": true,
+      "worker_threads_alive_after_shutdown": 0,
+      "prefetch_executor_shutdown": true
+    },
+    "bounded_queue": {
+      "third_request_rejected": true,
+      "first_status": "succeeded",
+      "second_status": "succeeded",
+      "worker_threads_alive_after_shutdown": 0,
+      "prefetch_executor_shutdown": true
+    },
+    "oom_then_recovery": {
+      "first": {
+        "status": "failed",
+        "current_stage": "FAILED",
+        "error_code": "RUNTIMEERROR",
+        "degraded": false,
+        "degrade_level": null,
+        "result_present": false
+      },
+      "second": {
+        "status": "succeeded",
+        "current_stage": "SUCCESS",
+        "error_code": null,
+        "degraded": false,
+        "degrade_level": null,
+        "result_present": true
+      },
+      "worker_threads_alive_after_shutdown": 0,
+      "prefetch_executor_shutdown": true
+    },
+    "two_worker_concurrency": {
+      "submitted": 8,
+      "success_count": 8,
+      "terminal_statuses": [
+        "succeeded",
+        "succeeded",
+        "succeeded",
+        "succeeded",
+        "succeeded",
+        "succeeded",
+        "succeeded",
+        "succeeded"
+      ],
+      "worker_threads_alive_after_shutdown": 0,
+      "prefetch_executor_shutdown": true
+    }
+  },
+  "limitations": [
+    "No CUDA or nvidia-smi probe was executed.",
+    "Stub timing and concurrency do not represent TimeLens-8B latency, GPU memory, or cancellation behavior.",
+    "Real GPU resource-release validation remains pending driver recovery."
+  ]
+}

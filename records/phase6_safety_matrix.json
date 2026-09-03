@@ -1,0 +1,28 @@
+{
+  "run_id": "phase6_safety_matrix_20260714",
+  "test_command": "PYTHONPATH=src:external/VideoITG pytest -q",
+  "test_count": 22,
+  "passed": 22,
+  "warning": "Starlette TestClient deprecation warning for httpx 0.28; no test failure",
+  "matrix": [
+    {"case": "unsupported_extension", "status": "pass", "evidence": "tests/test_service.py::test_upload_validation_and_task_creation"},
+    {"case": "path_escape_and_missing_file", "status": "pass", "evidence": "tests/test_service.py::test_cancel_queued_task_and_reject_path_escape"},
+    {"case": "oversized_upload", "status": "pass", "evidence": "tests/test_service.py::test_upload_validation_and_task_creation"},
+    {"case": "duplicate_request_id", "status": "pass", "evidence": "tests/test_service.py::test_async_lifecycle_and_idempotency"},
+    {"case": "queued_cancellation", "status": "pass", "evidence": "tests/test_service.py::test_cancel_queued_task_and_reject_path_escape"},
+    {"case": "bounded_queue_overload", "status": "pass", "evidence": "tests/test_service.py::test_bounded_manager_rejects_when_queue_is_full"},
+    {"case": "backend_failure_is_explicit", "status": "pass", "evidence": "tests/test_service.py::test_backend_failure_is_explicit_500"},
+    {"case": "steady_deadline_timeout", "status": "pass", "evidence": "tests/test_service.py::test_steady_timeout_returns_explicit_task_state"},
+    {"case": "synthetic_oom_recovery", "status": "pass", "evidence": "tests/test_service.py::test_oom_like_failure_clears_and_worker_remains_usable; clears CUDA cache when available and keeps worker alive"},
+    {"case": "unloaded_model_readiness", "status": "pass", "evidence": "tests/test_service.py::test_videoitg_readiness_requires_all_workers_loaded"},
+    {"case": "steady_rejected_before_model_ready", "status": "pass", "evidence": "tests/test_service.py::test_videoitg_readiness_requires_all_workers_loaded"},
+    {"case": "request_schema_extra_fields", "status": "pass", "evidence": "Pydantic extra=forbid; covered by service contract tests"},
+    {"case": "corrupt_or_zero_duration_video_with_real_backend", "status": "pass", "evidence": "real VideoITG-8B corrupt upload and 0-byte zero_duration.mp4 steady request both returned explicit failed/HTTP 500 with decord/moov-atom error"},
+    {"case": "real_backend_timeout_recovery", "status": "pass", "evidence": "VideoITG-8B one-GPU service with deadline_ms=1 returned HTTP 504 while running; task later succeeded and /healthz remained ready with loaded_workers=1"},
+    {"case": "hardware_GPU_OOM_recovery", "status": "pass_isolated_allocator_scope", "evidence": "records/phase6_oom_recovery.json; isolated CUDA_VISIBLE_DEVICES=2 child caught OutOfMemoryError, empty_cache, and post-recovery probe succeeded"},
+    {"case": "restart_terminal_task_recovery", "status": "pass", "evidence": "tests/test_service.py::test_terminal_task_state_recovers_after_manager_restart; JSONL state journal rehydrates terminal tasks and request_id deduplication"},
+    {"case": "restart_interrupted_task_recovery", "status": "pass", "evidence": "real stub process was SIGKILLed while task was running; restart rehydrated task f66839ed1f7547e49c291b0f4ffe1cf8 as failed with service_restart_recovery"},
+    {"case": "ffmpeg_shell_injection", "status": "not_applicable", "evidence": "service path does not invoke a shell or FFmpeg command"}
+  ],
+  "gate_status": "G6 safety matrix passed in the documented restricted/non-destructive scope; model-specific OOM capacity and production resilience are not claimed."
+}

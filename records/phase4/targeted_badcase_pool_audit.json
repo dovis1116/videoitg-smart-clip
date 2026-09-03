@@ -1,0 +1,14 @@
+{
+  "purpose": "Phase 4 hard-negative/temporal-interval candidate preparation",
+  "source": "records/phase3/regression_pool.jsonl",
+  "manual_review": "records/phase4/train_badcase_manual_review.json",
+  "rows": 4,
+  "split": "train",
+  "counts": {"short_event_miss": 2, "boundary_shift": 2},
+  "training_status": "not_used",
+  "reason_not_used": "Four confirmed examples are sufficient to freeze a diagnostic candidate pool but insufficient for claiming a trained fix; additional train-side positives/near-negatives must be constructed without touching held-out test rows.",
+  "next_action": "Compare a minimal interval-policy or scoring-head prototype against B1 on ordinary and final regression pools; the first direct score audit found all five reviewed adjacent candidates below their GT interval, so do not train on them as ranking inversions without a frame-level or query-conditioned hard-negative construction.",
+  "score_audit": "records/phase4/temporal_hard_negative_score_audit.json",
+  "frame_level_diagnostic_pool": "records/phase4/frame_hard_negative_pool.jsonl",
+  "evidence_scope": "Uniform 2-second full-video scan; continuous playback is not claimed."
+}

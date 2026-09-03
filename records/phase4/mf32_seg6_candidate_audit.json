@@ -1,0 +1,22 @@
+{
+  "candidate": "B1 max_frames=32 with 6-second output intervals",
+  "implementation_command": "scripts/run_baseline.py --baseline B1 --max-frames 32 --segment-seconds 6",
+  "scope": {
+    "pilot_rows": 50,
+    "output": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/outputs/phase4_B1_mf32_seg6_full_20260715_0100/summary.json"
+  },
+  "metrics": {
+    "recall_at_1_iou_0.3": 0.68,
+    "recall_at_1_iou_0.5": 0.54,
+    "topk_hit_iou_0.3": 0.88,
+    "topk_hit_iou_0.5": 0.70,
+    "boundary_error_s_topk": 2.7406
+  },
+  "comparison": {
+    "reference": "B1 max_frames=32, 5-second output interval",
+    "reference_topk_hit_iou_0.3": 0.90,
+    "reference_topk_hit_iou_0.5": 0.76
+  },
+  "gate_decision": "discard",
+  "reason": "The intermediate 6-second interval is lower than the fixed 5-second 32-frame candidate on both Top-k pilot thresholds, so it is not expanded to clean97 or held-out."
+}

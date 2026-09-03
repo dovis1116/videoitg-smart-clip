@@ -1,0 +1,45 @@
+{
+  "gate": "G5 quality-preserving single-reader audit",
+  "scope": {
+    "rows": 50,
+    "workers": 1,
+    "arrival_pattern": "burst",
+    "deadline_ms": 5000,
+    "warmup": true,
+    "budget": "E0 fixed16",
+    "quality_regression_smoke_rows": 5
+  },
+  "baseline": {
+    "name": "metadata_reader_plus_adapter_reader",
+    "output": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/outputs/phase5_real_benchmark_empty_cache_50_burst_20260715/e0.json",
+    "mean_service_ms": 2266.2169071286917,
+    "p50_service_ms": 2062.3639464611188,
+    "p95_service_ms": 3585.8033979311585,
+    "topk_iou_0.5": 0.68,
+    "timeout_count": 48
+  },
+  "candidate": {
+    "name": "adapter_single_reader_full_video",
+    "output": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/outputs/phase5_single_reader_benchmark_50_burst_20260715/e0.json",
+    "mean_service_ms": 2234.293462727219,
+    "p50_service_ms": 2029.5339328004047,
+    "p95_service_ms": 3625.488698016852,
+    "topk_iou_0.5": 0.68,
+    "timeout_count": 48
+  },
+  "quality_smoke": {
+    "rows": 5,
+    "predictions_byte_equivalent": true,
+    "topk_iou_0.5_baseline": 0.6,
+    "topk_iou_0.5_candidate": 0.6
+  },
+  "delta": {
+    "mean_service_relative": -0.0141,
+    "p50_service_relative": -0.0159,
+    "p95_service_relative": 0.0111,
+    "quality_topk_iou_0.5": 0.0,
+    "timeout_count": 0
+  },
+  "gate_decision": "retain_as_implementation_cleanup_not_G5_pass",
+  "reason": "A full-video candidate can now read duration and fps inside the adapter and avoid the caller's duplicate metadata VideoReader. The 50-row run preserves aggregate quality and reduces mean/P50 service time, but P95 increases by about 1.1% and remains far above the 5-second deadline. Keep the implementation because it removes redundant I/O without changing predictions, but it does not satisfy G5's tail-latency gate."
+}

@@ -1,0 +1,2326 @@
+{
+  "run_id": "g3_retriever_compare_20260831_222929",
+  "manifest": "/home/zjy/projects/videoitg_smart_clip/records/phase3/videoitg100_media_pilot.jsonl",
+  "sample_count": 100,
+  "feature_model_version": "siglip-so400m-patch14-384-v1",
+  "max_frames": 16,
+  "retrievers": {
+    "cached_cosine": {
+      "recall_at_5": 0.76,
+      "recall_at_10": 0.94,
+      "recall_at_20": 0.99,
+      "mean_retrieval_latency_ms": 20.075302699915483
+    },
+    "uniform": {
+      "recall_at_5": 0.97,
+      "recall_at_10": 0.98,
+      "recall_at_20": 1.0
+    }
+  },
+  "cache_events": [
+    {
+      "video_id": "videoitg40k:media_pilot:248981",
+      "event": "cache_hit",
+      "hit": true
+    },
+    {
+      "video_id": "videoitg40k:media_pilot:14517",
+      "event": "cache_hit",
+      "hit": true
+    },
+    {
+      "video_id": "videoitg40k:media_pilot:438874",
+      "event": "cache_hit",
+      "hit": true
+    },
+    {
+      "video_id": "videoitg40k:media_pilot:442611",
+      "event": "cache_hit",
+      "hit": true
+    },
+    {
+      "video_id": "videoitg40k:media_pilot:35047",
+      "event": "cache_hit",
+      "hit": true
+    },
+    {
+      "video_id": "videoitg40k:media_pilot:438687",
+      "event": "cache_hit",
+      "hit": true
+    },
+    {
+      "video_id": "videoitg40k:media_pilot:380917",
+      "event": "cache_hit",
+      "hit": true
+    },
+    {
+      "video_id": "videoitg40k:media_pilot:9651",
+      "event": "cache_hit",
+      "hit": true
+    },
+    {
+      "video_id": "videoitg40k:media_pilot:173579",
+      "event": "cache_hit",
+      "hit": true
+    },
+    {
+      "video_id": "videoitg40k:media_pilot:287250",
+      "event": "cache_hit",
+      "hit": true
+    },
+    {
+      "video_id": "videoitg40k:media_pilot:303326",
+      "event": "cache_hit",
+      "hit": true
+    },
+    {
+      "video_id": "videoitg40k:media_pilot:47118",
+      "event": "cache_hit",
+      "hit": true
+    },
+    {
+      "video_id": "videoitg40k:media_pilot:95127",
+      "event": "cache_hit",
+      "hit": true
+    },
+    {
+      "video_id": "videoitg40k:media_pilot:194907",
+      "event": "cache_hit",
+      "hit": true
+    },
+    {
+      "video_id": "videoitg40k:media_pilot:157652",
+      "event": "cache_hit",
+      "hit": true
+    },
+    {
+      "video_id": "videoitg40k:media_pilot:253712",
+      "event": "cache_hit",
+      "hit": true
+    },
+    {
+      "video_id": "videoitg40k:media_pilot:16572",
+      "event": "cache_hit",
+      "hit": true
+    },
+    {
+      "video_id": "videoitg40k:media_pilot:125860",
+      "event": "cache_hit",
+      "hit": true
+    },
+    {
+      "video_id": "videoitg40k:media_pilot:208227",
+      "event": "cache_hit",
+      "hit": true
+    },
+    {
+      "video_id": "videoitg40k:media_pilot:22669",
+      "event": "cache_hit",
+      "hit": true
+    },
+    {
+      "video_id": "videoitg40k:media_pilot:445844",
+      "event": "cache_hit",
+      "hit": true
+    },
+    {
+      "video_id": "videoitg40k:media_pilot:475360",
+      "event": "cache_hit",
+      "hit": true
+    },
+    {
+      "video_id": "videoitg40k:media_pilot:200235",
+      "event": "cache_hit",
+      "hit": true
+    },
+    {
+      "video_id": "videoitg40k:media_pilot:344582",
+      "event": "cache_hit",
+      "hit": true
+    },
+    {
+      "video_id": "videoitg40k:media_pilot:167155",
+      "event": "cache_hit",
+      "hit": true
+    },
+    {
+      "video_id": "videoitg40k:media_pilot:26829",
+      "event": "cache_hit",
+      "hit": true
+    },
+    {
+      "video_id": "videoitg40k:media_pilot:435305",
+      "event": "cache_hit",
+      "hit": true
+    },
+    {
+      "video_id": "videoitg40k:media_pilot:202368",
+      "event": "cache_hit",
+      "hit": true
+    },
+    {
+      "video_id": "videoitg40k:media_pilot:37689",
+      "event": "cache_hit",
+      "hit": true
+    },
+    {
+      "video_id": "videoitg40k:media_pilot:84027",
+      "event": "cache_hit",
+      "hit": true
+    },
+    {
+      "video_id": "videoitg40k:media_pilot:422662",
+      "event": "cache_hit",
+      "hit": true
+    },
+    {
+      "video_id": "videoitg40k:media_pilot:168327",
+      "event": "cache_hit",
+      "hit": true
+    },
+    {
+      "video_id": "videoitg40k:media_pilot:3791",
+      "event": "cache_hit",
+      "hit": true
+    },
+    {
+      "video_id": "videoitg40k:media_pilot:127469",
+      "event": "cache_hit",
+      "hit": true
+    },
+    {
+      "video_id": "videoitg40k:media_pilot:471777",
+      "event": "cache_hit",
+      "hit": true
+    },
+    {
+      "video_id": "videoitg40k:media_pilot:382101",
+      "event": "cache_hit",
+      "hit": true
+    },
+    {
+      "video_id": "videoitg40k:media_pilot:111414",
+      "event": "cache_hit",
+      "hit": true
+    },
+    {
+      "video_id": "videoitg40k:media_pilot:93380",
+      "event": "cache_hit",
+      "hit": true
+    },
+    {
+      "video_id": "videoitg40k:media_pilot:472174",
+      "event": "cache_hit",
+      "hit": true
+    },
+    {
+      "video_id": "videoitg40k:media_pilot:306446",
+      "event": "cache_hit",
+      "hit": true
+    },
+    {
+      "video_id": "videoitg40k:media_pilot:171358",
+      "event": "cache_hit",
+      "hit": true
+    },
+    {
+      "video_id": "videoitg40k:media_pilot:145887",
+      "event": "cache_hit",
+      "hit": true
+    },
+    {
+      "video_id": "videoitg40k:media_pilot:330898",
+      "event": "cache_hit",
+      "hit": true
+    },
+    {
+      "video_id": "videoitg40k:media_pilot:23380",
+      "event": "cache_hit",
+      "hit": true
+    },
+    {
+      "video_id": "videoitg40k:media_pilot:443255",
+      "event": "cache_hit",
+      "hit": true
+    },
+    {
+      "video_id": "videoitg40k:media_pilot:123639",
+      "event": "cache_hit",
+      "hit": true
+    },
+    {
+      "video_id": "videoitg40k:media_pilot:303014",
+      "event": "cache_hit",
+      "hit": true
+    },
+    {
+      "video_id": "videoitg40k:media_pilot:93507",
+      "event": "cache_hit",
+      "hit": true
+    },
+    {
+      "video_id": "videoitg40k:media_pilot:200016",
+      "event": "cache_hit",
+      "hit": true
+    },
+    {
+      "video_id": "videoitg40k:media_pilot:161015",
+      "event": "cache_hit",
+      "hit": true
+    },
+    {
+      "video_id": "videoitg40k:media_pilot:420269",
+      "event": "cache_hit",
+      "hit": true
+    },
+    {
+      "video_id": "videoitg40k:media_pilot:81449",
+      "event": "cache_hit",
+      "hit": true
+    },
+    {
+      "video_id": "videoitg40k:media_pilot:471172",
+      "event": "cache_hit",
+      "hit": true
+    },
+    {
+      "video_id": "videoitg40k:media_pilot:217699",
+      "event": "cache_hit",
+      "hit": true
+    },
+    {
+      "video_id": "videoitg40k:media_pilot:268585",
+      "event": "cache_hit",
+      "hit": true
+    },
+    {
+      "video_id": "videoitg40k:media_pilot:336758",
+      "event": "cache_hit",
+      "hit": true
+    },
+    {
+      "video_id": "videoitg40k:media_pilot:249673",
+      "event": "cache_hit",
+      "hit": true
+    },
+    {
+      "video_id": "videoitg40k:media_pilot:324690",
+      "event": "cache_hit",
+      "hit": true
+    },
+    {
+      "video_id": "videoitg40k:media_pilot:75922",
+      "event": "cache_hit",
+      "hit": true
+    },
+    {
+      "video_id": "videoitg40k:media_pilot:223969",
+      "event": "cache_hit",
+      "hit": true
+    },
+    {
+      "video_id": "videoitg40k:media_pilot:450823",
+      "event": "cache_hit",
+      "hit": true
+    },
+    {
+      "video_id": "videoitg40k:media_pilot:446217",
+      "event": "cache_hit",
+      "hit": true
+    },
+    {
+      "video_id": "videoitg40k:media_pilot:133267",
+      "event": "cache_hit",
+      "hit": true
+    },
+    {
+      "video_id": "videoitg40k:media_pilot:303121",
+      "event": "cache_hit",
+      "hit": true
+    },
+    {
+      "video_id": "videoitg40k:media_pilot:60657",
+      "event": "cache_hit",
+      "hit": true
+    },
+    {
+      "video_id": "videoitg40k:media_pilot:289467",
+      "event": "cache_hit",
+      "hit": true
+    },
+    {
+      "video_id": "videoitg40k:media_pilot:110763",
+      "event": "cache_hit",
+      "hit": true
+    },
+    {
+      "video_id": "videoitg40k:media_pilot:71673",
+      "event": "cache_hit",
+      "hit": true
+    },
+    {
+      "video_id": "videoitg40k:media_pilot:69489",
+      "event": "cache_hit",
+      "hit": true
+    },
+    {
+      "video_id": "videoitg40k:media_pilot:11697",
+      "event": "cache_hit",
+      "hit": true
+    },
+    {
+      "video_id": "videoitg40k:media_pilot:276491",
+      "event": "cache_hit",
+      "hit": true
+    },
+    {
+      "video_id": "videoitg40k:media_pilot:224991",
+      "event": "cache_hit",
+      "hit": true
+    },
+    {
+      "video_id": "videoitg40k:media_pilot:81683",
+      "event": "cache_hit",
+      "hit": true
+    },
+    {
+      "video_id": "videoitg40k:media_pilot:292355",
+      "event": "cache_hit",
+      "hit": true
+    },
+    {
+      "video_id": "videoitg40k:media_pilot:332051",
+      "event": "cache_hit",
+      "hit": true
+    },
+    {
+      "video_id": "videoitg40k:media_pilot:418411",
+      "event": "cache_hit",
+      "hit": true
+    },
+    {
+      "video_id": "videoitg40k:media_pilot:96013",
+      "event": "cache_hit",
+      "hit": true
+    },
+    {
+      "video_id": "videoitg40k:media_pilot:80853",
+      "event": "cache_hit",
+      "hit": true
+    },
+    {
+      "video_id": "videoitg40k:media_pilot:55345",
+      "event": "cache_hit",
+      "hit": true
+    },
+    {
+      "video_id": "videoitg40k:media_pilot:90561",
+      "event": "cache_hit",
+      "hit": true
+    },
+    {
+      "video_id": "videoitg40k:media_pilot:253604",
+      "event": "cache_miss",
+      "hit": false
+    },
+    {
+      "video_id": "videoitg40k:media_pilot:324843",
+      "event": "cache_miss",
+      "hit": false
+    },
+    {
+      "video_id": "videoitg40k:media_pilot:395556",
+      "event": "cache_miss",
+      "hit": false
+    },
+    {
+      "video_id": "videoitg40k:media_pilot:375680",
+      "event": "cache_miss",
+      "hit": false
+    },
+    {
+      "video_id": "videoitg40k:media_pilot:185712",
+      "event": "cache_miss",
+      "hit": false
+    },
+    {
+      "video_id": "videoitg40k:media_pilot:386692",
+      "event": "cache_miss",
+      "hit": false
+    },
+    {
+      "video_id": "videoitg40k:media_pilot:148844",
+      "event": "cache_miss",
+      "hit": false
+    },
+    {
+      "video_id": "videoitg40k:media_pilot:106880",
+      "event": "cache_miss",
+      "hit": false
+    },
+    {
+      "video_id": "videoitg40k:media_pilot:249801",
+      "event": "cache_miss",
+      "hit": false
+    },
+    {
+      "video_id": "videoitg40k:media_pilot:87617",
+      "event": "cache_miss",
+      "hit": false
+    },
+    {
+      "video_id": "videoitg40k:media_pilot:398833",
+      "event": "cache_miss",
+      "hit": false
+    },
+    {
+      "video_id": "videoitg40k:media_pilot:207992",
+      "event": "cache_miss",
+      "hit": false
+    },
+    {
+      "video_id": "videoitg40k:media_pilot:441380",
+      "event": "cache_miss",
+      "hit": false
+    },
+    {
+      "video_id": "videoitg40k:media_pilot:389582",
+      "event": "cache_miss",
+      "hit": false
+    },
+    {
+      "video_id": "videoitg40k:media_pilot:108517",
+      "event": "cache_miss",
+      "hit": false
+    },
+    {
+      "video_id": "videoitg40k:media_pilot:221243",
+      "event": "cache_miss",
+      "hit": false
+    },
+    {
+      "video_id": "videoitg40k:media_pilot:71510",
+      "event": "cache_miss",
+      "hit": false
+    },
+    {
+      "video_id": "videoitg40k:media_pilot:45429",
+      "event": "cache_miss",
+      "hit": false
+    },
+    {
+      "video_id": "videoitg40k:media_pilot:414124",
+      "event": "cache_miss",
+      "hit": false
+    },
+    {
+      "video_id": "videoitg40k:media_pilot:23329",
+      "event": "cache_miss",
+      "hit": false
+    }
+  ],
+  "details": [
+    {
+      "sample_id": "videoitg40k:media_pilot:248981",
+      "video_id": "videoitg40k:media_pilot:248981",
+      "duration_s": 148.61513333333335,
+      "cache_hit": true,
+      "feature_cache_size_bytes": 45322,
+      "cached_cosine": {
+        "recall_at_5": 0,
+        "recall_at_10": 0,
+        "recall_at_20": 1,
+        "latency_ms": 350.9715990003315
+      },
+      "uniform": {
+        "recall_at_5": 0,
+        "recall_at_10": 0,
+        "recall_at_20": 1
+      }
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:14517",
+      "video_id": "videoitg40k:media_pilot:14517",
+      "duration_s": 39.473,
+      "cache_hit": true,
+      "feature_cache_size_bytes": 45201,
+      "cached_cosine": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1,
+        "latency_ms": 17.00180999978329
+      },
+      "uniform": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1
+      }
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:438874",
+      "video_id": "videoitg40k:media_pilot:438874",
+      "duration_s": 32.032000000000004,
+      "cache_hit": true,
+      "feature_cache_size_bytes": 45295,
+      "cached_cosine": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1,
+        "latency_ms": 16.683600000760634
+      },
+      "uniform": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1
+      }
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:442611",
+      "video_id": "videoitg40k:media_pilot:442611",
+      "duration_s": 142.1755088421755,
+      "cache_hit": true,
+      "feature_cache_size_bytes": 45286,
+      "cached_cosine": {
+        "recall_at_5": 0,
+        "recall_at_10": 1,
+        "recall_at_20": 1,
+        "latency_ms": 16.897950999918976
+      },
+      "uniform": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1
+      }
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:35047",
+      "video_id": "videoitg40k:media_pilot:35047",
+      "duration_s": 57.22383333333333,
+      "cache_hit": true,
+      "feature_cache_size_bytes": 42576,
+      "cached_cosine": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1,
+        "latency_ms": 16.632752000077744
+      },
+      "uniform": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1
+      }
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:438687",
+      "video_id": "videoitg40k:media_pilot:438687",
+      "duration_s": 34.9349,
+      "cache_hit": true,
+      "feature_cache_size_bytes": 45225,
+      "cached_cosine": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1,
+        "latency_ms": 16.608166000878555
+      },
+      "uniform": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1
+      }
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:380917",
+      "video_id": "videoitg40k:media_pilot:380917",
+      "duration_s": 139.20587253920587,
+      "cache_hit": true,
+      "feature_cache_size_bytes": 45231,
+      "cached_cosine": {
+        "recall_at_5": 0,
+        "recall_at_10": 1,
+        "recall_at_20": 1,
+        "latency_ms": 17.11882499876083
+      },
+      "uniform": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1
+      }
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:9651",
+      "video_id": "videoitg40k:media_pilot:9651",
+      "duration_s": 43.1,
+      "cache_hit": true,
+      "feature_cache_size_bytes": 45143,
+      "cached_cosine": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1,
+        "latency_ms": 16.668991998813
+      },
+      "uniform": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1
+      }
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:173579",
+      "video_id": "videoitg40k:media_pilot:173579",
+      "duration_s": 35.7360970677452,
+      "cache_hit": true,
+      "feature_cache_size_bytes": 45300,
+      "cached_cosine": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1,
+        "latency_ms": 16.91531500000565
+      },
+      "uniform": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1
+      }
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:287250",
+      "video_id": "videoitg40k:media_pilot:287250",
+      "duration_s": 175.0750750750751,
+      "cache_hit": true,
+      "feature_cache_size_bytes": 45081,
+      "cached_cosine": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1,
+        "latency_ms": 16.7048210005305
+      },
+      "uniform": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1
+      }
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:303326",
+      "video_id": "videoitg40k:media_pilot:303326",
+      "duration_s": 56.356300000000005,
+      "cache_hit": true,
+      "feature_cache_size_bytes": 45130,
+      "cached_cosine": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1,
+        "latency_ms": 16.87040799879469
+      },
+      "uniform": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1
+      }
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:47118",
+      "video_id": "videoitg40k:media_pilot:47118",
+      "duration_s": 48.24,
+      "cache_hit": true,
+      "feature_cache_size_bytes": 45116,
+      "cached_cosine": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1,
+        "latency_ms": 16.62126100018213
+      },
+      "uniform": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1
+      }
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:95127",
+      "video_id": "videoitg40k:media_pilot:95127",
+      "duration_s": 136.26960293626962,
+      "cache_hit": true,
+      "feature_cache_size_bytes": 45238,
+      "cached_cosine": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1,
+        "latency_ms": 16.65576699997473
+      },
+      "uniform": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1
+      }
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:194907",
+      "video_id": "videoitg40k:media_pilot:194907",
+      "duration_s": 55.2,
+      "cache_hit": true,
+      "feature_cache_size_bytes": 45083,
+      "cached_cosine": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1,
+        "latency_ms": 16.62507799846935
+      },
+      "uniform": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1
+      }
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:157652",
+      "video_id": "videoitg40k:media_pilot:157652",
+      "duration_s": 31.031,
+      "cache_hit": true,
+      "feature_cache_size_bytes": 45195,
+      "cached_cosine": {
+        "recall_at_5": 0,
+        "recall_at_10": 1,
+        "recall_at_20": 1,
+        "latency_ms": 16.793931999927736
+      },
+      "uniform": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1
+      }
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:253712",
+      "video_id": "videoitg40k:media_pilot:253712",
+      "duration_s": 179.61294627961294,
+      "cache_hit": true,
+      "feature_cache_size_bytes": 45228,
+      "cached_cosine": {
+        "recall_at_5": 0,
+        "recall_at_10": 0,
+        "recall_at_20": 1,
+        "latency_ms": 16.60151299984136
+      },
+      "uniform": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1
+      }
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:16572",
+      "video_id": "videoitg40k:media_pilot:16572",
+      "duration_s": 40.00663333333333,
+      "cache_hit": true,
+      "feature_cache_size_bytes": 45304,
+      "cached_cosine": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1,
+        "latency_ms": 16.695193000487052
+      },
+      "uniform": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1
+      }
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:125860",
+      "video_id": "videoitg40k:media_pilot:125860",
+      "duration_s": 46.5465,
+      "cache_hit": true,
+      "feature_cache_size_bytes": 45091,
+      "cached_cosine": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1,
+        "latency_ms": 16.804591999971308
+      },
+      "uniform": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1
+      }
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:208227",
+      "video_id": "videoitg40k:media_pilot:208227",
+      "duration_s": 126.79346012679346,
+      "cache_hit": true,
+      "feature_cache_size_bytes": 45149,
+      "cached_cosine": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1,
+        "latency_ms": 16.71021199945244
+      },
+      "uniform": {
+        "recall_at_5": 0,
+        "recall_at_10": 1,
+        "recall_at_20": 1
+      }
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:22669",
+      "video_id": "videoitg40k:media_pilot:22669",
+      "duration_s": 30.3,
+      "cache_hit": true,
+      "feature_cache_size_bytes": 45184,
+      "cached_cosine": {
+        "recall_at_5": 0,
+        "recall_at_10": 1,
+        "recall_at_20": 1,
+        "latency_ms": 16.566866999710328
+      },
+      "uniform": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1
+      }
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:445844",
+      "video_id": "videoitg40k:media_pilot:445844",
+      "duration_s": 47.48076666666667,
+      "cache_hit": true,
+      "feature_cache_size_bytes": 45258,
+      "cached_cosine": {
+        "recall_at_5": 0,
+        "recall_at_10": 1,
+        "recall_at_20": 1,
+        "latency_ms": 16.89348299987614
+      },
+      "uniform": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1
+      }
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:475360",
+      "video_id": "videoitg40k:media_pilot:475360",
+      "duration_s": 167.0670670670671,
+      "cache_hit": true,
+      "feature_cache_size_bytes": 45314,
+      "cached_cosine": {
+        "recall_at_5": 0,
+        "recall_at_10": 0,
+        "recall_at_20": 0,
+        "latency_ms": 16.648253000312252
+      },
+      "uniform": {
+        "recall_at_5": 0,
+        "recall_at_10": 0,
+        "recall_at_20": 1
+      }
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:200235",
+      "video_id": "videoitg40k:media_pilot:200235",
+      "duration_s": 52.053,
+      "cache_hit": true,
+      "feature_cache_size_bytes": 45091,
+      "cached_cosine": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1,
+        "latency_ms": 16.66381200084288
+      },
+      "uniform": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1
+      }
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:344582",
+      "video_id": "videoitg40k:media_pilot:344582",
+      "duration_s": 48.9489,
+      "cache_hit": true,
+      "feature_cache_size_bytes": 45289,
+      "cached_cosine": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1,
+        "latency_ms": 16.77501599988318
+      },
+      "uniform": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1
+      }
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:167155",
+      "video_id": "videoitg40k:media_pilot:167155",
+      "duration_s": 121.55476666666667,
+      "cache_hit": true,
+      "feature_cache_size_bytes": 45031,
+      "cached_cosine": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1,
+        "latency_ms": 16.872080999746686
+      },
+      "uniform": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1
+      }
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:26829",
+      "video_id": "videoitg40k:media_pilot:26829",
+      "duration_s": 58.992266666666666,
+      "cache_hit": true,
+      "feature_cache_size_bytes": 45123,
+      "cached_cosine": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1,
+        "latency_ms": 16.650867999487673
+      },
+      "uniform": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1
+      }
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:435305",
+      "video_id": "videoitg40k:media_pilot:435305",
+      "duration_s": 40.2402,
+      "cache_hit": true,
+      "feature_cache_size_bytes": 45345,
+      "cached_cosine": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1,
+        "latency_ms": 16.927116999795544
+      },
+      "uniform": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1
+      }
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:202368",
+      "video_id": "videoitg40k:media_pilot:202368",
+      "duration_s": 138.30497163830498,
+      "cache_hit": true,
+      "feature_cache_size_bytes": 45239,
+      "cached_cosine": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1,
+        "latency_ms": 16.903843001273344
+      },
+      "uniform": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1
+      }
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:37689",
+      "video_id": "videoitg40k:media_pilot:37689",
+      "duration_s": 37.871,
+      "cache_hit": true,
+      "feature_cache_size_bytes": 45261,
+      "cached_cosine": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1,
+        "latency_ms": 16.6723180009285
+      },
+      "uniform": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1
+      }
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:84027",
+      "video_id": "videoitg40k:media_pilot:84027",
+      "duration_s": 54.82143333333333,
+      "cache_hit": true,
+      "feature_cache_size_bytes": 45222,
+      "cached_cosine": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1,
+        "latency_ms": 16.79848999992828
+      },
+      "uniform": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1
+      }
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:422662",
+      "video_id": "videoitg40k:media_pilot:422662",
+      "duration_s": 43.77706666666667,
+      "cache_hit": true,
+      "feature_cache_size_bytes": 45060,
+      "cached_cosine": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1,
+        "latency_ms": 16.86049899944919
+      },
+      "uniform": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1
+      }
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:168327",
+      "video_id": "videoitg40k:media_pilot:168327",
+      "duration_s": 34.30093333333333,
+      "cache_hit": true,
+      "feature_cache_size_bytes": 45207,
+      "cached_cosine": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1,
+        "latency_ms": 16.892359999474138
+      },
+      "uniform": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1
+      }
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:3791",
+      "video_id": "videoitg40k:media_pilot:3791",
+      "duration_s": 38.06666666666667,
+      "cache_hit": true,
+      "feature_cache_size_bytes": 45237,
+      "cached_cosine": {
+        "recall_at_5": 0,
+        "recall_at_10": 1,
+        "recall_at_20": 1,
+        "latency_ms": 16.805154000394396
+      },
+      "uniform": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1
+      }
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:127469",
+      "video_id": "videoitg40k:media_pilot:127469",
+      "duration_s": 29.963599595551063,
+      "cache_hit": true,
+      "feature_cache_size_bytes": 45278,
+      "cached_cosine": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1,
+        "latency_ms": 16.647983000439126
+      },
+      "uniform": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1
+      }
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:471777",
+      "video_id": "videoitg40k:media_pilot:471777",
+      "duration_s": 41.76,
+      "cache_hit": true,
+      "feature_cache_size_bytes": 44982,
+      "cached_cosine": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1,
+        "latency_ms": 16.60760499908065
+      },
+      "uniform": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1
+      }
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:382101",
+      "video_id": "videoitg40k:media_pilot:382101",
+      "duration_s": 44.419374999999995,
+      "cache_hit": true,
+      "feature_cache_size_bytes": 45214,
+      "cached_cosine": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1,
+        "latency_ms": 16.74574899880099
+      },
+      "uniform": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1
+      }
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:111414",
+      "video_id": "videoitg40k:media_pilot:111414",
+      "duration_s": 59.426033333333336,
+      "cache_hit": true,
+      "feature_cache_size_bytes": 45204,
+      "cached_cosine": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1,
+        "latency_ms": 16.639436000332353
+      },
+      "uniform": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1
+      }
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:93380",
+      "video_id": "videoitg40k:media_pilot:93380",
+      "duration_s": 38.8388,
+      "cache_hit": true,
+      "feature_cache_size_bytes": 45177,
+      "cached_cosine": {
+        "recall_at_5": 0,
+        "recall_at_10": 1,
+        "recall_at_20": 1,
+        "latency_ms": 16.885687000467442
+      },
+      "uniform": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1
+      }
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:472174",
+      "video_id": "videoitg40k:media_pilot:472174",
+      "duration_s": 41.80843333333333,
+      "cache_hit": true,
+      "feature_cache_size_bytes": 45246,
+      "cached_cosine": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1,
+        "latency_ms": 16.815372999190004
+      },
+      "uniform": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1
+      }
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:306446",
+      "video_id": "videoitg40k:media_pilot:306446",
+      "duration_s": 41.77506666666667,
+      "cache_hit": true,
+      "feature_cache_size_bytes": 45135,
+      "cached_cosine": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1,
+        "latency_ms": 16.623605999484425
+      },
+      "uniform": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1
+      }
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:171358",
+      "video_id": "videoitg40k:media_pilot:171358",
+      "duration_s": 38.89966666666667,
+      "cache_hit": true,
+      "feature_cache_size_bytes": 45173,
+      "cached_cosine": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1,
+        "latency_ms": 16.65255099942442
+      },
+      "uniform": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1
+      }
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:145887",
+      "video_id": "videoitg40k:media_pilot:145887",
+      "duration_s": 30.6306,
+      "cache_hit": true,
+      "feature_cache_size_bytes": 45307,
+      "cached_cosine": {
+        "recall_at_5": 0,
+        "recall_at_10": 1,
+        "recall_at_20": 1,
+        "latency_ms": 16.588107000643504
+      },
+      "uniform": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1
+      }
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:330898",
+      "video_id": "videoitg40k:media_pilot:330898",
+      "duration_s": 36.367,
+      "cache_hit": true,
+      "feature_cache_size_bytes": 45134,
+      "cached_cosine": {
+        "recall_at_5": 0,
+        "recall_at_10": 1,
+        "recall_at_20": 1,
+        "latency_ms": 16.568869999900926
+      },
+      "uniform": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1
+      }
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:23380",
+      "video_id": "videoitg40k:media_pilot:23380",
+      "duration_s": 30.16,
+      "cache_hit": true,
+      "feature_cache_size_bytes": 45321,
+      "cached_cosine": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1,
+        "latency_ms": 16.613455998594873
+      },
+      "uniform": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1
+      }
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:443255",
+      "video_id": "videoitg40k:media_pilot:443255",
+      "duration_s": 43.03333333333333,
+      "cache_hit": true,
+      "feature_cache_size_bytes": 45174,
+      "cached_cosine": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1,
+        "latency_ms": 16.599879001660156
+      },
+      "uniform": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1
+      }
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:123639",
+      "video_id": "videoitg40k:media_pilot:123639",
+      "duration_s": 42.308933333333336,
+      "cache_hit": true,
+      "feature_cache_size_bytes": 45230,
+      "cached_cosine": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1,
+        "latency_ms": 16.885987999557983
+      },
+      "uniform": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1
+      }
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:303014",
+      "video_id": "videoitg40k:media_pilot:303014",
+      "duration_s": 51.9,
+      "cache_hit": true,
+      "feature_cache_size_bytes": 45209,
+      "cached_cosine": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1,
+        "latency_ms": 16.57132500076841
+      },
+      "uniform": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1
+      }
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:93507",
+      "video_id": "videoitg40k:media_pilot:93507",
+      "duration_s": 42.16,
+      "cache_hit": true,
+      "feature_cache_size_bytes": 45133,
+      "cached_cosine": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1,
+        "latency_ms": 16.636039999866625
+      },
+      "uniform": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1
+      }
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:200016",
+      "video_id": "videoitg40k:media_pilot:200016",
+      "duration_s": 49.29952222222222,
+      "cache_hit": true,
+      "feature_cache_size_bytes": 45228,
+      "cached_cosine": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1,
+        "latency_ms": 16.563320001296233
+      },
+      "uniform": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1
+      }
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:161015",
+      "video_id": "videoitg40k:media_pilot:161015",
+      "duration_s": 30.296933333333335,
+      "cache_hit": true,
+      "feature_cache_size_bytes": 45275,
+      "cached_cosine": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1,
+        "latency_ms": 16.62274399859598
+      },
+      "uniform": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1
+      }
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:420269",
+      "video_id": "videoitg40k:media_pilot:420269",
+      "duration_s": 47.04612222222222,
+      "cache_hit": true,
+      "feature_cache_size_bytes": 45239,
+      "cached_cosine": {
+        "recall_at_5": 0,
+        "recall_at_10": 1,
+        "recall_at_20": 1,
+        "latency_ms": 16.791827998531517
+      },
+      "uniform": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1
+      }
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:81449",
+      "video_id": "videoitg40k:media_pilot:81449",
+      "duration_s": 42.1421,
+      "cache_hit": true,
+      "feature_cache_size_bytes": 45131,
+      "cached_cosine": {
+        "recall_at_5": 0,
+        "recall_at_10": 0,
+        "recall_at_20": 1,
+        "latency_ms": 16.608084999461425
+      },
+      "uniform": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1
+      }
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:471172",
+      "video_id": "videoitg40k:media_pilot:471172",
+      "duration_s": 44.669922222222226,
+      "cache_hit": true,
+      "feature_cache_size_bytes": 45144,
+      "cached_cosine": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1,
+        "latency_ms": 16.77120800013654
+      },
+      "uniform": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1
+      }
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:217699",
+      "video_id": "videoitg40k:media_pilot:217699",
+      "duration_s": 42.776066666666665,
+      "cache_hit": true,
+      "feature_cache_size_bytes": 45254,
+      "cached_cosine": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1,
+        "latency_ms": 16.740990000471356
+      },
+      "uniform": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1
+      }
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:268585",
+      "video_id": "videoitg40k:media_pilot:268585",
+      "duration_s": 58.3,
+      "cache_hit": true,
+      "feature_cache_size_bytes": 45240,
+      "cached_cosine": {
+        "recall_at_5": 0,
+        "recall_at_10": 1,
+        "recall_at_20": 1,
+        "latency_ms": 16.77542600009474
+      },
+      "uniform": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1
+      }
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:336758",
+      "video_id": "videoitg40k:media_pilot:336758",
+      "duration_s": 30.066666666666666,
+      "cache_hit": true,
+      "feature_cache_size_bytes": 45336,
+      "cached_cosine": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1,
+        "latency_ms": 16.585281999141444
+      },
+      "uniform": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1
+      }
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:249673",
+      "video_id": "videoitg40k:media_pilot:249673",
+      "duration_s": 52.24,
+      "cache_hit": true,
+      "feature_cache_size_bytes": 45224,
+      "cached_cosine": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1,
+        "latency_ms": 16.63822299997264
+      },
+      "uniform": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1
+      }
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:324690",
+      "video_id": "videoitg40k:media_pilot:324690",
+      "duration_s": 56.08936666666667,
+      "cache_hit": true,
+      "feature_cache_size_bytes": 45315,
+      "cached_cosine": {
+        "recall_at_5": 0,
+        "recall_at_10": 1,
+        "recall_at_20": 1,
+        "latency_ms": 16.903030998946633
+      },
+      "uniform": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1
+      }
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:75922",
+      "video_id": "videoitg40k:media_pilot:75922",
+      "duration_s": 56.4,
+      "cache_hit": true,
+      "feature_cache_size_bytes": 45197,
+      "cached_cosine": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1,
+        "latency_ms": 16.57031299873779
+      },
+      "uniform": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1
+      }
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:223969",
+      "video_id": "videoitg40k:media_pilot:223969",
+      "duration_s": 46.04604604604605,
+      "cache_hit": true,
+      "feature_cache_size_bytes": 45140,
+      "cached_cosine": {
+        "recall_at_5": 0,
+        "recall_at_10": 1,
+        "recall_at_20": 1,
+        "latency_ms": 16.58235600007174
+      },
+      "uniform": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1
+      }
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:450823",
+      "video_id": "videoitg40k:media_pilot:450823",
+      "duration_s": 40.140100000000004,
+      "cache_hit": true,
+      "feature_cache_size_bytes": 45237,
+      "cached_cosine": {
+        "recall_at_5": 0,
+        "recall_at_10": 0,
+        "recall_at_20": 1,
+        "latency_ms": 16.54555499953858
+      },
+      "uniform": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1
+      }
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:446217",
+      "video_id": "videoitg40k:media_pilot:446217",
+      "duration_s": 52.58586666666667,
+      "cache_hit": true,
+      "feature_cache_size_bytes": 45294,
+      "cached_cosine": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1,
+        "latency_ms": 16.641980000713374
+      },
+      "uniform": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1
+      }
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:133267",
+      "video_id": "videoitg40k:media_pilot:133267",
+      "duration_s": 57.733333333333334,
+      "cache_hit": true,
+      "feature_cache_size_bytes": 45323,
+      "cached_cosine": {
+        "recall_at_5": 0,
+        "recall_at_10": 1,
+        "recall_at_20": 1,
+        "latency_ms": 16.776589000073727
+      },
+      "uniform": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1
+      }
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:303121",
+      "video_id": "videoitg40k:media_pilot:303121",
+      "duration_s": 32.098733333333335,
+      "cache_hit": true,
+      "feature_cache_size_bytes": 45111,
+      "cached_cosine": {
+        "recall_at_5": 0,
+        "recall_at_10": 1,
+        "recall_at_20": 1,
+        "latency_ms": 16.66359199953149
+      },
+      "uniform": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1
+      }
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:60657",
+      "video_id": "videoitg40k:media_pilot:60657",
+      "duration_s": 30.01641111111111,
+      "cache_hit": true,
+      "feature_cache_size_bytes": 45017,
+      "cached_cosine": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1,
+        "latency_ms": 16.57042300030298
+      },
+      "uniform": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1
+      }
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:289467",
+      "video_id": "videoitg40k:media_pilot:289467",
+      "duration_s": 49.449400000000004,
+      "cache_hit": true,
+      "feature_cache_size_bytes": 45289,
+      "cached_cosine": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1,
+        "latency_ms": 16.62956700056384
+      },
+      "uniform": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1
+      }
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:110763",
+      "video_id": "videoitg40k:media_pilot:110763",
+      "duration_s": 55.867,
+      "cache_hit": true,
+      "feature_cache_size_bytes": 45289,
+      "cached_cosine": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1,
+        "latency_ms": 17.070060999685666
+      },
+      "uniform": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1
+      }
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:71673",
+      "video_id": "videoitg40k:media_pilot:71673",
+      "duration_s": 44.04448938321537,
+      "cache_hit": true,
+      "feature_cache_size_bytes": 45231,
+      "cached_cosine": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1,
+        "latency_ms": 16.777569999248954
+      },
+      "uniform": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1
+      }
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:69489",
+      "video_id": "videoitg40k:media_pilot:69489",
+      "duration_s": 46.946999999999996,
+      "cache_hit": true,
+      "feature_cache_size_bytes": 45231,
+      "cached_cosine": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1,
+        "latency_ms": 16.646580001179245
+      },
+      "uniform": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1
+      }
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:11697",
+      "video_id": "videoitg40k:media_pilot:11697",
+      "duration_s": 34.801433333333335,
+      "cache_hit": true,
+      "feature_cache_size_bytes": 45305,
+      "cached_cosine": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1,
+        "latency_ms": 16.893953001272166
+      },
+      "uniform": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1
+      }
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:276491",
+      "video_id": "videoitg40k:media_pilot:276491",
+      "duration_s": 40.03538888888889,
+      "cache_hit": true,
+      "feature_cache_size_bytes": 45192,
+      "cached_cosine": {
+        "recall_at_5": 0,
+        "recall_at_10": 0,
+        "recall_at_20": 1,
+        "latency_ms": 16.55835999918054
+      },
+      "uniform": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1
+      }
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:224991",
+      "video_id": "videoitg40k:media_pilot:224991",
+      "duration_s": 30.5305,
+      "cache_hit": true,
+      "feature_cache_size_bytes": 45283,
+      "cached_cosine": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1,
+        "latency_ms": 16.87963599943032
+      },
+      "uniform": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1
+      }
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:81683",
+      "video_id": "videoitg40k:media_pilot:81683",
+      "duration_s": 45.4596,
+      "cache_hit": true,
+      "feature_cache_size_bytes": 45145,
+      "cached_cosine": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1,
+        "latency_ms": 16.795214000012493
+      },
+      "uniform": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1
+      }
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:292355",
+      "video_id": "videoitg40k:media_pilot:292355",
+      "duration_s": 51.9519,
+      "cache_hit": true,
+      "feature_cache_size_bytes": 45341,
+      "cached_cosine": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1,
+        "latency_ms": 16.831734001243603
+      },
+      "uniform": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1
+      }
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:332051",
+      "video_id": "videoitg40k:media_pilot:332051",
+      "duration_s": 48.782066666666665,
+      "cache_hit": true,
+      "feature_cache_size_bytes": 45102,
+      "cached_cosine": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1,
+        "latency_ms": 16.583097998591256
+      },
+      "uniform": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1
+      }
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:418411",
+      "video_id": "videoitg40k:media_pilot:418411",
+      "duration_s": 47.280566666666665,
+      "cache_hit": true,
+      "feature_cache_size_bytes": 45208,
+      "cached_cosine": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1,
+        "latency_ms": 16.622944000118878
+      },
+      "uniform": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1
+      }
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:96013",
+      "video_id": "videoitg40k:media_pilot:96013",
+      "duration_s": 38.405033333333336,
+      "cache_hit": true,
+      "feature_cache_size_bytes": 40075,
+      "cached_cosine": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1,
+        "latency_ms": 16.64089899895771
+      },
+      "uniform": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1
+      }
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:80853",
+      "video_id": "videoitg40k:media_pilot:80853",
+      "duration_s": 34.76806666666667,
+      "cache_hit": true,
+      "feature_cache_size_bytes": 45082,
+      "cached_cosine": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1,
+        "latency_ms": 16.89806200010935
+      },
+      "uniform": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1
+      }
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:55345",
+      "video_id": "videoitg40k:media_pilot:55345",
+      "duration_s": 40.333333333333336,
+      "cache_hit": true,
+      "feature_cache_size_bytes": 45128,
+      "cached_cosine": {
+        "recall_at_5": 0,
+        "recall_at_10": 1,
+        "recall_at_20": 1,
+        "latency_ms": 17.175953998957993
+      },
+      "uniform": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1
+      }
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:90561",
+      "video_id": "videoitg40k:media_pilot:90561",
+      "duration_s": 36.83720930232558,
+      "cache_hit": true,
+      "feature_cache_size_bytes": 45270,
+      "cached_cosine": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1,
+        "latency_ms": 17.007962000207044
+      },
+      "uniform": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1
+      }
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:253604",
+      "video_id": "videoitg40k:media_pilot:253604",
+      "duration_s": 43.314166666666665,
+      "cache_hit": false,
+      "feature_cache_size_bytes": 45235,
+      "cached_cosine": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1,
+        "latency_ms": 16.104569998788065
+      },
+      "uniform": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1
+      }
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:324843",
+      "video_id": "videoitg40k:media_pilot:324843",
+      "duration_s": 41.875166666666665,
+      "cache_hit": false,
+      "feature_cache_size_bytes": 45206,
+      "cached_cosine": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1,
+        "latency_ms": 16.769525000199792
+      },
+      "uniform": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1
+      }
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:395556",
+      "video_id": "videoitg40k:media_pilot:395556",
+      "duration_s": 40.0,
+      "cache_hit": false,
+      "feature_cache_size_bytes": 45126,
+      "cached_cosine": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1,
+        "latency_ms": 16.791736999948625
+      },
+      "uniform": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1
+      }
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:375680",
+      "video_id": "videoitg40k:media_pilot:375680",
+      "duration_s": 33.6336,
+      "cache_hit": false,
+      "feature_cache_size_bytes": 45289,
+      "cached_cosine": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1,
+        "latency_ms": 16.729326998756733
+      },
+      "uniform": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1
+      }
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:185712",
+      "video_id": "videoitg40k:media_pilot:185712",
+      "duration_s": 34.57154444444445,
+      "cache_hit": false,
+      "feature_cache_size_bytes": 45297,
+      "cached_cosine": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1,
+        "latency_ms": 17.168858999866643
+      },
+      "uniform": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1
+      }
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:386692",
+      "video_id": "videoitg40k:media_pilot:386692",
+      "duration_s": 55.18846666666667,
+      "cache_hit": false,
+      "feature_cache_size_bytes": 45079,
+      "cached_cosine": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1,
+        "latency_ms": 16.817196001284174
+      },
+      "uniform": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1
+      }
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:148844",
+      "video_id": "videoitg40k:media_pilot:148844",
+      "duration_s": 48.38166666666667,
+      "cache_hit": false,
+      "feature_cache_size_bytes": 45189,
+      "cached_cosine": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1,
+        "latency_ms": 16.819820000819163
+      },
+      "uniform": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1
+      }
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:106880",
+      "video_id": "videoitg40k:media_pilot:106880",
+      "duration_s": 58.758700000000005,
+      "cache_hit": false,
+      "feature_cache_size_bytes": 45131,
+      "cached_cosine": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1,
+        "latency_ms": 16.877519999979995
+      },
+      "uniform": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1
+      }
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:249801",
+      "video_id": "videoitg40k:media_pilot:249801",
+      "duration_s": 51.285,
+      "cache_hit": false,
+      "feature_cache_size_bytes": 45296,
+      "cached_cosine": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1,
+        "latency_ms": 16.50464600061241
+      },
+      "uniform": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1
+      }
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:87617",
+      "video_id": "videoitg40k:media_pilot:87617",
+      "duration_s": 32.96626666666667,
+      "cache_hit": false,
+      "feature_cache_size_bytes": 45372,
+      "cached_cosine": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1,
+        "latency_ms": 17.095848999815644
+      },
+      "uniform": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1
+      }
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:398833",
+      "video_id": "videoitg40k:media_pilot:398833",
+      "duration_s": 46.446400000000004,
+      "cache_hit": false,
+      "feature_cache_size_bytes": 45211,
+      "cached_cosine": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1,
+        "latency_ms": 16.70205300069938
+      },
+      "uniform": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1
+      }
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:207992",
+      "video_id": "videoitg40k:media_pilot:207992",
+      "duration_s": 30.1301,
+      "cache_hit": false,
+      "feature_cache_size_bytes": 45155,
+      "cached_cosine": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1,
+        "latency_ms": 17.00607600105286
+      },
+      "uniform": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1
+      }
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:441380",
+      "video_id": "videoitg40k:media_pilot:441380",
+      "duration_s": 50.216833333333334,
+      "cache_hit": false,
+      "feature_cache_size_bytes": 45205,
+      "cached_cosine": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1,
+        "latency_ms": 14.890551999997115
+      },
+      "uniform": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1
+      }
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:389582",
+      "video_id": "videoitg40k:media_pilot:389582",
+      "duration_s": 48.415033333333334,
+      "cache_hit": false,
+      "feature_cache_size_bytes": 45191,
+      "cached_cosine": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1,
+        "latency_ms": 17.040131000612746
+      },
+      "uniform": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1
+      }
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:108517",
+      "video_id": "videoitg40k:media_pilot:108517",
+      "duration_s": 38.2,
+      "cache_hit": false,
+      "feature_cache_size_bytes": 45310,
+      "cached_cosine": {
+        "recall_at_5": 0,
+        "recall_at_10": 1,
+        "recall_at_20": 1,
+        "latency_ms": 16.764592999606975
+      },
+      "uniform": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1
+      }
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:221243",
+      "video_id": "videoitg40k:media_pilot:221243",
+      "duration_s": 33.86716666666666,
+      "cache_hit": false,
+      "feature_cache_size_bytes": 45193,
+      "cached_cosine": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1,
+        "latency_ms": 16.766726999776438
+      },
+      "uniform": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1
+      }
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:71510",
+      "video_id": "videoitg40k:media_pilot:71510",
+      "duration_s": 37.4,
+      "cache_hit": false,
+      "feature_cache_size_bytes": 45272,
+      "cached_cosine": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1,
+        "latency_ms": 16.993671000818722
+      },
+      "uniform": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1
+      }
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:45429",
+      "video_id": "videoitg40k:media_pilot:45429",
+      "duration_s": 43.25154166666666,
+      "cache_hit": false,
+      "feature_cache_size_bytes": 45196,
+      "cached_cosine": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1,
+        "latency_ms": 17.066510999939055
+      },
+      "uniform": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1
+      }
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:414124",
+      "video_id": "videoitg40k:media_pilot:414124",
+      "duration_s": 51.08436666666667,
+      "cache_hit": false,
+      "feature_cache_size_bytes": 45169,
+      "cached_cosine": {
+        "recall_at_5": 0,
+        "recall_at_10": 1,
+        "recall_at_20": 1,
+        "latency_ms": 16.809467999337357
+      },
+      "uniform": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1
+      }
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:23329",
+      "video_id": "videoitg40k:media_pilot:23329",
+      "duration_s": 46.0,
+      "cache_hit": false,
+      "feature_cache_size_bytes": 45374,
+      "cached_cosine": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1,
+        "latency_ms": 16.85529699898325
+      },
+      "uniform": {
+        "recall_at_5": 1,
+        "recall_at_10": 1,
+        "recall_at_20": 1
+      }
+    }
+  ],
+  "elapsed_ms": 48342.11772500021,
+  "selection": "pending full validation set"
+}

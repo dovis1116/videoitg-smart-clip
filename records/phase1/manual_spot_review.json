@@ -1,0 +1,100 @@
+{
+  "reviewer": "Codex visual spot inspection",
+  "count": 10,
+  "compatible_count": 10,
+  "incompatible_count": 0,
+  "artifact": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/outputs/phase1_media_audit/semantic_spot_frames.jpg",
+  "caveat": "Compatibility is not an independent re-label or full-dataset accuracy estimate.",
+  "samples": [
+    {
+      "sample_id": "videoitg40k:media_pilot:248981",
+      "video_id": "LLaVA-Video-178K/2_3_m_nextqa/NextQA/NExTVideo/0075/12843838795.mp4",
+      "query": "What happens to the helicopter as it pulls up the two people?\nAnswer the question using few words or phrase.",
+      "answer": "gets lower.",
+      "review_scope": "frame_num[0] +/- 3 seconds at source fps",
+      "visual_compatibility": "compatible",
+      "confidence": "medium"
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:442611",
+      "video_id": "LLaVA-Video-178K/2_3_m_nextqa/NextQA/NExTVideo/1006/9755380174.mp4",
+      "query": "Why does the lady in blue hold up her phone?\nOptions:\nA. stylish.\nB. not get lost.\nC. pass it to boy later.\nD. listening to her.\nE. record for memory.\n",
+      "answer": "E.",
+      "review_scope": "frame_num[0] +/- 3 seconds at source fps",
+      "visual_compatibility": "compatible",
+      "confidence": "medium"
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:380917",
+      "video_id": "LLaVA-Video-178K/2_3_m_nextqa/NextQA/NExTVideo/1007/9020947679.mp4",
+      "query": "Why did the boy in the middle pace around the stage before the performance?\nOptions:\nA. waiting his team member.\nB. wait for his turn.\nC. scared baby will fall off.\nD. prepare a performance.\nE. wants to jump again.\nPlease provide your answer by stating the letter followed by the full option.",
+      "answer": "A. waiting his team member.",
+      "review_scope": "frame_num[0] +/- 3 seconds at source fps",
+      "visual_compatibility": "compatible",
+      "confidence": "medium"
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:14517",
+      "video_id": "LLaVA-Video-178K/30_60_s_activitynetqa/ActivityNet-QA/activitynet/train/v1-3/train_val/v_-5K3KZ6fHuI.mp4",
+      "query": "what are the people with blue hats doing\nAnswer the question using few words or phrase.",
+      "answer": "play snow",
+      "review_scope": "frame_num[0] +/- 3 seconds at source fps",
+      "visual_compatibility": "compatible",
+      "confidence": "medium"
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:35047",
+      "video_id": "LLaVA-Video-178K/30_60_s_activitynetqa/ActivityNet-QA/activitynet/train/v1-3/train_val/v_17nr8u_ze0o.mp4",
+      "query": "is the person in black indoors\nAnswer the question using few words or phrase.",
+      "answer": "no",
+      "review_scope": "frame_num[0] +/- 3 seconds at source fps",
+      "visual_compatibility": "compatible",
+      "confidence": "medium"
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:9651",
+      "video_id": "LLaVA-Video-178K/30_60_s_activitynetqa/ActivityNet-QA/activitynet/train/v1-3/train_val/v_1G5cu1NvDFw.mp4",
+      "query": "does the person in black wear shorts\nAnswer the question using few words or phrase.",
+      "answer": "yes",
+      "review_scope": "frame_num[0] +/- 3 seconds at source fps",
+      "visual_compatibility": "compatible",
+      "confidence": "medium"
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:438874",
+      "video_id": "LLaVA-Video-178K/30_60_s_nextqa/NextQA/NExTVideo/0002/2735742477.mp4",
+      "query": "Why is the girl in blue bending over the box in the beginning?\nAnswer the question using few words or phrase.",
+      "answer": "get the balloons.",
+      "review_scope": "frame_num[0] +/- 3 seconds at source fps",
+      "visual_compatibility": "compatible",
+      "confidence": "medium"
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:438687",
+      "video_id": "LLaVA-Video-178K/30_60_s_nextqa/NextQA/NExTVideo/0005/2410320893.mp4",
+      "query": "Why was the boy in blue staring at the man in grey as he was reading?\nAnswer the question using few words or phrase.",
+      "answer": "wondering what he is reading.",
+      "review_scope": "frame_num[0] +/- 3 seconds at source fps",
+      "visual_compatibility": "compatible",
+      "confidence": "medium"
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:173579",
+      "video_id": "LLaVA-Video-178K/30_60_s_nextqa/NextQA/NExTVideo/0017/2512028142.mp4",
+      "query": "Why do they want to extinguish the fire?\nOptions:\nA. to burn the wood.\nB. prevent spreading.\nC. man blew them off.\nD. lighting.\nE. chemical reaction.\n",
+      "answer": "B.",
+      "review_scope": "frame_num[0] +/- 3 seconds at source fps",
+      "visual_compatibility": "compatible",
+      "confidence": "medium"
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:47118",
+      "video_id": "LLaVA-Video-178K/30_60_s_nextqa/NextQA/NExTVideo/0019/3628237900.mp4",
+      "query": "How is the lioness moving away from the lion?\nAnswer the question using few words or phrase.",
+      "answer": "walk.",
+      "review_scope": "frame_num[0] +/- 3 seconds at source fps",
+      "visual_compatibility": "compatible",
+      "confidence": "medium"
+    }
+  ]
+}

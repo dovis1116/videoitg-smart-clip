@@ -1,0 +1,29 @@
+{
+  "gate": "G5 E1 fixed-frame budget audit",
+  "scope": "50-row ordinary pilot",
+  "baseline": {
+    "max_frames": 16,
+    "topk_iou_0.5": 0.68,
+    "p95_rerank_ms": 3588.8
+  },
+  "candidates": {
+    "max_frames_12": {
+      "topk_iou_0.5": 0.66,
+      "delta_topk_iou_0.5": -0.02,
+      "p95_rerank_ms": 3599.0,
+      "delta_p95_relative": 0.0028,
+      "output": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/outputs/phase5_E1_mf12_pilot_20260715/summary.json",
+      "decision": "discard"
+    },
+    "max_frames_8": {
+      "topk_iou_0.5": 0.46,
+      "delta_topk_iou_0.5": -0.22,
+      "p95_rerank_ms": 2702.5,
+      "delta_p95_relative": -0.2469,
+      "output": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/outputs/phase5_E1_mf8_pilot_20260715/summary.json",
+      "decision": "discard"
+    }
+  },
+  "gate_decision": "no_E1_candidate",
+  "reason": "12 frames does not improve tail latency and loses 2 percentage points of Top-k@0.5; 8 frames improves P95 by about 25% but loses 22 percentage points of Top-k@0.5. Keep E0 fixed16."
+}

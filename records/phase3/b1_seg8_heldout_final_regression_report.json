@@ -1,0 +1,144 @@
+{
+  "pool": "records/phase3/heldout_split_regression_pool_final.jsonl",
+  "predictions": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/outputs/phase2_B1_seg8_full_20260714_0600/predictions.jsonl",
+  "pool_not_for_training": true,
+  "status_counts": {
+    "pool_count": 7,
+    "evaluated": 7,
+    "missing_prediction": 0
+  },
+  "overall": {
+    "sample_count": 7,
+    "recall_at_1_iou_0.3": 0.5714285714285714,
+    "recall_at_1_iou_0.5": 0.5714285714285714,
+    "topk_hit_iou_0.3": 0.8571428571428571,
+    "topk_hit_iou_0.5": 0.8571428571428571,
+    "max_iou_topk": 0.5984382809739763
+  },
+  "by_primary_code": {
+    "boundary_shift": {
+      "sample_count": 2,
+      "recall_at_1_iou_0.3": 0.0,
+      "recall_at_1_iou_0.5": 0.0,
+      "topk_hit_iou_0.3": 1.0,
+      "topk_hit_iou_0.5": 1.0,
+      "max_iou_topk": 0.7125
+    },
+    "control_correct": {
+      "sample_count": 3,
+      "recall_at_1_iou_0.3": 1.0,
+      "recall_at_1_iou_0.5": 1.0,
+      "topk_hit_iou_0.3": 1.0,
+      "topk_hit_iou_0.5": 1.0,
+      "max_iou_topk": 0.7454545454545455
+    },
+    "other_or_uncertain": {
+      "sample_count": 2,
+      "recall_at_1_iou_0.3": 0.5,
+      "recall_at_1_iou_0.5": 0.5,
+      "topk_hit_iou_0.3": 0.5,
+      "topk_hit_iou_0.5": 0.5,
+      "max_iou_topk": 0.26385216522709903
+    }
+  },
+  "per_sample": [
+    {
+      "sample_id": "videoitg40k:media_pilot:14517",
+      "primary_code": "boundary_shift",
+      "split": "test",
+      "status": "evaluated",
+      "metrics": {
+        "recall_at_1_iou_0.3": 0,
+        "recall_at_1_iou_0.5": 0,
+        "topk_hit_iou_0.3": 1,
+        "topk_hit_iou_0.5": 1,
+        "max_iou_topk": 0.8,
+        "boundary_error_s_topk": 1.0
+      }
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:344582",
+      "primary_code": "control_correct",
+      "split": "test",
+      "status": "evaluated",
+      "metrics": {
+        "recall_at_1_iou_0.3": 1,
+        "recall_at_1_iou_0.5": 1,
+        "topk_hit_iou_0.3": 1,
+        "topk_hit_iou_0.5": 1,
+        "max_iou_topk": 0.8,
+        "boundary_error_s_topk": 1.0
+      }
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:35047",
+      "primary_code": "other_or_uncertain",
+      "split": "test",
+      "status": "evaluated",
+      "metrics": {
+        "recall_at_1_iou_0.3": 0,
+        "recall_at_1_iou_0.5": 0,
+        "topk_hit_iou_0.3": 0,
+        "topk_hit_iou_0.5": 0,
+        "max_iou_topk": 0.0,
+        "boundary_error_s_topk": 19.471999999999994
+      }
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:435305",
+      "primary_code": "other_or_uncertain",
+      "split": "test",
+      "status": "evaluated",
+      "metrics": {
+        "recall_at_1_iou_0.3": 1,
+        "recall_at_1_iou_0.5": 1,
+        "topk_hit_iou_0.3": 1,
+        "topk_hit_iou_0.5": 1,
+        "max_iou_topk": 0.5277043304541981,
+        "boundary_error_s_topk": 2.009500000000001
+      }
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:443255",
+      "primary_code": "control_correct",
+      "split": "test",
+      "status": "evaluated",
+      "metrics": {
+        "recall_at_1_iou_0.3": 1,
+        "recall_at_1_iou_0.5": 1,
+        "topk_hit_iou_0.3": 1,
+        "topk_hit_iou_0.5": 1,
+        "max_iou_topk": 0.6363636363636364,
+        "boundary_error_s_topk": 2.0
+      }
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:93507",
+      "primary_code": "boundary_shift",
+      "split": "test",
+      "status": "evaluated",
+      "metrics": {
+        "recall_at_1_iou_0.3": 0,
+        "recall_at_1_iou_0.5": 0,
+        "topk_hit_iou_0.3": 1,
+        "topk_hit_iou_0.5": 1,
+        "max_iou_topk": 0.625,
+        "boundary_error_s_topk": 1.5
+      }
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:9651",
+      "primary_code": "control_correct",
+      "split": "test",
+      "status": "evaluated",
+      "metrics": {
+        "recall_at_1_iou_0.3": 1,
+        "recall_at_1_iou_0.5": 1,
+        "topk_hit_iou_0.3": 1,
+        "topk_hit_iou_0.5": 1,
+        "max_iou_topk": 0.8,
+        "boundary_error_s_topk": 1.0
+      }
+    }
+  ]
+}

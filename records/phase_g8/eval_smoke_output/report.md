@@ -1,0 +1,48 @@
+# Evaluation report
+
+```json
+{
+  "recall_at_1_iou_0.3": 0.5,
+  "recall_at_1_iou_0.5": 0.5,
+  "topk_hit_iou_0.3": 0.5,
+  "topk_hit_iou_0.5": 0.5,
+  "max_iou_topk": 0.3966666666666667,
+  "boundary_error_s_topk": 0.5999999999999996,
+  "sample_count": 4,
+  "retrieval_recall": {
+    "recall_at_5": 0.5,
+    "recall_at_10": 0.5,
+    "recall_at_20": 0.5
+  },
+  "duplicate_rate": 0.0,
+  "no_match_accuracy": 0.75,
+  "false_positive_rate": 0.0,
+  "false_negative_rate": 0.5,
+  "no_match_calibration": {
+    "retrieval_threshold": 0.0,
+    "grounding_threshold": 0.8,
+    "metrics": {
+      "no_match_accuracy": 1.0,
+      "false_positive_rate": 0.0,
+      "false_negative_rate": 0.0
+    },
+    "validation_count": 3
+  },
+  "retrieval_latency_ms_mean": 11.75,
+  "retrieval_latency_ms_p50": 12.0,
+  "retrieval_latency_ms_p95": 14.0,
+  "grounding_latency_ms_mean": 640.0,
+  "grounding_latency_ms_p50": 850.0,
+  "grounding_latency_ms_p95": 910.0,
+  "postprocess_latency_ms_mean": 0.85,
+  "postprocess_latency_ms_p50": 1.0,
+  "postprocess_latency_ms_p95": 1.2,
+  "end_to_end_latency_ms_mean": 675.0,
+  "end_to_end_latency_ms_p50": 900.0,
+  "end_to_end_latency_ms_p95": 950.0,
+  "gpu_memory_gib_mean": 14.024999999999999,
+  "gpu_memory_gib_p50": 18.4,
+  "gpu_memory_gib_p95": 18.5,
+  "degraded_rate": 0.0
+}
+```

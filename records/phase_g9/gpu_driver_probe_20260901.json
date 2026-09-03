@@ -1,0 +1,26 @@
+{
+  "stage": "G9",
+  "probe": {
+    "nvidia_smi": "timeout within 5 seconds",
+    "torch_cuda_probe": "timeout within 5 seconds",
+    "nvidia_smi_processes_observed": 854,
+    "process_states": {"D": 130, "S": 427, "Sl": 297},
+    "recheck_without_gpu_probe": {
+      "method": "ps process snapshot only",
+      "nvidia_smi_processes_observed": 859,
+      "process_states": {"Dl": 135, "Sl": 724}
+    },
+    "recheck_2_without_gpu_probe": {
+      "method": "ps process snapshot only",
+      "nvidia_smi_processes_observed": 867,
+      "process_states": {"Dl": 135, "Sl": 732}
+    }
+  },
+  "root_cause_evidence": {
+    "extension": "/home/zjy/.vscode-server/extensions/dolvin.vscode-nvidia-gpu-monitor-0.0.1/extension.js",
+    "behavior": "exec(nvidia-smi ...) every 2 seconds without a child timeout"
+  },
+  "impact": "GPU health probes and TimeLens CUDA calls cannot be considered valid while the host driver is unresponsive.",
+  "action": "Project jobs stopped; do not launch further GPU inference. Disable or reload the GPU monitor extension and recover the host driver before rerunning G4/G6/G9 real-model gates.",
+  "scope": "environmental_issue_not_project_model_failure"
+}

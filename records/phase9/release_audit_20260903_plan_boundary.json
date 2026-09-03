@@ -1,0 +1,24 @@
+{
+  "run_id": "release_audit_20260903T133526Z",
+  "required_files": 110,
+  "missing_files": [],
+  "workflow_protocol_success": true,
+  "workflow_is_not_human_study": true,
+  "required_scope_markers_present": {
+    "Query-aware Coarse-to-Fine Temporal Grounding": true,
+    "TimeLens-8B": true,
+    "G6 真实异步 HTTP smoke": true
+  },
+  "contract_checks": {
+    "candidate_schema": true,
+    "canonical_lifecycle": true,
+    "canonical_feedback": true,
+    "independent_postprocess": true,
+    "loopback_cors_only": true,
+    "evaluation_metric_schema": true,
+    "runtime_artifact": true
+  },
+  "status": "pass",
+  "g8_status": "out_of_scope_no_manual_annotation_or_human_test",
+  "g9_status": "packaging_and_gpu_automated_profiler_verified; portability_beyond_manylinux_2_39_conditional"
+}

@@ -1,0 +1,42 @@
+{
+  "run_id": "decord_build_20260901",
+  "status": "pass",
+  "source": {
+    "repository": "https://github.com/dmlc/decord.git",
+    "commit": "d2e56190286ae394032a8141885f76d5372bd44b",
+    "cuda": false
+  },
+  "build": {
+    "cmake": "4.4.3",
+    "ffmpeg": "6.1.1",
+    "ffmpeg_dev_install": "non-root apt download + dpkg-deb extraction",
+    "source_compile": "pass (libdecord.so)",
+    "runtime_packaging": "auditwheel repair pass; FFmpeg runtime dependency closure bundled",
+    "compatibility_patches": [
+      "include libavcodec/bsf.h for AVBSFContext",
+      "use const AVCodec* for FFmpeg 6 av_find_best_stream"
+    ]
+  },
+  "artifact": {
+    "path": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/deps/decord-0.6.0-cp313-cp313-manylinux_2_39_x86_64.whl",
+    "python": "3.13",
+    "platform_tag": "cp313-cp313-manylinux_2_39_x86_64",
+    "provenance": "Decord source-built library repaired with auditwheel and bundled FFmpeg runtime dependency closure",
+    "source_built_library_packaged": true,
+    "runtime_note": "wheel remains host-specific at manylinux_2_39; broader portability requires a manylinux build image",
+    "size_bytes": 98560277,
+    "sha256": "7386be0c67c81e47c2c46057307b26622970369e69e15e7768b73b244f42516e"
+  },
+  "verification": {
+    "pip_check_exit_code": 0,
+    "ldd_all_runtime_dependencies_resolved": true,
+    "import": true,
+    "video_reader": {
+      "path": "external/VideoITG/assets/imax.mp4",
+      "frames": 9514,
+      "fps": 23.976023976023978,
+      "duration_seconds": 396.8130833333333,
+      "first_frame_shape": [720, 1280, 3]
+    }
+  }
+}

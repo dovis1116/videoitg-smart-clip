@@ -1,0 +1,27 @@
+{
+  "candidate": "B1A adaptive interval mapping",
+  "policy": {
+    "narrow_seconds": 5.0,
+    "wide_seconds": 8.0,
+    "threshold": 0.6,
+    "threshold_selection": "selected from train-split offline grid; held-out test not used"
+  },
+  "implementation": "scripts/run_baseline.py --baseline B1A",
+  "full_run": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/outputs/phase4_B1A_full_20260714_0745/summary.json",
+  "repeat_run": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/outputs/phase4_B1A_repeat_20260714_0815/summary.json",
+  "repeatability": {"rows_first": 50, "rows_repeat": 50, "prediction_or_metric_differences": 0, "selection_differences": 0},
+  "expanded_clean97": "records/phase4/clean97_candidate_comparison.json",
+  "selection": {"wide_count": 4, "narrow_count": 46, "wide_fraction": 0.08},
+  "metrics": {
+    "pilot_50": {"recall_at_1_iou_0.3": 0.58, "recall_at_1_iou_0.5": 0.54, "topk_hit_iou_0.3": 0.8, "topk_hit_iou_0.5": 0.72, "max_iou_topk": 0.542291569425626, "boundary_error_s_topk": 4.238199787787788},
+    "heldout_test_7": {"recall_at_1_iou_0.3": 0.5714285714285714, "recall_at_1_iou_0.5": 0.5714285714285714, "topk_hit_iou_0.3": 0.7142857142857143, "topk_hit_iou_0.5": 0.7142857142857143, "max_iou_topk": 0.3725168481950921}
+  },
+  "comparison": {
+    "baseline_pilot_topk_hit_iou_0.5": 0.68,
+    "candidate_pilot_topk_hit_iou_0.5": 0.72,
+    "baseline_heldout_topk_hit_iou_0.5": 0.5714285714285714,
+    "candidate_heldout_topk_hit_iou_0.5": 0.7142857142857143,
+    "model_call_cost": "same one full-video VideoITG call per sample; interval mapping is post-processing"
+  },
+  "decision": "Promote B1A to a reproducible Phase 4 candidate for boundary-shift mitigation, not to the default. The repeated run is identical; formal default promotion still requires a larger held-out pool and regression checks on confirmed short-event cases."
+}

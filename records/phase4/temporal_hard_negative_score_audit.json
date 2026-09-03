@@ -1,0 +1,129 @@
+{
+  "status": "diagnostic_only",
+  "pool": "/home/zjy/projects/videoitg_smart_clip/records/phase4/temporal_hard_negative_pool.jsonl",
+  "rows": 5,
+  "all_not_for_training": true,
+  "negative_beats_gt_count": 0,
+  "by_source_badcase": {
+    "boundary_shift": {
+      "rows": 2,
+      "negative_beats_gt": 0
+    },
+    "short_event_miss": {
+      "rows": 3,
+      "negative_beats_gt": 0
+    }
+  },
+  "records": [
+    {
+      "candidate_id": "videoitg40k:media_pilot:145887:after_gt",
+      "sample_id": "videoitg40k:media_pilot:145887",
+      "source_badcase": "short_event_miss",
+      "ground_truth_segments": [
+        [
+          15.0,
+          20.0
+        ]
+      ],
+      "candidate_segment": [
+        20.0,
+        25.0
+      ],
+      "gt_score": 0.3643341064453125,
+      "negative_score": 0.315765380859375,
+      "negative_minus_gt": -0.0485687255859375,
+      "negative_rank_beats_gt": false,
+      "sampled_frames": 22,
+      "wall_seconds": 15.433343990938738,
+      "not_for_training": true
+    },
+    {
+      "candidate_id": "videoitg40k:media_pilot:145887:before_gt",
+      "sample_id": "videoitg40k:media_pilot:145887",
+      "source_badcase": "short_event_miss",
+      "ground_truth_segments": [
+        [
+          15.0,
+          20.0
+        ]
+      ],
+      "candidate_segment": [
+        10.0,
+        15.0
+      ],
+      "gt_score": 0.3643341064453125,
+      "negative_score": 0.3355712890625,
+      "negative_minus_gt": -0.0287628173828125,
+      "negative_rank_beats_gt": false,
+      "sampled_frames": 22,
+      "wall_seconds": 3.341903688153252,
+      "not_for_training": true
+    },
+    {
+      "candidate_id": "videoitg40k:media_pilot:208227:after_gt",
+      "sample_id": "videoitg40k:media_pilot:208227",
+      "source_badcase": "short_event_miss",
+      "ground_truth_segments": [
+        [
+          65.0,
+          70.0
+        ]
+      ],
+      "candidate_segment": [
+        70.0,
+        75.0
+      ],
+      "gt_score": 0.3482704162597656,
+      "negative_score": 0.32244873046875,
+      "negative_minus_gt": -0.025821685791015625,
+      "negative_rank_beats_gt": false,
+      "sampled_frames": 21,
+      "wall_seconds": 3.0463583888486028,
+      "not_for_training": true
+    },
+    {
+      "candidate_id": "videoitg40k:media_pilot:253712:after_gt",
+      "sample_id": "videoitg40k:media_pilot:253712",
+      "source_badcase": "boundary_shift",
+      "ground_truth_segments": [
+        [
+          0.0,
+          5.0
+        ]
+      ],
+      "candidate_segment": [
+        5.0,
+        10.0
+      ],
+      "gt_score": 0.18559932708740234,
+      "negative_score": 0.14865875244140625,
+      "negative_minus_gt": -0.036940574645996094,
+      "negative_rank_beats_gt": false,
+      "sampled_frames": 21,
+      "wall_seconds": 2.930376405827701,
+      "not_for_training": true
+    },
+    {
+      "candidate_id": "videoitg40k:media_pilot:287250:after_gt",
+      "sample_id": "videoitg40k:media_pilot:287250",
+      "source_badcase": "boundary_shift",
+      "ground_truth_segments": [
+        [
+          0.0,
+          5.0
+        ]
+      ],
+      "candidate_segment": [
+        5.0,
+        10.0
+      ],
+      "gt_score": 0.20267105102539062,
+      "negative_score": 0.19606781005859375,
+      "negative_minus_gt": -0.006603240966796875,
+      "negative_rank_beats_gt": false,
+      "sampled_frames": 21,
+      "wall_seconds": 2.9231447561178356,
+      "not_for_training": true
+    }
+  ]
+}

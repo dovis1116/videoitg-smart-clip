@@ -1,0 +1,150 @@
+[
+  {
+    "sample_id": "videoitg40k:media_pilot:248981",
+    "video_path": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/raw/LLaVA-Video-178K/2_3_m_nextqa/NextQA/NExTVideo/0075/12843838795.mp4",
+    "query": "What happens to the helicopter as it pulls up the two people?\nAnswer the question using few words or phrase.",
+    "ground_truth": [
+      [
+        145.0,
+        150.0
+      ]
+    ],
+    "coarse_windows": [
+      {
+        "start": 4.008999824523926,
+        "end": 14.008999824523926,
+        "score": 0.13766101002693176
+      }
+    ],
+    "predictions": [
+      {
+        "start_s": 4.008999824523926,
+        "end_s": 13.008999824523926,
+        "refined_start": 4.008999824523926,
+        "refined_end": 13.008999824523926,
+        "retrieval_score": 0.13766101002693176,
+        "grounding_score": 1.0,
+        "final_score": 0.7412983030080795,
+        "candidate_id": "videoitg40k:media_pilot:248981:r0"
+      }
+    ],
+    "output_top_k": 1,
+    "status": "POSSIBLE",
+    "actual_match": true,
+    "degraded": false,
+    "elapsed_ms": 6530.737067998416,
+    "badcase_type": "unclassified"
+  },
+  {
+    "sample_id": "videoitg40k:media_pilot:438874",
+    "video_path": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/raw/LLaVA-Video-178K/30_60_s_nextqa/NextQA/NExTVideo/0002/2735742477.mp4",
+    "query": "Why is the girl in blue bending over the box in the beginning?\nAnswer the question using few words or phrase.",
+    "ground_truth": [
+      [
+        0.0,
+        5.0
+      ]
+    ],
+    "coarse_windows": [
+      {
+        "start": 13.017999649047852,
+        "end": 23.01799964904785,
+        "score": 0.13001346588134766
+      }
+    ],
+    "predictions": [
+      {
+        "start_s": 13.017999649047852,
+        "end_s": 17.01799964904785,
+        "refined_start": 13.017999649047852,
+        "refined_end": 17.01799964904785,
+        "retrieval_score": 0.13001346588134766,
+        "grounding_score": 1.0,
+        "final_score": 0.7390040397644044,
+        "candidate_id": "videoitg40k:media_pilot:438874:r0"
+      }
+    ],
+    "output_top_k": 1,
+    "status": "POSSIBLE",
+    "actual_match": true,
+    "degraded": false,
+    "elapsed_ms": 7432.081023001956,
+    "badcase_type": "unclassified"
+  },
+  {
+    "sample_id": "videoitg40k:media_pilot:442611",
+    "video_path": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/raw/LLaVA-Video-178K/2_3_m_nextqa/NextQA/NExTVideo/1006/9755380174.mp4",
+    "query": "Why does the lady in blue hold up her phone?\nOptions:\nA. stylish.\nB. not get lost.\nC. pass it to boy later.\nD. listening to her.\nE. record for memory.\n",
+    "ground_truth": [
+      [
+        0.0,
+        5.0
+      ],
+      [
+        5.0,
+        10.0
+      ]
+    ],
+    "coarse_windows": [
+      {
+        "start": 23.02802848815918,
+        "end": 33.02802848815918,
+        "score": 0.03269898518919945
+      }
+    ],
+    "predictions": [
+      {
+        "start_s": 23.02802848815918,
+        "end_s": 31.02802848815918,
+        "refined_start": 23.02802848815918,
+        "refined_end": 31.02802848815918,
+        "retrieval_score": 0.03269898518919945,
+        "grounding_score": 1.0,
+        "final_score": 0.7098096955567599,
+        "candidate_id": "videoitg40k:media_pilot:442611:r0"
+      }
+    ],
+    "output_top_k": 1,
+    "status": "POSSIBLE",
+    "actual_match": true,
+    "degraded": false,
+    "elapsed_ms": 5825.572769997962,
+    "badcase_type": "unclassified"
+  },
+  {
+    "sample_id": "videoitg40k:media_pilot:35047",
+    "video_path": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/raw/LLaVA-Video-178K/30_60_s_activitynetqa/ActivityNet-QA/activitynet/train/v1-3/train_val/v_17nr8u_ze0o.mp4",
+    "query": "is the person in black indoors\nAnswer the question using few words or phrase.",
+    "ground_truth": [
+      [
+        45.0,
+        50.0
+      ]
+    ],
+    "coarse_windows": [
+      {
+        "start": 33.038002014160156,
+        "end": 43.038002014160156,
+        "score": 0.03791622817516327
+      }
+    ],
+    "predictions": [
+      {
+        "start_s": 33.038002014160156,
+        "end_s": 36.038002014160156,
+        "refined_start": 33.038002014160156,
+        "refined_end": 36.038002014160156,
+        "retrieval_score": 0.03791622817516327,
+        "grounding_score": 1.0,
+        "final_score": 0.7113748684525489,
+        "candidate_id": "videoitg40k:media_pilot:35047:r0"
+      }
+    ],
+    "output_top_k": 1,
+    "status": "POSSIBLE",
+    "actual_match": true,
+    "degraded": false,
+    "elapsed_ms": 9648.082718998921,
+    "badcase_type": "unclassified"
+  }
+]

@@ -1,0 +1,55 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Environments and local configuration
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+
+# IDE and OS files
+.idea/
+.vscode/
+.DS_Store
+
+# Runtime artifacts
+*.log
+*.pid
+*.sock
+tmp/
+cache/
+
+# Repository directories keep only their policy/readme until versioned artifacts exist
+data/*
+!data/README.md
+outputs/*
+!outputs/README.md
+
+# Large media, tensors, indexes, and model files must stay on the external data disk
+*.mp4
+*.mov
+*.mkv
+*.avi
+*.webm
+*.npy
+*.npz
+*.faiss
+*.index
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.bin
+
+# Vendored baseline repository: keep source/license files, omit upstream history
+# and downloaded/generated runtime artifacts.
+external/VideoITG/.git/
+external/VideoITG/results/
+external/VideoITG/assets/imax.mp4

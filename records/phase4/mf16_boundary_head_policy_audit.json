@@ -1,0 +1,26 @@
+{
+  "purpose": "Check whether frozen 16-frame score features can select a 64-frame fallback for short-event recovery without using test labels.",
+  "inputs": {
+    "frame_scores": "records/phase4/boundary_train_dev_frame_scores.jsonl",
+    "base_predictions": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/outputs/phase4_B1_clean97_full_20260714_0900/predictions.jsonl",
+    "fallback_predictions": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/outputs/phase4_B1_mf64_clean97_20260715_0700/predictions.jsonl",
+    "boundary_head": "records/phase4/boundary_head_v1_train_only.json"
+  },
+  "train": {
+    "rows": 71,
+    "fallback_topk_iou_0.5_gains": 10,
+    "fallback_topk_iou_0.5_losses": 5,
+    "unchanged": 56
+  },
+  "dev": {
+    "rows": 8,
+    "fallback_topk_iou_0.5_gains": 0,
+    "fallback_topk_iou_0.5_losses": 0,
+    "unchanged": 8,
+    "base_topk_iou_0.5": 0.75,
+    "fallback_topk_iou_0.5": 0.75
+  },
+  "test_policy_status": "not_tuned_on_test",
+  "decision": "no_16_to_64_fallback_promoted",
+  "reason": "The boundary-head-derived score features do not produce any changed dev rows to validate a selective 64-frame rule. Keep 16-frame inference plus boundary head v1; short-event recovery remains unresolved and fixed 64-frame sampling remains a quality-only candidate."
+}

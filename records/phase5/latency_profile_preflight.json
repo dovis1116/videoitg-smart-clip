@@ -1,0 +1,42 @@
+{
+  "status": "offline_preflight_only",
+  "scope": "50-row target-present pilot, one CUDA device, sequential B1 full-video calls",
+  "source_runs": {
+    "B1_mf16": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/outputs/phase2_B1_full_20260714_0200/predictions.jsonl",
+    "B1_mf32": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/outputs/phase4_B1_mf32_full_20260714_1700/predictions.jsonl",
+    "B1_mf64": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/outputs/phase4_B1_mf64_full_20260715_0600/predictions.jsonl"
+  },
+  "profiles": {
+    "fixed_16": {
+      "max_frames": 16,
+      "p50_rerank_ms": 2038.7,
+      "p95_rerank_ms": 3588.8,
+      "mean_rerank_ms": 2425.3,
+      "p95_sampled_frames": 16,
+      "peak_cuda_gib": 16.4556,
+      "topk_hit_iou_0.5": 0.68
+    },
+    "fixed_32": {
+      "max_frames": 32,
+      "p50_rerank_ms": 2643.9,
+      "p95_rerank_ms": 4790.8,
+      "mean_rerank_ms": 3132.7,
+      "p95_sampled_frames": 32,
+      "peak_cuda_gib": 16.6059,
+      "topk_hit_iou_0.5": 0.76
+    },
+    "fixed_64": {
+      "max_frames": 64,
+      "p50_rerank_ms": 3253.3,
+      "p95_rerank_ms": 6970.4,
+      "mean_rerank_ms": 4115.2,
+      "p95_sampled_frames": 64,
+      "peak_cuda_gib": 17.8053,
+      "topk_hit_iou_0.5": 0.78
+    }
+  },
+  "quality_scope": "pilot quality only; no concurrency, queue, deadline, or P95 service claim",
+  "g4_default_decision": "B1_fixed16_5s_retained; B1_mf64_quality_candidate_not_promoted",
+  "g5_status": "not_passed",
+  "next_step": "Use the explicit policy module for offline request replay with B1 fixed16 as E0; do not report these sequential timings as service throughput."
+}

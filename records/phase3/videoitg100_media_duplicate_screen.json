@@ -1,0 +1,48 @@
+{
+  "manifest": "records/phase3/videoitg100_media_pilot.jsonl",
+  "video_count": 100,
+  "exact_duplicate_groups": [],
+  "near_duplicate_threshold": 4,
+  "first_frame_near_duplicate_pairs": [
+    {
+      "video_a": "LLaVA-Video-178K/30_60_s_activitynetqa/ActivityNet-QA/activitynet/train/v1-3/train_val/v_BCsfauy69xM.mp4",
+      "video_b": "LLaVA-Video-178K/30_60_s_activitynetqa/ActivityNet-QA/activitynet/train/v1-3/train_val/v_F6cNWYlfUs8.mp4",
+      "hamming_by_position": {
+        "first": 0,
+        "middle": 20,
+        "annotated": 0
+      },
+      "close_positions": [
+        "first",
+        "annotated"
+      ]
+    },
+    {
+      "video_a": "LLaVA-Video-178K/30_60_s_activitynetqa/ActivityNet-QA/activitynet/train/v1-3/train_val/v_BCsfauy69xM.mp4",
+      "video_b": "LLaVA-Video-178K/30_60_s_activitynetqa/ActivityNet-QA/activitynet/train/v1-3/train_val/v_GcEutQTeAnA.mp4",
+      "hamming_by_position": {
+        "first": 0,
+        "middle": 29,
+        "annotated": 0
+      },
+      "close_positions": [
+        "first",
+        "annotated"
+      ]
+    },
+    {
+      "video_a": "LLaVA-Video-178K/30_60_s_activitynetqa/ActivityNet-QA/activitynet/train/v1-3/train_val/v_F6cNWYlfUs8.mp4",
+      "video_b": "LLaVA-Video-178K/30_60_s_activitynetqa/ActivityNet-QA/activitynet/train/v1-3/train_val/v_GcEutQTeAnA.mp4",
+      "hamming_by_position": {
+        "first": 0,
+        "middle": 23,
+        "annotated": 0
+      },
+      "close_positions": [
+        "first",
+        "annotated"
+      ]
+    }
+  ],
+  "note": "Three-position average hashes are only a screening signal; semantic near-duplicate review is still required."
+}

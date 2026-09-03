@@ -1,0 +1,306 @@
+{
+  "pool": "records/phase3/clean97_test_regression_pool_final.jsonl",
+  "predictions": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/outputs/phase4_B1C_clean97_20260714_2200/predictions.jsonl",
+  "pool_not_for_training": true,
+  "status_counts": {
+    "pool_count": 18,
+    "evaluated": 18,
+    "missing_prediction": 0
+  },
+  "overall": {
+    "sample_count": 18,
+    "recall_at_1_iou_0.3": 0.6111111111111112,
+    "recall_at_1_iou_0.5": 0.4444444444444444,
+    "topk_hit_iou_0.3": 0.8888888888888888,
+    "topk_hit_iou_0.5": 0.6111111111111112,
+    "max_iou_topk": 0.5539527955460771
+  },
+  "by_primary_code": {
+    "boundary_shift": {
+      "sample_count": 4,
+      "recall_at_1_iou_0.3": 0.5,
+      "recall_at_1_iou_0.5": 0.25,
+      "topk_hit_iou_0.3": 0.75,
+      "topk_hit_iou_0.5": 0.5,
+      "max_iou_topk": 0.5275667739654306
+    },
+    "control_correct": {
+      "sample_count": 10,
+      "recall_at_1_iou_0.3": 0.8,
+      "recall_at_1_iou_0.5": 0.7,
+      "topk_hit_iou_0.3": 1.0,
+      "topk_hit_iou_0.5": 0.8,
+      "max_iou_topk": 0.6543607002366131
+    },
+    "other_or_uncertain": {
+      "sample_count": 3,
+      "recall_at_1_iou_0.3": 0.0,
+      "recall_at_1_iou_0.5": 0.0,
+      "topk_hit_iou_0.3": 0.6666666666666666,
+      "topk_hit_iou_0.5": 0.3333333333333333,
+      "max_iou_topk": 0.30833333333333335
+    },
+    "short_event_miss": {
+      "sample_count": 1,
+      "recall_at_1_iou_0.3": 1.0,
+      "recall_at_1_iou_0.5": 0.0,
+      "topk_hit_iou_0.3": 1.0,
+      "topk_hit_iou_0.5": 0.0,
+      "max_iou_topk": 0.3922762216015346
+    }
+  },
+  "per_sample": [
+    {
+      "sample_id": "videoitg40k:media_pilot:14517",
+      "primary_code": "boundary_shift",
+      "split": "test",
+      "status": "evaluated",
+      "metrics": {
+        "recall_at_1_iou_0.3": 1,
+        "recall_at_1_iou_0.5": 1,
+        "topk_hit_iou_0.3": 1,
+        "topk_hit_iou_0.5": 1,
+        "max_iou_topk": 0.8,
+        "boundary_error_s_topk": 1.0
+      }
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:185712",
+      "primary_code": "control_correct",
+      "split": "test",
+      "status": "evaluated",
+      "metrics": {
+        "recall_at_1_iou_0.3": 1,
+        "recall_at_1_iou_0.5": 1,
+        "topk_hit_iou_0.3": 1,
+        "topk_hit_iou_0.5": 1,
+        "max_iou_topk": 0.625,
+        "boundary_error_s_topk": 1.5
+      }
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:221243",
+      "primary_code": "control_correct",
+      "split": "test",
+      "status": "evaluated",
+      "metrics": {
+        "recall_at_1_iou_0.3": 1,
+        "recall_at_1_iou_0.5": 1,
+        "topk_hit_iou_0.3": 1,
+        "topk_hit_iou_0.5": 1,
+        "max_iou_topk": 0.7173114535133329,
+        "boundary_error_s_topk": 1.4815000000000005
+      }
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:223969",
+      "primary_code": "control_correct",
+      "split": "test",
+      "status": "evaluated",
+      "metrics": {
+        "recall_at_1_iou_0.3": 1,
+        "recall_at_1_iou_0.5": 1,
+        "topk_hit_iou_0.3": 1,
+        "topk_hit_iou_0.5": 1,
+        "max_iou_topk": 0.625,
+        "boundary_error_s_topk": 1.5
+      }
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:224991",
+      "primary_code": "control_correct",
+      "split": "test",
+      "status": "evaluated",
+      "metrics": {
+        "recall_at_1_iou_0.3": 1,
+        "recall_at_1_iou_0.5": 1,
+        "topk_hit_iou_0.3": 1,
+        "topk_hit_iou_0.5": 1,
+        "max_iou_topk": 0.7999999999999999,
+        "boundary_error_s_topk": 1.0000000000000004
+      }
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:249801",
+      "primary_code": "boundary_shift",
+      "split": "test",
+      "status": "evaluated",
+      "metrics": {
+        "recall_at_1_iou_0.3": 0,
+        "recall_at_1_iou_0.5": 0,
+        "topk_hit_iou_0.3": 0,
+        "topk_hit_iou_0.5": 0,
+        "max_iou_topk": 0.24151709586172174,
+        "boundary_error_s_topk": 5.49839076723017
+      }
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:253604",
+      "primary_code": "short_event_miss",
+      "split": "test",
+      "status": "evaluated",
+      "metrics": {
+        "recall_at_1_iou_0.3": 1,
+        "recall_at_1_iou_0.5": 0,
+        "topk_hit_iou_0.3": 1,
+        "topk_hit_iou_0.5": 0,
+        "max_iou_topk": 0.3922762216015346,
+        "boundary_error_s_topk": 2.8372276264591427
+      }
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:268585",
+      "primary_code": "other_or_uncertain",
+      "split": "test",
+      "status": "evaluated",
+      "metrics": {
+        "recall_at_1_iou_0.3": 0,
+        "recall_at_1_iou_0.5": 0,
+        "topk_hit_iou_0.3": 1,
+        "topk_hit_iou_0.5": 1,
+        "max_iou_topk": 0.625,
+        "boundary_error_s_topk": 1.5
+      }
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:344582",
+      "primary_code": "control_correct",
+      "split": "test",
+      "status": "evaluated",
+      "metrics": {
+        "recall_at_1_iou_0.3": 1,
+        "recall_at_1_iou_0.5": 1,
+        "topk_hit_iou_0.3": 1,
+        "topk_hit_iou_0.5": 1,
+        "max_iou_topk": 0.8,
+        "boundary_error_s_topk": 1.0
+      }
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:35047",
+      "primary_code": "other_or_uncertain",
+      "split": "test",
+      "status": "evaluated",
+      "metrics": {
+        "recall_at_1_iou_0.3": 0,
+        "recall_at_1_iou_0.5": 0,
+        "topk_hit_iou_0.3": 0,
+        "topk_hit_iou_0.5": 0,
+        "max_iou_topk": 0.0,
+        "boundary_error_s_topk": 15.467999999999996
+      }
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:386692",
+      "primary_code": "control_correct",
+      "split": "test",
+      "status": "evaluated",
+      "metrics": {
+        "recall_at_1_iou_0.3": 1,
+        "recall_at_1_iou_0.5": 0,
+        "topk_hit_iou_0.3": 1,
+        "topk_hit_iou_0.5": 0,
+        "max_iou_topk": 0.37413455948417157,
+        "boundary_error_s_topk": 2.960499999999996
+      }
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:395556",
+      "primary_code": "control_correct",
+      "split": "test",
+      "status": "evaluated",
+      "metrics": {
+        "recall_at_1_iou_0.3": 1,
+        "recall_at_1_iou_0.5": 1,
+        "topk_hit_iou_0.3": 1,
+        "topk_hit_iou_0.5": 1,
+        "max_iou_topk": 0.8,
+        "boundary_error_s_topk": 1.0
+      }
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:435305",
+      "primary_code": "other_or_uncertain",
+      "split": "test",
+      "status": "evaluated",
+      "metrics": {
+        "recall_at_1_iou_0.3": 0,
+        "recall_at_1_iou_0.5": 0,
+        "topk_hit_iou_0.3": 1,
+        "topk_hit_iou_0.5": 0,
+        "max_iou_topk": 0.3,
+        "boundary_error_s_topk": 3.5
+      }
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:443255",
+      "primary_code": "control_correct",
+      "split": "test",
+      "status": "evaluated",
+      "metrics": {
+        "recall_at_1_iou_0.3": 0,
+        "recall_at_1_iou_0.5": 0,
+        "topk_hit_iou_0.3": 1,
+        "topk_hit_iou_0.5": 0,
+        "max_iou_topk": 0.44,
+        "boundary_error_s_topk": 3.5
+      }
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:75922",
+      "primary_code": "boundary_shift",
+      "split": "test",
+      "status": "evaluated",
+      "metrics": {
+        "recall_at_1_iou_0.3": 1,
+        "recall_at_1_iou_0.5": 0,
+        "topk_hit_iou_0.3": 1,
+        "topk_hit_iou_0.5": 0,
+        "max_iou_topk": 0.44375000000000064,
+        "boundary_error_s_topk": 1.7799999999999976
+      }
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:80853",
+      "primary_code": "control_correct",
+      "split": "test",
+      "status": "evaluated",
+      "metrics": {
+        "recall_at_1_iou_0.3": 0,
+        "recall_at_1_iou_0.5": 0,
+        "topk_hit_iou_0.3": 1,
+        "topk_hit_iou_0.5": 1,
+        "max_iou_topk": 0.5621609893686265,
+        "boundary_error_s_topk": 2.522500000000001
+      }
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:93507",
+      "primary_code": "boundary_shift",
+      "split": "test",
+      "status": "evaluated",
+      "metrics": {
+        "recall_at_1_iou_0.3": 0,
+        "recall_at_1_iou_0.5": 0,
+        "topk_hit_iou_0.3": 1,
+        "topk_hit_iou_0.5": 1,
+        "max_iou_topk": 0.625,
+        "boundary_error_s_topk": 1.5
+      }
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:9651",
+      "primary_code": "control_correct",
+      "split": "test",
+      "status": "evaluated",
+      "metrics": {
+        "recall_at_1_iou_0.3": 1,
+        "recall_at_1_iou_0.5": 1,
+        "topk_hit_iou_0.3": 1,
+        "topk_hit_iou_0.5": 1,
+        "max_iou_topk": 0.8,
+        "boundary_error_s_topk": 1.0
+      }
+    }
+  ]
+}

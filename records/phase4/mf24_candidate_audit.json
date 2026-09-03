@@ -1,0 +1,59 @@
+{
+  "gate": "G4 max_frames=24 candidate audit",
+  "candidate": {
+    "name": "B1_mf24",
+    "policy": "full-video VideoITG with max_frames=24, target_fps=2, 5-second output intervals",
+    "baseline": "B1 fixed16",
+    "selection_status": "selected_before independent heldout review",
+    "quality_cap": "ordinary pilot Top-k@0.5 must not decrease; reviewed controls must not decrease"
+  },
+  "evidence": {
+    "pilot_50": {
+      "baseline_topk_iou_0.5": 0.68,
+      "candidate_topk_iou_0.5": 0.68,
+      "baseline_recall_at_1_iou_0.5": 0.50,
+      "candidate_recall_at_1_iou_0.5": 0.52,
+      "baseline_boundary_error_s": 4.238,
+      "candidate_boundary_error_s": 3.255,
+      "output": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/outputs/phase4_mf24_pilot_20260715/summary.json"
+    },
+    "clean97": {
+      "baseline_topk_iou_0.5": 0.6494845361,
+      "candidate_topk_iou_0.5": 0.7010309278,
+      "boundary_shift": {"baseline": 0.25, "candidate": 0.5},
+      "short_event_miss": {"baseline": 0.0, "candidate": 1.0},
+      "control_correct": {"baseline": 0.9, "candidate": 0.9},
+      "output": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/outputs/phase4_mf24_clean97_20260715/summary.json"
+    },
+    "final18": {
+      "baseline_topk_iou_0.5": 0.5555555556,
+      "candidate_topk_iou_0.5": 0.7222222222,
+      "boundary_shift": {"baseline": 0.25, "candidate": 0.5},
+      "short_event_miss": {"baseline": 0.0, "candidate": 1.0},
+      "control_correct": {"baseline": 0.9, "candidate": 0.9},
+      "paired_gains": 3,
+      "paired_losses": 0,
+      "source": "clean97 predictions restricted to records/phase3/clean97_test_regression_pool_final.jsonl"
+    },
+    "additional_heldout27": {
+      "baseline_topk_iou_0.5": 0.7777777778,
+      "candidate_topk_iou_0.5": 0.8518518519,
+      "boundary_shift": {"baseline": 0.5714285714, "candidate": 0.7142857143},
+      "control_correct": {"baseline": 0.8333333333, "candidate": 0.8888888889},
+      "other_or_uncertain": {"baseline": 1.0, "candidate": 1.0},
+      "paired_gains": 3,
+      "paired_losses": 1,
+      "output": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/outputs/phase4_mf24_extra27_20260715/summary.json"
+    }
+  },
+  "latency": {
+    "pilot_50_candidate_mean_rerank_s": 2.7790574453,
+    "pilot_50_candidate_p95_rerank_s": 4.1684201320,
+    "clean97_candidate_mean_rerank_s": 2.6506818279,
+    "clean97_candidate_p95_rerank_s": 4.4918689090,
+    "peak_cuda_gib": 16.4748535156,
+    "relative_to_fixed16": "about +10-15% on the available runs; not a G5 latency improvement"
+  },
+  "gate_decision": "G4 conditionally passed for mf24 quality scope; keep fixed16 as default until G5",
+  "reason": "The 24-frame candidate preserves ordinary-pilot Top-k and reviewed controls, improves both independent quality pools, and fixes the single confirmed short-event regression in final18. Its latency is higher than fixed16 and it does not address the G5 tail/deadline failure, so it is a quality-priority, explicitly selectable candidate rather than the default service budget."
+}

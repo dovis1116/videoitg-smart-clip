@@ -1,0 +1,52 @@
+{
+  "run_id": "workflow_20260831T191700Z",
+  "scope": "automated_protocol_only",
+  "backend": "stub",
+  "iterations": 8,
+  "successful_tasks": 8,
+  "feedback_events": 8,
+  "sessions": [
+    {
+      "task_id": "b0a57f4411ab41979d532c648953d317",
+      "status": "succeeded",
+      "feedback": "ACCEPT"
+    },
+    {
+      "task_id": "111bf5144c174950a24d25d1cde87f52",
+      "status": "succeeded",
+      "feedback": "START_TOO_LATE"
+    },
+    {
+      "task_id": "d9f0a4c770b94f6281384c1b66ed3e04",
+      "status": "succeeded",
+      "feedback": "ACCEPT"
+    },
+    {
+      "task_id": "44a92d71fbca4087993c191d8c80b2b7",
+      "status": "succeeded",
+      "feedback": "START_TOO_LATE"
+    },
+    {
+      "task_id": "7c10955887494f7fb91af8602dc59a3b",
+      "status": "succeeded",
+      "feedback": "ACCEPT"
+    },
+    {
+      "task_id": "09c91ae4692c4bf2ba446ed09305193f",
+      "status": "succeeded",
+      "feedback": "START_TOO_LATE"
+    },
+    {
+      "task_id": "6e8eb89985294321ab70512ae88a36b3",
+      "status": "succeeded",
+      "feedback": "ACCEPT"
+    },
+    {
+      "task_id": "c308e3817f254b688c67af89c6e6eb8c",
+      "status": "succeeded",
+      "feedback": "START_TOO_LATE"
+    }
+  ],
+  "human_user_test": false,
+  "videoitg_quality_evaluation": false
+}

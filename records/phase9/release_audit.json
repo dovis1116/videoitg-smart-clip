@@ -1,0 +1,15 @@
+{
+  "run_id": "release_audit_20260714T094803Z",
+  "required_files": 17,
+  "missing_files": [],
+  "workflow_protocol_success": true,
+  "workflow_is_not_human_study": true,
+  "required_scope_markers_present": {
+    "50-request/5-second synchronous burst": true,
+    "Phase 6": true,
+    "G5-B": true
+  },
+  "status": "pass",
+  "g8_status": "pending_real_user_test",
+  "g9_status": "packaging_audit_pass_pending_g8"
+}

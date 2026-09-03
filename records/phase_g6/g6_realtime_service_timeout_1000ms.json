@@ -1,0 +1,101 @@
+{
+  "run_id": "g6_real_service_20260901_003322",
+  "task_id": "e690a45711114864b0fee41d94d9ea14",
+  "async_timeout_ms": 1000,
+  "timelens_total_pixels": 4194304,
+  "observations": [
+    {
+      "status": "running",
+      "canonical_status": "INDEXING",
+      "current_stage": "INDEXING",
+      "progress": 0.25,
+      "degraded": false
+    },
+    {
+      "status": "running",
+      "canonical_status": "INDEXING",
+      "current_stage": "INDEXING",
+      "progress": 0.25,
+      "degraded": false
+    },
+    {
+      "status": "timeout",
+      "canonical_status": "TIMEOUT",
+      "current_stage": "TIMEOUT",
+      "progress": 0.25,
+      "degraded": true
+    }
+  ],
+  "elapsed_ms": 25091.795828000613,
+  "result": {
+    "task_id": "e690a45711114864b0fee41d94d9ea14",
+    "video_id": "imax10s",
+    "status": "timeout",
+    "result": {
+      "status": "POSSIBLE",
+      "predictions": [
+        {
+          "candidate_id": "imax10s:r0",
+          "coarse_start": 3.0079994201660156,
+          "coarse_end": 10.01,
+          "retrieval_score": 0.09246249496936798,
+          "raw_start": 3.0079994201660156,
+          "raw_end": 10.01,
+          "grounding_score": 0.0,
+          "refined_start": 3.0079994201660156,
+          "refined_end": 10.01,
+          "final_score": 0.09246249496936798,
+          "duplication_penalty": 0.0,
+          "rank": 1,
+          "pre_dedup_rank": 1,
+          "retriever_version": "cached-cosine-v1",
+          "grounder_version": "TimeLens-8B",
+          "postprocess_version": "boundary-refinement-v1+ranking-v1+temporal-dedup-v1+no-match-v1",
+          "retrieval_latency_ms": 336.4082990010502,
+          "grounding_latency_ms": 10127.812073002133,
+          "postprocess_latency_ms": 0.10094300159835257,
+          "degraded": true,
+          "degrade_level": 2,
+          "degrade_reason": "async_timeout_coarse_fallback",
+          "deduplicated": false,
+          "boundary_confidence": 1.0,
+          "completeness_score": 1.0
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_id": "imax10s:r0",
+          "coarse_start": 3.0079994201660156,
+          "coarse_end": 10.01,
+          "retrieval_score": 0.09246249496936798,
+          "raw_start": 3.0079994201660156,
+          "raw_end": 10.01,
+          "grounding_score": 0.0,
+          "refined_start": 3.0079994201660156,
+          "refined_end": 10.01,
+          "final_score": 0.09246249496936798,
+          "duplication_penalty": 0.0,
+          "rank": 1,
+          "pre_dedup_rank": 1,
+          "retriever_version": "cached-cosine-v1",
+          "grounder_version": "TimeLens-8B",
+          "postprocess_version": "boundary-refinement-v1+ranking-v1+temporal-dedup-v1+no-match-v1",
+          "retrieval_latency_ms": 336.4082990010502,
+          "grounding_latency_ms": 10127.812073002133,
+          "postprocess_latency_ms": 0.10094300159835257,
+          "degraded": true,
+          "degrade_level": 2,
+          "degrade_reason": "async_timeout_coarse_fallback",
+          "deduplicated": false,
+          "boundary_confidence": 1.0,
+          "completeness_score": 1.0
+        }
+      ],
+      "degraded": true,
+      "degrade_level": 2,
+      "degrade_reason": "async_timeout_coarse_fallback"
+    },
+    "degraded": true
+  },
+  "scope": "single_real_async_http_smoke_or_timeout_contract_not_throughput_or_quality_gate"
+}

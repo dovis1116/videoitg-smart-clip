@@ -1,0 +1,30 @@
+{
+  "phase": "Phase 6 restricted service",
+  "run_id": "steady_pressure_submit_prefetch_20260714",
+  "contract": "G5-A steady-1s",
+  "protocol": {
+    "requests": 50,
+    "arrival_interval_s": 1.0,
+    "deadline_s": 5.0,
+    "backend": "VideoITG-8B",
+    "devices": ["cuda:0", "cuda:1"],
+    "workers": 2,
+    "policy": "E0_fixed16",
+    "warmup": true,
+    "service_bind": "127.0.0.1:8767",
+    "prefetch": "CPU frame preparation submitted at task admission"
+  },
+  "result": {
+    "successful": 50,
+    "timeouts": 0,
+    "status_counts": {"200": 50},
+    "wall_p95_s": 3.111351,
+    "source": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/outputs/phase6/steady_pressure_final_20260714.json"
+  },
+  "quality_scope": {
+    "topk_hit_iou_0.5": 0.68,
+    "source": "records/phase5/multi_gpu_audit.json",
+    "note": "The HTTP pressure replay uses the smoke video and therefore does not independently compute GT quality; quality value is inherited from the matched fixed16 dual-GPU capacity audit."
+  },
+  "interpretation": "The restricted service clears the measured G5-A steady-1s contract after admission-time CPU prefetch. This is a bounded personal-service result, not evidence for synchronous burst or production-scale traffic."
+}

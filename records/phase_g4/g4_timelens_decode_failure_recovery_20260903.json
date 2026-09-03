@@ -1,0 +1,25 @@
+{
+  "run_id": "g4_timelens_smoke_20260903_185011",
+  "video": "/home/zjy/projects/videoitg_smart_clip/tests/fixtures/corrupt.mp4",
+  "query": "a person performing an action",
+  "candidate_windows": [
+    {
+      "start": 0.0,
+      "end": 5.0,
+      "score": 0.5,
+      "candidate_id": "g4-smoke-0"
+    }
+  ],
+  "batch_size": 1,
+  "max_new_tokens": 128,
+  "total_pixels": 4194304,
+  "predictions": [],
+  "error": {
+    "type": "CalledProcessError",
+    "message": "Command '['/home/zjy/miniconda3/lib/python3.13/site-packages/static_ffmpeg/bin/linux/ffmpeg', '-hide_banner', '-loglevel', 'error', '-y', '-ss', '0.0', '-i', '/home/zjy/projects/videoitg_smart_clip/tests/fixtures/corrupt.mp4', '-t', '5.0', '-an', '-c:v', 'libx264', '-preset', 'ultrafast', '-pix_fmt', 'yuv420p', '/tmp/timelens_windows-0jo545mu/g4-smoke-0.mp4']' returned non-zero exit status 183."
+  },
+  "status": "failed",
+  "elapsed_ms": 15491.109380003763,
+  "gpu_peak_memory_allocated_gib": 18.64846658706665,
+  "gpu_peak_memory_reserved_gib": 18.9375
+}

@@ -1,0 +1,28 @@
+{
+  "candidate": "B1E: full-video peak followed by a 10-second local zoom",
+  "implementation_command": "scripts/run_baseline.py --baseline B1E --max-frames 16 --segment-seconds 5 --zoom-window-seconds 10",
+  "pilot_profile": {
+    "rows": 10,
+    "topk_hit_iou_0.3": 0.70,
+    "topk_hit_iou_0.5": 0.70,
+    "reference_b1_topk_hit_iou_0.3": 0.70,
+    "reference_b1_topk_hit_iou_0.5": 0.80,
+    "output": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/outputs/phase4_B1E_zoom10_profile10_20260715_0300/summary.json"
+  },
+  "targeted_confirmed_rows": {
+    "rows": 5,
+    "topk_hit_iou_0.3": 0.0,
+    "topk_hit_iou_0.5": 0.0,
+    "ids": [
+      "videoitg40k:media_pilot:145887",
+      "videoitg40k:media_pilot:208227",
+      "videoitg40k:media_pilot:253712",
+      "videoitg40k:media_pilot:287250",
+      "videoitg40k:media_pilot:253604"
+    ],
+    "output": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/outputs/phase4_B1E_zoom10_targeted5_20260715_0400/summary.json"
+  },
+  "cost": "two sequential VideoITG calls per row; approximately double the reranker work",
+  "gate_decision": "discard",
+  "reason": "Local zoom did not improve the 10-row pilot profile and did not recover any of the five confirmed train/test badcase rows. It is therefore not expanded to clean97 or held-out."
+}

@@ -1,0 +1,41 @@
+{
+  "scope": {
+    "manifest": "records/phase3/videoitg100_media_pilot_clean.jsonl",
+    "sample_count": 97,
+    "test_count": 18,
+    "excluded_near_duplicate_videos": 3,
+    "note": "Expanded evidence from already downloaded media; not a replacement for the original 50-row G2 pilot."
+  },
+  "runs": {
+    "B1_5s": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/outputs/phase4_B1_clean97_full_20260714_0900/summary.json",
+    "B1_8s": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/outputs/phase4_B1_seg8_clean97_full_20260714_1000/summary.json",
+    "B1A": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/outputs/phase4_B1A_clean97_full_20260714_1100_summary.json",
+    "B1A_evaluation_mode": "offline interval remapping from the frozen B1 frame scores; the B1A policy itself is implemented and directly repeated on the 50-row pilot"
+  },
+  "heldout_test_reports": {
+    "B1_5s": "records/phase3/clean97_test_final_b1_regression_report.json",
+    "B1_8s": "records/phase3/clean97_test_final_b1_seg8_regression_report.json",
+    "B1A": "records/phase3/clean97_test_final_b1a_regression_report.json",
+    "pool": "records/phase3/clean97_test_regression_pool_final.jsonl",
+    "manual_review": "records/phase3/clean97_test_manual_review.json"
+  },
+  "split_metrics": {
+    "B1_5s": {
+      "train_71": {"recall_at_1_iou_0.3": 0.563, "recall_at_1_iou_0.5": 0.493, "topk_hit_iou_0.3": 0.803, "topk_hit_iou_0.5": 0.662},
+      "dev_8": {"recall_at_1_iou_0.3": 0.625, "recall_at_1_iou_0.5": 0.625, "topk_hit_iou_0.3": 0.75, "topk_hit_iou_0.5": 0.75},
+      "test_18": {"recall_at_1_iou_0.3": 0.611, "recall_at_1_iou_0.5": 0.5, "topk_hit_iou_0.3": 0.722, "topk_hit_iou_0.5": 0.556}
+    },
+    "B1_8s": {
+      "train_71": {"recall_at_1_iou_0.3": 0.634, "recall_at_1_iou_0.5": 0.535, "topk_hit_iou_0.3": 0.817, "topk_hit_iou_0.5": 0.648},
+      "dev_8": {"recall_at_1_iou_0.3": 0.625, "recall_at_1_iou_0.5": 0.625, "topk_hit_iou_0.3": 0.75, "topk_hit_iou_0.5": 0.625},
+      "test_18": {"recall_at_1_iou_0.3": 0.667, "recall_at_1_iou_0.5": 0.611, "topk_hit_iou_0.3": 0.889, "topk_hit_iou_0.5": 0.778}
+    },
+    "B1A_threshold_0.6": {
+      "wide_count": 5,
+      "train_71": {"recall_at_1_iou_0.3": 0.563, "recall_at_1_iou_0.5": 0.507, "topk_hit_iou_0.3": 0.803, "topk_hit_iou_0.5": 0.676},
+      "dev_8": {"recall_at_1_iou_0.3": 0.625, "recall_at_1_iou_0.5": 0.625, "topk_hit_iou_0.3": 0.75, "topk_hit_iou_0.5": 0.75},
+      "test_18": {"recall_at_1_iou_0.3": 0.611, "recall_at_1_iou_0.5": 0.611, "topk_hit_iou_0.3": 0.722, "topk_hit_iou_0.5": 0.667}
+    }
+  },
+  "decision": "B1A is the more conservative candidate: it improves clean97 test Top-k IoU>=0.5 from 0.556 to 0.667 while preserving train/dev Top-k, and switches only 5/97 rows. Eight test rows now have sampled full-video semantic review; ten controls remain metric-only. Keep B1 as the documented default until continuous replay and a target-category improvement check are complete; retain B1A as the Phase 4 candidate."
+}

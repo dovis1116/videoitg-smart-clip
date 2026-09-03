@@ -1,0 +1,5141 @@
+[
+  {
+    "sample_id": "videoitg40k:media_pilot:248981",
+    "video_path": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/raw/LLaVA-Video-178K/2_3_m_nextqa/NextQA/NExTVideo/0075/12843838795.mp4",
+    "query": "What happens to the helicopter as it pulls up the two people?\nAnswer the question using few words or phrase.",
+    "ground_truth": [
+      [
+        145.0,
+        150.0
+      ]
+    ],
+    "coarse_windows": [
+      {
+        "start": 123.12800598144531,
+        "end": 133.1280059814453,
+        "score": 0.19209688901901245
+      }
+    ],
+    "predictions": [
+      {
+        "start_s": 123.12800598144531,
+        "end_s": 132.1280059814453,
+        "refined_start": 123.12800598144531,
+        "refined_end": 132.1280059814453,
+        "retrieval_score": 0.19209688901901245,
+        "grounding_score": 1.0,
+        "final_score": 0.7576290667057037,
+        "candidate_id": "videoitg40k:media_pilot:248981:r0"
+      }
+    ],
+    "candidates": [
+      {
+        "candidate_id": "videoitg40k:media_pilot:248981:r0",
+        "coarse_start": 123.12800598144531,
+        "coarse_end": 133.1280059814453,
+        "retrieval_score": 0.19209688901901245,
+        "raw_start": 123.12800598144531,
+        "raw_end": 132.1280059814453,
+        "grounding_score": 1.0,
+        "refined_start": 123.12800598144531,
+        "refined_end": 132.1280059814453,
+        "final_score": 0.7576290667057037,
+        "duplication_penalty": 0.0,
+        "rank": 1,
+        "pre_dedup_rank": 1,
+        "retriever_version": "cached-cosine-v1",
+        "grounder_version": "TimeLens-8B",
+        "postprocess_version": "boundary-refinement-v1+ranking-v1+temporal-dedup-v1+no-match-v1",
+        "retrieval_latency_ms": 333.296484008315,
+        "grounding_latency_ms": 1825.8770639949944,
+        "postprocess_latency_ms": 0.05108800542075187,
+        "degraded": false,
+        "degrade_level": 0,
+        "degrade_reason": null,
+        "deduplicated": false,
+        "boundary_confidence": 1.0,
+        "completeness_score": 1.0
+      }
+    ],
+    "output_top_k": 1,
+    "status": "POSSIBLE",
+    "actual_match": true,
+    "degraded": false,
+    "elapsed_ms": 1825.8770639949944,
+    "badcase_type": "unclassified"
+  },
+  {
+    "sample_id": "videoitg40k:media_pilot:438874",
+    "video_path": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/raw/LLaVA-Video-178K/30_60_s_nextqa/NextQA/NExTVideo/0002/2735742477.mp4",
+    "query": "Why is the girl in blue bending over the box in the beginning?\nAnswer the question using few words or phrase.",
+    "ground_truth": [
+      [
+        0.0,
+        5.0
+      ]
+    ],
+    "coarse_windows": [
+      {
+        "start": 13.017999649047852,
+        "end": 23.01799964904785,
+        "score": 0.1809137761592865
+      }
+    ],
+    "predictions": [
+      {
+        "start_s": 14.017999649047852,
+        "end_s": 18.01799964904785,
+        "refined_start": 14.017999649047852,
+        "refined_end": 18.01799964904785,
+        "retrieval_score": 0.1809137761592865,
+        "grounding_score": 1.0,
+        "final_score": 0.754274132847786,
+        "candidate_id": "videoitg40k:media_pilot:438874:r0"
+      }
+    ],
+    "candidates": [
+      {
+        "candidate_id": "videoitg40k:media_pilot:438874:r0",
+        "coarse_start": 13.017999649047852,
+        "coarse_end": 23.01799964904785,
+        "retrieval_score": 0.1809137761592865,
+        "raw_start": 14.017999649047852,
+        "raw_end": 18.01799964904785,
+        "grounding_score": 1.0,
+        "refined_start": 14.017999649047852,
+        "refined_end": 18.01799964904785,
+        "final_score": 0.754274132847786,
+        "duplication_penalty": 0.0,
+        "rank": 1,
+        "pre_dedup_rank": 1,
+        "retriever_version": "cached-cosine-v1",
+        "grounder_version": "TimeLens-8B",
+        "postprocess_version": "boundary-refinement-v1+ranking-v1+temporal-dedup-v1+no-match-v1",
+        "retrieval_latency_ms": 11.504406007588841,
+        "grounding_latency_ms": 1274.7496840020176,
+        "postprocess_latency_ms": 0.14015799388289452,
+        "degraded": false,
+        "degrade_level": 0,
+        "degrade_reason": null,
+        "deduplicated": false,
+        "boundary_confidence": 1.0,
+        "completeness_score": 1.0
+      }
+    ],
+    "output_top_k": 1,
+    "status": "POSSIBLE",
+    "actual_match": true,
+    "degraded": false,
+    "elapsed_ms": 1274.7496840020176,
+    "badcase_type": "unclassified"
+  },
+  {
+    "sample_id": "videoitg40k:media_pilot:442611",
+    "video_path": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/raw/LLaVA-Video-178K/2_3_m_nextqa/NextQA/NExTVideo/1006/9755380174.mp4",
+    "query": "Why does the lady in blue hold up her phone?\nOptions:\nA. stylish.\nB. not get lost.\nC. pass it to boy later.\nD. listening to her.\nE. record for memory.\n",
+    "ground_truth": [
+      [
+        0.0,
+        5.0
+      ],
+      [
+        5.0,
+        10.0
+      ]
+    ],
+    "coarse_windows": [
+      {
+        "start": 23.02802848815918,
+        "end": 33.02802848815918,
+        "score": 0.03260313346982002
+      }
+    ],
+    "predictions": [
+      {
+        "start_s": 23.02802848815918,
+        "end_s": 28.02802848815918,
+        "refined_start": 23.02802848815918,
+        "refined_end": 28.02802848815918,
+        "retrieval_score": 0.03260313346982002,
+        "grounding_score": 1.0,
+        "final_score": 0.709780940040946,
+        "candidate_id": "videoitg40k:media_pilot:442611:r0"
+      }
+    ],
+    "candidates": [
+      {
+        "candidate_id": "videoitg40k:media_pilot:442611:r0",
+        "coarse_start": 23.02802848815918,
+        "coarse_end": 33.02802848815918,
+        "retrieval_score": 0.03260313346982002,
+        "raw_start": 23.02802848815918,
+        "raw_end": 28.02802848815918,
+        "grounding_score": 1.0,
+        "refined_start": 23.02802848815918,
+        "refined_end": 28.02802848815918,
+        "final_score": 0.709780940040946,
+        "duplication_penalty": 0.0,
+        "rank": 1,
+        "pre_dedup_rank": 1,
+        "retriever_version": "cached-cosine-v1",
+        "grounder_version": "TimeLens-8B",
+        "postprocess_version": "boundary-refinement-v1+ranking-v1+temporal-dedup-v1+no-match-v1",
+        "retrieval_latency_ms": 12.589883001055568,
+        "grounding_latency_ms": 1108.9308400114533,
+        "postprocess_latency_ms": 0.021261002984829247,
+        "degraded": false,
+        "degrade_level": 0,
+        "degrade_reason": null,
+        "deduplicated": false,
+        "boundary_confidence": 1.0,
+        "completeness_score": 1.0
+      }
+    ],
+    "output_top_k": 1,
+    "status": "POSSIBLE",
+    "actual_match": true,
+    "degraded": false,
+    "elapsed_ms": 1108.9308400114533,
+    "badcase_type": "unclassified"
+  },
+  {
+    "sample_id": "videoitg40k:media_pilot:35047",
+    "video_path": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/raw/LLaVA-Video-178K/30_60_s_activitynetqa/ActivityNet-QA/activitynet/train/v1-3/train_val/v_17nr8u_ze0o.mp4",
+    "query": "is the person in black indoors\nAnswer the question using few words or phrase.",
+    "ground_truth": [
+      [
+        45.0,
+        50.0
+      ]
+    ],
+    "coarse_windows": [
+      {
+        "start": 0.0,
+        "end": 5.0,
+        "score": 0.07459338754415512
+      }
+    ],
+    "predictions": [
+      {
+        "start_s": 0.0,
+        "end_s": 2.0,
+        "refined_start": 0.0,
+        "refined_end": 2.0,
+        "retrieval_score": 0.07459338754415512,
+        "grounding_score": 1.0,
+        "final_score": 0.7223780162632465,
+        "candidate_id": "videoitg40k:media_pilot:35047:r0"
+      }
+    ],
+    "candidates": [
+      {
+        "candidate_id": "videoitg40k:media_pilot:35047:r0",
+        "coarse_start": 0.0,
+        "coarse_end": 5.0,
+        "retrieval_score": 0.07459338754415512,
+        "raw_start": 0.0,
+        "raw_end": 2.0,
+        "grounding_score": 1.0,
+        "refined_start": 0.0,
+        "refined_end": 2.0,
+        "final_score": 0.7223780162632465,
+        "duplication_penalty": 0.0,
+        "rank": 1,
+        "pre_dedup_rank": 1,
+        "retriever_version": "cached-cosine-v1",
+        "grounder_version": "TimeLens-8B",
+        "postprocess_version": "boundary-refinement-v1+ranking-v1+temporal-dedup-v1+no-match-v1",
+        "retrieval_latency_ms": 11.41388098767493,
+        "grounding_latency_ms": 1084.4338919996517,
+        "postprocess_latency_ms": 0.021220999769866467,
+        "degraded": false,
+        "degrade_level": 0,
+        "degrade_reason": null,
+        "deduplicated": false,
+        "boundary_confidence": 1.0,
+        "completeness_score": 1.0
+      }
+    ],
+    "output_top_k": 1,
+    "status": "POSSIBLE",
+    "actual_match": true,
+    "degraded": false,
+    "elapsed_ms": 1084.4338919996517,
+    "badcase_type": "unclassified"
+  },
+  {
+    "sample_id": "videoitg40k:media_pilot:438687",
+    "video_path": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/raw/LLaVA-Video-178K/30_60_s_nextqa/NextQA/NExTVideo/0005/2410320893.mp4",
+    "query": "Why was the boy in blue staring at the man in grey as he was reading?\nAnswer the question using few words or phrase.",
+    "ground_truth": [
+      [
+        0.0,
+        5.0
+      ]
+    ],
+    "coarse_windows": [
+      {
+        "start": 0.0,
+        "end": 7.002000093460083,
+        "score": 0.07962192595005035
+      }
+    ],
+    "predictions": [
+      {
+        "start_s": 3.0,
+        "end_s": 6.0,
+        "refined_start": 3.0,
+        "refined_end": 6.0,
+        "retrieval_score": 0.07962192595005035,
+        "grounding_score": 1.0,
+        "final_score": 0.7238865777850152,
+        "candidate_id": "videoitg40k:media_pilot:438687:r0"
+      }
+    ],
+    "candidates": [
+      {
+        "candidate_id": "videoitg40k:media_pilot:438687:r0",
+        "coarse_start": 0.0,
+        "coarse_end": 7.002000093460083,
+        "retrieval_score": 0.07962192595005035,
+        "raw_start": 3.0,
+        "raw_end": 6.0,
+        "grounding_score": 1.0,
+        "refined_start": 3.0,
+        "refined_end": 6.0,
+        "final_score": 0.7238865777850152,
+        "duplication_penalty": 0.0,
+        "rank": 1,
+        "pre_dedup_rank": 1,
+        "retriever_version": "cached-cosine-v1",
+        "grounder_version": "TimeLens-8B",
+        "postprocess_version": "boundary-refinement-v1+ranking-v1+temporal-dedup-v1+no-match-v1",
+        "retrieval_latency_ms": 11.604055995121598,
+        "grounding_latency_ms": 1065.9403529862175,
+        "postprocess_latency_ms": 0.02257400774396956,
+        "degraded": false,
+        "degrade_level": 0,
+        "degrade_reason": null,
+        "deduplicated": false,
+        "boundary_confidence": 1.0,
+        "completeness_score": 1.0
+      }
+    ],
+    "output_top_k": 1,
+    "status": "POSSIBLE",
+    "actual_match": true,
+    "degraded": false,
+    "elapsed_ms": 1065.9403529862175,
+    "badcase_type": "unclassified"
+  },
+  {
+    "sample_id": "videoitg40k:media_pilot:380917",
+    "video_path": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/raw/LLaVA-Video-178K/2_3_m_nextqa/NextQA/NExTVideo/1007/9020947679.mp4",
+    "query": "Why did the boy in the middle pace around the stage before the performance?\nOptions:\nA. waiting his team member.\nB. wait for his turn.\nC. scared baby will fall off.\nD. prepare a performance.\nE. wants to jump again.\nPlease provide your answer by stating the letter followed by the full option.",
+    "ground_truth": [
+      [
+        5.0,
+        10.0
+      ]
+    ],
+    "coarse_windows": [
+      {
+        "start": 22.027027130126953,
+        "end": 32.02702713012695,
+        "score": 0.05050021409988403
+      }
+    ],
+    "predictions": [
+      {
+        "start_s": 22.027027130126953,
+        "end_s": 30.027027130126953,
+        "refined_start": 22.027027130126953,
+        "refined_end": 30.027027130126953,
+        "retrieval_score": 0.05050021409988403,
+        "grounding_score": 1.0,
+        "final_score": 0.7151500642299653,
+        "candidate_id": "videoitg40k:media_pilot:380917:r0"
+      }
+    ],
+    "candidates": [
+      {
+        "candidate_id": "videoitg40k:media_pilot:380917:r0",
+        "coarse_start": 22.027027130126953,
+        "coarse_end": 32.02702713012695,
+        "retrieval_score": 0.05050021409988403,
+        "raw_start": 22.027027130126953,
+        "raw_end": 30.027027130126953,
+        "grounding_score": 1.0,
+        "refined_start": 22.027027130126953,
+        "refined_end": 30.027027130126953,
+        "final_score": 0.7151500642299653,
+        "duplication_penalty": 0.0,
+        "rank": 1,
+        "pre_dedup_rank": 1,
+        "retriever_version": "cached-cosine-v1",
+        "grounder_version": "TimeLens-8B",
+        "postprocess_version": "boundary-refinement-v1+ranking-v1+temporal-dedup-v1+no-match-v1",
+        "retrieval_latency_ms": 12.302882998483256,
+        "grounding_latency_ms": 1110.56322499644,
+        "postprocess_latency_ms": 0.02258300082758069,
+        "degraded": false,
+        "degrade_level": 0,
+        "degrade_reason": null,
+        "deduplicated": false,
+        "boundary_confidence": 1.0,
+        "completeness_score": 1.0
+      }
+    ],
+    "output_top_k": 1,
+    "status": "POSSIBLE",
+    "actual_match": true,
+    "degraded": false,
+    "elapsed_ms": 1110.56322499644,
+    "badcase_type": "unclassified"
+  },
+  {
+    "sample_id": "videoitg40k:media_pilot:287250",
+    "video_path": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/raw/LLaVA-Video-178K/2_3_m_nextqa/NextQA/NExTVideo/1013/10566292134.mp4",
+    "query": "What was the man on the extreme right doing as the man with glasses held the cup and spoke?\nAnswer the question using few words or phrase.",
+    "ground_truth": [
+      [
+        0.0,
+        5.0
+      ]
+    ],
+    "coarse_windows": [
+      {
+        "start": 18.02302360534668,
+        "end": 28.02302360534668,
+        "score": 0.07504145801067352
+      }
+    ],
+    "predictions": [
+      {
+        "start_s": 21.02302360534668,
+        "end_s": 24.02302360534668,
+        "refined_start": 21.02302360534668,
+        "refined_end": 24.02302360534668,
+        "retrieval_score": 0.07504145801067352,
+        "grounding_score": 1.0,
+        "final_score": 0.7225124374032021,
+        "candidate_id": "videoitg40k:media_pilot:287250:r0"
+      }
+    ],
+    "candidates": [
+      {
+        "candidate_id": "videoitg40k:media_pilot:287250:r0",
+        "coarse_start": 18.02302360534668,
+        "coarse_end": 28.02302360534668,
+        "retrieval_score": 0.07504145801067352,
+        "raw_start": 21.02302360534668,
+        "raw_end": 24.02302360534668,
+        "grounding_score": 1.0,
+        "refined_start": 21.02302360534668,
+        "refined_end": 24.02302360534668,
+        "final_score": 0.7225124374032021,
+        "duplication_penalty": 0.0,
+        "rank": 1,
+        "pre_dedup_rank": 1,
+        "retriever_version": "cached-cosine-v1",
+        "grounder_version": "TimeLens-8B",
+        "postprocess_version": "boundary-refinement-v1+ranking-v1+temporal-dedup-v1+no-match-v1",
+        "retrieval_latency_ms": 11.5261369937798,
+        "grounding_latency_ms": 1112.9428400017787,
+        "postprocess_latency_ms": 0.02369600406382233,
+        "degraded": false,
+        "degrade_level": 0,
+        "degrade_reason": null,
+        "deduplicated": false,
+        "boundary_confidence": 1.0,
+        "completeness_score": 1.0
+      }
+    ],
+    "output_top_k": 1,
+    "status": "POSSIBLE",
+    "actual_match": true,
+    "degraded": false,
+    "elapsed_ms": 1112.9428400017787,
+    "badcase_type": "unclassified"
+  },
+  {
+    "sample_id": "videoitg40k:media_pilot:303326",
+    "video_path": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/raw/LLaVA-Video-178K/30_60_s_activitynetqa/ActivityNet-QA/activitynet/train/v1-3/train_val/v_2FcdD7WapJM.mp4",
+    "query": "does the woman in the video use mouthwash indoors\nAnswer the question using few words or phrase.",
+    "ground_truth": [
+      [
+        10.0,
+        15.0
+      ],
+      [
+        15.0,
+        20.0
+      ]
+    ],
+    "coarse_windows": [
+      {
+        "start": 17.02199935913086,
+        "end": 27.02199935913086,
+        "score": 0.2265917956829071
+      }
+    ],
+    "predictions": [
+      {
+        "start_s": 21.02199935913086,
+        "end_s": 24.02199935913086,
+        "refined_start": 21.02199935913086,
+        "refined_end": 24.02199935913086,
+        "retrieval_score": 0.2265917956829071,
+        "grounding_score": 1.0,
+        "final_score": 0.7679775387048722,
+        "candidate_id": "videoitg40k:media_pilot:303326:r0"
+      }
+    ],
+    "candidates": [
+      {
+        "candidate_id": "videoitg40k:media_pilot:303326:r0",
+        "coarse_start": 17.02199935913086,
+        "coarse_end": 27.02199935913086,
+        "retrieval_score": 0.2265917956829071,
+        "raw_start": 21.02199935913086,
+        "raw_end": 24.02199935913086,
+        "grounding_score": 1.0,
+        "refined_start": 21.02199935913086,
+        "refined_end": 24.02199935913086,
+        "final_score": 0.7679775387048722,
+        "duplication_penalty": 0.0,
+        "rank": 1,
+        "pre_dedup_rank": 1,
+        "retriever_version": "cached-cosine-v1",
+        "grounder_version": "TimeLens-8B",
+        "postprocess_version": "boundary-refinement-v1+ranking-v1+temporal-dedup-v1+no-match-v1",
+        "retrieval_latency_ms": 11.479546999908052,
+        "grounding_latency_ms": 2150.0032999902032,
+        "postprocess_latency_ms": 0.03135998849757016,
+        "degraded": false,
+        "degrade_level": 0,
+        "degrade_reason": null,
+        "deduplicated": false,
+        "boundary_confidence": 1.0,
+        "completeness_score": 1.0
+      }
+    ],
+    "output_top_k": 1,
+    "status": "POSSIBLE",
+    "actual_match": true,
+    "degraded": false,
+    "elapsed_ms": 2150.0032999902032,
+    "badcase_type": "unclassified"
+  },
+  {
+    "sample_id": "videoitg40k:media_pilot:194907",
+    "video_path": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/raw/LLaVA-Video-178K/30_60_s_activitynetqa/ActivityNet-QA/activitynet/train/v1-3/train_val/v_2LzWCwYtUzs.mp4",
+    "query": "what happened to the person in the video before he cut the potatoes\nAnswer the question using few words or phrase.",
+    "ground_truth": [
+      [
+        0.0,
+        5.0
+      ],
+      [
+        5.0,
+        10.0
+      ]
+    ],
+    "coarse_windows": [
+      {
+        "start": 17.0,
+        "end": 27.0,
+        "score": 0.17691445350646973
+      }
+    ],
+    "predictions": [
+      {
+        "start_s": 17.0,
+        "end_s": 21.0,
+        "refined_start": 17.0,
+        "refined_end": 21.0,
+        "retrieval_score": 0.17691445350646973,
+        "grounding_score": 1.0,
+        "final_score": 0.753074336051941,
+        "candidate_id": "videoitg40k:media_pilot:194907:r0"
+      }
+    ],
+    "candidates": [
+      {
+        "candidate_id": "videoitg40k:media_pilot:194907:r0",
+        "coarse_start": 17.0,
+        "coarse_end": 27.0,
+        "retrieval_score": 0.17691445350646973,
+        "raw_start": 17.0,
+        "raw_end": 21.0,
+        "grounding_score": 1.0,
+        "refined_start": 17.0,
+        "refined_end": 21.0,
+        "final_score": 0.753074336051941,
+        "duplication_penalty": 0.0,
+        "rank": 1,
+        "pre_dedup_rank": 1,
+        "retriever_version": "cached-cosine-v1",
+        "grounder_version": "TimeLens-8B",
+        "postprocess_version": "boundary-refinement-v1+ranking-v1+temporal-dedup-v1+no-match-v1",
+        "retrieval_latency_ms": 12.882031995104626,
+        "grounding_latency_ms": 1301.4240349875763,
+        "postprocess_latency_ms": 0.029596005333587527,
+        "degraded": false,
+        "degrade_level": 0,
+        "degrade_reason": null,
+        "deduplicated": false,
+        "boundary_confidence": 1.0,
+        "completeness_score": 1.0
+      }
+    ],
+    "output_top_k": 1,
+    "status": "POSSIBLE",
+    "actual_match": true,
+    "degraded": false,
+    "elapsed_ms": 1301.4240349875763,
+    "badcase_type": "unclassified"
+  },
+  {
+    "sample_id": "videoitg40k:media_pilot:157652",
+    "video_path": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/raw/LLaVA-Video-178K/30_60_s_nextqa/NextQA/NExTVideo/0026/2764832695.mp4",
+    "query": "Why is the lady in brown pushing the swing?\nOptions:\nA. playing her instrument.\nB. swing swing for baby on it.\nC. feel afraid.\nD. dancing to the beat.\nE. fun.\n",
+    "ground_truth": [
+      [
+        0.0,
+        5.0
+      ],
+      [
+        5.0,
+        10.0
+      ]
+    ],
+    "coarse_windows": [
+      {
+        "start": 23.027999877929688,
+        "end": 31.031,
+        "score": 0.1303289234638214
+      }
+    ],
+    "predictions": [
+      {
+        "start_s": 25.027999877929688,
+        "end_s": 28.027999877929688,
+        "refined_start": 25.027999877929688,
+        "refined_end": 28.027999877929688,
+        "retrieval_score": 0.1303289234638214,
+        "grounding_score": 1.0,
+        "final_score": 0.7390986770391466,
+        "candidate_id": "videoitg40k:media_pilot:157652:r0"
+      }
+    ],
+    "candidates": [
+      {
+        "candidate_id": "videoitg40k:media_pilot:157652:r0",
+        "coarse_start": 23.027999877929688,
+        "coarse_end": 31.031,
+        "retrieval_score": 0.1303289234638214,
+        "raw_start": 25.027999877929688,
+        "raw_end": 28.027999877929688,
+        "grounding_score": 1.0,
+        "refined_start": 25.027999877929688,
+        "refined_end": 28.027999877929688,
+        "final_score": 0.7390986770391466,
+        "duplication_penalty": 0.0,
+        "rank": 1,
+        "pre_dedup_rank": 1,
+        "retriever_version": "cached-cosine-v1",
+        "grounder_version": "TimeLens-8B",
+        "postprocess_version": "boundary-refinement-v1+ranking-v1+temporal-dedup-v1+no-match-v1",
+        "retrieval_latency_ms": 11.687966994941235,
+        "grounding_latency_ms": 1113.5782179917442,
+        "postprocess_latency_ms": 0.035567994927987456,
+        "degraded": false,
+        "degrade_level": 0,
+        "degrade_reason": null,
+        "deduplicated": false,
+        "boundary_confidence": 1.0,
+        "completeness_score": 1.0
+      }
+    ],
+    "output_top_k": 1,
+    "status": "POSSIBLE",
+    "actual_match": true,
+    "degraded": false,
+    "elapsed_ms": 1113.5782179917442,
+    "badcase_type": "unclassified"
+  },
+  {
+    "sample_id": "videoitg40k:media_pilot:253712",
+    "video_path": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/raw/LLaVA-Video-178K/2_3_m_nextqa/NextQA/NExTVideo/1016/11049178966.mp4",
+    "query": "How are the two men positioned on stage?\nAnswer the question using few words or phrase.",
+    "ground_truth": [
+      [
+        0.0,
+        5.0
+      ]
+    ],
+    "coarse_windows": [
+      {
+        "start": 126.13113403320312,
+        "end": 136.13113403320312,
+        "score": 0.0817028284072876
+      }
+    ],
+    "predictions": [
+      {
+        "start_s": 126.13113403320312,
+        "end_s": 135.13113403320312,
+        "refined_start": 126.13113403320312,
+        "refined_end": 135.13113403320312,
+        "retrieval_score": 0.0817028284072876,
+        "grounding_score": 1.0,
+        "final_score": 0.7245108485221863,
+        "candidate_id": "videoitg40k:media_pilot:253712:r0"
+      }
+    ],
+    "candidates": [
+      {
+        "candidate_id": "videoitg40k:media_pilot:253712:r0",
+        "coarse_start": 126.13113403320312,
+        "coarse_end": 136.13113403320312,
+        "retrieval_score": 0.0817028284072876,
+        "raw_start": 126.13113403320312,
+        "raw_end": 135.13113403320312,
+        "grounding_score": 1.0,
+        "refined_start": 126.13113403320312,
+        "refined_end": 135.13113403320312,
+        "final_score": 0.7245108485221863,
+        "duplication_penalty": 0.0,
+        "rank": 1,
+        "pre_dedup_rank": 1,
+        "retriever_version": "cached-cosine-v1",
+        "grounder_version": "TimeLens-8B",
+        "postprocess_version": "boundary-refinement-v1+ranking-v1+temporal-dedup-v1+no-match-v1",
+        "retrieval_latency_ms": 11.524002999067307,
+        "grounding_latency_ms": 1105.682028006413,
+        "postprocess_latency_ms": 0.02232298720628023,
+        "degraded": false,
+        "degrade_level": 0,
+        "degrade_reason": null,
+        "deduplicated": false,
+        "boundary_confidence": 1.0,
+        "completeness_score": 1.0
+      }
+    ],
+    "output_top_k": 1,
+    "status": "POSSIBLE",
+    "actual_match": true,
+    "degraded": false,
+    "elapsed_ms": 1105.682028006413,
+    "badcase_type": "unclassified"
+  },
+  {
+    "sample_id": "videoitg40k:media_pilot:16572",
+    "video_path": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/raw/LLaVA-Video-178K/30_60_s_activitynetqa/ActivityNet-QA/activitynet/train/v1-3/train_val/v_3ZJQHfrfR2M.mp4",
+    "query": "what is the old man doing\nAnswer the question using few words or phrase.",
+    "ground_truth": [
+      [
+        0.0,
+        5.0
+      ]
+    ],
+    "coarse_windows": [
+      {
+        "start": 18.023000717163086,
+        "end": 28.023000717163086,
+        "score": 0.12217050790786743
+      }
+    ],
+    "predictions": [
+      {
+        "start_s": 18.023000717163086,
+        "end_s": 27.023000717163086,
+        "refined_start": 18.023000717163086,
+        "refined_end": 27.023000717163086,
+        "retrieval_score": 0.12217050790786743,
+        "grounding_score": 1.0,
+        "final_score": 0.7366511523723602,
+        "candidate_id": "videoitg40k:media_pilot:16572:r0"
+      }
+    ],
+    "candidates": [
+      {
+        "candidate_id": "videoitg40k:media_pilot:16572:r0",
+        "coarse_start": 18.023000717163086,
+        "coarse_end": 28.023000717163086,
+        "retrieval_score": 0.12217050790786743,
+        "raw_start": 18.023000717163086,
+        "raw_end": 27.023000717163086,
+        "grounding_score": 1.0,
+        "refined_start": 18.023000717163086,
+        "refined_end": 27.023000717163086,
+        "final_score": 0.7366511523723602,
+        "duplication_penalty": 0.0,
+        "rank": 1,
+        "pre_dedup_rank": 1,
+        "retriever_version": "cached-cosine-v1",
+        "grounder_version": "TimeLens-8B",
+        "postprocess_version": "boundary-refinement-v1+ranking-v1+temporal-dedup-v1+no-match-v1",
+        "retrieval_latency_ms": 11.603403996559791,
+        "grounding_latency_ms": 1781.155996999587,
+        "postprocess_latency_ms": 0.023365006200037897,
+        "degraded": false,
+        "degrade_level": 0,
+        "degrade_reason": null,
+        "deduplicated": false,
+        "boundary_confidence": 1.0,
+        "completeness_score": 1.0
+      }
+    ],
+    "output_top_k": 1,
+    "status": "POSSIBLE",
+    "actual_match": true,
+    "degraded": false,
+    "elapsed_ms": 1781.155996999587,
+    "badcase_type": "unclassified"
+  },
+  {
+    "sample_id": "videoitg40k:media_pilot:125860",
+    "video_path": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/raw/LLaVA-Video-178K/30_60_s_nextqa/NextQA/NExTVideo/0026/3760748296.mp4",
+    "query": "How did the hamsters react at first when the food was given to them via hand?\nOptions:\nA. put into mouth again.\nB. lick and turn away.\nC. opened mouth.\nD. hold the spoon.\nE. thrilled.\n",
+    "ground_truth": [
+      [
+        10.0,
+        15.0
+      ],
+      [
+        15.0,
+        20.0
+      ]
+    ],
+    "coarse_windows": [
+      {
+        "start": 0.0,
+        "end": 5.0,
+        "score": 0.0893724113702774
+      }
+    ],
+    "predictions": [
+      {
+        "start_s": 0.0,
+        "end_s": 3.0,
+        "refined_start": 0.0,
+        "refined_end": 3.0,
+        "retrieval_score": 0.0893724113702774,
+        "grounding_score": 1.0,
+        "final_score": 0.7268117234110834,
+        "candidate_id": "videoitg40k:media_pilot:125860:r0"
+      }
+    ],
+    "candidates": [
+      {
+        "candidate_id": "videoitg40k:media_pilot:125860:r0",
+        "coarse_start": 0.0,
+        "coarse_end": 5.0,
+        "retrieval_score": 0.0893724113702774,
+        "raw_start": 0.0,
+        "raw_end": 3.0,
+        "grounding_score": 1.0,
+        "refined_start": 0.0,
+        "refined_end": 3.0,
+        "final_score": 0.7268117234110834,
+        "duplication_penalty": 0.0,
+        "rank": 1,
+        "pre_dedup_rank": 1,
+        "retriever_version": "cached-cosine-v1",
+        "grounder_version": "TimeLens-8B",
+        "postprocess_version": "boundary-refinement-v1+ranking-v1+temporal-dedup-v1+no-match-v1",
+        "retrieval_latency_ms": 11.693096996168606,
+        "grounding_latency_ms": 948.457459002384,
+        "postprocess_latency_ms": 0.020749997929669917,
+        "degraded": false,
+        "degrade_level": 0,
+        "degrade_reason": null,
+        "deduplicated": false,
+        "boundary_confidence": 1.0,
+        "completeness_score": 1.0
+      }
+    ],
+    "output_top_k": 1,
+    "status": "POSSIBLE",
+    "actual_match": true,
+    "degraded": false,
+    "elapsed_ms": 948.457459002384,
+    "badcase_type": "unclassified"
+  },
+  {
+    "sample_id": "videoitg40k:media_pilot:208227",
+    "video_path": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/raw/LLaVA-Video-178K/2_3_m_nextqa/NextQA/NExTVideo/1021/10440265715.mp4",
+    "query": "Why did the boy in red start to throw the snow after picking up on his hands?\nAnswer the question using few words or phrase.",
+    "ground_truth": [
+      [
+        65.0,
+        70.0
+      ]
+    ],
+    "coarse_windows": [
+      {
+        "start": 112.11711883544922,
+        "end": 122.11711883544922,
+        "score": 0.18796159327030182
+      }
+    ],
+    "predictions": [
+      {
+        "start_s": 119.11711883544922,
+        "end_s": 121.11711883544922,
+        "refined_start": 119.11711883544922,
+        "refined_end": 121.11711883544922,
+        "retrieval_score": 0.18796159327030182,
+        "grounding_score": 1.0,
+        "final_score": 0.7563884779810905,
+        "candidate_id": "videoitg40k:media_pilot:208227:r0"
+      }
+    ],
+    "candidates": [
+      {
+        "candidate_id": "videoitg40k:media_pilot:208227:r0",
+        "coarse_start": 112.11711883544922,
+        "coarse_end": 122.11711883544922,
+        "retrieval_score": 0.18796159327030182,
+        "raw_start": 119.11711883544922,
+        "raw_end": 121.11711883544922,
+        "grounding_score": 1.0,
+        "refined_start": 119.11711883544922,
+        "refined_end": 121.11711883544922,
+        "final_score": 0.7563884779810905,
+        "duplication_penalty": 0.0,
+        "rank": 1,
+        "pre_dedup_rank": 1,
+        "retriever_version": "cached-cosine-v1",
+        "grounder_version": "TimeLens-8B",
+        "postprocess_version": "boundary-refinement-v1+ranking-v1+temporal-dedup-v1+no-match-v1",
+        "retrieval_latency_ms": 11.39336300548166,
+        "grounding_latency_ms": 1261.7314710078062,
+        "postprocess_latency_ms": 0.05479399987962097,
+        "degraded": false,
+        "degrade_level": 0,
+        "degrade_reason": null,
+        "deduplicated": false,
+        "boundary_confidence": 1.0,
+        "completeness_score": 1.0
+      }
+    ],
+    "output_top_k": 1,
+    "status": "POSSIBLE",
+    "actual_match": true,
+    "degraded": false,
+    "elapsed_ms": 1261.7314710078062,
+    "badcase_type": "unclassified"
+  },
+  {
+    "sample_id": "videoitg40k:media_pilot:22669",
+    "video_path": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/raw/LLaVA-Video-178K/30_60_s_activitynetqa/ActivityNet-QA/activitynet/train/v1-3/train_val/v_3vVhq-v5-wM.mp4",
+    "query": "is the person wearing a hat indoors\nAnswer the question using few words or phrase.",
+    "ground_truth": [
+      [
+        0.0,
+        5.0
+      ]
+    ],
+    "coarse_windows": [
+      {
+        "start": 21.0,
+        "end": 30.3,
+        "score": 0.11799141764640808
+      }
+    ],
+    "predictions": [
+      {
+        "start_s": 26.0,
+        "end_s": 28.0,
+        "refined_start": 26.0,
+        "refined_end": 28.0,
+        "retrieval_score": 0.11799141764640808,
+        "grounding_score": 1.0,
+        "final_score": 0.7353974252939224,
+        "candidate_id": "videoitg40k:media_pilot:22669:r0"
+      }
+    ],
+    "candidates": [
+      {
+        "candidate_id": "videoitg40k:media_pilot:22669:r0",
+        "coarse_start": 21.0,
+        "coarse_end": 30.3,
+        "retrieval_score": 0.11799141764640808,
+        "raw_start": 26.0,
+        "raw_end": 28.0,
+        "grounding_score": 1.0,
+        "refined_start": 26.0,
+        "refined_end": 28.0,
+        "final_score": 0.7353974252939224,
+        "duplication_penalty": 0.0,
+        "rank": 1,
+        "pre_dedup_rank": 1,
+        "retriever_version": "cached-cosine-v1",
+        "grounder_version": "TimeLens-8B",
+        "postprocess_version": "boundary-refinement-v1+ranking-v1+temporal-dedup-v1+no-match-v1",
+        "retrieval_latency_ms": 11.71644100395497,
+        "grounding_latency_ms": 786.4444559963886,
+        "postprocess_latency_ms": 0.029596994863823056,
+        "degraded": false,
+        "degrade_level": 0,
+        "degrade_reason": null,
+        "deduplicated": false,
+        "boundary_confidence": 1.0,
+        "completeness_score": 1.0
+      }
+    ],
+    "output_top_k": 1,
+    "status": "POSSIBLE",
+    "actual_match": true,
+    "degraded": false,
+    "elapsed_ms": 786.4444559963886,
+    "badcase_type": "unclassified"
+  },
+  {
+    "sample_id": "videoitg40k:media_pilot:445844",
+    "video_path": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/raw/LLaVA-Video-178K/30_60_s_nextqa/NextQA/NExTVideo/0031/5516830700.mp4",
+    "query": "What did the baby do after the girl took his balloon away?\nOptions:\nA. shift the pillow.\nB. make it move.\nC. stand up.\nD. chase after dog.\nE. move towards the present and touch it.\nPlease respond with only the letter of the correct answer.",
+    "ground_truth": [
+      [
+        20.0,
+        25.0
+      ],
+      [
+        25.0,
+        30.0
+      ]
+    ],
+    "coarse_windows": [
+      {
+        "start": 42.047000885009766,
+        "end": 47.48076666666667,
+        "score": 0.1252075433731079
+      }
+    ],
+    "predictions": [
+      {
+        "start_s": 43.047000885009766,
+        "end_s": 46.047000885009766,
+        "refined_start": 43.047000885009766,
+        "refined_end": 46.047000885009766,
+        "retrieval_score": 0.1252075433731079,
+        "grounding_score": 1.0,
+        "final_score": 0.7375622630119325,
+        "candidate_id": "videoitg40k:media_pilot:445844:r0"
+      }
+    ],
+    "candidates": [
+      {
+        "candidate_id": "videoitg40k:media_pilot:445844:r0",
+        "coarse_start": 42.047000885009766,
+        "coarse_end": 47.48076666666667,
+        "retrieval_score": 0.1252075433731079,
+        "raw_start": 43.047000885009766,
+        "raw_end": 46.047000885009766,
+        "grounding_score": 1.0,
+        "refined_start": 43.047000885009766,
+        "refined_end": 46.047000885009766,
+        "final_score": 0.7375622630119325,
+        "duplication_penalty": 0.0,
+        "rank": 1,
+        "pre_dedup_rank": 1,
+        "retriever_version": "cached-cosine-v1",
+        "grounder_version": "TimeLens-8B",
+        "postprocess_version": "boundary-refinement-v1+ranking-v1+temporal-dedup-v1+no-match-v1",
+        "retrieval_latency_ms": 12.022847004118375,
+        "grounding_latency_ms": 777.7620819979347,
+        "postprocess_latency_ms": 0.020979990949854255,
+        "degraded": false,
+        "degrade_level": 0,
+        "degrade_reason": null,
+        "deduplicated": false,
+        "boundary_confidence": 1.0,
+        "completeness_score": 1.0
+      }
+    ],
+    "output_top_k": 1,
+    "status": "POSSIBLE",
+    "actual_match": true,
+    "degraded": false,
+    "elapsed_ms": 777.7620819979347,
+    "badcase_type": "unclassified"
+  },
+  {
+    "sample_id": "videoitg40k:media_pilot:475360",
+    "video_path": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/raw/LLaVA-Video-178K/2_3_m_nextqa/NextQA/NExTVideo/1106/9038264963.mp4",
+    "query": "How did the man in white react after the man in green starts reading?\nAnswer the question using few words or phrase.",
+    "ground_truth": [
+      [
+        125.0,
+        130.0
+      ]
+    ],
+    "coarse_windows": [
+      {
+        "start": 39.044044494628906,
+        "end": 49.044044494628906,
+        "score": 0.05042129009962082
+      }
+    ],
+    "predictions": [
+      {
+        "start_s": 45.044044494628906,
+        "end_s": 48.044044494628906,
+        "refined_start": 45.044044494628906,
+        "refined_end": 48.044044494628906,
+        "retrieval_score": 0.05042129009962082,
+        "grounding_score": 1.0,
+        "final_score": 0.7151263870298863,
+        "candidate_id": "videoitg40k:media_pilot:475360:r0"
+      }
+    ],
+    "candidates": [
+      {
+        "candidate_id": "videoitg40k:media_pilot:475360:r0",
+        "coarse_start": 39.044044494628906,
+        "coarse_end": 49.044044494628906,
+        "retrieval_score": 0.05042129009962082,
+        "raw_start": 45.044044494628906,
+        "raw_end": 48.044044494628906,
+        "grounding_score": 1.0,
+        "refined_start": 45.044044494628906,
+        "refined_end": 48.044044494628906,
+        "final_score": 0.7151263870298863,
+        "duplication_penalty": 0.0,
+        "rank": 1,
+        "pre_dedup_rank": 1,
+        "retriever_version": "cached-cosine-v1",
+        "grounder_version": "TimeLens-8B",
+        "postprocess_version": "boundary-refinement-v1+ranking-v1+temporal-dedup-v1+no-match-v1",
+        "retrieval_latency_ms": 11.635917006060481,
+        "grounding_latency_ms": 1241.5914610028267,
+        "postprocess_latency_ms": 0.03258300421293825,
+        "degraded": false,
+        "degrade_level": 0,
+        "degrade_reason": null,
+        "deduplicated": false,
+        "boundary_confidence": 1.0,
+        "completeness_score": 1.0
+      }
+    ],
+    "output_top_k": 1,
+    "status": "POSSIBLE",
+    "actual_match": true,
+    "degraded": false,
+    "elapsed_ms": 1241.5914610028267,
+    "badcase_type": "unclassified"
+  },
+  {
+    "sample_id": "videoitg40k:media_pilot:200235",
+    "video_path": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/raw/LLaVA-Video-178K/30_60_s_activitynetqa/ActivityNet-QA/activitynet/train/v1-3/train_val/v_4Rto4Aa6fxw.mp4",
+    "query": "why does the audience cheer\nAnswer the question using few words or phrase.",
+    "ground_truth": [
+      [
+        30.0,
+        35.0
+      ],
+      [
+        35.0,
+        40.0
+      ]
+    ],
+    "coarse_windows": [
+      {
+        "start": 29.01285171508789,
+        "end": 39.01285171508789,
+        "score": 0.10628392547369003
+      }
+    ],
+    "predictions": [
+      {
+        "start_s": 33.01285171508789,
+        "end_s": 36.01285171508789,
+        "refined_start": 33.01285171508789,
+        "refined_end": 36.01285171508789,
+        "retrieval_score": 0.10628392547369003,
+        "grounding_score": 1.0,
+        "final_score": 0.7318851776421071,
+        "candidate_id": "videoitg40k:media_pilot:200235:r0"
+      }
+    ],
+    "candidates": [
+      {
+        "candidate_id": "videoitg40k:media_pilot:200235:r0",
+        "coarse_start": 29.01285171508789,
+        "coarse_end": 39.01285171508789,
+        "retrieval_score": 0.10628392547369003,
+        "raw_start": 33.01285171508789,
+        "raw_end": 36.01285171508789,
+        "grounding_score": 1.0,
+        "refined_start": 33.01285171508789,
+        "refined_end": 36.01285171508789,
+        "final_score": 0.7318851776421071,
+        "duplication_penalty": 0.0,
+        "rank": 1,
+        "pre_dedup_rank": 1,
+        "retriever_version": "cached-cosine-v1",
+        "grounder_version": "TimeLens-8B",
+        "postprocess_version": "boundary-refinement-v1+ranking-v1+temporal-dedup-v1+no-match-v1",
+        "retrieval_latency_ms": 11.416696986998431,
+        "grounding_latency_ms": 1755.5174680019263,
+        "postprocess_latency_ms": 0.06442400626838207,
+        "degraded": false,
+        "degrade_level": 0,
+        "degrade_reason": null,
+        "deduplicated": false,
+        "boundary_confidence": 1.0,
+        "completeness_score": 1.0
+      }
+    ],
+    "output_top_k": 1,
+    "status": "POSSIBLE",
+    "actual_match": true,
+    "degraded": false,
+    "elapsed_ms": 1755.5174680019263,
+    "badcase_type": "unclassified"
+  },
+  {
+    "sample_id": "videoitg40k:media_pilot:344582",
+    "video_path": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/raw/LLaVA-Video-178K/30_60_s_nextqa/NextQA/NExTVideo/0034/5379354799.mp4",
+    "query": "How did the lady ensured the boy follows her?\nOptions:\nA. by hand movements.\nB. using a leash.\nC. playing with him.\nD. hold boy s hand.\nE. carry the boy.\n",
+    "ground_truth": [
+      [
+        0.0,
+        5.0
+      ],
+      [
+        5.0,
+        10.0
+      ]
+    ],
+    "coarse_windows": [
+      {
+        "start": 30.03499984741211,
+        "end": 40.03499984741211,
+        "score": 0.07709844410419464
+      }
+    ],
+    "predictions": [
+      {
+        "start_s": 31.03499984741211,
+        "end_s": 35.03499984741211,
+        "refined_start": 31.03499984741211,
+        "refined_end": 35.03499984741211,
+        "retrieval_score": 0.07709844410419464,
+        "grounding_score": 1.0,
+        "final_score": 0.7231295332312584,
+        "candidate_id": "videoitg40k:media_pilot:344582:r0"
+      }
+    ],
+    "candidates": [
+      {
+        "candidate_id": "videoitg40k:media_pilot:344582:r0",
+        "coarse_start": 30.03499984741211,
+        "coarse_end": 40.03499984741211,
+        "retrieval_score": 0.07709844410419464,
+        "raw_start": 31.03499984741211,
+        "raw_end": 35.03499984741211,
+        "grounding_score": 1.0,
+        "refined_start": 31.03499984741211,
+        "refined_end": 35.03499984741211,
+        "final_score": 0.7231295332312584,
+        "duplication_penalty": 0.0,
+        "rank": 1,
+        "pre_dedup_rank": 1,
+        "retriever_version": "cached-cosine-v1",
+        "grounder_version": "TimeLens-8B",
+        "postprocess_version": "boundary-refinement-v1+ranking-v1+temporal-dedup-v1+no-match-v1",
+        "retrieval_latency_ms": 11.89303898718208,
+        "grounding_latency_ms": 1687.320525990799,
+        "postprocess_latency_ms": 0.06540499452967197,
+        "degraded": false,
+        "degrade_level": 0,
+        "degrade_reason": null,
+        "deduplicated": false,
+        "boundary_confidence": 1.0,
+        "completeness_score": 1.0
+      }
+    ],
+    "output_top_k": 1,
+    "status": "POSSIBLE",
+    "actual_match": true,
+    "degraded": false,
+    "elapsed_ms": 1687.320525990799,
+    "badcase_type": "unclassified"
+  },
+  {
+    "sample_id": "videoitg40k:media_pilot:167155",
+    "video_path": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/raw/LLaVA-Video-178K/2_3_m_nextqa/NextQA/NExTVideo/1107/13517946454.mp4",
+    "query": "What did the man in purple do after the man in green raised his hand toward his left?\nOptions:\nA. smiles and waves.\nB. stand there.\nC. preparing to shoot.\nD. starts speaking.\nE. play his instrument.\n",
+    "ground_truth": [
+      [
+        40.0,
+        45.0
+      ],
+      [
+        50.0,
+        55.0
+      ]
+    ],
+    "coarse_windows": [
+      {
+        "start": 116.12100219726562,
+        "end": 121.55476666666667,
+        "score": 0.0368981696665287
+      }
+    ],
+    "predictions": [
+      {
+        "start_s": 118.12100219726562,
+        "end_s": 121.12100219726562,
+        "refined_start": 118.12100219726562,
+        "refined_end": 121.12100219726562,
+        "retrieval_score": 0.0368981696665287,
+        "grounding_score": 1.0,
+        "final_score": 0.7110694508999587,
+        "candidate_id": "videoitg40k:media_pilot:167155:r0"
+      }
+    ],
+    "candidates": [
+      {
+        "candidate_id": "videoitg40k:media_pilot:167155:r0",
+        "coarse_start": 116.12100219726562,
+        "coarse_end": 121.55476666666667,
+        "retrieval_score": 0.0368981696665287,
+        "raw_start": 118.12100219726562,
+        "raw_end": 121.12100219726562,
+        "grounding_score": 1.0,
+        "refined_start": 118.12100219726562,
+        "refined_end": 121.12100219726562,
+        "final_score": 0.7110694508999587,
+        "duplication_penalty": 0.0,
+        "rank": 1,
+        "pre_dedup_rank": 1,
+        "retriever_version": "cached-cosine-v1",
+        "grounder_version": "TimeLens-8B",
+        "postprocess_version": "boundary-refinement-v1+ranking-v1+temporal-dedup-v1+no-match-v1",
+        "retrieval_latency_ms": 12.123308988520876,
+        "grounding_latency_ms": 944.1156440007035,
+        "postprocess_latency_ms": 0.022823995095677674,
+        "degraded": false,
+        "degrade_level": 0,
+        "degrade_reason": null,
+        "deduplicated": false,
+        "boundary_confidence": 1.0,
+        "completeness_score": 1.0
+      }
+    ],
+    "output_top_k": 1,
+    "status": "POSSIBLE",
+    "actual_match": true,
+    "degraded": false,
+    "elapsed_ms": 944.1156440007035,
+    "badcase_type": "unclassified"
+  },
+  {
+    "sample_id": "videoitg40k:media_pilot:26829",
+    "video_path": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/raw/LLaVA-Video-178K/30_60_s_activitynetqa/ActivityNet-QA/activitynet/train/v1-3/train_val/v_5jaIcPomOuM.mp4",
+    "query": "what is the woman in green clothes doing\nAnswer the question using few words or phrase.",
+    "ground_truth": [
+      [
+        20.0,
+        25.0
+      ]
+    ],
+    "coarse_windows": [
+      {
+        "start": 2.006999969482422,
+        "end": 12.006999969482422,
+        "score": 0.0963192731142044
+      }
+    ],
+    "predictions": [
+      {
+        "start_s": 6.006999969482422,
+        "end_s": 11.006999969482422,
+        "refined_start": 6.006999969482422,
+        "refined_end": 11.006999969482422,
+        "retrieval_score": 0.0963192731142044,
+        "grounding_score": 1.0,
+        "final_score": 0.7288957819342614,
+        "candidate_id": "videoitg40k:media_pilot:26829:r0"
+      }
+    ],
+    "candidates": [
+      {
+        "candidate_id": "videoitg40k:media_pilot:26829:r0",
+        "coarse_start": 2.006999969482422,
+        "coarse_end": 12.006999969482422,
+        "retrieval_score": 0.0963192731142044,
+        "raw_start": 6.006999969482422,
+        "raw_end": 11.006999969482422,
+        "grounding_score": 1.0,
+        "refined_start": 6.006999969482422,
+        "refined_end": 11.006999969482422,
+        "final_score": 0.7288957819342614,
+        "duplication_penalty": 0.0,
+        "rank": 1,
+        "pre_dedup_rank": 1,
+        "retriever_version": "cached-cosine-v1",
+        "grounder_version": "TimeLens-8B",
+        "postprocess_version": "boundary-refinement-v1+ranking-v1+temporal-dedup-v1+no-match-v1",
+        "retrieval_latency_ms": 11.423740987083875,
+        "grounding_latency_ms": 1359.1111129935598,
+        "postprocess_latency_ms": 0.0228830031119287,
+        "degraded": false,
+        "degrade_level": 0,
+        "degrade_reason": null,
+        "deduplicated": false,
+        "boundary_confidence": 1.0,
+        "completeness_score": 1.0
+      }
+    ],
+    "output_top_k": 1,
+    "status": "POSSIBLE",
+    "actual_match": true,
+    "degraded": false,
+    "elapsed_ms": 1359.1111129935598,
+    "badcase_type": "unclassified"
+  },
+  {
+    "sample_id": "videoitg40k:media_pilot:435305",
+    "video_path": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/raw/LLaVA-Video-178K/30_60_s_nextqa/NextQA/NExTVideo/0035/2779715525.mp4",
+    "query": "What happened to the boy after he started to cycle at the end of the video?\nOptions:\nA. pick baby up.\nB. check his pants.\nC. fell.\nD. adjust tricycle.\nE. take taco up.\nPlease respond with only the letter of the correct answer.",
+    "ground_truth": [
+      [
+        5.0,
+        10.0
+      ],
+      [
+        15.0,
+        20.0
+      ]
+    ],
+    "coarse_windows": [
+      {
+        "start": 8.01300048828125,
+        "end": 18.01300048828125,
+        "score": 0.12297206372022629
+      }
+    ],
+    "predictions": [
+      {
+        "start_s": 14.01300048828125,
+        "end_s": 17.01300048828125,
+        "refined_start": 14.01300048828125,
+        "refined_end": 17.01300048828125,
+        "retrieval_score": 0.12297206372022629,
+        "grounding_score": 1.0,
+        "final_score": 0.7368916191160679,
+        "candidate_id": "videoitg40k:media_pilot:435305:r0"
+      }
+    ],
+    "candidates": [
+      {
+        "candidate_id": "videoitg40k:media_pilot:435305:r0",
+        "coarse_start": 8.01300048828125,
+        "coarse_end": 18.01300048828125,
+        "retrieval_score": 0.12297206372022629,
+        "raw_start": 14.01300048828125,
+        "raw_end": 17.01300048828125,
+        "grounding_score": 1.0,
+        "refined_start": 14.01300048828125,
+        "refined_end": 17.01300048828125,
+        "final_score": 0.7368916191160679,
+        "duplication_penalty": 0.0,
+        "rank": 1,
+        "pre_dedup_rank": 1,
+        "retriever_version": "cached-cosine-v1",
+        "grounder_version": "TimeLens-8B",
+        "postprocess_version": "boundary-refinement-v1+ranking-v1+temporal-dedup-v1+no-match-v1",
+        "retrieval_latency_ms": 11.779191001551226,
+        "grounding_latency_ms": 1232.3921299976064,
+        "postprocess_latency_ms": 0.024005988962017,
+        "degraded": false,
+        "degrade_level": 0,
+        "degrade_reason": null,
+        "deduplicated": false,
+        "boundary_confidence": 1.0,
+        "completeness_score": 1.0
+      }
+    ],
+    "output_top_k": 1,
+    "status": "POSSIBLE",
+    "actual_match": true,
+    "degraded": false,
+    "elapsed_ms": 1232.3921299976064,
+    "badcase_type": "unclassified"
+  },
+  {
+    "sample_id": "videoitg40k:media_pilot:202368",
+    "video_path": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/raw/LLaVA-Video-178K/2_3_m_nextqa/NextQA/NExTVideo/1110/12398010263.mp4",
+    "query": "What does the bigger dog do after the smaller dog goes for its behind at the beginning?\nOptions:\nA. move towards big dog.\nB. lie down.\nC. caress the dog.\nD. chase after small dog.\nE. sniff it.\nPlease respond with only the letter of the correct answer.",
+    "ground_truth": [
+      [
+        15.0,
+        20.0
+      ],
+      [
+        20.0,
+        25.0
+      ]
+    ],
+    "coarse_windows": [
+      {
+        "start": 68.07307434082031,
+        "end": 78.07307434082031,
+        "score": 0.10577475279569626
+      }
+    ],
+    "predictions": [
+      {
+        "start_s": 69.07307434082031,
+        "end_s": 73.07307434082031,
+        "refined_start": 69.07307434082031,
+        "refined_end": 73.07307434082031,
+        "retrieval_score": 0.10577475279569626,
+        "grounding_score": 1.0,
+        "final_score": 0.731732425838709,
+        "candidate_id": "videoitg40k:media_pilot:202368:r0"
+      }
+    ],
+    "candidates": [
+      {
+        "candidate_id": "videoitg40k:media_pilot:202368:r0",
+        "coarse_start": 68.07307434082031,
+        "coarse_end": 78.07307434082031,
+        "retrieval_score": 0.10577475279569626,
+        "raw_start": 69.07307434082031,
+        "raw_end": 73.07307434082031,
+        "grounding_score": 1.0,
+        "refined_start": 69.07307434082031,
+        "refined_end": 73.07307434082031,
+        "final_score": 0.731732425838709,
+        "duplication_penalty": 0.0,
+        "rank": 1,
+        "pre_dedup_rank": 1,
+        "retriever_version": "cached-cosine-v1",
+        "grounder_version": "TimeLens-8B",
+        "postprocess_version": "boundary-refinement-v1+ranking-v1+temporal-dedup-v1+no-match-v1",
+        "retrieval_latency_ms": 11.792536999564618,
+        "grounding_latency_ms": 1089.0811049903277,
+        "postprocess_latency_ms": 0.022993990569375455,
+        "degraded": false,
+        "degrade_level": 0,
+        "degrade_reason": null,
+        "deduplicated": false,
+        "boundary_confidence": 1.0,
+        "completeness_score": 1.0
+      }
+    ],
+    "output_top_k": 1,
+    "status": "POSSIBLE",
+    "actual_match": true,
+    "degraded": false,
+    "elapsed_ms": 1089.0811049903277,
+    "badcase_type": "unclassified"
+  },
+  {
+    "sample_id": "videoitg40k:media_pilot:37689",
+    "video_path": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/raw/LLaVA-Video-178K/30_60_s_activitynetqa/ActivityNet-QA/activitynet/train/v1-3/train_val/v_7knqgoHxuGE.mp4",
+    "query": "what is the relationship between a black man and a woman opposite him\nAnswer the question using few words or phrase.",
+    "ground_truth": [
+      [
+        0.0,
+        5.0
+      ],
+      [
+        5.0,
+        10.0
+      ]
+    ],
+    "coarse_windows": [
+      {
+        "start": 17.02190399169922,
+        "end": 27.02190399169922,
+        "score": 0.023355476558208466
+      }
+    ],
+    "predictions": [
+      {
+        "start_s": 23.02190399169922,
+        "end_s": 25.02190399169922,
+        "refined_start": 23.02190399169922,
+        "refined_end": 25.02190399169922,
+        "retrieval_score": 0.023355476558208466,
+        "grounding_score": 1.0,
+        "final_score": 0.7070066429674626,
+        "candidate_id": "videoitg40k:media_pilot:37689:r0"
+      }
+    ],
+    "candidates": [
+      {
+        "candidate_id": "videoitg40k:media_pilot:37689:r0",
+        "coarse_start": 17.02190399169922,
+        "coarse_end": 27.02190399169922,
+        "retrieval_score": 0.023355476558208466,
+        "raw_start": 23.02190399169922,
+        "raw_end": 25.02190399169922,
+        "grounding_score": 1.0,
+        "refined_start": 23.02190399169922,
+        "refined_end": 25.02190399169922,
+        "final_score": 0.7070066429674626,
+        "duplication_penalty": 0.0,
+        "rank": 1,
+        "pre_dedup_rank": 1,
+        "retriever_version": "cached-cosine-v1",
+        "grounder_version": "TimeLens-8B",
+        "postprocess_version": "boundary-refinement-v1+ranking-v1+temporal-dedup-v1+no-match-v1",
+        "retrieval_latency_ms": 11.421806993894279,
+        "grounding_latency_ms": 1742.7494799921988,
+        "postprocess_latency_ms": 0.02983699960168451,
+        "degraded": false,
+        "degrade_level": 0,
+        "degrade_reason": null,
+        "deduplicated": false,
+        "boundary_confidence": 1.0,
+        "completeness_score": 1.0
+      }
+    ],
+    "output_top_k": 1,
+    "status": "POSSIBLE",
+    "actual_match": true,
+    "degraded": false,
+    "elapsed_ms": 1742.7494799921988,
+    "badcase_type": "unclassified"
+  },
+  {
+    "sample_id": "videoitg40k:media_pilot:84027",
+    "video_path": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/raw/LLaVA-Video-178K/30_60_s_nextqa/NextQA/NExTVideo/0038/3416353558.mp4",
+    "query": "How does the lady feel while reading from the paper?\nOptions:\nA. refreshing.\nB. restless.\nC. confused but calm.\nD. unhappy.\nE. happy.\nPlease respond with only the letter of the correct answer.",
+    "ground_truth": [
+      [
+        0.0,
+        5.0
+      ]
+    ],
+    "coarse_windows": [
+      {
+        "start": 23.027999877929688,
+        "end": 33.02799987792969,
+        "score": 0.004752115346491337
+      }
+    ],
+    "predictions": [
+      {
+        "start_s": 23.027999877929688,
+        "end_s": 32.02799987792969,
+        "refined_start": 23.027999877929688,
+        "refined_end": 32.02799987792969,
+        "retrieval_score": 0.004752115346491337,
+        "grounding_score": 1.0,
+        "final_score": 0.7014256346039474,
+        "candidate_id": "videoitg40k:media_pilot:84027:r0"
+      }
+    ],
+    "candidates": [
+      {
+        "candidate_id": "videoitg40k:media_pilot:84027:r0",
+        "coarse_start": 23.027999877929688,
+        "coarse_end": 33.02799987792969,
+        "retrieval_score": 0.004752115346491337,
+        "raw_start": 23.027999877929688,
+        "raw_end": 32.02799987792969,
+        "grounding_score": 1.0,
+        "refined_start": 23.027999877929688,
+        "refined_end": 32.02799987792969,
+        "final_score": 0.7014256346039474,
+        "duplication_penalty": 0.0,
+        "rank": 1,
+        "pre_dedup_rank": 1,
+        "retriever_version": "cached-cosine-v1",
+        "grounder_version": "TimeLens-8B",
+        "postprocess_version": "boundary-refinement-v1+ranking-v1+temporal-dedup-v1+no-match-v1",
+        "retrieval_latency_ms": 11.789531010435894,
+        "grounding_latency_ms": 774.8505429917714,
+        "postprocess_latency_ms": 0.021139989257790148,
+        "degraded": false,
+        "degrade_level": 0,
+        "degrade_reason": null,
+        "deduplicated": false,
+        "boundary_confidence": 1.0,
+        "completeness_score": 1.0
+      }
+    ],
+    "output_top_k": 1,
+    "status": "POSSIBLE",
+    "actual_match": true,
+    "degraded": false,
+    "elapsed_ms": 774.8505429917714,
+    "badcase_type": "unclassified"
+  },
+  {
+    "sample_id": "videoitg40k:media_pilot:422662",
+    "video_path": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/raw/LLaVA-Video-178K/30_60_s_activitynetqa/ActivityNet-QA/activitynet/train/v1-3/train_val/v_80pIiAmVa5Q.mp4",
+    "query": "where is the video taken\nAnswer the question using few words or phrase.",
+    "ground_truth": [
+      [
+        5.0,
+        10.0
+      ],
+      [
+        10.0,
+        15.0
+      ]
+    ],
+    "coarse_windows": [
+      {
+        "start": 26.0310001373291,
+        "end": 36.0310001373291,
+        "score": 0.08439818024635315
+      }
+    ],
+    "predictions": [
+      {
+        "start_s": 26.0310001373291,
+        "end_s": 35.0310001373291,
+        "refined_start": 26.0310001373291,
+        "refined_end": 35.0310001373291,
+        "retrieval_score": 0.08439818024635315,
+        "grounding_score": 1.0,
+        "final_score": 0.7253194540739061,
+        "candidate_id": "videoitg40k:media_pilot:422662:r0"
+      }
+    ],
+    "candidates": [
+      {
+        "candidate_id": "videoitg40k:media_pilot:422662:r0",
+        "coarse_start": 26.0310001373291,
+        "coarse_end": 36.0310001373291,
+        "retrieval_score": 0.08439818024635315,
+        "raw_start": 26.0310001373291,
+        "raw_end": 35.0310001373291,
+        "grounding_score": 1.0,
+        "refined_start": 26.0310001373291,
+        "refined_end": 35.0310001373291,
+        "final_score": 0.7253194540739061,
+        "duplication_penalty": 0.0,
+        "rank": 1,
+        "pre_dedup_rank": 1,
+        "retriever_version": "cached-cosine-v1",
+        "grounder_version": "TimeLens-8B",
+        "postprocess_version": "boundary-refinement-v1+ranking-v1+temporal-dedup-v1+no-match-v1",
+        "retrieval_latency_ms": 11.369657004252076,
+        "grounding_latency_ms": 1953.353019998758,
+        "postprocess_latency_ms": 0.022683001589030027,
+        "degraded": false,
+        "degrade_level": 0,
+        "degrade_reason": null,
+        "deduplicated": false,
+        "boundary_confidence": 1.0,
+        "completeness_score": 1.0
+      }
+    ],
+    "output_top_k": 1,
+    "status": "POSSIBLE",
+    "actual_match": true,
+    "degraded": false,
+    "elapsed_ms": 1953.353019998758,
+    "badcase_type": "unclassified"
+  },
+  {
+    "sample_id": "videoitg40k:media_pilot:3791",
+    "video_path": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/raw/LLaVA-Video-178K/30_60_s_activitynetqa/ActivityNet-QA/activitynet/train/v1-3/train_val/v_9-xf_gylOR0.mp4",
+    "query": "is the person in the video indoors\nAnswer the question using few words or phrase.",
+    "ground_truth": [
+      [
+        0.0,
+        5.0
+      ]
+    ],
+    "coarse_windows": [
+      {
+        "start": 33.0,
+        "end": 38.06666666666667,
+        "score": 0.10286103934049606
+      }
+    ],
+    "predictions": [
+      {
+        "start_s": 33.0,
+        "end_s": 37.0,
+        "refined_start": 33.0,
+        "refined_end": 37.0,
+        "retrieval_score": 0.10286103934049606,
+        "grounding_score": 1.0,
+        "final_score": 0.7308583118021488,
+        "candidate_id": "videoitg40k:media_pilot:3791:r0"
+      }
+    ],
+    "candidates": [
+      {
+        "candidate_id": "videoitg40k:media_pilot:3791:r0",
+        "coarse_start": 33.0,
+        "coarse_end": 38.06666666666667,
+        "retrieval_score": 0.10286103934049606,
+        "raw_start": 33.0,
+        "raw_end": 37.0,
+        "grounding_score": 1.0,
+        "refined_start": 33.0,
+        "refined_end": 37.0,
+        "final_score": 0.7308583118021488,
+        "duplication_penalty": 0.0,
+        "rank": 1,
+        "pre_dedup_rank": 1,
+        "retriever_version": "cached-cosine-v1",
+        "grounder_version": "TimeLens-8B",
+        "postprocess_version": "boundary-refinement-v1+ranking-v1+temporal-dedup-v1+no-match-v1",
+        "retrieval_latency_ms": 11.372293010936119,
+        "grounding_latency_ms": 1738.4841199964285,
+        "postprocess_latency_ms": 0.024237000616267323,
+        "degraded": false,
+        "degrade_level": 0,
+        "degrade_reason": null,
+        "deduplicated": false,
+        "boundary_confidence": 1.0,
+        "completeness_score": 1.0
+      }
+    ],
+    "output_top_k": 1,
+    "status": "POSSIBLE",
+    "actual_match": true,
+    "degraded": false,
+    "elapsed_ms": 1738.4841199964285,
+    "badcase_type": "unclassified"
+  },
+  {
+    "sample_id": "videoitg40k:media_pilot:127469",
+    "video_path": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/raw/LLaVA-Video-178K/30_60_s_nextqa/NextQA/NExTVideo/0049/2918932774.mp4",
+    "query": "Why did the man in red use large gestures when communicating with the man in green?\nAnswer the question using few words or phrase.",
+    "ground_truth": [
+      [
+        0.0,
+        5.0
+      ]
+    ],
+    "coarse_windows": [
+      {
+        "start": 10.015167236328125,
+        "end": 20.015167236328125,
+        "score": 0.12312622368335724
+      }
+    ],
+    "predictions": [
+      {
+        "start_s": 13.015167236328125,
+        "end_s": 18.015167236328125,
+        "refined_start": 13.015167236328125,
+        "refined_end": 18.015167236328125,
+        "retrieval_score": 0.12312622368335724,
+        "grounding_score": 1.0,
+        "final_score": 0.7369378671050073,
+        "candidate_id": "videoitg40k:media_pilot:127469:r0"
+      }
+    ],
+    "candidates": [
+      {
+        "candidate_id": "videoitg40k:media_pilot:127469:r0",
+        "coarse_start": 10.015167236328125,
+        "coarse_end": 20.015167236328125,
+        "retrieval_score": 0.12312622368335724,
+        "raw_start": 13.015167236328125,
+        "raw_end": 18.015167236328125,
+        "grounding_score": 1.0,
+        "refined_start": 13.015167236328125,
+        "refined_end": 18.015167236328125,
+        "final_score": 0.7369378671050073,
+        "duplication_penalty": 0.0,
+        "rank": 1,
+        "pre_dedup_rank": 1,
+        "retriever_version": "cached-cosine-v1",
+        "grounder_version": "TimeLens-8B",
+        "postprocess_version": "boundary-refinement-v1+ranking-v1+temporal-dedup-v1+no-match-v1",
+        "retrieval_latency_ms": 11.741148002329282,
+        "grounding_latency_ms": 764.6425200073281,
+        "postprocess_latency_ms": 0.02318399492651224,
+        "degraded": false,
+        "degrade_level": 0,
+        "degrade_reason": null,
+        "deduplicated": false,
+        "boundary_confidence": 1.0,
+        "completeness_score": 1.0
+      }
+    ],
+    "output_top_k": 1,
+    "status": "POSSIBLE",
+    "actual_match": true,
+    "degraded": false,
+    "elapsed_ms": 764.6425200073281,
+    "badcase_type": "unclassified"
+  },
+  {
+    "sample_id": "videoitg40k:media_pilot:471777",
+    "video_path": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/raw/LLaVA-Video-178K/30_60_s_activitynetqa/ActivityNet-QA/activitynet/train/v1-3/train_val/v_AS0hqTk_mIs.mp4",
+    "query": "why does the man who wear stripes want to jump up and cheers\nAnswer the question using few words or phrase.",
+    "ground_truth": [
+      [
+        30.0,
+        35.0
+      ],
+      [
+        35.0,
+        40.0
+      ]
+    ],
+    "coarse_windows": [
+      {
+        "start": 27.0,
+        "end": 37.0,
+        "score": 0.0734676867723465
+      }
+    ],
+    "predictions": [
+      {
+        "start_s": 31.0,
+        "end_s": 33.0,
+        "refined_start": 31.0,
+        "refined_end": 33.0,
+        "retrieval_score": 0.0734676867723465,
+        "grounding_score": 1.0,
+        "final_score": 0.722040306031704,
+        "candidate_id": "videoitg40k:media_pilot:471777:r0"
+      }
+    ],
+    "candidates": [
+      {
+        "candidate_id": "videoitg40k:media_pilot:471777:r0",
+        "coarse_start": 27.0,
+        "coarse_end": 37.0,
+        "retrieval_score": 0.0734676867723465,
+        "raw_start": 31.0,
+        "raw_end": 33.0,
+        "grounding_score": 1.0,
+        "refined_start": 31.0,
+        "refined_end": 33.0,
+        "final_score": 0.722040306031704,
+        "duplication_penalty": 0.0,
+        "rank": 1,
+        "pre_dedup_rank": 1,
+        "retriever_version": "cached-cosine-v1",
+        "grounder_version": "TimeLens-8B",
+        "postprocess_version": "boundary-refinement-v1+ranking-v1+temporal-dedup-v1+no-match-v1",
+        "retrieval_latency_ms": 11.461453002993949,
+        "grounding_latency_ms": 776.3674769958016,
+        "postprocess_latency_ms": 0.020359002519398928,
+        "degraded": false,
+        "degrade_level": 0,
+        "degrade_reason": null,
+        "deduplicated": false,
+        "boundary_confidence": 1.0,
+        "completeness_score": 1.0
+      }
+    ],
+    "output_top_k": 1,
+    "status": "POSSIBLE",
+    "actual_match": true,
+    "degraded": false,
+    "elapsed_ms": 776.3674769958016,
+    "badcase_type": "unclassified"
+  },
+  {
+    "sample_id": "videoitg40k:media_pilot:382101",
+    "video_path": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/raw/LLaVA-Video-178K/30_60_s_nextqa/NextQA/NExTVideo/0050/11976171036.mp4",
+    "query": "How are the babies riding the scooter?\nOptions:\nA. push body forward and backwards.\nB. hold baby in her hands.\nC. ride in circle.\nD. holds his hands.\nE. kneel.\n",
+    "ground_truth": [
+      [
+        5.0,
+        10.0
+      ],
+      [
+        10.0,
+        15.0
+      ]
+    ],
+    "coarse_windows": [
+      {
+        "start": 12.017000198364258,
+        "end": 22.017000198364258,
+        "score": 0.14935573935508728
+      }
+    ],
+    "predictions": [
+      {
+        "start_s": 12.017000198364258,
+        "end_s": 21.017000198364258,
+        "refined_start": 12.017000198364258,
+        "refined_end": 21.017000198364258,
+        "retrieval_score": 0.14935573935508728,
+        "grounding_score": 1.0,
+        "final_score": 0.7448067218065262,
+        "candidate_id": "videoitg40k:media_pilot:382101:r0"
+      }
+    ],
+    "candidates": [
+      {
+        "candidate_id": "videoitg40k:media_pilot:382101:r0",
+        "coarse_start": 12.017000198364258,
+        "coarse_end": 22.017000198364258,
+        "retrieval_score": 0.14935573935508728,
+        "raw_start": 12.017000198364258,
+        "raw_end": 21.017000198364258,
+        "grounding_score": 1.0,
+        "refined_start": 12.017000198364258,
+        "refined_end": 21.017000198364258,
+        "final_score": 0.7448067218065262,
+        "duplication_penalty": 0.0,
+        "rank": 1,
+        "pre_dedup_rank": 1,
+        "retriever_version": "cached-cosine-v1",
+        "grounder_version": "TimeLens-8B",
+        "postprocess_version": "boundary-refinement-v1+ranking-v1+temporal-dedup-v1+no-match-v1",
+        "retrieval_latency_ms": 11.638801996014081,
+        "grounding_latency_ms": 1072.281089000171,
+        "postprocess_latency_ms": 0.02224200579803437,
+        "degraded": false,
+        "degrade_level": 0,
+        "degrade_reason": null,
+        "deduplicated": false,
+        "boundary_confidence": 1.0,
+        "completeness_score": 1.0
+      }
+    ],
+    "output_top_k": 1,
+    "status": "POSSIBLE",
+    "actual_match": true,
+    "degraded": false,
+    "elapsed_ms": 1072.281089000171,
+    "badcase_type": "unclassified"
+  },
+  {
+    "sample_id": "videoitg40k:media_pilot:93380",
+    "video_path": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/raw/LLaVA-Video-178K/30_60_s_nextqa/NextQA/NExTVideo/0050/6265685815.mp4",
+    "query": "Why is the child s arms stretched out at the start?\nOptions:\nA. give bird the fruit.\nB. pick up toy.\nC. man moved it.\nD. reaching for ball.\nE. maintain balance.\nPlease provide your answer by stating the letter followed by the full option.",
+    "ground_truth": [
+      [
+        5.0,
+        10.0
+      ]
+    ],
+    "coarse_windows": [
+      {
+        "start": 0.0,
+        "end": 5.0,
+        "score": 0.056122809648513794
+      }
+    ],
+    "predictions": [
+      {
+        "start_s": 0.0,
+        "end_s": 4.0,
+        "refined_start": 0.0,
+        "refined_end": 4.0,
+        "retrieval_score": 0.056122809648513794,
+        "grounding_score": 1.0,
+        "final_score": 0.7168368428945542,
+        "candidate_id": "videoitg40k:media_pilot:93380:r0"
+      }
+    ],
+    "candidates": [
+      {
+        "candidate_id": "videoitg40k:media_pilot:93380:r0",
+        "coarse_start": 0.0,
+        "coarse_end": 5.0,
+        "retrieval_score": 0.056122809648513794,
+        "raw_start": 0.0,
+        "raw_end": 4.0,
+        "grounding_score": 1.0,
+        "refined_start": 0.0,
+        "refined_end": 4.0,
+        "final_score": 0.7168368428945542,
+        "duplication_penalty": 0.0,
+        "rank": 1,
+        "pre_dedup_rank": 1,
+        "retriever_version": "cached-cosine-v1",
+        "grounder_version": "TimeLens-8B",
+        "postprocess_version": "boundary-refinement-v1+ranking-v1+temporal-dedup-v1+no-match-v1",
+        "retrieval_latency_ms": 11.882668986800127,
+        "grounding_latency_ms": 733.8944299990544,
+        "postprocess_latency_ms": 0.020620005670934916,
+        "degraded": false,
+        "degrade_level": 0,
+        "degrade_reason": null,
+        "deduplicated": false,
+        "boundary_confidence": 1.0,
+        "completeness_score": 1.0
+      }
+    ],
+    "output_top_k": 1,
+    "status": "POSSIBLE",
+    "actual_match": true,
+    "degraded": false,
+    "elapsed_ms": 733.8944299990544,
+    "badcase_type": "unclassified"
+  },
+  {
+    "sample_id": "videoitg40k:media_pilot:472174",
+    "video_path": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/raw/LLaVA-Video-178K/30_60_s_activitynetqa/ActivityNet-QA/activitynet/train/v1-3/train_val/v_BCsfauy69xM.mp4",
+    "query": "how difficult is the practice of pumpkin lanterns in video\nAnswer the question using few words or phrase.",
+    "ground_truth": [
+      [
+        0.0,
+        5.0
+      ]
+    ],
+    "coarse_windows": [
+      {
+        "start": 5.010000228881836,
+        "end": 15.010000228881836,
+        "score": 0.1377992480993271
+      }
+    ],
+    "predictions": [
+      {
+        "start_s": 5.010000228881836,
+        "end_s": 13.010000228881836,
+        "refined_start": 5.010000228881836,
+        "refined_end": 13.010000228881836,
+        "retrieval_score": 0.1377992480993271,
+        "grounding_score": 1.0,
+        "final_score": 0.7413397744297983,
+        "candidate_id": "videoitg40k:media_pilot:472174:r0"
+      }
+    ],
+    "candidates": [
+      {
+        "candidate_id": "videoitg40k:media_pilot:472174:r0",
+        "coarse_start": 5.010000228881836,
+        "coarse_end": 15.010000228881836,
+        "retrieval_score": 0.1377992480993271,
+        "raw_start": 5.010000228881836,
+        "raw_end": 13.010000228881836,
+        "grounding_score": 1.0,
+        "refined_start": 5.010000228881836,
+        "refined_end": 13.010000228881836,
+        "final_score": 0.7413397744297983,
+        "duplication_penalty": 0.0,
+        "rank": 1,
+        "pre_dedup_rank": 1,
+        "retriever_version": "cached-cosine-v1",
+        "grounder_version": "TimeLens-8B",
+        "postprocess_version": "boundary-refinement-v1+ranking-v1+temporal-dedup-v1+no-match-v1",
+        "retrieval_latency_ms": 11.392130996682681,
+        "grounding_latency_ms": 2002.3569420009153,
+        "postprocess_latency_ms": 0.02774299355223775,
+        "degraded": false,
+        "degrade_level": 0,
+        "degrade_reason": null,
+        "deduplicated": false,
+        "boundary_confidence": 1.0,
+        "completeness_score": 1.0
+      }
+    ],
+    "output_top_k": 1,
+    "status": "POSSIBLE",
+    "actual_match": true,
+    "degraded": false,
+    "elapsed_ms": 2002.3569420009153,
+    "badcase_type": "unclassified"
+  },
+  {
+    "sample_id": "videoitg40k:media_pilot:171358",
+    "video_path": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/raw/LLaVA-Video-178K/30_60_s_activitynetqa/ActivityNet-QA/activitynet/train/v1-3/train_val/v_BKRKHkkZq6g.mp4",
+    "query": "is the person in blue outdoors\nAnswer the question using few words or phrase.",
+    "ground_truth": [
+      [
+        0.0,
+        5.0
+      ]
+    ],
+    "coarse_windows": [
+      {
+        "start": 1.9999399185180664,
+        "end": 11.999939918518066,
+        "score": 0.01837601140141487
+      }
+    ],
+    "predictions": [
+      {
+        "start_s": 1.9999399185180664,
+        "end_s": 10.999939918518066,
+        "refined_start": 1.9999399185180664,
+        "refined_end": 10.999939918518066,
+        "retrieval_score": 0.01837601140141487,
+        "grounding_score": 1.0,
+        "final_score": 0.7055128034204246,
+        "candidate_id": "videoitg40k:media_pilot:171358:r0"
+      }
+    ],
+    "candidates": [
+      {
+        "candidate_id": "videoitg40k:media_pilot:171358:r0",
+        "coarse_start": 1.9999399185180664,
+        "coarse_end": 11.999939918518066,
+        "retrieval_score": 0.01837601140141487,
+        "raw_start": 1.9999399185180664,
+        "raw_end": 10.999939918518066,
+        "grounding_score": 1.0,
+        "refined_start": 1.9999399185180664,
+        "refined_end": 10.999939918518066,
+        "final_score": 0.7055128034204246,
+        "duplication_penalty": 0.0,
+        "rank": 1,
+        "pre_dedup_rank": 1,
+        "retriever_version": "cached-cosine-v1",
+        "grounder_version": "TimeLens-8B",
+        "postprocess_version": "boundary-refinement-v1+ranking-v1+temporal-dedup-v1+no-match-v1",
+        "retrieval_latency_ms": 11.350852000759915,
+        "grounding_latency_ms": 1738.8484930124832,
+        "postprocess_latency_ms": 0.023836008040234447,
+        "degraded": false,
+        "degrade_level": 0,
+        "degrade_reason": null,
+        "deduplicated": false,
+        "boundary_confidence": 1.0,
+        "completeness_score": 1.0
+      }
+    ],
+    "output_top_k": 1,
+    "status": "POSSIBLE",
+    "actual_match": true,
+    "degraded": false,
+    "elapsed_ms": 1738.8484930124832,
+    "badcase_type": "unclassified"
+  },
+  {
+    "sample_id": "videoitg40k:media_pilot:145887",
+    "video_path": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/raw/LLaVA-Video-178K/30_60_s_nextqa/NextQA/NExTVideo/0056/3160466137.mp4",
+    "query": "How did the boy in green covered the camera lens?\nAnswer the question using few words or phrase.",
+    "ground_truth": [
+      [
+        15.0,
+        20.0
+      ]
+    ],
+    "coarse_windows": [
+      {
+        "start": 0.0,
+        "end": 5.0,
+        "score": 0.1629919409751892
+      }
+    ],
+    "predictions": [
+      {
+        "start_s": 0.0,
+        "end_s": 2.0,
+        "refined_start": 0.0,
+        "refined_end": 2.0,
+        "retrieval_score": 0.1629919409751892,
+        "grounding_score": 1.0,
+        "final_score": 0.7488975822925568,
+        "candidate_id": "videoitg40k:media_pilot:145887:r0"
+      }
+    ],
+    "candidates": [
+      {
+        "candidate_id": "videoitg40k:media_pilot:145887:r0",
+        "coarse_start": 0.0,
+        "coarse_end": 5.0,
+        "retrieval_score": 0.1629919409751892,
+        "raw_start": 0.0,
+        "raw_end": 2.0,
+        "grounding_score": 1.0,
+        "refined_start": 0.0,
+        "refined_end": 2.0,
+        "final_score": 0.7488975822925568,
+        "duplication_penalty": 0.0,
+        "rank": 1,
+        "pre_dedup_rank": 1,
+        "retriever_version": "cached-cosine-v1",
+        "grounder_version": "TimeLens-8B",
+        "postprocess_version": "boundary-refinement-v1+ranking-v1+temporal-dedup-v1+no-match-v1",
+        "retrieval_latency_ms": 11.41581599949859,
+        "grounding_latency_ms": 932.0086410007207,
+        "postprocess_latency_ms": 0.05173899990040809,
+        "degraded": false,
+        "degrade_level": 0,
+        "degrade_reason": null,
+        "deduplicated": false,
+        "boundary_confidence": 1.0,
+        "completeness_score": 1.0
+      }
+    ],
+    "output_top_k": 1,
+    "status": "POSSIBLE",
+    "actual_match": true,
+    "degraded": false,
+    "elapsed_ms": 932.0086410007207,
+    "badcase_type": "unclassified"
+  },
+  {
+    "sample_id": "videoitg40k:media_pilot:330898",
+    "video_path": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/raw/LLaVA-Video-178K/30_60_s_activitynetqa/ActivityNet-QA/activitynet/train/v1-3/train_val/v_C1vhQIJtLsw.mp4",
+    "query": "what is the person in white doing\nAnswer the question using few words or phrase.",
+    "ground_truth": [
+      [
+        0.0,
+        5.0
+      ]
+    ],
+    "coarse_windows": [
+      {
+        "start": 27.97008514404297,
+        "end": 36.367,
+        "score": 0.13253465294837952
+      }
+    ],
+    "predictions": [
+      {
+        "start_s": 30.97008514404297,
+        "end_s": 34.97008514404297,
+        "refined_start": 30.97008514404297,
+        "refined_end": 34.97008514404297,
+        "retrieval_score": 0.13253465294837952,
+        "grounding_score": 1.0,
+        "final_score": 0.7397603958845138,
+        "candidate_id": "videoitg40k:media_pilot:330898:r0"
+      }
+    ],
+    "candidates": [
+      {
+        "candidate_id": "videoitg40k:media_pilot:330898:r0",
+        "coarse_start": 27.97008514404297,
+        "coarse_end": 36.367,
+        "retrieval_score": 0.13253465294837952,
+        "raw_start": 30.97008514404297,
+        "raw_end": 34.97008514404297,
+        "grounding_score": 1.0,
+        "refined_start": 30.97008514404297,
+        "refined_end": 34.97008514404297,
+        "final_score": 0.7397603958845138,
+        "duplication_penalty": 0.0,
+        "rank": 1,
+        "pre_dedup_rank": 1,
+        "retriever_version": "cached-cosine-v1",
+        "grounder_version": "TimeLens-8B",
+        "postprocess_version": "boundary-refinement-v1+ranking-v1+temporal-dedup-v1+no-match-v1",
+        "retrieval_latency_ms": 11.396018002415076,
+        "grounding_latency_ms": 1152.2764560068026,
+        "postprocess_latency_ms": 0.02232300175819546,
+        "degraded": false,
+        "degrade_level": 0,
+        "degrade_reason": null,
+        "deduplicated": false,
+        "boundary_confidence": 1.0,
+        "completeness_score": 1.0
+      }
+    ],
+    "output_top_k": 1,
+    "status": "POSSIBLE",
+    "actual_match": true,
+    "degraded": false,
+    "elapsed_ms": 1152.2764560068026,
+    "badcase_type": "unclassified"
+  },
+  {
+    "sample_id": "videoitg40k:media_pilot:23380",
+    "video_path": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/raw/LLaVA-Video-178K/30_60_s_nextqa/NextQA/NExTVideo/0065/11313345705.mp4",
+    "query": "How does the girl showed that she is interested in what the boy is doing?\nAnswer the question using few words or phrase.",
+    "ground_truth": [
+      [
+        0.0,
+        5.0
+      ]
+    ],
+    "coarse_windows": [
+      {
+        "start": 19.0,
+        "end": 29.0,
+        "score": 0.12335073947906494
+      }
+    ],
+    "predictions": [
+      {
+        "start_s": 27.0,
+        "end_s": 28.0,
+        "refined_start": 27.0,
+        "refined_end": 28.0,
+        "retrieval_score": 0.12335073947906494,
+        "grounding_score": 1.0,
+        "final_score": 0.7370052218437195,
+        "candidate_id": "videoitg40k:media_pilot:23380:r0"
+      }
+    ],
+    "candidates": [
+      {
+        "candidate_id": "videoitg40k:media_pilot:23380:r0",
+        "coarse_start": 19.0,
+        "coarse_end": 29.0,
+        "retrieval_score": 0.12335073947906494,
+        "raw_start": 27.0,
+        "raw_end": 28.0,
+        "grounding_score": 1.0,
+        "refined_start": 27.0,
+        "refined_end": 28.0,
+        "final_score": 0.7370052218437195,
+        "duplication_penalty": 0.0,
+        "rank": 1,
+        "pre_dedup_rank": 1,
+        "retriever_version": "cached-cosine-v1",
+        "grounder_version": "TimeLens-8B",
+        "postprocess_version": "boundary-refinement-v1+ranking-v1+temporal-dedup-v1+no-match-v1",
+        "retrieval_latency_ms": 11.520476997247897,
+        "grounding_latency_ms": 1130.6470340059604,
+        "postprocess_latency_ms": 0.023314991267398,
+        "degraded": false,
+        "degrade_level": 0,
+        "degrade_reason": null,
+        "deduplicated": false,
+        "boundary_confidence": 1.0,
+        "completeness_score": 1.0
+      }
+    ],
+    "output_top_k": 1,
+    "status": "POSSIBLE",
+    "actual_match": true,
+    "degraded": false,
+    "elapsed_ms": 1130.6470340059604,
+    "badcase_type": "unclassified"
+  },
+  {
+    "sample_id": "videoitg40k:media_pilot:443255",
+    "video_path": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/raw/LLaVA-Video-178K/30_60_s_activitynetqa/ActivityNet-QA/activitynet/train/v1-3/train_val/v_Dx9wjBdbZ1M.mp4",
+    "query": "what is the occupation of a person wearing orange clothes\nAnswer the question using few words or phrase.",
+    "ground_truth": [
+      [
+        10.0,
+        15.0
+      ],
+      [
+        15.0,
+        20.0
+      ]
+    ],
+    "coarse_windows": [
+      {
+        "start": 32.0,
+        "end": 42.0,
+        "score": 0.0719328448176384
+      }
+    ],
+    "predictions": [
+      {
+        "start_s": 32.0,
+        "end_s": 37.0,
+        "refined_start": 32.0,
+        "refined_end": 37.0,
+        "retrieval_score": 0.0719328448176384,
+        "grounding_score": 1.0,
+        "final_score": 0.7215798534452915,
+        "candidate_id": "videoitg40k:media_pilot:443255:r0"
+      }
+    ],
+    "candidates": [
+      {
+        "candidate_id": "videoitg40k:media_pilot:443255:r0",
+        "coarse_start": 32.0,
+        "coarse_end": 42.0,
+        "retrieval_score": 0.0719328448176384,
+        "raw_start": 32.0,
+        "raw_end": 37.0,
+        "grounding_score": 1.0,
+        "refined_start": 32.0,
+        "refined_end": 37.0,
+        "final_score": 0.7215798534452915,
+        "duplication_penalty": 0.0,
+        "rank": 1,
+        "pre_dedup_rank": 1,
+        "retriever_version": "cached-cosine-v1",
+        "grounder_version": "TimeLens-8B",
+        "postprocess_version": "boundary-refinement-v1+ranking-v1+temporal-dedup-v1+no-match-v1",
+        "retrieval_latency_ms": 11.472493992187083,
+        "grounding_latency_ms": 1134.700041002361,
+        "postprocess_latency_ms": 0.021992993424646556,
+        "degraded": false,
+        "degrade_level": 0,
+        "degrade_reason": null,
+        "deduplicated": false,
+        "boundary_confidence": 1.0,
+        "completeness_score": 1.0
+      }
+    ],
+    "output_top_k": 1,
+    "status": "POSSIBLE",
+    "actual_match": true,
+    "degraded": false,
+    "elapsed_ms": 1134.700041002361,
+    "badcase_type": "unclassified"
+  },
+  {
+    "sample_id": "videoitg40k:media_pilot:123639",
+    "video_path": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/raw/LLaVA-Video-178K/30_60_s_nextqa/NextQA/NExTVideo/0065/5552271623.mp4",
+    "query": "Why did the man in blue extends his arms forward in the middle of the video?\nOptions:\nA. to answer call.\nB. walk.\nC. pick up cloth.\nD. pushing bottles forward.\nE. catch the ball.\nPlease provide your answer by stating the letter followed by the full option.",
+    "ground_truth": [
+      [
+        15.0,
+        20.0
+      ]
+    ],
+    "coarse_windows": [
+      {
+        "start": 11.016000747680664,
+        "end": 21.016000747680664,
+        "score": 0.09777507185935974
+      }
+    ],
+    "predictions": [
+      {
+        "start_s": 14.016000747680664,
+        "end_s": 16.016000747680664,
+        "refined_start": 14.016000747680664,
+        "refined_end": 16.016000747680664,
+        "retrieval_score": 0.09777507185935974,
+        "grounding_score": 1.0,
+        "final_score": 0.7293325215578079,
+        "candidate_id": "videoitg40k:media_pilot:123639:r0"
+      }
+    ],
+    "candidates": [
+      {
+        "candidate_id": "videoitg40k:media_pilot:123639:r0",
+        "coarse_start": 11.016000747680664,
+        "coarse_end": 21.016000747680664,
+        "retrieval_score": 0.09777507185935974,
+        "raw_start": 14.016000747680664,
+        "raw_end": 16.016000747680664,
+        "grounding_score": 1.0,
+        "refined_start": 14.016000747680664,
+        "refined_end": 16.016000747680664,
+        "final_score": 0.7293325215578079,
+        "duplication_penalty": 0.0,
+        "rank": 1,
+        "pre_dedup_rank": 1,
+        "retriever_version": "cached-cosine-v1",
+        "grounder_version": "TimeLens-8B",
+        "postprocess_version": "boundary-refinement-v1+ranking-v1+temporal-dedup-v1+no-match-v1",
+        "retrieval_latency_ms": 11.714958993252367,
+        "grounding_latency_ms": 1101.6616580018308,
+        "postprocess_latency_ms": 0.024747001589275897,
+        "degraded": false,
+        "degrade_level": 0,
+        "degrade_reason": null,
+        "deduplicated": false,
+        "boundary_confidence": 1.0,
+        "completeness_score": 1.0
+      }
+    ],
+    "output_top_k": 1,
+    "status": "POSSIBLE",
+    "actual_match": true,
+    "degraded": false,
+    "elapsed_ms": 1101.6616580018308,
+    "badcase_type": "unclassified"
+  },
+  {
+    "sample_id": "videoitg40k:media_pilot:303014",
+    "video_path": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/raw/LLaVA-Video-178K/30_60_s_activitynetqa/ActivityNet-QA/activitynet/train/v1-3/train_val/v_EJr0qHpy77g.mp4",
+    "query": "what is in front of the blindfolded person\nAnswer the question using few words or phrase.",
+    "ground_truth": [
+      [
+        0.0,
+        5.0
+      ]
+    ],
+    "coarse_windows": [
+      {
+        "start": 5.0,
+        "end": 15.0,
+        "score": 0.11667796969413757
+      }
+    ],
+    "predictions": [
+      {
+        "start_s": 5.0,
+        "end_s": 14.0,
+        "refined_start": 5.0,
+        "refined_end": 14.0,
+        "retrieval_score": 0.11667796969413757,
+        "grounding_score": 1.0,
+        "final_score": 0.7350033909082414,
+        "candidate_id": "videoitg40k:media_pilot:303014:r0"
+      }
+    ],
+    "candidates": [
+      {
+        "candidate_id": "videoitg40k:media_pilot:303014:r0",
+        "coarse_start": 5.0,
+        "coarse_end": 15.0,
+        "retrieval_score": 0.11667796969413757,
+        "raw_start": 5.0,
+        "raw_end": 14.0,
+        "grounding_score": 1.0,
+        "refined_start": 5.0,
+        "refined_end": 14.0,
+        "final_score": 0.7350033909082414,
+        "duplication_penalty": 0.0,
+        "rank": 1,
+        "pre_dedup_rank": 1,
+        "retriever_version": "cached-cosine-v1",
+        "grounder_version": "TimeLens-8B",
+        "postprocess_version": "boundary-refinement-v1+ranking-v1+temporal-dedup-v1+no-match-v1",
+        "retrieval_latency_ms": 11.375588990631513,
+        "grounding_latency_ms": 867.0738299988443,
+        "postprocess_latency_ms": 0.02846401184797287,
+        "degraded": false,
+        "degrade_level": 0,
+        "degrade_reason": null,
+        "deduplicated": false,
+        "boundary_confidence": 1.0,
+        "completeness_score": 1.0
+      }
+    ],
+    "output_top_k": 1,
+    "status": "POSSIBLE",
+    "actual_match": true,
+    "degraded": false,
+    "elapsed_ms": 867.0738299988443,
+    "badcase_type": "unclassified"
+  },
+  {
+    "sample_id": "videoitg40k:media_pilot:93507",
+    "video_path": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/raw/LLaVA-Video-178K/30_60_s_nextqa/NextQA/NExTVideo/0069/11276891496.mp4",
+    "query": "Why did the pope hold onto the lady with short hair s head?\nAnswer the question using few words or phrase.",
+    "ground_truth": [
+      [
+        20.0,
+        25.0
+      ]
+    ],
+    "coarse_windows": [
+      {
+        "start": 14.0,
+        "end": 24.0,
+        "score": 0.15519139170646667
+      }
+    ],
+    "predictions": [
+      {
+        "start_s": 14.0,
+        "end_s": 22.0,
+        "refined_start": 14.0,
+        "refined_end": 22.0,
+        "retrieval_score": 0.15519139170646667,
+        "grounding_score": 1.0,
+        "final_score": 0.74655741751194,
+        "candidate_id": "videoitg40k:media_pilot:93507:r0"
+      }
+    ],
+    "candidates": [
+      {
+        "candidate_id": "videoitg40k:media_pilot:93507:r0",
+        "coarse_start": 14.0,
+        "coarse_end": 24.0,
+        "retrieval_score": 0.15519139170646667,
+        "raw_start": 14.0,
+        "raw_end": 22.0,
+        "grounding_score": 1.0,
+        "refined_start": 14.0,
+        "refined_end": 22.0,
+        "final_score": 0.74655741751194,
+        "duplication_penalty": 0.0,
+        "rank": 1,
+        "pre_dedup_rank": 1,
+        "retriever_version": "cached-cosine-v1",
+        "grounder_version": "TimeLens-8B",
+        "postprocess_version": "boundary-refinement-v1+ranking-v1+temporal-dedup-v1+no-match-v1",
+        "retrieval_latency_ms": 11.476050989585929,
+        "grounding_latency_ms": 1120.886086995597,
+        "postprocess_latency_ms": 0.06560501060448587,
+        "degraded": false,
+        "degrade_level": 0,
+        "degrade_reason": null,
+        "deduplicated": false,
+        "boundary_confidence": 1.0,
+        "completeness_score": 1.0
+      }
+    ],
+    "output_top_k": 1,
+    "status": "POSSIBLE",
+    "actual_match": true,
+    "degraded": false,
+    "elapsed_ms": 1120.886086995597,
+    "badcase_type": "unclassified"
+  },
+  {
+    "sample_id": "videoitg40k:media_pilot:200016",
+    "video_path": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/raw/LLaVA-Video-178K/30_60_s_activitynetqa/ActivityNet-QA/activitynet/train/v1-3/train_val/v_F2Igw6lvqwk.mp4",
+    "query": "is the woman in the jeans wearing a board shoe\nAnswer the question using few words or phrase.",
+    "ground_truth": [
+      [
+        0.0,
+        5.0
+      ],
+      [
+        5.0,
+        10.0
+      ],
+      [
+        10.0,
+        15.0
+      ]
+    ],
+    "coarse_windows": [
+      {
+        "start": 24.02916145324707,
+        "end": 34.02916145324707,
+        "score": 0.0979953184723854
+      }
+    ],
+    "predictions": [
+      {
+        "start_s": 24.02916145324707,
+        "end_s": 33.02916145324707,
+        "refined_start": 24.02916145324707,
+        "refined_end": 33.02916145324707,
+        "retrieval_score": 0.0979953184723854,
+        "grounding_score": 1.0,
+        "final_score": 0.7293985955417157,
+        "candidate_id": "videoitg40k:media_pilot:200016:r0"
+      }
+    ],
+    "candidates": [
+      {
+        "candidate_id": "videoitg40k:media_pilot:200016:r0",
+        "coarse_start": 24.02916145324707,
+        "coarse_end": 34.02916145324707,
+        "retrieval_score": 0.0979953184723854,
+        "raw_start": 24.02916145324707,
+        "raw_end": 33.02916145324707,
+        "grounding_score": 1.0,
+        "refined_start": 24.02916145324707,
+        "refined_end": 33.02916145324707,
+        "final_score": 0.7293985955417157,
+        "duplication_penalty": 0.0,
+        "rank": 1,
+        "pre_dedup_rank": 1,
+        "retriever_version": "cached-cosine-v1",
+        "grounder_version": "TimeLens-8B",
+        "postprocess_version": "boundary-refinement-v1+ranking-v1+temporal-dedup-v1+no-match-v1",
+        "retrieval_latency_ms": 11.493454003357328,
+        "grounding_latency_ms": 758.8672620040597,
+        "postprocess_latency_ms": 0.02459700044710189,
+        "degraded": false,
+        "degrade_level": 0,
+        "degrade_reason": null,
+        "deduplicated": false,
+        "boundary_confidence": 1.0,
+        "completeness_score": 1.0
+      }
+    ],
+    "output_top_k": 1,
+    "status": "POSSIBLE",
+    "actual_match": true,
+    "degraded": false,
+    "elapsed_ms": 758.8672620040597,
+    "badcase_type": "unclassified"
+  },
+  {
+    "sample_id": "videoitg40k:media_pilot:420269",
+    "video_path": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/raw/LLaVA-Video-178K/30_60_s_activitynetqa/ActivityNet-QA/activitynet/train/v1-3/train_val/v_F6cNWYlfUs8.mp4",
+    "query": "is the hat in the same color\nAnswer the question using few words or phrase.",
+    "ground_truth": [
+      [
+        0.0,
+        5.0
+      ]
+    ],
+    "coarse_windows": [
+      {
+        "start": 10.01471996307373,
+        "end": 20.01471996307373,
+        "score": 0.10460648685693741
+      }
+    ],
+    "predictions": [
+      {
+        "start_s": 13.01471996307373,
+        "end_s": 16.01471996307373,
+        "refined_start": 13.01471996307373,
+        "refined_end": 16.01471996307373,
+        "retrieval_score": 0.10460648685693741,
+        "grounding_score": 1.0,
+        "final_score": 0.7313819460570812,
+        "candidate_id": "videoitg40k:media_pilot:420269:r0"
+      }
+    ],
+    "candidates": [
+      {
+        "candidate_id": "videoitg40k:media_pilot:420269:r0",
+        "coarse_start": 10.01471996307373,
+        "coarse_end": 20.01471996307373,
+        "retrieval_score": 0.10460648685693741,
+        "raw_start": 13.01471996307373,
+        "raw_end": 16.01471996307373,
+        "grounding_score": 1.0,
+        "refined_start": 13.01471996307373,
+        "refined_end": 16.01471996307373,
+        "final_score": 0.7313819460570812,
+        "duplication_penalty": 0.0,
+        "rank": 1,
+        "pre_dedup_rank": 1,
+        "retriever_version": "cached-cosine-v1",
+        "grounder_version": "TimeLens-8B",
+        "postprocess_version": "boundary-refinement-v1+ranking-v1+temporal-dedup-v1+no-match-v1",
+        "retrieval_latency_ms": 11.454879990196787,
+        "grounding_latency_ms": 2031.6820689913584,
+        "postprocess_latency_ms": 0.06789001054130495,
+        "degraded": false,
+        "degrade_level": 0,
+        "degrade_reason": null,
+        "deduplicated": false,
+        "boundary_confidence": 1.0,
+        "completeness_score": 1.0
+      }
+    ],
+    "output_top_k": 1,
+    "status": "POSSIBLE",
+    "actual_match": true,
+    "degraded": false,
+    "elapsed_ms": 2031.6820689913584,
+    "badcase_type": "unclassified"
+  },
+  {
+    "sample_id": "videoitg40k:media_pilot:81449",
+    "video_path": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/raw/LLaVA-Video-178K/30_60_s_nextqa/NextQA/NExTVideo/0076/3388614426.mp4",
+    "query": "What does the man holding the book do as the couple faced each other?\nAnswer the question using few words or phrase.",
+    "ground_truth": [
+      [
+        0.0,
+        5.0
+      ]
+    ],
+    "coarse_windows": [
+      {
+        "start": 37.04199981689453,
+        "end": 42.1421,
+        "score": 0.09789511561393738
+      }
+    ],
+    "predictions": [
+      {
+        "start_s": 37.04199981689453,
+        "end_s": 41.04199981689453,
+        "refined_start": 37.04199981689453,
+        "refined_end": 41.04199981689453,
+        "retrieval_score": 0.09789511561393738,
+        "grounding_score": 1.0,
+        "final_score": 0.7293685346841812,
+        "candidate_id": "videoitg40k:media_pilot:81449:r0"
+      }
+    ],
+    "candidates": [
+      {
+        "candidate_id": "videoitg40k:media_pilot:81449:r0",
+        "coarse_start": 37.04199981689453,
+        "coarse_end": 42.1421,
+        "retrieval_score": 0.09789511561393738,
+        "raw_start": 37.04199981689453,
+        "raw_end": 41.04199981689453,
+        "grounding_score": 1.0,
+        "refined_start": 37.04199981689453,
+        "refined_end": 41.04199981689453,
+        "final_score": 0.7293685346841812,
+        "duplication_penalty": 0.0,
+        "rank": 1,
+        "pre_dedup_rank": 1,
+        "retriever_version": "cached-cosine-v1",
+        "grounder_version": "TimeLens-8B",
+        "postprocess_version": "boundary-refinement-v1+ranking-v1+temporal-dedup-v1+no-match-v1",
+        "retrieval_latency_ms": 11.593917006393895,
+        "grounding_latency_ms": 937.6242610014742,
+        "postprocess_latency_ms": 0.022674008505418897,
+        "degraded": false,
+        "degrade_level": 0,
+        "degrade_reason": null,
+        "deduplicated": false,
+        "boundary_confidence": 1.0,
+        "completeness_score": 1.0
+      }
+    ],
+    "output_top_k": 1,
+    "status": "POSSIBLE",
+    "actual_match": true,
+    "degraded": false,
+    "elapsed_ms": 937.6242610014742,
+    "badcase_type": "unclassified"
+  },
+  {
+    "sample_id": "videoitg40k:media_pilot:471172",
+    "video_path": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/raw/LLaVA-Video-178K/30_60_s_activitynetqa/ActivityNet-QA/activitynet/train/v1-3/train_val/v_F9HKxxoNNSQ.mp4",
+    "query": "how many people in black shoes are there\nAnswer the question using few words or phrase.",
+    "ground_truth": [
+      [
+        5.0,
+        10.0
+      ],
+      [
+        15.0,
+        20.0
+      ]
+    ],
+    "coarse_windows": [
+      {
+        "start": 24.029193878173828,
+        "end": 34.02919387817383,
+        "score": 0.0643673837184906
+      }
+    ],
+    "predictions": [
+      {
+        "start_s": 25.029193878173828,
+        "end_s": 29.029193878173828,
+        "refined_start": 25.029193878173828,
+        "refined_end": 29.029193878173828,
+        "retrieval_score": 0.0643673837184906,
+        "grounding_score": 1.0,
+        "final_score": 0.7193102151155473,
+        "candidate_id": "videoitg40k:media_pilot:471172:r0"
+      }
+    ],
+    "candidates": [
+      {
+        "candidate_id": "videoitg40k:media_pilot:471172:r0",
+        "coarse_start": 24.029193878173828,
+        "coarse_end": 34.02919387817383,
+        "retrieval_score": 0.0643673837184906,
+        "raw_start": 25.029193878173828,
+        "raw_end": 29.029193878173828,
+        "grounding_score": 1.0,
+        "refined_start": 25.029193878173828,
+        "refined_end": 29.029193878173828,
+        "final_score": 0.7193102151155473,
+        "duplication_penalty": 0.0,
+        "rank": 1,
+        "pre_dedup_rank": 1,
+        "retriever_version": "cached-cosine-v1",
+        "grounder_version": "TimeLens-8B",
+        "postprocess_version": "boundary-refinement-v1+ranking-v1+temporal-dedup-v1+no-match-v1",
+        "retrieval_latency_ms": 11.52469401131384,
+        "grounding_latency_ms": 1914.541806007037,
+        "postprocess_latency_ms": 0.023855987819842994,
+        "degraded": false,
+        "degrade_level": 0,
+        "degrade_reason": null,
+        "deduplicated": false,
+        "boundary_confidence": 1.0,
+        "completeness_score": 1.0
+      }
+    ],
+    "output_top_k": 1,
+    "status": "POSSIBLE",
+    "actual_match": true,
+    "degraded": false,
+    "elapsed_ms": 1914.541806007037,
+    "badcase_type": "unclassified"
+  },
+  {
+    "sample_id": "videoitg40k:media_pilot:217699",
+    "video_path": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/raw/LLaVA-Video-178K/30_60_s_nextqa/NextQA/NExTVideo/0079/4447314310.mp4",
+    "query": "Why are the sheeps do not go outside?\nOptions:\nA. desert.\nB. tied up with rope.\nC. fenced up.\nD. stage designated.\nE. special challenge.\n",
+    "ground_truth": [
+      [
+        0.0,
+        5.0
+      ],
+      [
+        5.0,
+        10.0
+      ]
+    ],
+    "coarse_windows": [
+      {
+        "start": 23.027999877929688,
+        "end": 33.02799987792969,
+        "score": 0.08766747266054153
+      }
+    ],
+    "predictions": [
+      {
+        "start_s": 23.027999877929688,
+        "end_s": 32.02799987792969,
+        "refined_start": 23.027999877929688,
+        "refined_end": 32.02799987792969,
+        "retrieval_score": 0.08766747266054153,
+        "grounding_score": 1.0,
+        "final_score": 0.7263002417981625,
+        "candidate_id": "videoitg40k:media_pilot:217699:r0"
+      }
+    ],
+    "candidates": [
+      {
+        "candidate_id": "videoitg40k:media_pilot:217699:r0",
+        "coarse_start": 23.027999877929688,
+        "coarse_end": 33.02799987792969,
+        "retrieval_score": 0.08766747266054153,
+        "raw_start": 23.027999877929688,
+        "raw_end": 32.02799987792969,
+        "grounding_score": 1.0,
+        "refined_start": 23.027999877929688,
+        "refined_end": 32.02799987792969,
+        "final_score": 0.7263002417981625,
+        "duplication_penalty": 0.0,
+        "rank": 1,
+        "pre_dedup_rank": 1,
+        "retriever_version": "cached-cosine-v1",
+        "grounder_version": "TimeLens-8B",
+        "postprocess_version": "boundary-refinement-v1+ranking-v1+temporal-dedup-v1+no-match-v1",
+        "retrieval_latency_ms": 11.62916400062386,
+        "grounding_latency_ms": 1235.863135996624,
+        "postprocess_latency_ms": 0.022854001144878566,
+        "degraded": false,
+        "degrade_level": 0,
+        "degrade_reason": null,
+        "deduplicated": false,
+        "boundary_confidence": 1.0,
+        "completeness_score": 1.0
+      }
+    ],
+    "output_top_k": 1,
+    "status": "POSSIBLE",
+    "actual_match": true,
+    "degraded": false,
+    "elapsed_ms": 1235.863135996624,
+    "badcase_type": "unclassified"
+  },
+  {
+    "sample_id": "videoitg40k:media_pilot:268585",
+    "video_path": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/raw/LLaVA-Video-178K/30_60_s_activitynetqa/ActivityNet-QA/activitynet/train/v1-3/train_val/v_FRFjdn_pjYk.mp4",
+    "query": "why is the man in orange running\nAnswer the question using few words or phrase.",
+    "ground_truth": [
+      [
+        15.0,
+        20.0
+      ]
+    ],
+    "coarse_windows": [
+      {
+        "start": 45.0,
+        "end": 55.0,
+        "score": 0.1084006279706955
+      }
+    ],
+    "predictions": [
+      {
+        "start_s": 45.0,
+        "end_s": 54.0,
+        "refined_start": 45.0,
+        "refined_end": 54.0,
+        "retrieval_score": 0.1084006279706955,
+        "grounding_score": 1.0,
+        "final_score": 0.7325201883912087,
+        "candidate_id": "videoitg40k:media_pilot:268585:r0"
+      }
+    ],
+    "candidates": [
+      {
+        "candidate_id": "videoitg40k:media_pilot:268585:r0",
+        "coarse_start": 45.0,
+        "coarse_end": 55.0,
+        "retrieval_score": 0.1084006279706955,
+        "raw_start": 45.0,
+        "raw_end": 54.0,
+        "grounding_score": 1.0,
+        "refined_start": 45.0,
+        "refined_end": 54.0,
+        "final_score": 0.7325201883912087,
+        "duplication_penalty": 0.0,
+        "rank": 1,
+        "pre_dedup_rank": 1,
+        "retriever_version": "cached-cosine-v1",
+        "grounder_version": "TimeLens-8B",
+        "postprocess_version": "boundary-refinement-v1+ranking-v1+temporal-dedup-v1+no-match-v1",
+        "retrieval_latency_ms": 11.366371007170528,
+        "grounding_latency_ms": 1751.245296007255,
+        "postprocess_latency_ms": 0.02484800643287599,
+        "degraded": false,
+        "degrade_level": 0,
+        "degrade_reason": null,
+        "deduplicated": false,
+        "boundary_confidence": 1.0,
+        "completeness_score": 1.0
+      }
+    ],
+    "output_top_k": 1,
+    "status": "POSSIBLE",
+    "actual_match": true,
+    "degraded": false,
+    "elapsed_ms": 1751.245296007255,
+    "badcase_type": "unclassified"
+  },
+  {
+    "sample_id": "videoitg40k:media_pilot:249673",
+    "video_path": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/raw/LLaVA-Video-178K/30_60_s_activitynetqa/ActivityNet-QA/activitynet/train/v1-3/train_val/v_G3cINUdHdGo.mp4",
+    "query": "what happened to the person wearing gold chains around his neck before the darts\nAnswer the question using few words or phrase.",
+    "ground_truth": [
+      [
+        15.0,
+        20.0
+      ]
+    ],
+    "coarse_windows": [
+      {
+        "start": 8.0,
+        "end": 18.0,
+        "score": 0.18950237333774567
+      }
+    ],
+    "predictions": [
+      {
+        "start_s": 8.0,
+        "end_s": 16.0,
+        "refined_start": 8.0,
+        "refined_end": 16.0,
+        "retrieval_score": 0.18950237333774567,
+        "grounding_score": 1.0,
+        "final_score": 0.7568507120013237,
+        "candidate_id": "videoitg40k:media_pilot:249673:r0"
+      }
+    ],
+    "candidates": [
+      {
+        "candidate_id": "videoitg40k:media_pilot:249673:r0",
+        "coarse_start": 8.0,
+        "coarse_end": 18.0,
+        "retrieval_score": 0.18950237333774567,
+        "raw_start": 8.0,
+        "raw_end": 16.0,
+        "grounding_score": 1.0,
+        "refined_start": 8.0,
+        "refined_end": 16.0,
+        "final_score": 0.7568507120013237,
+        "duplication_penalty": 0.0,
+        "rank": 1,
+        "pre_dedup_rank": 1,
+        "retriever_version": "cached-cosine-v1",
+        "grounder_version": "TimeLens-8B",
+        "postprocess_version": "boundary-refinement-v1+ranking-v1+temporal-dedup-v1+no-match-v1",
+        "retrieval_latency_ms": 11.504424997838214,
+        "grounding_latency_ms": 1620.7420800055843,
+        "postprocess_latency_ms": 0.02778299676720053,
+        "degraded": false,
+        "degrade_level": 0,
+        "degrade_reason": null,
+        "deduplicated": false,
+        "boundary_confidence": 1.0,
+        "completeness_score": 1.0
+      }
+    ],
+    "output_top_k": 1,
+    "status": "POSSIBLE",
+    "actual_match": true,
+    "degraded": false,
+    "elapsed_ms": 1620.7420800055843,
+    "badcase_type": "unclassified"
+  },
+  {
+    "sample_id": "videoitg40k:media_pilot:324690",
+    "video_path": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/raw/LLaVA-Video-178K/30_60_s_nextqa/NextQA/NExTVideo/0086/3277667959.mp4",
+    "query": "Why did the men put their feet on the log?\nOptions:\nA. fishing.\nB. indicate moving forward.\nC. stabilizes it.\nD. they are performing.\nE. to fill his pump with water.\nPlease provide your answer by stating the letter followed by the full option.",
+    "ground_truth": [
+      [
+        0.0,
+        5.0
+      ]
+    ],
+    "coarse_windows": [
+      {
+        "start": 43.04800033569336,
+        "end": 53.04800033569336,
+        "score": 0.04515303298830986
+      }
+    ],
+    "predictions": [
+      {
+        "start_s": 47.04800033569336,
+        "end_s": 52.04800033569336,
+        "refined_start": 47.04800033569336,
+        "refined_end": 52.04800033569336,
+        "retrieval_score": 0.04515303298830986,
+        "grounding_score": 1.0,
+        "final_score": 0.7135459098964929,
+        "candidate_id": "videoitg40k:media_pilot:324690:r0"
+      }
+    ],
+    "candidates": [
+      {
+        "candidate_id": "videoitg40k:media_pilot:324690:r0",
+        "coarse_start": 43.04800033569336,
+        "coarse_end": 53.04800033569336,
+        "retrieval_score": 0.04515303298830986,
+        "raw_start": 47.04800033569336,
+        "raw_end": 52.04800033569336,
+        "grounding_score": 1.0,
+        "refined_start": 47.04800033569336,
+        "refined_end": 52.04800033569336,
+        "final_score": 0.7135459098964929,
+        "duplication_penalty": 0.0,
+        "rank": 1,
+        "pre_dedup_rank": 1,
+        "retriever_version": "cached-cosine-v1",
+        "grounder_version": "TimeLens-8B",
+        "postprocess_version": "boundary-refinement-v1+ranking-v1+temporal-dedup-v1+no-match-v1",
+        "retrieval_latency_ms": 11.91851799376309,
+        "grounding_latency_ms": 1223.4020110045094,
+        "postprocess_latency_ms": 0.024225999368354678,
+        "degraded": false,
+        "degrade_level": 0,
+        "degrade_reason": null,
+        "deduplicated": false,
+        "boundary_confidence": 1.0,
+        "completeness_score": 1.0
+      }
+    ],
+    "output_top_k": 1,
+    "status": "POSSIBLE",
+    "actual_match": true,
+    "degraded": false,
+    "elapsed_ms": 1223.4020110045094,
+    "badcase_type": "unclassified"
+  },
+  {
+    "sample_id": "videoitg40k:media_pilot:75922",
+    "video_path": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/raw/LLaVA-Video-178K/30_60_s_activitynetqa/ActivityNet-QA/activitynet/train/v1-3/train_val/v_GVn7MSMHXxk.mp4",
+    "query": "does the dog catch the plate in the video\nAnswer the question using few words or phrase.",
+    "ground_truth": [
+      [
+        5.0,
+        10.0
+      ],
+      [
+        15.0,
+        20.0
+      ],
+      [
+        50.0,
+        55.0
+      ]
+    ],
+    "coarse_windows": [
+      {
+        "start": 24.0,
+        "end": 34.0,
+        "score": 0.16696596145629883
+      }
+    ],
+    "predictions": [
+      {
+        "start_s": 29.0,
+        "end_s": 30.0,
+        "refined_start": 29.0,
+        "refined_end": 30.0,
+        "retrieval_score": 0.16696596145629883,
+        "grounding_score": 1.0,
+        "final_score": 0.7500897884368898,
+        "candidate_id": "videoitg40k:media_pilot:75922:r0"
+      }
+    ],
+    "candidates": [
+      {
+        "candidate_id": "videoitg40k:media_pilot:75922:r0",
+        "coarse_start": 24.0,
+        "coarse_end": 34.0,
+        "retrieval_score": 0.16696596145629883,
+        "raw_start": 29.0,
+        "raw_end": 30.0,
+        "grounding_score": 1.0,
+        "refined_start": 29.0,
+        "refined_end": 30.0,
+        "final_score": 0.7500897884368898,
+        "duplication_penalty": 0.0,
+        "rank": 1,
+        "pre_dedup_rank": 1,
+        "retriever_version": "cached-cosine-v1",
+        "grounder_version": "TimeLens-8B",
+        "postprocess_version": "boundary-refinement-v1+ranking-v1+temporal-dedup-v1+no-match-v1",
+        "retrieval_latency_ms": 11.404976001358591,
+        "grounding_latency_ms": 1276.9245650124503,
+        "postprocess_latency_ms": 0.021751999156549573,
+        "degraded": false,
+        "degrade_level": 0,
+        "degrade_reason": null,
+        "deduplicated": false,
+        "boundary_confidence": 1.0,
+        "completeness_score": 1.0
+      }
+    ],
+    "output_top_k": 1,
+    "status": "POSSIBLE",
+    "actual_match": true,
+    "degraded": false,
+    "elapsed_ms": 1276.9245650124503,
+    "badcase_type": "unclassified"
+  },
+  {
+    "sample_id": "videoitg40k:media_pilot:223969",
+    "video_path": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/raw/LLaVA-Video-178K/30_60_s_nextqa/NextQA/NExTVideo/0088/11585784946.mp4",
+    "query": "How did the lady in grey direct the dog on what it should do?\nAnswer the question using few words or phrase.",
+    "ground_truth": [
+      [
+        0.0,
+        5.0
+      ]
+    ],
+    "coarse_windows": [
+      {
+        "start": 16.021020889282227,
+        "end": 26.021020889282227,
+        "score": 0.13369759917259216
+      }
+    ],
+    "predictions": [
+      {
+        "start_s": 16.021020889282227,
+        "end_s": 25.021020889282227,
+        "refined_start": 16.021020889282227,
+        "refined_end": 25.021020889282227,
+        "retrieval_score": 0.13369759917259216,
+        "grounding_score": 1.0,
+        "final_score": 0.7401092797517776,
+        "candidate_id": "videoitg40k:media_pilot:223969:r0"
+      }
+    ],
+    "candidates": [
+      {
+        "candidate_id": "videoitg40k:media_pilot:223969:r0",
+        "coarse_start": 16.021020889282227,
+        "coarse_end": 26.021020889282227,
+        "retrieval_score": 0.13369759917259216,
+        "raw_start": 16.021020889282227,
+        "raw_end": 25.021020889282227,
+        "grounding_score": 1.0,
+        "refined_start": 16.021020889282227,
+        "refined_end": 25.021020889282227,
+        "final_score": 0.7401092797517776,
+        "duplication_penalty": 0.0,
+        "rank": 1,
+        "pre_dedup_rank": 1,
+        "retriever_version": "cached-cosine-v1",
+        "grounder_version": "TimeLens-8B",
+        "postprocess_version": "boundary-refinement-v1+ranking-v1+temporal-dedup-v1+no-match-v1",
+        "retrieval_latency_ms": 11.389124003471807,
+        "grounding_latency_ms": 1101.4286880090367,
+        "postprocess_latency_ms": 0.02220299211330712,
+        "degraded": false,
+        "degrade_level": 0,
+        "degrade_reason": null,
+        "deduplicated": false,
+        "boundary_confidence": 1.0,
+        "completeness_score": 1.0
+      }
+    ],
+    "output_top_k": 1,
+    "status": "POSSIBLE",
+    "actual_match": true,
+    "degraded": false,
+    "elapsed_ms": 1101.4286880090367,
+    "badcase_type": "unclassified"
+  },
+  {
+    "sample_id": "videoitg40k:media_pilot:450823",
+    "video_path": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/raw/LLaVA-Video-178K/30_60_s_activitynetqa/ActivityNet-QA/activitynet/train/v1-3/train_val/v_GcEutQTeAnA.mp4",
+    "query": "what color is the hair of the person in the grey coat\nAnswer the question using few words or phrase.",
+    "ground_truth": [
+      [
+        0.0,
+        5.0
+      ]
+    ],
+    "coarse_windows": [
+      {
+        "start": 3.008000373840332,
+        "end": 13.008000373840332,
+        "score": 0.051477354019880295
+      }
+    ],
+    "predictions": [
+      {
+        "start_s": 3.008000373840332,
+        "end_s": 12.008000373840332,
+        "refined_start": 3.008000373840332,
+        "refined_end": 12.008000373840332,
+        "retrieval_score": 0.051477354019880295,
+        "grounding_score": 1.0,
+        "final_score": 0.7154432062059641,
+        "candidate_id": "videoitg40k:media_pilot:450823:r0"
+      }
+    ],
+    "candidates": [
+      {
+        "candidate_id": "videoitg40k:media_pilot:450823:r0",
+        "coarse_start": 3.008000373840332,
+        "coarse_end": 13.008000373840332,
+        "retrieval_score": 0.051477354019880295,
+        "raw_start": 3.008000373840332,
+        "raw_end": 12.008000373840332,
+        "grounding_score": 1.0,
+        "refined_start": 3.008000373840332,
+        "refined_end": 12.008000373840332,
+        "final_score": 0.7154432062059641,
+        "duplication_penalty": 0.0,
+        "rank": 1,
+        "pre_dedup_rank": 1,
+        "retriever_version": "cached-cosine-v1",
+        "grounder_version": "TimeLens-8B",
+        "postprocess_version": "boundary-refinement-v1+ranking-v1+temporal-dedup-v1+no-match-v1",
+        "retrieval_latency_ms": 11.607062013354152,
+        "grounding_latency_ms": 781.2079279974569,
+        "postprocess_latency_ms": 0.019547995179891586,
+        "degraded": false,
+        "degrade_level": 0,
+        "degrade_reason": null,
+        "deduplicated": false,
+        "boundary_confidence": 1.0,
+        "completeness_score": 1.0
+      }
+    ],
+    "output_top_k": 1,
+    "status": "POSSIBLE",
+    "actual_match": true,
+    "degraded": false,
+    "elapsed_ms": 781.2079279974569,
+    "badcase_type": "unclassified"
+  },
+  {
+    "sample_id": "videoitg40k:media_pilot:446217",
+    "video_path": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/raw/LLaVA-Video-178K/30_60_s_nextqa/NextQA/NExTVideo/0094/3161384320.mp4",
+    "query": "What does the guy in grey do after lifting the guy in black up near the end?\nAnswer the question using few words or phrase.",
+    "ground_truth": [
+      [
+        30.0,
+        35.0
+      ],
+      [
+        35.0,
+        40.0
+      ]
+    ],
+    "coarse_windows": [
+      {
+        "start": 26.0310001373291,
+        "end": 36.0310001373291,
+        "score": 0.1522582471370697
+      }
+    ],
+    "predictions": [
+      {
+        "start_s": 33.0310001373291,
+        "end_s": 35.0310001373291,
+        "refined_start": 33.0310001373291,
+        "refined_end": 35.0310001373291,
+        "retrieval_score": 0.1522582471370697,
+        "grounding_score": 1.0,
+        "final_score": 0.745677474141121,
+        "candidate_id": "videoitg40k:media_pilot:446217:r0"
+      }
+    ],
+    "candidates": [
+      {
+        "candidate_id": "videoitg40k:media_pilot:446217:r0",
+        "coarse_start": 26.0310001373291,
+        "coarse_end": 36.0310001373291,
+        "retrieval_score": 0.1522582471370697,
+        "raw_start": 33.0310001373291,
+        "raw_end": 35.0310001373291,
+        "grounding_score": 1.0,
+        "refined_start": 33.0310001373291,
+        "refined_end": 35.0310001373291,
+        "final_score": 0.745677474141121,
+        "duplication_penalty": 0.0,
+        "rank": 1,
+        "pre_dedup_rank": 1,
+        "retriever_version": "cached-cosine-v1",
+        "grounder_version": "TimeLens-8B",
+        "postprocess_version": "boundary-refinement-v1+ranking-v1+temporal-dedup-v1+no-match-v1",
+        "retrieval_latency_ms": 11.431346007157117,
+        "grounding_latency_ms": 1238.6744279938284,
+        "postprocess_latency_ms": 0.02317401231266558,
+        "degraded": false,
+        "degrade_level": 0,
+        "degrade_reason": null,
+        "deduplicated": false,
+        "boundary_confidence": 1.0,
+        "completeness_score": 1.0
+      }
+    ],
+    "output_top_k": 1,
+    "status": "POSSIBLE",
+    "actual_match": true,
+    "degraded": false,
+    "elapsed_ms": 1238.6744279938284,
+    "badcase_type": "unclassified"
+  },
+  {
+    "sample_id": "videoitg40k:media_pilot:133267",
+    "video_path": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/raw/LLaVA-Video-178K/30_60_s_activitynetqa/ActivityNet-QA/activitynet/train/v1-3/train_val/v_GhwvPy4_2KE.mp4",
+    "query": "is the child in the video outdoors\nAnswer the question using few words or phrase.",
+    "ground_truth": [
+      [
+        0.0,
+        5.0
+      ],
+      [
+        5.0,
+        10.0
+      ]
+    ],
+    "coarse_windows": [
+      {
+        "start": 10.0,
+        "end": 20.0,
+        "score": 0.13378901779651642
+      }
+    ],
+    "predictions": [
+      {
+        "start_s": 10.0,
+        "end_s": 19.0,
+        "refined_start": 10.0,
+        "refined_end": 19.0,
+        "retrieval_score": 0.13378901779651642,
+        "grounding_score": 1.0,
+        "final_score": 0.7401367053389549,
+        "candidate_id": "videoitg40k:media_pilot:133267:r0"
+      }
+    ],
+    "candidates": [
+      {
+        "candidate_id": "videoitg40k:media_pilot:133267:r0",
+        "coarse_start": 10.0,
+        "coarse_end": 20.0,
+        "retrieval_score": 0.13378901779651642,
+        "raw_start": 10.0,
+        "raw_end": 19.0,
+        "grounding_score": 1.0,
+        "refined_start": 10.0,
+        "refined_end": 19.0,
+        "final_score": 0.7401367053389549,
+        "duplication_penalty": 0.0,
+        "rank": 1,
+        "pre_dedup_rank": 1,
+        "retriever_version": "cached-cosine-v1",
+        "grounder_version": "TimeLens-8B",
+        "postprocess_version": "boundary-refinement-v1+ranking-v1+temporal-dedup-v1+no-match-v1",
+        "retrieval_latency_ms": 11.350199987646192,
+        "grounding_latency_ms": 1804.7388280101586,
+        "postprocess_latency_ms": 0.025918998289853334,
+        "degraded": false,
+        "degrade_level": 0,
+        "degrade_reason": null,
+        "deduplicated": false,
+        "boundary_confidence": 1.0,
+        "completeness_score": 1.0
+      }
+    ],
+    "output_top_k": 1,
+    "status": "POSSIBLE",
+    "actual_match": true,
+    "degraded": false,
+    "elapsed_ms": 1804.7388280101586,
+    "badcase_type": "unclassified"
+  },
+  {
+    "sample_id": "videoitg40k:media_pilot:303121",
+    "video_path": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/raw/LLaVA-Video-178K/30_60_s_nextqa/NextQA/NExTVideo/0097/5391529619.mp4",
+    "query": "How many people were wearing ties?\nOptions:\nA. two.\nB. one.\nC. three.\nD. four.\nE. five.\n",
+    "ground_truth": [
+      [
+        0.0,
+        5.0
+      ]
+    ],
+    "coarse_windows": [
+      {
+        "start": 20.024999618530273,
+        "end": 30.024999618530273,
+        "score": 0.0870576873421669
+      }
+    ],
+    "predictions": [
+      {
+        "start_s": 20.024999618530273,
+        "end_s": 29.024999618530273,
+        "refined_start": 20.024999618530273,
+        "refined_end": 29.024999618530273,
+        "retrieval_score": 0.0870576873421669,
+        "grounding_score": 1.0,
+        "final_score": 0.72611730620265,
+        "candidate_id": "videoitg40k:media_pilot:303121:r0"
+      }
+    ],
+    "candidates": [
+      {
+        "candidate_id": "videoitg40k:media_pilot:303121:r0",
+        "coarse_start": 20.024999618530273,
+        "coarse_end": 30.024999618530273,
+        "retrieval_score": 0.0870576873421669,
+        "raw_start": 20.024999618530273,
+        "raw_end": 29.024999618530273,
+        "grounding_score": 1.0,
+        "refined_start": 20.024999618530273,
+        "refined_end": 29.024999618530273,
+        "final_score": 0.72611730620265,
+        "duplication_penalty": 0.0,
+        "rank": 1,
+        "pre_dedup_rank": 1,
+        "retriever_version": "cached-cosine-v1",
+        "grounder_version": "TimeLens-8B",
+        "postprocess_version": "boundary-refinement-v1+ranking-v1+temporal-dedup-v1+no-match-v1",
+        "retrieval_latency_ms": 11.63114799419418,
+        "grounding_latency_ms": 1207.1009589999449,
+        "postprocess_latency_ms": 0.027451998903416097,
+        "degraded": false,
+        "degrade_level": 0,
+        "degrade_reason": null,
+        "deduplicated": false,
+        "boundary_confidence": 1.0,
+        "completeness_score": 1.0
+      }
+    ],
+    "output_top_k": 1,
+    "status": "POSSIBLE",
+    "actual_match": true,
+    "degraded": false,
+    "elapsed_ms": 1207.1009589999449,
+    "badcase_type": "unclassified"
+  },
+  {
+    "sample_id": "videoitg40k:media_pilot:289467",
+    "video_path": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/raw/LLaVA-Video-178K/30_60_s_nextqa/NextQA/NExTVideo/0098/3802656968.mp4",
+    "query": "What did the lady in white do after she picked up the snake?\nAnswer the question using few words or phrase.",
+    "ground_truth": [
+      [
+        0.0,
+        5.0
+      ]
+    ],
+    "coarse_windows": [
+      {
+        "start": 1.00600004196167,
+        "end": 11.00600004196167,
+        "score": 0.10029935091733932
+      }
+    ],
+    "predictions": [
+      {
+        "start_s": 3.00600004196167,
+        "end_s": 6.00600004196167,
+        "refined_start": 3.00600004196167,
+        "refined_end": 6.00600004196167,
+        "retrieval_score": 0.10029935091733932,
+        "grounding_score": 1.0,
+        "final_score": 0.7300898052752018,
+        "candidate_id": "videoitg40k:media_pilot:289467:r0"
+      }
+    ],
+    "candidates": [
+      {
+        "candidate_id": "videoitg40k:media_pilot:289467:r0",
+        "coarse_start": 1.00600004196167,
+        "coarse_end": 11.00600004196167,
+        "retrieval_score": 0.10029935091733932,
+        "raw_start": 3.00600004196167,
+        "raw_end": 6.00600004196167,
+        "grounding_score": 1.0,
+        "refined_start": 3.00600004196167,
+        "refined_end": 6.00600004196167,
+        "final_score": 0.7300898052752018,
+        "duplication_penalty": 0.0,
+        "rank": 1,
+        "pre_dedup_rank": 1,
+        "retriever_version": "cached-cosine-v1",
+        "grounder_version": "TimeLens-8B",
+        "postprocess_version": "boundary-refinement-v1+ranking-v1+temporal-dedup-v1+no-match-v1",
+        "retrieval_latency_ms": 11.536426012753509,
+        "grounding_latency_ms": 950.4023990011774,
+        "postprocess_latency_ms": 0.02914600190706551,
+        "degraded": false,
+        "degrade_level": 0,
+        "degrade_reason": null,
+        "deduplicated": false,
+        "boundary_confidence": 1.0,
+        "completeness_score": 1.0
+      }
+    ],
+    "output_top_k": 1,
+    "status": "POSSIBLE",
+    "actual_match": true,
+    "degraded": false,
+    "elapsed_ms": 950.4023990011774,
+    "badcase_type": "unclassified"
+  },
+  {
+    "sample_id": "videoitg40k:media_pilot:110763",
+    "video_path": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/raw/LLaVA-Video-178K/30_60_s_activitynetqa/ActivityNet-QA/activitynet/train/v1-3/train_val/v_HJZj6z1dyT4.mp4",
+    "query": "what happens after the black and white striped man run away\nAnswer the question using few words or phrase.",
+    "ground_truth": [
+      [
+        20.0,
+        25.0
+      ],
+      [
+        25.0,
+        30.0
+      ]
+    ],
+    "coarse_windows": [
+      {
+        "start": 12.989374160766602,
+        "end": 22.9893741607666,
+        "score": 0.08107371628284454
+      }
+    ],
+    "predictions": [
+      {
+        "start_s": 20.9893741607666,
+        "end_s": 21.9893741607666,
+        "refined_start": 20.9893741607666,
+        "refined_end": 21.9893741607666,
+        "retrieval_score": 0.08107371628284454,
+        "grounding_score": 1.0,
+        "final_score": 0.7243221148848533,
+        "candidate_id": "videoitg40k:media_pilot:110763:r0"
+      }
+    ],
+    "candidates": [
+      {
+        "candidate_id": "videoitg40k:media_pilot:110763:r0",
+        "coarse_start": 12.989374160766602,
+        "coarse_end": 22.9893741607666,
+        "retrieval_score": 0.08107371628284454,
+        "raw_start": 20.9893741607666,
+        "raw_end": 21.9893741607666,
+        "grounding_score": 1.0,
+        "refined_start": 20.9893741607666,
+        "refined_end": 21.9893741607666,
+        "final_score": 0.7243221148848533,
+        "duplication_penalty": 0.0,
+        "rank": 1,
+        "pre_dedup_rank": 1,
+        "retriever_version": "cached-cosine-v1",
+        "grounder_version": "TimeLens-8B",
+        "postprocess_version": "boundary-refinement-v1+ranking-v1+temporal-dedup-v1+no-match-v1",
+        "retrieval_latency_ms": 11.406798992538825,
+        "grounding_latency_ms": 1774.5074480044423,
+        "postprocess_latency_ms": 0.025047993403859437,
+        "degraded": false,
+        "degrade_level": 0,
+        "degrade_reason": null,
+        "deduplicated": false,
+        "boundary_confidence": 1.0,
+        "completeness_score": 1.0
+      }
+    ],
+    "output_top_k": 1,
+    "status": "POSSIBLE",
+    "actual_match": true,
+    "degraded": false,
+    "elapsed_ms": 1774.5074480044423,
+    "badcase_type": "unclassified"
+  },
+  {
+    "sample_id": "videoitg40k:media_pilot:71673",
+    "video_path": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/raw/LLaVA-Video-178K/30_60_s_nextqa/NextQA/NExTVideo/1000/2858955970.mp4",
+    "query": "How does the lady standing at the shore move her hands?\nOptions:\nA. hug.\nB. holds onto the wall.\nC. jumping up and down.\nD. pretend to swim.\nE. wave.\n",
+    "ground_truth": [
+      [
+        15.0,
+        20.0
+      ]
+    ],
+    "coarse_windows": [
+      {
+        "start": 23.02831268310547,
+        "end": 33.02831268310547,
+        "score": 0.04872319474816322
+      }
+    ],
+    "predictions": [
+      {
+        "start_s": 23.02831268310547,
+        "end_s": 33.02831268310547,
+        "refined_start": 23.02831268310547,
+        "refined_end": 33.02831268310547,
+        "retrieval_score": 0.04872319474816322,
+        "grounding_score": 0.0,
+        "final_score": 0.04872319474816322,
+        "candidate_id": "videoitg40k:media_pilot:71673:r0"
+      }
+    ],
+    "candidates": [
+      {
+        "candidate_id": "videoitg40k:media_pilot:71673:r0",
+        "coarse_start": 23.02831268310547,
+        "coarse_end": 33.02831268310547,
+        "retrieval_score": 0.04872319474816322,
+        "raw_start": 23.02831268310547,
+        "raw_end": 33.02831268310547,
+        "grounding_score": 0.0,
+        "refined_start": 23.02831268310547,
+        "refined_end": 33.02831268310547,
+        "final_score": 0.04872319474816322,
+        "duplication_penalty": 0.0,
+        "rank": 1,
+        "retriever_version": "cached-cosine-v1",
+        "grounder_version": "TimeLens-8B",
+        "postprocess_version": "degraded-coarse-v1",
+        "retrieval_latency_ms": 11.764914001105353,
+        "grounding_latency_ms": 0.0,
+        "postprocess_latency_ms": 0.0,
+        "degraded": true,
+        "degrade_level": 2,
+        "degrade_reason": "grounding_error:CalledProcessError",
+        "deduplicated": false
+      }
+    ],
+    "output_top_k": 1,
+    "status": "POSSIBLE",
+    "actual_match": true,
+    "degraded": true,
+    "elapsed_ms": 0.0,
+    "badcase_type": "unclassified"
+  },
+  {
+    "sample_id": "videoitg40k:media_pilot:11697",
+    "video_path": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/raw/LLaVA-Video-178K/30_60_s_nextqa/NextQA/NExTVideo/1000/4227464140.mp4",
+    "query": "Why did the man point the controller at the television?\nOptions:\nA. to play game.\nB. where the car is.\nC. hand gesture while talking.\nD. as the people are watching it.\nE. watch the television.\nPlease provide your answer by stating the letter followed by the full option.",
+    "ground_truth": [
+      [
+        20.0,
+        25.0
+      ]
+    ],
+    "coarse_windows": [
+      {
+        "start": 29.034000396728516,
+        "end": 34.801433333333335,
+        "score": 0.11491087079048157
+      }
+    ],
+    "predictions": [
+      {
+        "start_s": 29.034000396728516,
+        "end_s": 34.034000396728516,
+        "refined_start": 29.034000396728516,
+        "refined_end": 34.034000396728516,
+        "retrieval_score": 0.11491087079048157,
+        "grounding_score": 1.0,
+        "final_score": 0.7344732612371445,
+        "candidate_id": "videoitg40k:media_pilot:11697:r0"
+      }
+    ],
+    "candidates": [
+      {
+        "candidate_id": "videoitg40k:media_pilot:11697:r0",
+        "coarse_start": 29.034000396728516,
+        "coarse_end": 34.801433333333335,
+        "retrieval_score": 0.11491087079048157,
+        "raw_start": 29.034000396728516,
+        "raw_end": 34.034000396728516,
+        "grounding_score": 1.0,
+        "refined_start": 29.034000396728516,
+        "refined_end": 34.034000396728516,
+        "final_score": 0.7344732612371445,
+        "duplication_penalty": 0.0,
+        "rank": 1,
+        "pre_dedup_rank": 1,
+        "retriever_version": "cached-cosine-v1",
+        "grounder_version": "TimeLens-8B",
+        "postprocess_version": "boundary-refinement-v1+ranking-v1+temporal-dedup-v1+no-match-v1",
+        "retrieval_latency_ms": 11.743842987925746,
+        "grounding_latency_ms": 770.7558879919816,
+        "postprocess_latency_ms": 0.02185199991799891,
+        "degraded": false,
+        "degrade_level": 0,
+        "degrade_reason": null,
+        "deduplicated": false,
+        "boundary_confidence": 1.0,
+        "completeness_score": 1.0
+      }
+    ],
+    "output_top_k": 1,
+    "status": "POSSIBLE",
+    "actual_match": true,
+    "degraded": false,
+    "elapsed_ms": 770.7558879919816,
+    "badcase_type": "unclassified"
+  },
+  {
+    "sample_id": "videoitg40k:media_pilot:276491",
+    "video_path": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/raw/LLaVA-Video-178K/30_60_s_activitynetqa/ActivityNet-QA/activitynet/train/v1-3/train_val/v_IrTqW6Qn8mI.mp4",
+    "query": "what happens before clearing the leaves\nAnswer the question using few words or phrase.",
+    "ground_truth": [
+      [
+        0.0,
+        5.0
+      ]
+    ],
+    "coarse_windows": [
+      {
+        "start": 12.840703964233398,
+        "end": 22.8407039642334,
+        "score": 0.16253435611724854
+      }
+    ],
+    "predictions": [
+      {
+        "start_s": 12.840703964233398,
+        "end_s": 21.8407039642334,
+        "refined_start": 12.840703964233398,
+        "refined_end": 21.8407039642334,
+        "retrieval_score": 0.16253435611724854,
+        "grounding_score": 1.0,
+        "final_score": 0.7487603068351747,
+        "candidate_id": "videoitg40k:media_pilot:276491:r0"
+      }
+    ],
+    "candidates": [
+      {
+        "candidate_id": "videoitg40k:media_pilot:276491:r0",
+        "coarse_start": 12.840703964233398,
+        "coarse_end": 22.8407039642334,
+        "retrieval_score": 0.16253435611724854,
+        "raw_start": 12.840703964233398,
+        "raw_end": 21.8407039642334,
+        "grounding_score": 1.0,
+        "refined_start": 12.840703964233398,
+        "refined_end": 21.8407039642334,
+        "final_score": 0.7487603068351747,
+        "duplication_penalty": 0.0,
+        "rank": 1,
+        "pre_dedup_rank": 1,
+        "retriever_version": "cached-cosine-v1",
+        "grounder_version": "TimeLens-8B",
+        "postprocess_version": "boundary-refinement-v1+ranking-v1+temporal-dedup-v1+no-match-v1",
+        "retrieval_latency_ms": 11.392471991712227,
+        "grounding_latency_ms": 1511.1537329939893,
+        "postprocess_latency_ms": 0.027032001526094973,
+        "degraded": false,
+        "degrade_level": 0,
+        "degrade_reason": null,
+        "deduplicated": false,
+        "boundary_confidence": 1.0,
+        "completeness_score": 1.0
+      }
+    ],
+    "output_top_k": 1,
+    "status": "POSSIBLE",
+    "actual_match": true,
+    "degraded": false,
+    "elapsed_ms": 1511.1537329939893,
+    "badcase_type": "unclassified"
+  },
+  {
+    "sample_id": "videoitg40k:media_pilot:224991",
+    "video_path": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/raw/LLaVA-Video-178K/30_60_s_nextqa/NextQA/NExTVideo/1000/5182578763.mp4",
+    "query": "Why are the machines able to stay together as they move?\nOptions:\nA. giving instructions on how to dance.\nB. cold weather.\nC. going on a trip.\nD. enjoying music.\nE. connected by string.\nPlease provide your answer by stating the letter followed by the full option.",
+    "ground_truth": [
+      [
+        0.0,
+        5.0
+      ],
+      [
+        5.0,
+        10.0
+      ]
+    ],
+    "coarse_windows": [
+      {
+        "start": 11.016000747680664,
+        "end": 21.016000747680664,
+        "score": 0.0878879576921463
+      }
+    ],
+    "predictions": [
+      {
+        "start_s": 14.016000747680664,
+        "end_s": 20.016000747680664,
+        "refined_start": 14.016000747680664,
+        "refined_end": 20.016000747680664,
+        "retrieval_score": 0.0878879576921463,
+        "grounding_score": 1.0,
+        "final_score": 0.726366387307644,
+        "candidate_id": "videoitg40k:media_pilot:224991:r0"
+      }
+    ],
+    "candidates": [
+      {
+        "candidate_id": "videoitg40k:media_pilot:224991:r0",
+        "coarse_start": 11.016000747680664,
+        "coarse_end": 21.016000747680664,
+        "retrieval_score": 0.0878879576921463,
+        "raw_start": 14.016000747680664,
+        "raw_end": 20.016000747680664,
+        "grounding_score": 1.0,
+        "refined_start": 14.016000747680664,
+        "refined_end": 20.016000747680664,
+        "final_score": 0.726366387307644,
+        "duplication_penalty": 0.0,
+        "rank": 1,
+        "pre_dedup_rank": 1,
+        "retriever_version": "cached-cosine-v1",
+        "grounder_version": "TimeLens-8B",
+        "postprocess_version": "boundary-refinement-v1+ranking-v1+temporal-dedup-v1+no-match-v1",
+        "retrieval_latency_ms": 11.835398996481672,
+        "grounding_latency_ms": 1231.118964991765,
+        "postprocess_latency_ms": 0.021861997083760798,
+        "degraded": false,
+        "degrade_level": 0,
+        "degrade_reason": null,
+        "deduplicated": false,
+        "boundary_confidence": 1.0,
+        "completeness_score": 1.0
+      }
+    ],
+    "output_top_k": 1,
+    "status": "POSSIBLE",
+    "actual_match": true,
+    "degraded": false,
+    "elapsed_ms": 1231.118964991765,
+    "badcase_type": "unclassified"
+  },
+  {
+    "sample_id": "videoitg40k:media_pilot:292355",
+    "video_path": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/raw/LLaVA-Video-178K/30_60_s_nextqa/NextQA/NExTVideo/1000/6162188298.mp4",
+    "query": "How did the people travel to the middle of the sea?\nOptions:\nA. submarine.\nB. boat.\nC. chinese junk.\nD. helicopter.\nE. rubber dinghy.\nPlease respond with only the letter of the correct answer.",
+    "ground_truth": [
+      [
+        0.0,
+        5.0
+      ]
+    ],
+    "coarse_windows": [
+      {
+        "start": 1.00600004196167,
+        "end": 11.00600004196167,
+        "score": 0.06931795924901962
+      }
+    ],
+    "predictions": [
+      {
+        "start_s": 1.00600004196167,
+        "end_s": 8.00600004196167,
+        "refined_start": 1.00600004196167,
+        "refined_end": 8.00600004196167,
+        "retrieval_score": 0.06931795924901962,
+        "grounding_score": 1.0,
+        "final_score": 0.720795387774706,
+        "candidate_id": "videoitg40k:media_pilot:292355:r0"
+      }
+    ],
+    "candidates": [
+      {
+        "candidate_id": "videoitg40k:media_pilot:292355:r0",
+        "coarse_start": 1.00600004196167,
+        "coarse_end": 11.00600004196167,
+        "retrieval_score": 0.06931795924901962,
+        "raw_start": 1.00600004196167,
+        "raw_end": 8.00600004196167,
+        "grounding_score": 1.0,
+        "refined_start": 1.00600004196167,
+        "refined_end": 8.00600004196167,
+        "final_score": 0.720795387774706,
+        "duplication_penalty": 0.0,
+        "rank": 1,
+        "pre_dedup_rank": 1,
+        "retriever_version": "cached-cosine-v1",
+        "grounder_version": "TimeLens-8B",
+        "postprocess_version": "boundary-refinement-v1+ranking-v1+temporal-dedup-v1+no-match-v1",
+        "retrieval_latency_ms": 11.631900008069351,
+        "grounding_latency_ms": 1191.6060819930863,
+        "postprocess_latency_ms": 0.024836990633048117,
+        "degraded": false,
+        "degrade_level": 0,
+        "degrade_reason": null,
+        "deduplicated": false,
+        "boundary_confidence": 1.0,
+        "completeness_score": 1.0
+      }
+    ],
+    "output_top_k": 1,
+    "status": "POSSIBLE",
+    "actual_match": true,
+    "degraded": false,
+    "elapsed_ms": 1191.6060819930863,
+    "badcase_type": "unclassified"
+  },
+  {
+    "sample_id": "videoitg40k:media_pilot:96013",
+    "video_path": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/raw/LLaVA-Video-178K/30_60_s_activitynetqa/ActivityNet-QA/activitynet/train/v1-3/train_val/v_L2MfC4jcRo0.mp4",
+    "query": "what is the person with glasses doing\nAnswer the question using few words or phrase.",
+    "ground_truth": [
+      [
+        25.0,
+        30.0
+      ],
+      [
+        30.0,
+        35.0
+      ]
+    ],
+    "coarse_windows": [
+      {
+        "start": 12.017000198364258,
+        "end": 22.017000198364258,
+        "score": 0.1296730935573578
+      }
+    ],
+    "predictions": [
+      {
+        "start_s": 15.017000198364258,
+        "end_s": 17.017000198364258,
+        "refined_start": 15.017000198364258,
+        "refined_end": 17.017000198364258,
+        "retrieval_score": 0.1296730935573578,
+        "grounding_score": 1.0,
+        "final_score": 0.7389019280672073,
+        "candidate_id": "videoitg40k:media_pilot:96013:r0"
+      }
+    ],
+    "candidates": [
+      {
+        "candidate_id": "videoitg40k:media_pilot:96013:r0",
+        "coarse_start": 12.017000198364258,
+        "coarse_end": 22.017000198364258,
+        "retrieval_score": 0.1296730935573578,
+        "raw_start": 15.017000198364258,
+        "raw_end": 17.017000198364258,
+        "grounding_score": 1.0,
+        "refined_start": 15.017000198364258,
+        "refined_end": 17.017000198364258,
+        "final_score": 0.7389019280672073,
+        "duplication_penalty": 0.0,
+        "rank": 1,
+        "pre_dedup_rank": 1,
+        "retriever_version": "cached-cosine-v1",
+        "grounder_version": "TimeLens-8B",
+        "postprocess_version": "boundary-refinement-v1+ranking-v1+temporal-dedup-v1+no-match-v1",
+        "retrieval_latency_ms": 11.423269999795593,
+        "grounding_latency_ms": 1757.4137030023849,
+        "postprocess_latency_ms": 0.023375003365799785,
+        "degraded": false,
+        "degrade_level": 0,
+        "degrade_reason": null,
+        "deduplicated": false,
+        "boundary_confidence": 1.0,
+        "completeness_score": 1.0
+      }
+    ],
+    "output_top_k": 1,
+    "status": "POSSIBLE",
+    "actual_match": true,
+    "degraded": false,
+    "elapsed_ms": 1757.4137030023849,
+    "badcase_type": "unclassified"
+  },
+  {
+    "sample_id": "videoitg40k:media_pilot:80853",
+    "video_path": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/raw/LLaVA-Video-178K/30_60_s_nextqa/NextQA/NExTVideo/1002/6335144338.mp4",
+    "query": "What does the smaller elephant do after getting out of the pool halfway?\nOptions:\nA. goes to the front of pool.\nB. touch pumpkin.\nC. moves back.\nD. flush away.\nE. splash mud.\nPlease provide your answer by stating the letter followed by the full option.",
+    "ground_truth": [
+      [
+        15.0,
+        20.0
+      ],
+      [
+        20.0,
+        25.0
+      ]
+    ],
+    "coarse_windows": [
+      {
+        "start": 29.034000396728516,
+        "end": 34.76806666666667,
+        "score": 0.13327321410179138
+      }
+    ],
+    "predictions": [
+      {
+        "start_s": 31.034000396728516,
+        "end_s": 33.034000396728516,
+        "refined_start": 31.034000396728516,
+        "refined_end": 33.034000396728516,
+        "retrieval_score": 0.13327321410179138,
+        "grounding_score": 1.0,
+        "final_score": 0.7399819642305374,
+        "candidate_id": "videoitg40k:media_pilot:80853:r0"
+      }
+    ],
+    "candidates": [
+      {
+        "candidate_id": "videoitg40k:media_pilot:80853:r0",
+        "coarse_start": 29.034000396728516,
+        "coarse_end": 34.76806666666667,
+        "retrieval_score": 0.13327321410179138,
+        "raw_start": 31.034000396728516,
+        "raw_end": 33.034000396728516,
+        "grounding_score": 1.0,
+        "refined_start": 31.034000396728516,
+        "refined_end": 33.034000396728516,
+        "final_score": 0.7399819642305374,
+        "duplication_penalty": 0.0,
+        "rank": 1,
+        "pre_dedup_rank": 1,
+        "retriever_version": "cached-cosine-v1",
+        "grounder_version": "TimeLens-8B",
+        "postprocess_version": "boundary-refinement-v1+ranking-v1+temporal-dedup-v1+no-match-v1",
+        "retrieval_latency_ms": 11.81556101073511,
+        "grounding_latency_ms": 939.9923019955168,
+        "postprocess_latency_ms": 0.021651998395100236,
+        "degraded": false,
+        "degrade_level": 0,
+        "degrade_reason": null,
+        "deduplicated": false,
+        "boundary_confidence": 1.0,
+        "completeness_score": 1.0
+      }
+    ],
+    "output_top_k": 1,
+    "status": "POSSIBLE",
+    "actual_match": true,
+    "degraded": false,
+    "elapsed_ms": 939.9923019955168,
+    "badcase_type": "unclassified"
+  },
+  {
+    "sample_id": "videoitg40k:media_pilot:55345",
+    "video_path": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/raw/LLaVA-Video-178K/30_60_s_activitynetqa/ActivityNet-QA/activitynet/train/v1-3/train_val/v_M7tUnCF9lU4.mp4",
+    "query": "how many people are there in the video\nAnswer the question using few words or phrase.",
+    "ground_truth": [
+      [
+        0.0,
+        5.0
+      ]
+    ],
+    "coarse_windows": [
+      {
+        "start": 24.0,
+        "end": 34.0,
+        "score": 0.062239233404397964
+      }
+    ],
+    "predictions": [
+      {
+        "start_s": 24.0,
+        "end_s": 33.0,
+        "refined_start": 24.0,
+        "refined_end": 33.0,
+        "retrieval_score": 0.062239233404397964,
+        "grounding_score": 1.0,
+        "final_score": 0.7186717700213194,
+        "candidate_id": "videoitg40k:media_pilot:55345:r0"
+      }
+    ],
+    "candidates": [
+      {
+        "candidate_id": "videoitg40k:media_pilot:55345:r0",
+        "coarse_start": 24.0,
+        "coarse_end": 34.0,
+        "retrieval_score": 0.062239233404397964,
+        "raw_start": 24.0,
+        "raw_end": 33.0,
+        "grounding_score": 1.0,
+        "refined_start": 24.0,
+        "refined_end": 33.0,
+        "final_score": 0.7186717700213194,
+        "duplication_penalty": 0.0,
+        "rank": 1,
+        "pre_dedup_rank": 1,
+        "retriever_version": "cached-cosine-v1",
+        "grounder_version": "TimeLens-8B",
+        "postprocess_version": "boundary-refinement-v1+ranking-v1+temporal-dedup-v1+no-match-v1",
+        "retrieval_latency_ms": 11.322827995172702,
+        "grounding_latency_ms": 790.5910499976017,
+        "postprocess_latency_ms": 0.030448005418293178,
+        "degraded": false,
+        "degrade_level": 0,
+        "degrade_reason": null,
+        "deduplicated": false,
+        "boundary_confidence": 1.0,
+        "completeness_score": 1.0
+      }
+    ],
+    "output_top_k": 1,
+    "status": "POSSIBLE",
+    "actual_match": true,
+    "degraded": false,
+    "elapsed_ms": 790.5910499976017,
+    "badcase_type": "unclassified"
+  },
+  {
+    "sample_id": "videoitg40k:media_pilot:90561",
+    "video_path": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/raw/LLaVA-Video-178K/30_60_s_nextqa/NextQA/NExTVideo/1005/2776753352.mp4",
+    "query": "How does the man with the watch react when the man in navy hands him a coconut?\nOptions:\nA. make it do tricks.\nB. takes the coconut from his hand.\nC. tries to get out of water.\nD. put the man s other hand in.\nE. run away.\nPlease respond with only the letter of the correct answer.",
+    "ground_truth": [
+      [
+        15.0,
+        20.0
+      ]
+    ],
+    "coarse_windows": [
+      {
+        "start": 28.033367156982422,
+        "end": 36.83720930232558,
+        "score": 0.09256234019994736
+      }
+    ],
+    "predictions": [
+      {
+        "start_s": 28.033367156982422,
+        "end_s": 36.83720930232558,
+        "refined_start": 28.033367156982422,
+        "refined_end": 36.83720930232558,
+        "retrieval_score": 0.09256234019994736,
+        "grounding_score": 0.0,
+        "final_score": 0.09256234019994736,
+        "candidate_id": "videoitg40k:media_pilot:90561:r0"
+      }
+    ],
+    "candidates": [
+      {
+        "candidate_id": "videoitg40k:media_pilot:90561:r0",
+        "coarse_start": 28.033367156982422,
+        "coarse_end": 36.83720930232558,
+        "retrieval_score": 0.09256234019994736,
+        "raw_start": 28.033367156982422,
+        "raw_end": 36.83720930232558,
+        "grounding_score": 0.0,
+        "refined_start": 28.033367156982422,
+        "refined_end": 36.83720930232558,
+        "final_score": 0.09256234019994736,
+        "duplication_penalty": 0.0,
+        "rank": 1,
+        "retriever_version": "cached-cosine-v1",
+        "grounder_version": "TimeLens-8B",
+        "postprocess_version": "degraded-coarse-v1",
+        "retrieval_latency_ms": 11.80509099503979,
+        "grounding_latency_ms": 0.0,
+        "postprocess_latency_ms": 0.0,
+        "degraded": true,
+        "degrade_level": 2,
+        "degrade_reason": "grounding_error:CalledProcessError",
+        "deduplicated": false
+      }
+    ],
+    "output_top_k": 1,
+    "status": "POSSIBLE",
+    "actual_match": true,
+    "degraded": true,
+    "elapsed_ms": 0.0,
+    "badcase_type": "unclassified"
+  },
+  {
+    "sample_id": "videoitg40k:media_pilot:253604",
+    "video_path": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/raw/LLaVA-Video-178K/30_60_s_activitynetqa/ActivityNet-QA/activitynet/train/v1-3/train_val/v_MDdCBN1o2sE.mp4",
+    "query": "which hand of the man in red trousers is wearing a bracelet\nAnswer the question using few words or phrase.",
+    "ground_truth": [
+      [
+        15.0,
+        20.0
+      ]
+    ],
+    "coarse_windows": [
+      {
+        "start": 11.179611206054688,
+        "end": 21.179611206054688,
+        "score": 0.01749931275844574
+      }
+    ],
+    "predictions": [
+      {
+        "start_s": 16.179611206054688,
+        "end_s": 18.179611206054688,
+        "refined_start": 16.179611206054688,
+        "refined_end": 18.179611206054688,
+        "retrieval_score": 0.01749931275844574,
+        "grounding_score": 1.0,
+        "final_score": 0.7052497938275337,
+        "candidate_id": "videoitg40k:media_pilot:253604:r0"
+      }
+    ],
+    "candidates": [
+      {
+        "candidate_id": "videoitg40k:media_pilot:253604:r0",
+        "coarse_start": 11.179611206054688,
+        "coarse_end": 21.179611206054688,
+        "retrieval_score": 0.01749931275844574,
+        "raw_start": 16.179611206054688,
+        "raw_end": 18.179611206054688,
+        "grounding_score": 1.0,
+        "refined_start": 16.179611206054688,
+        "refined_end": 18.179611206054688,
+        "final_score": 0.7052497938275337,
+        "duplication_penalty": 0.0,
+        "rank": 1,
+        "pre_dedup_rank": 1,
+        "retriever_version": "cached-cosine-v1",
+        "grounder_version": "TimeLens-8B",
+        "postprocess_version": "boundary-refinement-v1+ranking-v1+temporal-dedup-v1+no-match-v1",
+        "retrieval_latency_ms": 11.39124900510069,
+        "grounding_latency_ms": 2033.8662700087298,
+        "postprocess_latency_ms": 0.024235996534116566,
+        "degraded": false,
+        "degrade_level": 0,
+        "degrade_reason": null,
+        "deduplicated": false,
+        "boundary_confidence": 1.0,
+        "completeness_score": 1.0
+      }
+    ],
+    "output_top_k": 1,
+    "status": "POSSIBLE",
+    "actual_match": true,
+    "degraded": false,
+    "elapsed_ms": 2033.8662700087298,
+    "badcase_type": "unclassified"
+  },
+  {
+    "sample_id": "videoitg40k:media_pilot:395556",
+    "video_path": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/raw/LLaVA-Video-178K/30_60_s_activitynetqa/ActivityNet-QA/activitynet/train/v1-3/train_val/v_MEwGjGcV_Ik.mp4",
+    "query": "what is the color of the discus in front of the person wearing the flower dress\nAnswer the question using few words or phrase.",
+    "ground_truth": [
+      [
+        0.0,
+        5.0
+      ],
+      [
+        5.0,
+        10.0
+      ]
+    ],
+    "coarse_windows": [
+      {
+        "start": 28.0,
+        "end": 38.0,
+        "score": 0.07679550349712372
+      }
+    ],
+    "predictions": [
+      {
+        "start_s": 28.0,
+        "end_s": 37.0,
+        "refined_start": 28.0,
+        "refined_end": 37.0,
+        "retrieval_score": 0.07679550349712372,
+        "grounding_score": 1.0,
+        "final_score": 0.7230386510491371,
+        "candidate_id": "videoitg40k:media_pilot:395556:r0"
+      }
+    ],
+    "candidates": [
+      {
+        "candidate_id": "videoitg40k:media_pilot:395556:r0",
+        "coarse_start": 28.0,
+        "coarse_end": 38.0,
+        "retrieval_score": 0.07679550349712372,
+        "raw_start": 28.0,
+        "raw_end": 37.0,
+        "grounding_score": 1.0,
+        "refined_start": 28.0,
+        "refined_end": 37.0,
+        "final_score": 0.7230386510491371,
+        "duplication_penalty": 0.0,
+        "rank": 1,
+        "pre_dedup_rank": 1,
+        "retriever_version": "cached-cosine-v1",
+        "grounder_version": "TimeLens-8B",
+        "postprocess_version": "boundary-refinement-v1+ranking-v1+temporal-dedup-v1+no-match-v1",
+        "retrieval_latency_ms": 11.480310000479221,
+        "grounding_latency_ms": 780.6169429968577,
+        "postprocess_latency_ms": 0.02957700053229928,
+        "degraded": false,
+        "degrade_level": 0,
+        "degrade_reason": null,
+        "deduplicated": false,
+        "boundary_confidence": 1.0,
+        "completeness_score": 1.0
+      }
+    ],
+    "output_top_k": 1,
+    "status": "POSSIBLE",
+    "actual_match": true,
+    "degraded": false,
+    "elapsed_ms": 780.6169429968577,
+    "badcase_type": "unclassified"
+  },
+  {
+    "sample_id": "videoitg40k:media_pilot:375680",
+    "video_path": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/raw/LLaVA-Video-178K/30_60_s_nextqa/NextQA/NExTVideo/1005/6262213455.mp4",
+    "query": "Why is the child sitting at the table?\nAnswer the question using few words or phrase.",
+    "ground_truth": [
+      [
+        0.0,
+        5.0
+      ]
+    ],
+    "coarse_windows": [
+      {
+        "start": 1.00600004196167,
+        "end": 11.00600004196167,
+        "score": 0.14527195692062378
+      }
+    ],
+    "predictions": [
+      {
+        "start_s": 1.00600004196167,
+        "end_s": 10.00600004196167,
+        "refined_start": 1.00600004196167,
+        "refined_end": 10.00600004196167,
+        "retrieval_score": 0.14527195692062378,
+        "grounding_score": 1.0,
+        "final_score": 0.7435815870761873,
+        "candidate_id": "videoitg40k:media_pilot:375680:r0"
+      }
+    ],
+    "candidates": [
+      {
+        "candidate_id": "videoitg40k:media_pilot:375680:r0",
+        "coarse_start": 1.00600004196167,
+        "coarse_end": 11.00600004196167,
+        "retrieval_score": 0.14527195692062378,
+        "raw_start": 1.00600004196167,
+        "raw_end": 10.00600004196167,
+        "grounding_score": 1.0,
+        "refined_start": 1.00600004196167,
+        "refined_end": 10.00600004196167,
+        "final_score": 0.7435815870761873,
+        "duplication_penalty": 0.0,
+        "rank": 1,
+        "pre_dedup_rank": 1,
+        "retriever_version": "cached-cosine-v1",
+        "grounder_version": "TimeLens-8B",
+        "postprocess_version": "boundary-refinement-v1+ranking-v1+temporal-dedup-v1+no-match-v1",
+        "retrieval_latency_ms": 11.42413199704606,
+        "grounding_latency_ms": 1111.7206119961338,
+        "postprocess_latency_ms": 0.023165004677139223,
+        "degraded": false,
+        "degrade_level": 0,
+        "degrade_reason": null,
+        "deduplicated": false,
+        "boundary_confidence": 1.0,
+        "completeness_score": 1.0
+      }
+    ],
+    "output_top_k": 1,
+    "status": "POSSIBLE",
+    "actual_match": true,
+    "degraded": false,
+    "elapsed_ms": 1111.7206119961338,
+    "badcase_type": "unclassified"
+  },
+  {
+    "sample_id": "videoitg40k:media_pilot:386692",
+    "video_path": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/raw/LLaVA-Video-178K/30_60_s_nextqa/NextQA/NExTVideo/1006/4593651245.mp4",
+    "query": "Why did the adult place her hand behind the baby s neck when he is lifted up?\nAnswer the question using few words or phrase.",
+    "ground_truth": [
+      [
+        40.0,
+        45.0
+      ]
+    ],
+    "coarse_windows": [
+      {
+        "start": 2.006999969482422,
+        "end": 12.006999969482422,
+        "score": 0.12915948033332825
+      }
+    ],
+    "predictions": [
+      {
+        "start_s": 5.006999969482422,
+        "end_s": 8.006999969482422,
+        "refined_start": 5.006999969482422,
+        "refined_end": 8.006999969482422,
+        "retrieval_score": 0.12915948033332825,
+        "grounding_score": 1.0,
+        "final_score": 0.7387478440999986,
+        "candidate_id": "videoitg40k:media_pilot:386692:r0"
+      }
+    ],
+    "candidates": [
+      {
+        "candidate_id": "videoitg40k:media_pilot:386692:r0",
+        "coarse_start": 2.006999969482422,
+        "coarse_end": 12.006999969482422,
+        "retrieval_score": 0.12915948033332825,
+        "raw_start": 5.006999969482422,
+        "raw_end": 8.006999969482422,
+        "grounding_score": 1.0,
+        "refined_start": 5.006999969482422,
+        "refined_end": 8.006999969482422,
+        "final_score": 0.7387478440999986,
+        "duplication_penalty": 0.0,
+        "rank": 1,
+        "pre_dedup_rank": 1,
+        "retriever_version": "cached-cosine-v1",
+        "grounder_version": "TimeLens-8B",
+        "postprocess_version": "boundary-refinement-v1+ranking-v1+temporal-dedup-v1+no-match-v1",
+        "retrieval_latency_ms": 11.603916995227337,
+        "grounding_latency_ms": 1233.0110210023122,
+        "postprocess_latency_ms": 0.023405009415000677,
+        "degraded": false,
+        "degrade_level": 0,
+        "degrade_reason": null,
+        "deduplicated": false,
+        "boundary_confidence": 1.0,
+        "completeness_score": 1.0
+      }
+    ],
+    "output_top_k": 1,
+    "status": "POSSIBLE",
+    "actual_match": true,
+    "degraded": false,
+    "elapsed_ms": 1233.0110210023122,
+    "badcase_type": "unclassified"
+  },
+  {
+    "sample_id": "videoitg40k:media_pilot:87617",
+    "video_path": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/raw/LLaVA-Video-178K/30_60_s_nextqa/NextQA/NExTVideo/1007/3636078612.mp4",
+    "query": "Why did the girl in bright pink laughing after the boy did silly faces and movements?\nOptions:\nA. likes chocolate.\nB. to go to the person recording.\nC. copying him.\nD. found him funny.\nE. talk something interesting.\nPlease respond with only the letter of the correct answer.",
+    "ground_truth": [
+      [
+        20.0,
+        25.0
+      ],
+      [
+        25.0,
+        30.0
+      ]
+    ],
+    "coarse_windows": [
+      {
+        "start": 24.02899932861328,
+        "end": 32.96626666666667,
+        "score": 0.06187061220407486
+      }
+    ],
+    "predictions": [
+      {
+        "start_s": 28.02899932861328,
+        "end_s": 32.02899932861328,
+        "refined_start": 28.02899932861328,
+        "refined_end": 32.02899932861328,
+        "retrieval_score": 0.06187061220407486,
+        "grounding_score": 1.0,
+        "final_score": 0.7185611836612225,
+        "candidate_id": "videoitg40k:media_pilot:87617:r0"
+      }
+    ],
+    "candidates": [
+      {
+        "candidate_id": "videoitg40k:media_pilot:87617:r0",
+        "coarse_start": 24.02899932861328,
+        "coarse_end": 32.96626666666667,
+        "retrieval_score": 0.06187061220407486,
+        "raw_start": 28.02899932861328,
+        "raw_end": 32.02899932861328,
+        "grounding_score": 1.0,
+        "refined_start": 28.02899932861328,
+        "refined_end": 32.02899932861328,
+        "final_score": 0.7185611836612225,
+        "duplication_penalty": 0.0,
+        "rank": 1,
+        "pre_dedup_rank": 1,
+        "retriever_version": "cached-cosine-v1",
+        "grounder_version": "TimeLens-8B",
+        "postprocess_version": "boundary-refinement-v1+ranking-v1+temporal-dedup-v1+no-match-v1",
+        "retrieval_latency_ms": 11.880064004799351,
+        "grounding_latency_ms": 1179.716605998692,
+        "postprocess_latency_ms": 0.023524989956058562,
+        "degraded": false,
+        "degrade_level": 0,
+        "degrade_reason": null,
+        "deduplicated": false,
+        "boundary_confidence": 1.0,
+        "completeness_score": 1.0
+      }
+    ],
+    "output_top_k": 1,
+    "status": "POSSIBLE",
+    "actual_match": true,
+    "degraded": false,
+    "elapsed_ms": 1179.716605998692,
+    "badcase_type": "unclassified"
+  },
+  {
+    "sample_id": "videoitg40k:media_pilot:207992",
+    "video_path": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/raw/LLaVA-Video-178K/30_60_s_nextqa/NextQA/NExTVideo/1007/3736610392.mp4",
+    "query": "What did the hamster do before it came out from the green bowl?\nOptions:\nA. turn on the wand.\nB. the lady sitting down.\nC. drink from water bowl.\nD. resting.\nE. crawl in sofa.\nPlease respond with only the letter of the correct answer.",
+    "ground_truth": [
+      [
+        0.0,
+        5.0
+      ],
+      [
+        5.0,
+        10.0
+      ],
+      [
+        10.0,
+        15.0
+      ]
+    ],
+    "coarse_windows": [
+      {
+        "start": 13.017999649047852,
+        "end": 23.01799964904785,
+        "score": 0.1047588437795639
+      }
+    ],
+    "predictions": [
+      {
+        "start_s": 13.017999649047852,
+        "end_s": 18.01799964904785,
+        "refined_start": 13.017999649047852,
+        "refined_end": 18.01799964904785,
+        "retrieval_score": 0.1047588437795639,
+        "grounding_score": 1.0,
+        "final_score": 0.7314276531338693,
+        "candidate_id": "videoitg40k:media_pilot:207992:r0"
+      }
+    ],
+    "candidates": [
+      {
+        "candidate_id": "videoitg40k:media_pilot:207992:r0",
+        "coarse_start": 13.017999649047852,
+        "coarse_end": 23.01799964904785,
+        "retrieval_score": 0.1047588437795639,
+        "raw_start": 13.017999649047852,
+        "raw_end": 18.01799964904785,
+        "grounding_score": 1.0,
+        "refined_start": 13.017999649047852,
+        "refined_end": 18.01799964904785,
+        "final_score": 0.7314276531338693,
+        "duplication_penalty": 0.0,
+        "rank": 1,
+        "pre_dedup_rank": 1,
+        "retriever_version": "cached-cosine-v1",
+        "grounder_version": "TimeLens-8B",
+        "postprocess_version": "boundary-refinement-v1+ranking-v1+temporal-dedup-v1+no-match-v1",
+        "retrieval_latency_ms": 11.695070003042929,
+        "grounding_latency_ms": 1242.054910006118,
+        "postprocess_latency_ms": 0.023325002985075116,
+        "degraded": false,
+        "degrade_level": 0,
+        "degrade_reason": null,
+        "deduplicated": false,
+        "boundary_confidence": 1.0,
+        "completeness_score": 1.0
+      }
+    ],
+    "output_top_k": 1,
+    "status": "POSSIBLE",
+    "actual_match": true,
+    "degraded": false,
+    "elapsed_ms": 1242.054910006118,
+    "badcase_type": "unclassified"
+  },
+  {
+    "sample_id": "videoitg40k:media_pilot:441380",
+    "video_path": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/raw/LLaVA-Video-178K/30_60_s_activitynetqa/ActivityNet-QA/activitynet/train/v1-3/train_val/v_NouHsmaE-xA.mp4",
+    "query": "what happened when the person in the cowboy threw the rope\nAnswer the question using few words or phrase.",
+    "ground_truth": [
+      [
+        20.0,
+        25.0
+      ],
+      [
+        25.0,
+        30.0
+      ]
+    ],
+    "coarse_windows": [
+      {
+        "start": 35.040000915527344,
+        "end": 45.040000915527344,
+        "score": 0.15735219419002533
+      }
+    ],
+    "predictions": [
+      {
+        "start_s": 35.040000915527344,
+        "end_s": 38.040000915527344,
+        "refined_start": 35.040000915527344,
+        "refined_end": 38.040000915527344,
+        "retrieval_score": 0.15735219419002533,
+        "grounding_score": 1.0,
+        "final_score": 0.7472056582570077,
+        "candidate_id": "videoitg40k:media_pilot:441380:r0"
+      }
+    ],
+    "candidates": [
+      {
+        "candidate_id": "videoitg40k:media_pilot:441380:r0",
+        "coarse_start": 35.040000915527344,
+        "coarse_end": 45.040000915527344,
+        "retrieval_score": 0.15735219419002533,
+        "raw_start": 35.040000915527344,
+        "raw_end": 38.040000915527344,
+        "grounding_score": 1.0,
+        "refined_start": 35.040000915527344,
+        "refined_end": 38.040000915527344,
+        "final_score": 0.7472056582570077,
+        "duplication_penalty": 0.0,
+        "rank": 1,
+        "pre_dedup_rank": 1,
+        "retriever_version": "cached-cosine-v1",
+        "grounder_version": "TimeLens-8B",
+        "postprocess_version": "boundary-refinement-v1+ranking-v1+temporal-dedup-v1+no-match-v1",
+        "retrieval_latency_ms": 11.35934800549876,
+        "grounding_latency_ms": 2095.373082003789,
+        "postprocess_latency_ms": 0.02549900091253221,
+        "degraded": false,
+        "degrade_level": 0,
+        "degrade_reason": null,
+        "deduplicated": false,
+        "boundary_confidence": 1.0,
+        "completeness_score": 1.0
+      }
+    ],
+    "output_top_k": 1,
+    "status": "POSSIBLE",
+    "actual_match": true,
+    "degraded": false,
+    "elapsed_ms": 2095.373082003789,
+    "badcase_type": "unclassified"
+  },
+  {
+    "sample_id": "videoitg40k:media_pilot:108517",
+    "video_path": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/raw/LLaVA-Video-178K/30_60_s_activitynetqa/ActivityNet-QA/activitynet/train/v1-3/train_val/v_OqLrsVv44MY.mp4",
+    "query": "what happened to the person in the grey jacket before talking\nAnswer the question using few words or phrase.",
+    "ground_truth": [
+      [
+        0.0,
+        5.0
+      ]
+    ],
+    "coarse_windows": [
+      {
+        "start": 22.0,
+        "end": 32.0,
+        "score": 0.11342965066432953
+      }
+    ],
+    "predictions": [
+      {
+        "start_s": 22.0,
+        "end_s": 26.0,
+        "refined_start": 22.0,
+        "refined_end": 26.0,
+        "retrieval_score": 0.11342965066432953,
+        "grounding_score": 1.0,
+        "final_score": 0.7340288951992988,
+        "candidate_id": "videoitg40k:media_pilot:108517:r0"
+      }
+    ],
+    "candidates": [
+      {
+        "candidate_id": "videoitg40k:media_pilot:108517:r0",
+        "coarse_start": 22.0,
+        "coarse_end": 32.0,
+        "retrieval_score": 0.11342965066432953,
+        "raw_start": 22.0,
+        "raw_end": 26.0,
+        "grounding_score": 1.0,
+        "refined_start": 22.0,
+        "refined_end": 26.0,
+        "final_score": 0.7340288951992988,
+        "duplication_penalty": 0.0,
+        "rank": 1,
+        "pre_dedup_rank": 1,
+        "retriever_version": "cached-cosine-v1",
+        "grounder_version": "TimeLens-8B",
+        "postprocess_version": "boundary-refinement-v1+ranking-v1+temporal-dedup-v1+no-match-v1",
+        "retrieval_latency_ms": 11.738102999515831,
+        "grounding_latency_ms": 771.446607002872,
+        "postprocess_latency_ms": 0.02043900894932449,
+        "degraded": false,
+        "degrade_level": 0,
+        "degrade_reason": null,
+        "deduplicated": false,
+        "boundary_confidence": 1.0,
+        "completeness_score": 1.0
+      }
+    ],
+    "output_top_k": 1,
+    "status": "POSSIBLE",
+    "actual_match": true,
+    "degraded": false,
+    "elapsed_ms": 771.446607002872,
+    "badcase_type": "unclassified"
+  },
+  {
+    "sample_id": "videoitg40k:media_pilot:221243",
+    "video_path": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/raw/LLaVA-Video-178K/30_60_s_nextqa/NextQA/NExTVideo/1007/7029370717.mp4",
+    "query": "How did the fish manage to not bump into one another?\nAnswer the question using few words or phrase.",
+    "ground_truth": [
+      [
+        15.0,
+        20.0
+      ],
+      [
+        20.0,
+        25.0
+      ]
+    ],
+    "coarse_windows": [
+      {
+        "start": 28.033000946044922,
+        "end": 33.86716666666666,
+        "score": 0.12434709072113037
+      }
+    ],
+    "predictions": [
+      {
+        "start_s": 28.033000946044922,
+        "end_s": 32.03300094604492,
+        "refined_start": 28.033000946044922,
+        "refined_end": 32.03300094604492,
+        "retrieval_score": 0.12434709072113037,
+        "grounding_score": 1.0,
+        "final_score": 0.7373041272163392,
+        "candidate_id": "videoitg40k:media_pilot:221243:r0"
+      }
+    ],
+    "candidates": [
+      {
+        "candidate_id": "videoitg40k:media_pilot:221243:r0",
+        "coarse_start": 28.033000946044922,
+        "coarse_end": 33.86716666666666,
+        "retrieval_score": 0.12434709072113037,
+        "raw_start": 28.033000946044922,
+        "raw_end": 32.03300094604492,
+        "grounding_score": 1.0,
+        "refined_start": 28.033000946044922,
+        "refined_end": 32.03300094604492,
+        "final_score": 0.7373041272163392,
+        "duplication_penalty": 0.0,
+        "rank": 1,
+        "pre_dedup_rank": 1,
+        "retriever_version": "cached-cosine-v1",
+        "grounder_version": "TimeLens-8B",
+        "postprocess_version": "boundary-refinement-v1+ranking-v1+temporal-dedup-v1+no-match-v1",
+        "retrieval_latency_ms": 11.472594997030683,
+        "grounding_latency_ms": 854.4089990027715,
+        "postprocess_latency_ms": 0.021671003196388483,
+        "degraded": false,
+        "degrade_level": 0,
+        "degrade_reason": null,
+        "deduplicated": false,
+        "boundary_confidence": 1.0,
+        "completeness_score": 1.0
+      }
+    ],
+    "output_top_k": 1,
+    "status": "POSSIBLE",
+    "actual_match": true,
+    "degraded": false,
+    "elapsed_ms": 854.4089990027715,
+    "badcase_type": "unclassified"
+  },
+  {
+    "sample_id": "videoitg40k:media_pilot:71510",
+    "video_path": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/raw/LLaVA-Video-178K/30_60_s_activitynetqa/ActivityNet-QA/activitynet/train/v1-3/train_val/v_Q6XjxUlbP2M.mp4",
+    "query": "what color is the hair of the person in white clothes\nAnswer the question using few words or phrase.",
+    "ground_truth": [
+      [
+        0.0,
+        5.0
+      ]
+    ],
+    "coarse_windows": [
+      {
+        "start": 29.0,
+        "end": 37.4,
+        "score": 0.018089020624756813
+      }
+    ],
+    "predictions": [
+      {
+        "start_s": 35.0,
+        "end_s": 37.0,
+        "refined_start": 35.0,
+        "refined_end": 37.0,
+        "retrieval_score": 0.018089020624756813,
+        "grounding_score": 1.0,
+        "final_score": 0.7054267061874271,
+        "candidate_id": "videoitg40k:media_pilot:71510:r0"
+      }
+    ],
+    "candidates": [
+      {
+        "candidate_id": "videoitg40k:media_pilot:71510:r0",
+        "coarse_start": 29.0,
+        "coarse_end": 37.4,
+        "retrieval_score": 0.018089020624756813,
+        "raw_start": 35.0,
+        "raw_end": 37.0,
+        "grounding_score": 1.0,
+        "refined_start": 35.0,
+        "refined_end": 37.0,
+        "final_score": 0.7054267061874271,
+        "duplication_penalty": 0.0,
+        "rank": 1,
+        "pre_dedup_rank": 1,
+        "retriever_version": "cached-cosine-v1",
+        "grounder_version": "TimeLens-8B",
+        "postprocess_version": "boundary-refinement-v1+ranking-v1+temporal-dedup-v1+no-match-v1",
+        "retrieval_latency_ms": 11.3416940002935,
+        "grounding_latency_ms": 773.1618299876573,
+        "postprocess_latency_ms": 0.02147098712157458,
+        "degraded": false,
+        "degrade_level": 0,
+        "degrade_reason": null,
+        "deduplicated": false,
+        "boundary_confidence": 1.0,
+        "completeness_score": 1.0
+      }
+    ],
+    "output_top_k": 1,
+    "status": "POSSIBLE",
+    "actual_match": true,
+    "degraded": false,
+    "elapsed_ms": 773.1618299876573,
+    "badcase_type": "unclassified"
+  },
+  {
+    "sample_id": "videoitg40k:media_pilot:414124",
+    "video_path": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/raw/LLaVA-Video-178K/30_60_s_activitynetqa/ActivityNet-QA/activitynet/train/v1-3/train_val/v_QR2BmWR5FGM.mp4",
+    "query": "how many people are there in the video\nAnswer the question using few words or phrase.",
+    "ground_truth": [
+      [
+        0.0,
+        5.0
+      ]
+    ],
+    "coarse_windows": [
+      {
+        "start": 25.030000686645508,
+        "end": 35.03000068664551,
+        "score": 0.065062016248703
+      }
+    ],
+    "predictions": [
+      {
+        "start_s": 25.030000686645508,
+        "end_s": 34.03000068664551,
+        "refined_start": 25.030000686645508,
+        "refined_end": 34.03000068664551,
+        "retrieval_score": 0.065062016248703,
+        "grounding_score": 1.0,
+        "final_score": 0.719518604874611,
+        "candidate_id": "videoitg40k:media_pilot:414124:r0"
+      }
+    ],
+    "candidates": [
+      {
+        "candidate_id": "videoitg40k:media_pilot:414124:r0",
+        "coarse_start": 25.030000686645508,
+        "coarse_end": 35.03000068664551,
+        "retrieval_score": 0.065062016248703,
+        "raw_start": 25.030000686645508,
+        "raw_end": 34.03000068664551,
+        "grounding_score": 1.0,
+        "refined_start": 25.030000686645508,
+        "refined_end": 34.03000068664551,
+        "final_score": 0.719518604874611,
+        "duplication_penalty": 0.0,
+        "rank": 1,
+        "pre_dedup_rank": 1,
+        "retriever_version": "cached-cosine-v1",
+        "grounder_version": "TimeLens-8B",
+        "postprocess_version": "boundary-refinement-v1+ranking-v1+temporal-dedup-v1+no-match-v1",
+        "retrieval_latency_ms": 11.35893700120505,
+        "grounding_latency_ms": 1235.0324439903488,
+        "postprocess_latency_ms": 0.02340499486308545,
+        "degraded": false,
+        "degrade_level": 0,
+        "degrade_reason": null,
+        "deduplicated": false,
+        "boundary_confidence": 1.0,
+        "completeness_score": 1.0
+      }
+    ],
+    "output_top_k": 1,
+    "status": "POSSIBLE",
+    "actual_match": true,
+    "degraded": false,
+    "elapsed_ms": 1235.0324439903488,
+    "badcase_type": "unclassified"
+  },
+  {
+    "sample_id": "videoitg40k:media_pilot:23329",
+    "video_path": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/raw/LLaVA-Video-178K/30_60_s_nextqa/NextQA/NExTVideo/1009/3265024425.mp4",
+    "query": "What does the female lion do after running away for a while in the middle of the video?\nAnswer the question using few words or phrase.",
+    "ground_truth": [
+      [
+        25.0,
+        30.0
+      ],
+      [
+        30.0,
+        35.0
+      ]
+    ],
+    "coarse_windows": [
+      {
+        "start": 28.0,
+        "end": 38.0,
+        "score": 0.17091013491153717
+      }
+    ],
+    "predictions": [
+      {
+        "start_s": 33.0,
+        "end_s": 37.0,
+        "refined_start": 33.0,
+        "refined_end": 37.0,
+        "retrieval_score": 0.17091013491153717,
+        "grounding_score": 1.0,
+        "final_score": 0.7512730404734611,
+        "candidate_id": "videoitg40k:media_pilot:23329:r0"
+      }
+    ],
+    "candidates": [
+      {
+        "candidate_id": "videoitg40k:media_pilot:23329:r0",
+        "coarse_start": 28.0,
+        "coarse_end": 38.0,
+        "retrieval_score": 0.17091013491153717,
+        "raw_start": 33.0,
+        "raw_end": 37.0,
+        "grounding_score": 1.0,
+        "refined_start": 33.0,
+        "refined_end": 37.0,
+        "final_score": 0.7512730404734611,
+        "duplication_penalty": 0.0,
+        "rank": 1,
+        "pre_dedup_rank": 1,
+        "retriever_version": "cached-cosine-v1",
+        "grounder_version": "TimeLens-8B",
+        "postprocess_version": "boundary-refinement-v1+ranking-v1+temporal-dedup-v1+no-match-v1",
+        "retrieval_latency_ms": 11.459329005447216,
+        "grounding_latency_ms": 1332.8684000007343,
+        "postprocess_latency_ms": 0.024948007194325328,
+        "degraded": false,
+        "degrade_level": 0,
+        "degrade_reason": null,
+        "deduplicated": false,
+        "boundary_confidence": 1.0,
+        "completeness_score": 1.0
+      }
+    ],
+    "output_top_k": 1,
+    "status": "POSSIBLE",
+    "actual_match": true,
+    "degraded": false,
+    "elapsed_ms": 1332.8684000007343,
+    "badcase_type": "unclassified"
+  }
+]

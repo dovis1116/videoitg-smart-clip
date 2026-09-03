@@ -1,0 +1,43 @@
+{
+  "scope": {
+    "manifest": "/home/zjy/projects/videoitg_smart_clip/records/phase1/videoitg40k_media_pilot.jsonl",
+    "sample_count": 50,
+    "same_seed": 42,
+    "same_device": "cuda:0",
+    "comparison": "predictions and per-sample metrics compared exactly; runtime compared separately"
+  },
+  "baselines": {
+    "B0": {
+      "first_summary": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/outputs/phase2_B0_full_20260714_0145/summary.json",
+      "repeat_summary": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/outputs/phase2_B0_repeat_20260714_0300/summary.json",
+      "first_predictions": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/outputs/phase2_B0_full_20260714_0145/predictions.jsonl",
+      "repeat_predictions": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/outputs/phase2_B0_repeat_20260714_0300/predictions.jsonl",
+      "row_count_first": 50,
+      "row_count_repeat": 50,
+      "prediction_or_metric_differences": 0,
+      "metrics_equal": true
+    },
+    "B1": {
+      "first_summary": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/outputs/phase2_B1_full_20260714_0200/summary.json",
+      "repeat_summary": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/outputs/phase2_B1_repeat_20260714_0320/summary.json",
+      "first_predictions": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/outputs/phase2_B1_full_20260714_0200/predictions.jsonl",
+      "repeat_predictions": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/outputs/phase2_B1_repeat_20260714_0320/predictions.jsonl",
+      "row_count_first": 50,
+      "row_count_repeat": 50,
+      "prediction_or_metric_differences": 0,
+      "metrics_equal": true
+    },
+    "B2": {
+      "first_summary": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/outputs/phase2_B2_full_20260714_0050/summary.json",
+      "repeat_summary": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/outputs/phase2_B2_repeat_20260714_0400/summary.json",
+      "first_predictions": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/outputs/phase2_B2_full_20260714_0050/predictions.jsonl",
+      "repeat_predictions": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/outputs/phase2_B2_repeat_20260714_0400/predictions.jsonl",
+      "row_count_first": 50,
+      "row_count_repeat": 50,
+      "prediction_or_metric_differences": 0,
+      "metrics_equal": true,
+      "mean_abs_rerank_runtime_delta_s": 0.020996421347372233
+    }
+  },
+  "conclusion": "With fixed manifest, seed, model revisions, device, and configuration, all three primary baselines reproduced identical predictions and per-sample metrics on 50 pilot rows. Runtime varies independently and is not treated as a quality difference."
+}

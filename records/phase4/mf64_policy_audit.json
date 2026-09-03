@@ -1,0 +1,17 @@
+{
+  "purpose": "Pre-registered check for a 32-frame confidence-gated 64-frame fallback",
+  "inputs": {
+    "base_predictions": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/outputs/phase4_B1_mf32_clean97_20260714_1800/predictions.jsonl",
+    "fallback_predictions": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/outputs/phase4_B1_mf64_clean97_20260715_0700/predictions.jsonl"
+  },
+  "split_counts": {"train": 71, "dev": 8, "test": 18},
+  "train_observation": {
+    "fallback_topk_iou_0.5_gains": 9,
+    "fallback_topk_iou_0.5_losses": 9,
+    "unchanged": 53,
+    "interpretation": "The tested 32-frame top-1 score and top-1/top-2 margin do not yield a positive, stable train-only fallback rule; dev has no changed rows to validate a threshold."
+  },
+  "test_policy_status": "not_tuned_on_test",
+  "decision": "no_confidence_gated_fallback_promoted",
+  "reason": "Current evidence supports retaining B1 as the latency-safe default and reporting static 64-frame sampling as the strongest quality candidate. A conditional fallback requires additional train/dev data or a separately justified observable signal; the fixed 18-row test pool was not used to select a threshold."
+}

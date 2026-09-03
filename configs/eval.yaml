@@ -1,0 +1,8 @@
+evaluation:
+  output_top_k: 3
+  grounding_iou_thresholds: [0.3, 0.5, 0.7]
+  retriever_top_n: [5, 10, 20]
+  no_match_threshold_source: validation_set
+  duplicate_iou_threshold: 0.7
+  data_version: pending
+  split_version: pending

@@ -1,0 +1,17 @@
+{
+  "timestamp": "2026-07-14T00:05:01+0800",
+  "python": "3.12.3 (main, Jun 19 2026, 12:46:00) [GCC 13.3.0]",
+  "torch": "2.6.0+cu124",
+  "torch_cuda": "12.4",
+  "videoitg_git_revision": "50a60a822c0e362bfd8747c45ba34e66e9c9d650",
+  "model_path": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/models/VideoITG-8B",
+  "model_config_sha256": "f69244d0f7aa86ec02d04c0525223d59dbbda18e4809c72119637206b226b4f6",
+  "model_index_sha256": "c00029c51dce7bd0c5bf3b99f16877f5174e2a0f13ec94f68b9b91b6240a5ef5",
+  "adapter_smoke_result": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/outputs/phase1_adapter_smoke_20260714_0100/result.json",
+  "media_pilot_audit": "/home/zjy/projects/videoitg_smart_clip/records/phase1/media_pilot_audit.json",
+  "gpu": [
+    "NVIDIA GeForce RTX 4090 D, 595.71.05, 24564 MiB",
+    "NVIDIA GeForce RTX 4090 D, 595.71.05, 24564 MiB",
+    "NVIDIA GeForce RTX 4090 D, 595.71.05, 24564 MiB"
+  ]
+}

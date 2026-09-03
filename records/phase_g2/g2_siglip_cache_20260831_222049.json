@@ -1,0 +1,62 @@
+{
+  "run_id": "g2_siglip_cache_20260831_222049",
+  "video": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/raw/service_uploads/3d9fe127bbd14785899b26bc2d0ac97b.mp4",
+  "video_id": "3d9fe127bbd14785899b26bc2d0ac97b",
+  "feature_model": "siglip-so400m-patch14-384-v1",
+  "sampled_frames": 2,
+  "video_duration": 396.8130833333333,
+  "first_query": {
+    "cache_hit": false,
+    "candidates": [
+      {
+        "start": 391.39599609375,
+        "end": 396.8130833333333,
+        "score": 0.013888193294405937,
+        "candidate_id": "3d9fe127bbd14785899b26bc2d0ac97b:r0"
+      },
+      {
+        "start": 0.0,
+        "end": 5.0,
+        "score": 0.0011661917669698596,
+        "candidate_id": "3d9fe127bbd14785899b26bc2d0ac97b:r1"
+      }
+    ]
+  },
+  "second_query": {
+    "cache_hit": true,
+    "candidates": [
+      {
+        "start": 0.0,
+        "end": 5.0,
+        "score": 0.04156867787241936,
+        "candidate_id": "3d9fe127bbd14785899b26bc2d0ac97b:r0"
+      },
+      {
+        "start": 391.39599609375,
+        "end": 396.8130833333333,
+        "score": -0.00385971087962389,
+        "candidate_id": "3d9fe127bbd14785899b26bc2d0ac97b:r1"
+      }
+    ]
+  },
+  "cache_events": [
+    {
+      "video_id": "3d9fe127bbd14785899b26bc2d0ac97b",
+      "event": "cache_miss",
+      "hit": false
+    },
+    {
+      "video_id": "3d9fe127bbd14785899b26bc2d0ac97b",
+      "event": "cache_hit",
+      "hit": true
+    },
+    {
+      "video_id": "3d9fe127bbd14785899b26bc2d0ac97b",
+      "event": "cache_hit",
+      "hit": true
+    }
+  ],
+  "feature_path": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/features/g2_siglip_smoke_final/46afe19142f345af0dba8645.npz",
+  "elapsed_ms": 1054.7649649997766,
+  "extractor_calls": 1
+}

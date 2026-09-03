@@ -1,0 +1,19 @@
+{
+  "scope": {
+    "pool": "records/phase4/heldout_extra27_regression_pool.jsonl",
+    "sample_count": 27,
+    "base": "B1 max_frames=16, segment_seconds=5",
+    "candidate": "B1 max_frames=16, segment_seconds=8"
+  },
+  "overall": {
+    "topk_hit_iou_0.5": {"seg5": 0.7777777778, "seg8": 0.7407407407, "delta": -0.0370370371},
+    "recall_at_1_iou_0.5": {"seg5": 0.5185185185, "seg8": 0.5925925926, "delta": 0.0740740741}
+  },
+  "manual_reviewed_categories": {
+    "boundary_shift": {"count": 7, "seg5_topk_iou_0.5": 0.5714285714, "seg8_topk_iou_0.5": 0.4285714286, "delta": -0.1428571428},
+    "control_correct": {"count": 18, "seg5_topk_iou_0.5": 0.8333333333, "seg8_topk_iou_0.5": 0.8888888889, "delta": 0.0555555556},
+    "other_or_uncertain": {"count": 2, "seg5_topk_iou_0.5": 1.0, "seg8_topk_iou_0.5": 0.5, "delta": -0.5}
+  },
+  "decision": "discard_seg8_candidate",
+  "reason": "The wider interval does not improve the manually confirmed boundary_shift category and lowers overall Top-k@0.5; no further expansion is justified."
+}

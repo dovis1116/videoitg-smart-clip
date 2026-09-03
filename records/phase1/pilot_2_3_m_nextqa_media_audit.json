@@ -1,0 +1,66 @@
+{
+  "manifest": "/home/zjy/projects/videoitg_smart_clip/records/phase1/videoitg40k_pilot_2_3_m_nextqa.jsonl",
+  "row_count": 4,
+  "exists_count": 4,
+  "decoded_count": 4,
+  "valid_frame_label_count": 4,
+  "errors": [],
+  "rows": [
+    {
+      "sample_id": "videoitg40k:train:248981",
+      "video_id": "LLaVA-Video-178K/2_3_m_nextqa/NextQA/NExTVideo/0075/12843838795.mp4",
+      "path": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/raw/LLaVA-Video-178K/2_3_m_nextqa/NextQA/NExTVideo/0075/12843838795.mp4",
+      "exists": true,
+      "decoded": true,
+      "frame_count": 4454,
+      "fps": 29.97002997002997,
+      "duration_s": 148.61513333333335,
+      "frame_num_in_bounds": true,
+      "max_frame_num": 145,
+      "max_clip_num": 29,
+      "error": null
+    },
+    {
+      "sample_id": "videoitg40k:train:442611",
+      "video_id": "LLaVA-Video-178K/2_3_m_nextqa/NextQA/NExTVideo/1006/9755380174.mp4",
+      "path": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/raw/LLaVA-Video-178K/2_3_m_nextqa/NextQA/NExTVideo/1006/9755380174.mp4",
+      "exists": true,
+      "decoded": true,
+      "frame_count": 4261,
+      "fps": 29.97,
+      "duration_s": 142.1755088421755,
+      "frame_num_in_bounds": true,
+      "max_frame_num": 1,
+      "max_clip_num": 1,
+      "error": null
+    },
+    {
+      "sample_id": "videoitg40k:train:380917",
+      "video_id": "LLaVA-Video-178K/2_3_m_nextqa/NextQA/NExTVideo/1007/9020947679.mp4",
+      "path": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/raw/LLaVA-Video-178K/2_3_m_nextqa/NextQA/NExTVideo/1007/9020947679.mp4",
+      "exists": true,
+      "decoded": true,
+      "frame_count": 4172,
+      "fps": 29.97,
+      "duration_s": 139.20587253920587,
+      "frame_num_in_bounds": true,
+      "max_frame_num": 9,
+      "max_clip_num": 1,
+      "error": null
+    },
+    {
+      "sample_id": "videoitg40k:train:287250",
+      "video_id": "LLaVA-Video-178K/2_3_m_nextqa/NextQA/NExTVideo/1013/10566292134.mp4",
+      "path": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/raw/LLaVA-Video-178K/2_3_m_nextqa/NextQA/NExTVideo/1013/10566292134.mp4",
+      "exists": true,
+      "decoded": true,
+      "frame_count": 5247,
+      "fps": 29.97,
+      "duration_s": 175.0750750750751,
+      "frame_num_in_bounds": true,
+      "max_frame_num": 4,
+      "max_clip_num": 0,
+      "error": null
+    }
+  ]
+}

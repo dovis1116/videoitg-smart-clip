@@ -1,0 +1,47 @@
+{
+  "gate": "G5 multi-GPU capacity audit",
+  "scope": {
+    "rows": 50,
+    "devices": ["cuda:0", "cuda:1"],
+    "workers": 2,
+    "policy": "E0_fixed16",
+    "deadline_ms": 5000,
+    "warmup": true,
+    "shared_queue": true,
+    "lookahead_prefetch": true,
+    "service_implementation": false
+  },
+  "results": {
+    "burst": {
+      "source": "outputs/phase5_multi_gpu_prefetch_50_burst_20260715/e0.json",
+      "p95_service_ms": 1969.8842810466886,
+      "p95_total_ms": 39913.83146401495,
+      "timeout_count": 46,
+      "error_count": 0,
+      "topk_hit_iou_0.5": 0.68,
+      "prefetched_rows": 47
+    },
+    "steady_1s": {
+      "source": "outputs/phase5_multi_gpu_prefetch_50_steady1s_20260715/e0.json",
+      "p95_service_ms": 3196.0728091653436,
+      "p95_total_ms": 4386.515530059114,
+      "timeout_count": 0,
+      "error_count": 0,
+      "topk_hit_iou_0.5": 0.68,
+      "prefetched_rows": 22
+    }
+  },
+  "delta_vs_single_gpu_prefetch": {
+    "burst": {
+      "p95_total_ms_percent": -47.78,
+      "timeout_count_delta": -2
+    },
+    "steady_1s": {
+      "p95_total_ms_percent": -85.46,
+      "timeout_count_delta": -44
+    }
+  },
+  "gate_decision": "G5 not passed",
+  "reason": "Two local GPU workers plus one-request CPU lookahead preserve fixed16 quality and clear the 5-second deadline for the 50-row steady-1s probe, but the burst queue still has 46/50 deadline misses and P95 total latency about 39.9 seconds. This establishes a useful steady-load deployment capacity, not a burst-safe G5 promotion or a service implementation.",
+  "next_action": "Keep the benchmark as a capacity artifact. Before Phase 6, either add a quality-preserving burst strategy (for example, measured batching/admission behavior) or explicitly narrow the accepted arrival SLA; do not claim G5 passed from the steady result alone."
+}

@@ -1,0 +1,33 @@
+{
+  "candidate": "B1 max_frames=32",
+  "baseline": "B1 max_frames=16",
+  "policy": {"segment_seconds": 5.0, "target_fps": 2.0, "max_frames": 32, "output_top_k": 3},
+  "runs": {
+    "pilot_first": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/outputs/phase4_B1_mf32_full_20260714_1700/summary.json",
+    "pilot_repeat": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/outputs/phase4_B1_mf32_repeat_20260714_1900/summary.json",
+    "clean97": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/outputs/phase4_B1_mf32_clean97_20260714_1800/summary.json",
+    "train_badcase_report": "records/phase4/mf32_train_regression_report.json",
+    "heldout7_report": "records/phase4/mf32_heldout7_regression_report.json",
+    "clean97_final_report": "records/phase4/mf32_clean97_final_regression_report.json"
+  },
+  "metrics": {
+    "pilot_50": {
+      "B1_16": {"recall_at_1_iou_0.3": 0.58, "recall_at_1_iou_0.5": 0.50, "topk_hit_iou_0.3": 0.80, "topk_hit_iou_0.5": 0.68},
+      "B1_32": {"recall_at_1_iou_0.3": 0.68, "recall_at_1_iou_0.5": 0.54, "topk_hit_iou_0.3": 0.88, "topk_hit_iou_0.5": 0.76}
+    },
+    "clean97_overall": {
+      "B1_16": {"recall_at_1_iou_0.3": 0.5773195876, "topk_hit_iou_0.5": 0.6494845361},
+      "B1_32": {"recall_at_1_iou_0.3": 0.5979381443, "topk_hit_iou_0.5": 0.7216494845}
+    },
+    "final_test18_topk_iou_0.5": {
+      "B1_16": {"overall": 0.5555555556, "boundary_shift": 0.25, "short_event_miss": 0.0, "control_correct": 0.9},
+      "B1_32": {"overall": 0.6666666667, "boundary_shift": 1.0, "short_event_miss": 0.0, "control_correct": 0.8}
+    },
+    "train_badcase_topk_iou_0.5": {"B1_16": {"short_event_miss": 0.0}, "B1_32": {"short_event_miss": 0.5}},
+    "heldout7_topk_iou_0.5": {"B1_16": 0.5714285714, "B1_32": 0.7142857143}
+  },
+  "repeatability": {"rows_first": 50, "rows_repeat": 50, "prediction_or_metric_differences": 0},
+  "cost": {"B1_16_mean_rerank_seconds": 2.4253, "B1_32_mean_rerank_seconds": 3.1327, "relative_increase": 0.2916, "peak_cuda_gib_B1_32": 16.6059},
+  "gate_decision": "retain_as_phase4_candidate_not_default",
+  "reason": "32 frames improves ordinary pilot, clean97 overall, boundary-shift test coverage, and one of two train short-event cases, with exact repeatability. It loses 1/10 clean97 test controls at Top-k IoU>=0.5 and costs about 29% more rerank time; therefore G4 is not declared passed without a pre-registered trade-off decision and further short-event evidence."
+}

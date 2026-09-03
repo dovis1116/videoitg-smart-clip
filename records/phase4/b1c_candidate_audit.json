@@ -1,0 +1,24 @@
+{
+  "candidate": "B1C direct: max_frames=32, segment_seconds=8",
+  "implementation_command": "scripts/run_baseline.py --baseline B1 --max-frames 32 --segment-seconds 8",
+  "runs": {
+    "pilot_first": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/outputs/phase4_B1C_full_20260714_2100/summary.json",
+    "pilot_repeat": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/outputs/phase4_B1C_repeat_20260714_2300/summary.json",
+    "clean97": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/outputs/phase4_B1C_clean97_20260714_2200/summary.json",
+    "train_badcase_report": "records/phase4/B1C_train_regression_report.json",
+    "heldout7_report": "records/phase4/B1C_heldout7_regression_report.json",
+    "clean97_final_report": "records/phase4/B1C_clean97_final_regression_report.json"
+  },
+  "metrics": {
+    "pilot_50": {"recall_at_1_iou_0.3": 0.74, "recall_at_1_iou_0.5": 0.62, "topk_hit_iou_0.3": 0.92, "topk_hit_iou_0.5": 0.74, "boundary_error_s_topk": 2.6364},
+    "clean97_overall": {"recall_at_1_iou_0.3": 0.6907, "recall_at_1_iou_0.5": 0.5670, "topk_hit_iou_0.3": 0.8969, "topk_hit_iou_0.5": 0.7113},
+    "final_test18_topk_iou_0.5": {"overall": 0.6111, "boundary_shift": 0.5, "short_event_miss": 0.0, "control_correct": 0.8},
+    "heldout7_topk_iou_0.5": {"B1_16_5s": 0.5714, "B1C": 0.5714},
+    "train_badcase_topk_iou_0.5": {"short_event_miss": 0.5, "boundary_shift": 0.0}
+  },
+  "repeatability": {"rows_first": 50, "rows_repeat": 50, "prediction_or_metric_differences": 0},
+  "cost": {"relative_to_B1_16_5s": "approximately +29% mean rerank time; peak CUDA allocation remains about 16.6 GiB"},
+  "implementation_note": "Direct run is authoritative. Offline remapping of frozen 5-second Top-3 predictions to 8 seconds is not used for the gate because 8-second non-overlap selection changes the candidate set.",
+  "gate_decision": "G4 not passed; retain as Phase 4 candidate",
+  "reason": "B1C improves ordinary pilot and clean97 overall metrics and partially improves confirmed boundary/short-event coverage, but it does not improve the historical heldout aggregate, loses 2/10 final controls at Top-k IoU>=0.5, and costs about 29% more. Keep B1 16-frame/5-second as default until a stronger quality-latency policy is validated."
+}

@@ -1,0 +1,11 @@
+{
+  "video_id": "profile-video",
+  "video_duration": 60.0,
+  "feature_model": "deterministic-frame-v1",
+  "feature_model_version": "hash-v1",
+  "preprocessing_config": "{\"segment\":\"uniform\"}",
+  "sampling_config": "{\"fps\":1.0}",
+  "feature_path": "/home/zjy/projects/videoitg_smart_clip/records/phase_g9/profile_cache/a08049d44a6784b7b13aba82.npz",
+  "created_at": "2026-08-31T15:09:37Z",
+  "cache_hit": false
+}

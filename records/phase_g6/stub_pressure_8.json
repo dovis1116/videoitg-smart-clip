@@ -1,0 +1,322 @@
+{
+  "contract": "G5-A steady-1s",
+  "requests": 8,
+  "interval_s": 0.01,
+  "successful": 6,
+  "timeouts": 0,
+  "status_counts": {
+    "200": 6,
+    "429": 2
+  },
+  "wall_p95_s": 0.24796,
+  "results": [
+    {
+      "request_id": "steady-pressure-000",
+      "scheduled_offset_s": 28430.483261,
+      "status_code": 200,
+      "wall_seconds": 0.215453,
+      "response": {
+        "task_id": "bb90667c4a494c99b9d8a74a3ea5d71b",
+        "request_id": "steady-pressure-000",
+        "mode": "steady",
+        "status": "succeeded",
+        "queue_position": null,
+        "estimated_wait_ms": null,
+        "created_at": "2026-08-31T17:58:56.006234Z",
+        "updated_at": "2026-08-31T17:58:56.066305Z",
+        "started_at": "2026-08-31T17:58:56.045258Z",
+        "finished_at": "2026-08-31T17:58:56.066247Z",
+        "model_version": "stub-v1",
+        "policy_version": "E0_fixed16",
+        "result": {
+          "predictions": [
+            {
+              "candidate_id": "stub",
+              "start_s": 0.0,
+              "end_s": 5.0,
+              "score": 1.0
+            }
+          ],
+          "runtime": {
+            "backend": "stub",
+            "device": "cpu",
+            "sampled_frames": 0
+          },
+          "video_path": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/processed/g6/imax10s.mp4",
+          "query_length": 11
+        },
+        "error": null,
+        "cancel_requested": false,
+        "deduplicated": false,
+        "video_id": "imax10s",
+        "progress": 1.0,
+        "current_stage": "SUCCESS",
+        "error_code": null,
+        "degraded": false,
+        "canonical_status": "SUCCESS"
+      },
+      "task_status": "succeeded"
+    },
+    {
+      "request_id": "steady-pressure-001",
+      "scheduled_offset_s": 28430.493261,
+      "status_code": 200,
+      "wall_seconds": 0.24796,
+      "response": {
+        "task_id": "6c7e9bfffe01447d886dfa1cdbb3892d",
+        "request_id": "steady-pressure-001",
+        "mode": "steady",
+        "status": "succeeded",
+        "queue_position": null,
+        "estimated_wait_ms": null,
+        "created_at": "2026-08-31T17:58:56.049283Z",
+        "updated_at": "2026-08-31T17:58:56.108283Z",
+        "started_at": "2026-08-31T17:58:56.087493Z",
+        "finished_at": "2026-08-31T17:58:56.108226Z",
+        "model_version": "stub-v1",
+        "policy_version": "E0_fixed16",
+        "result": {
+          "predictions": [
+            {
+              "candidate_id": "stub",
+              "start_s": 0.0,
+              "end_s": 5.0,
+              "score": 1.0
+            }
+          ],
+          "runtime": {
+            "backend": "stub",
+            "device": "cpu",
+            "sampled_frames": 0
+          },
+          "video_path": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/processed/g6/imax10s.mp4",
+          "query_length": 11
+        },
+        "error": null,
+        "cancel_requested": false,
+        "deduplicated": false,
+        "video_id": "imax10s",
+        "progress": 1.0,
+        "current_stage": "SUCCESS",
+        "error_code": null,
+        "degraded": false,
+        "canonical_status": "SUCCESS"
+      },
+      "task_status": "succeeded"
+    },
+    {
+      "request_id": "steady-pressure-002",
+      "scheduled_offset_s": 28430.503261,
+      "status_code": 429,
+      "wall_seconds": 0.181079,
+      "response": {
+        "detail": {
+          "reason": "overloaded",
+          "message": "bounded task queue is full"
+        }
+      },
+      "task_status": null
+    },
+    {
+      "request_id": "steady-pressure-003",
+      "scheduled_offset_s": 28430.513261,
+      "status_code": 200,
+      "wall_seconds": 0.249505,
+      "response": {
+        "task_id": "04b12e5577cb48fe8fd37ed347059ce4",
+        "request_id": "steady-pressure-003",
+        "mode": "steady",
+        "status": "succeeded",
+        "queue_position": null,
+        "estimated_wait_ms": null,
+        "created_at": "2026-08-31T17:58:56.108690Z",
+        "updated_at": "2026-08-31T17:58:56.130468Z",
+        "started_at": "2026-08-31T17:58:56.109392Z",
+        "finished_at": "2026-08-31T17:58:56.130415Z",
+        "model_version": "stub-v1",
+        "policy_version": "E0_fixed16",
+        "result": {
+          "predictions": [
+            {
+              "candidate_id": "stub",
+              "start_s": 0.0,
+              "end_s": 5.0,
+              "score": 1.0
+            }
+          ],
+          "runtime": {
+            "backend": "stub",
+            "device": "cpu",
+            "sampled_frames": 0
+          },
+          "video_path": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/processed/g6/imax10s.mp4",
+          "query_length": 11
+        },
+        "error": null,
+        "cancel_requested": false,
+        "deduplicated": false,
+        "video_id": "imax10s",
+        "progress": 1.0,
+        "current_stage": "SUCCESS",
+        "error_code": null,
+        "degraded": false,
+        "canonical_status": "SUCCESS"
+      },
+      "task_status": "succeeded"
+    },
+    {
+      "request_id": "steady-pressure-004",
+      "scheduled_offset_s": 28430.523261,
+      "status_code": 200,
+      "wall_seconds": 0.19697,
+      "response": {
+        "task_id": "8a6d39e05492471c89ac39b77b2110f1",
+        "request_id": "steady-pressure-004",
+        "mode": "steady",
+        "status": "succeeded",
+        "queue_position": null,
+        "estimated_wait_ms": null,
+        "created_at": "2026-08-31T17:58:56.046858Z",
+        "updated_at": "2026-08-31T17:58:56.087296Z",
+        "started_at": "2026-08-31T17:58:56.066502Z",
+        "finished_at": "2026-08-31T17:58:56.087237Z",
+        "model_version": "stub-v1",
+        "policy_version": "E0_fixed16",
+        "result": {
+          "predictions": [
+            {
+              "candidate_id": "stub",
+              "start_s": 0.0,
+              "end_s": 5.0,
+              "score": 1.0
+            }
+          ],
+          "runtime": {
+            "backend": "stub",
+            "device": "cpu",
+            "sampled_frames": 0
+          },
+          "video_path": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/processed/g6/imax10s.mp4",
+          "query_length": 11
+        },
+        "error": null,
+        "cancel_requested": false,
+        "deduplicated": false,
+        "video_id": "imax10s",
+        "progress": 1.0,
+        "current_stage": "SUCCESS",
+        "error_code": null,
+        "degraded": false,
+        "canonical_status": "SUCCESS"
+      },
+      "task_status": "succeeded"
+    },
+    {
+      "request_id": "steady-pressure-005",
+      "scheduled_offset_s": 28430.533261,
+      "status_code": 200,
+      "wall_seconds": 0.145252,
+      "response": {
+        "task_id": "d444faf4cbf642d2afd86f8031a6bc93",
+        "request_id": "steady-pressure-005",
+        "mode": "steady",
+        "status": "succeeded",
+        "queue_position": null,
+        "estimated_wait_ms": null,
+        "created_at": "2026-08-31T17:58:56.001592Z",
+        "updated_at": "2026-08-31T17:58:56.044981Z",
+        "started_at": "2026-08-31T17:58:56.023234Z",
+        "finished_at": "2026-08-31T17:58:56.044903Z",
+        "model_version": "stub-v1",
+        "policy_version": "E0_fixed16",
+        "result": {
+          "predictions": [
+            {
+              "candidate_id": "stub",
+              "start_s": 0.0,
+              "end_s": 5.0,
+              "score": 1.0
+            }
+          ],
+          "runtime": {
+            "backend": "stub",
+            "device": "cpu",
+            "sampled_frames": 0
+          },
+          "video_path": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/processed/g6/imax10s.mp4",
+          "query_length": 11
+        },
+        "error": null,
+        "cancel_requested": false,
+        "deduplicated": false,
+        "video_id": "imax10s",
+        "progress": 1.0,
+        "current_stage": "SUCCESS",
+        "error_code": null,
+        "degraded": false,
+        "canonical_status": "SUCCESS"
+      },
+      "task_status": "succeeded"
+    },
+    {
+      "request_id": "steady-pressure-006",
+      "scheduled_offset_s": 28430.543261,
+      "status_code": 429,
+      "wall_seconds": 0.144817,
+      "response": {
+        "detail": {
+          "reason": "overloaded",
+          "message": "bounded task queue is full"
+        }
+      },
+      "task_status": null
+    },
+    {
+      "request_id": "steady-pressure-007",
+      "scheduled_offset_s": 28430.553261,
+      "status_code": 200,
+      "wall_seconds": 0.104801,
+      "response": {
+        "task_id": "6417fce9b12e41c38754464cbc144f90",
+        "request_id": "steady-pressure-007",
+        "mode": "steady",
+        "status": "succeeded",
+        "queue_position": null,
+        "estimated_wait_ms": null,
+        "created_at": "2026-08-31T17:58:56.000960Z",
+        "updated_at": "2026-08-31T17:58:56.022892Z",
+        "started_at": "2026-08-31T17:58:56.001940Z",
+        "finished_at": "2026-08-31T17:58:56.022714Z",
+        "model_version": "stub-v1",
+        "policy_version": "E0_fixed16",
+        "result": {
+          "predictions": [
+            {
+              "candidate_id": "stub",
+              "start_s": 0.0,
+              "end_s": 5.0,
+              "score": 1.0
+            }
+          ],
+          "runtime": {
+            "backend": "stub",
+            "device": "cpu",
+            "sampled_frames": 0
+          },
+          "video_path": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/processed/g6/imax10s.mp4",
+          "query_length": 11
+        },
+        "error": null,
+        "cancel_requested": false,
+        "deduplicated": false,
+        "video_id": "imax10s",
+        "progress": 1.0,
+        "current_stage": "SUCCESS",
+        "error_code": null,
+        "degraded": false,
+        "canonical_status": "SUCCESS"
+      },
+      "task_status": "succeeded"
+    }
+  ]
+}

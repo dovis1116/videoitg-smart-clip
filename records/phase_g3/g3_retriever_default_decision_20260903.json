@@ -1,0 +1,18 @@
+{
+  "run_id": "g3_retriever_default_decision_20260903_190000",
+  "evidence_run": "g3_retriever_compare_20260903_184712",
+  "sample_count": 79,
+  "scope": "target_present_only_pending_manifest",
+  "observed_metrics": {
+    "cached_cosine": {"recall_at_5": 0.7088607595, "recall_at_10": 0.8987341772, "recall_at_20": 0.9493670886, "mean_retrieval_latency_ms": 11.920226, "mean_index_size_bytes": 45162.5823},
+    "uniform": {"recall_at_5": 0.9240506329, "recall_at_10": 0.9367088608, "recall_at_20": 0.9620253165, "mean_retrieval_latency_ms": 0.091923, "mean_index_size_bytes": 0.0}
+  },
+  "decision": {
+    "main_route_default": "cached_cosine",
+    "reason": "The product route requires a query-aware retriever; Uniform is retained as a non-semantic reference and operational fallback.",
+    "reference_best_observed_present_only": "uniform",
+    "selection_status": "conditional_current_scope_not_formal_global_selection"
+  },
+  "limitations": ["All 79 rows have actual_match=true.", "Labels remain pending and there are no difficult or negative categories.", "Uniform's observed advantage cannot establish semantic retrieval quality outside this scope."],
+  "next_step": "Keep cached_cosine as the query-aware main-route default; retain Uniform for fallback/reference until a broader valid comparison is available."
+}

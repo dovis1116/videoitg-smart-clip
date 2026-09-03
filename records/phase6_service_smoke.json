@@ -1,0 +1,40 @@
+{
+  "phase": "Phase 6 restricted service",
+  "run_id": "service_contract_smoke_20260714",
+  "backend": "stub",
+  "bind": "127.0.0.1:8765",
+  "queue_size": 2,
+  "evidence": {
+    "healthz": "200 OK",
+    "upload_task": "202 Accepted",
+    "task_status": "queued -> succeeded",
+    "invalid_video_path": "400 Bad Request",
+    "process_shutdown": "clean uvicorn shutdown"
+  },
+  "tests": {
+    "command": "PYTHONPATH=src:external/VideoITG pytest -q",
+    "passed": 22,
+    "failed": 0
+  },
+  "real_videoitg_smoke": {
+    "backend": "VideoITG-8B",
+    "devices": ["cuda:0", "cuda:1"],
+    "warmup": true,
+    "healthz": "200 OK; loaded_workers=2",
+    "steady_request": "200 OK; succeeded",
+    "observed_wall_seconds": 2.985,
+    "runtime_model_seconds": 1.380,
+    "runtime_read_seconds": 1.328,
+    "peak_cuda_gib": 16.45,
+    "process_shutdown": "clean uvicorn shutdown"
+  },
+  "steady_pressure": {
+    "source": "records/phase6_steady_pressure.json",
+    "successful": 50,
+    "timeouts": 0,
+    "wall_p95_seconds": 3.111351,
+    "prefetch": "admission-time CPU frame preparation"
+  },
+  "scope": "Stub smoke covers service contract and queue lifecycle; real smoke covers two-GPU model loading, one steady request, and a fixed-rate pressure replay. Neither is production validation; synchronous burst remains unsupported.",
+  "gate_status": "G6 safety matrix passed in documented restricted scope; G5-A steady-1s service pressure passed in this bounded scope"
+}

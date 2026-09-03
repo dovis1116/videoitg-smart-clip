@@ -1,0 +1,31 @@
+{
+  "candidate": "B1 segment_seconds=8, max_frames=16",
+  "baseline": "B1 segment_seconds=5, max_frames=16",
+  "candidate_summary": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/outputs/phase2_B1_seg8_full_20260714_0600/summary.json",
+  "baseline_summary": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/outputs/phase2_B1_full_20260714_0200/summary.json",
+  "pilot_50": {
+    "baseline": {"recall_at_1_iou_0.3": 0.58, "recall_at_1_iou_0.5": 0.5, "topk_hit_iou_0.3": 0.8, "topk_hit_iou_0.5": 0.68, "max_iou_topk": 0.536611133558476, "boundary_error_s_topk": 4.238199787787788},
+    "candidate": {"recall_at_1_iou_0.3": 0.62, "recall_at_1_iou_0.5": 0.56, "topk_hit_iou_0.3": 0.82, "topk_hit_iou_0.5": 0.66, "max_iou_topk": 0.516548554806976, "boundary_error_s_topk": 4.4002644386462055}
+  },
+  "heldout_test_pool_4": {
+    "baseline_report": "records/phase3/b1_heldout_regression_report.json",
+    "candidate_report": "records/phase3/b1_seg8_heldout_regression_report.json",
+    "baseline": {"recall_at_1_iou_0.3": 0.25, "recall_at_1_iou_0.5": 0.0, "topk_hit_iou_0.3": 0.5, "topk_hit_iou_0.5": 0.25, "max_iou_topk": 0.25163722190048454},
+    "candidate": {"recall_at_1_iou_0.3": 0.25, "recall_at_1_iou_0.5": 0.25, "topk_hit_iou_0.3": 0.75, "topk_hit_iou_0.5": 0.75, "max_iou_topk": 0.4881760826135495}
+  },
+  "heldout_test_split_pool_7": {
+    "pool": "records/phase3/heldout_split_regression_pool_final.jsonl",
+    "baseline_report": "records/phase3/b1_heldout_final_regression_report.json",
+    "candidate_report": "records/phase3/b1_seg8_heldout_final_regression_report.json",
+    "baseline": {"recall_at_1_iou_0.3": 0.5714285714285714, "recall_at_1_iou_0.5": 0.42857142857142855, "topk_hit_iou_0.3": 0.7142857142857143, "topk_hit_iou_0.5": 0.5714285714285714, "max_iou_topk": 0.35807841251456257},
+    "candidate": {"recall_at_1_iou_0.3": 0.5714285714285714, "recall_at_1_iou_0.5": 0.5714285714285714, "topk_hit_iou_0.3": 0.8571428571428571, "topk_hit_iou_0.5": 0.8571428571428571, "max_iou_topk": 0.5984382809739763}
+  },
+  "train_provisional_pool_4": {
+    "baseline_report": "records/phase3/b1_regression_report.json",
+    "candidate_report": "records/phase3/b1_seg8_regression_report.json",
+    "baseline_max_iou_topk": 0.013518498998629702,
+    "candidate_max_iou_topk": 0.04580413215618454,
+    "candidate_recall_at_1_iou_0.3": 0.0
+  },
+  "decision": "Do not promote segment_seconds=8 as the default yet. It improves the tiny held-out pool and low-IoU pilot recall, but decreases pilot Top-k IoU>=0.5 and does not fix the provisional train regression pool. Acquire more held-out boundary cases before a final choice."
+}

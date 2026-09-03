@@ -1,0 +1,21 @@
+{
+  "gate": "G4 target_fps=4 sampling-phase audit",
+  "scope": {
+    "max_frames": 16,
+    "target_fps": 4.0,
+    "sample_ids": [
+      "videoitg40k:media_pilot:145887",
+      "videoitg40k:media_pilot:208227",
+      "videoitg40k:media_pilot:253712",
+      "videoitg40k:media_pilot:287250"
+    ],
+    "selection_pool": "confirmed train badcases"
+  },
+  "result": {
+    "short_event_miss_topk_iou_0.5": {"baseline16": 0.0, "candidate": 0.0},
+    "boundary_shift_topk_iou_0.5": {"baseline16": 0.0, "candidate": 0.0},
+    "candidate_output": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/outputs/phase4_targetfps4_short_train_20260715/summary.json"
+  },
+  "gate_decision": "discard",
+  "reason": "Changing the sampling phase to target_fps=4 while keeping 16 frames did not recover either confirmed train short-event sample and did not improve either boundary-shift sample. No full-pilot expansion was justified."
+}

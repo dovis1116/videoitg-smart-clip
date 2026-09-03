@@ -1,0 +1,16 @@
+{
+  "run_id": "phase6_cuda_allocator_oom_recovery_20260714",
+  "command": "CUDA_VISIBLE_DEVICES=2 PYTHONPATH=src:external/VideoITG python scripts/smoke_oom_recovery.py",
+  "scope": "isolated CUDA allocator child process; no VideoITG model or service process loaded",
+  "device_visible_to_process": "cuda:0 (physical GPU 2)",
+  "result": {
+    "status": "passed",
+    "free_before_bytes": 24878186496,
+    "total_bytes": 25252724736,
+    "requested_bytes": 25415057408,
+    "caught_oom": true,
+    "error_type": "OutOfMemoryError",
+    "post_recovery_probe_sum": 1024.0
+  },
+  "interpretation": "The isolated allocator catches hardware OOM, clears the CUDA cache, and successfully allocates a small probe afterward. This validates runtime recovery behavior, not model-specific OOM capacity or production resilience."
+}

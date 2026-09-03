@@ -1,0 +1,83 @@
+{
+  "reviewer": "Codex visual full-video sampled review",
+  "review_type": "full_video_sampled_2s_scan",
+  "review_scope": "clean97 test split; GT/B1 evidence plus uniform 2-second full-video scan; labels are semantic review outcomes, not training labels",
+  "source_evidence": [
+    "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/outputs/phase3_test_badcase_evidence_20260714_0500/index.json",
+    "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/outputs/phase3_clean97_unreviewed_fullscan_20260714_1430/index.json"
+  ],
+  "samples": [
+    {
+      "sample_id": "videoitg40k:media_pilot:14517",
+      "primary_code": "boundary_shift",
+      "promotion_status": "confirmed_sampled_full_video",
+      "severity": "medium",
+      "confidence": "medium",
+      "rationale": "The snow/blue-hat activity appears in GT and lower-ranked B1 intervals; B1 top-1 is an adjacent 9.5–14.5 s interval, supporting a temporal ranking/boundary issue rather than wrong subject."
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:35047",
+      "primary_code": "other_or_uncertain",
+      "promotion_status": "confirmed_sampled_full_video",
+      "severity": "medium",
+      "confidence": "low",
+      "rationale": "The query is a binary indoor/outdoor question with answer 'no'; the full-video scan does not establish a positive target event or a safe semantic error category under the target-present protocol."
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:435305",
+      "primary_code": "other_or_uncertain",
+      "promotion_status": "confirmed_sampled_full_video",
+      "severity": "medium",
+      "confidence": "low",
+      "rationale": "The query has two GT intervals and B1 overlaps the first interval at IoU≈0.427; the sampled full-video evidence does not distinguish a boundary shift from a repeated cycling event."
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:93507",
+      "primary_code": "boundary_shift",
+      "promotion_status": "confirmed_sampled_full_video",
+      "severity": "medium",
+      "confidence": "medium",
+      "rationale": "The pope/ceremony scene repeats across nearby intervals; B1 predictions are adjacent ceremony segments, including 15.7–20.7 s next to the 20–25 s GT, supporting a temporal boundary/ranking issue."
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:249801",
+      "primary_code": "boundary_shift",
+      "promotion_status": "confirmed_sampled_full_video",
+      "severity": "medium",
+      "confidence": "medium",
+      "rationale": "The flower-bed/lawn scene is visible through the 5–15 s GT interval and nearby frames. B1 top-1 ends at 5.0 s while its second result covers 10–15 s, so the evidence supports an adjacent boundary/ranking shift rather than a missing target."
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:253604",
+      "primary_code": "short_event_miss",
+      "promotion_status": "confirmed_sampled_full_video",
+      "severity": "high",
+      "confidence": "medium",
+      "rationale": "The man in red trousers is visibly present only briefly around 16.5–18.0 s inside the 15–20 s GT interval; B1 top-3 intervals are 0–5, 32.4–37.4, and 37.9–42.9 s, with no result near the short visible event."
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:268585",
+      "primary_code": "other_or_uncertain",
+      "promotion_status": "confirmed_sampled_full_video",
+      "severity": "medium",
+      "confidence": "low",
+      "rationale": "The man in orange and treadmill scene persist across nearly the full video, while the dataset supplies only a 15–20 s GT interval. B1 selects other portions of the same persistent scene; this is evidence of temporal-label ambiguity, but not a safe, specific taxonomy label."
+    },
+    {
+      "sample_id": "videoitg40k:media_pilot:75922",
+      "primary_code": "boundary_shift",
+      "promotion_status": "confirmed_sampled_full_video",
+      "severity": "medium",
+      "confidence": "medium",
+      "rationale": "The dog/plate interaction recurs in the scanned video around the annotated intervals. B1 results straddle the GT boundaries (0.38–5.38, 10.94–15.94, 18.14–23.14 s) rather than selecting the 5–10, 15–20, or 50–55 s windows, supporting boundary/ranking error with multi-segment ambiguity."
+    }
+  ],
+  "summary": {
+    "sample_count": 8,
+    "split": "test",
+    "counts": {"boundary_shift": 4, "short_event_miss": 1, "other_or_uncertain": 3},
+    "not_claimed": ["same_object_wrong_action", "same_action_wrong_subject", "duplicate_result", "false_positive_no_match", "asr_visual_conflict"],
+    "controls_not_semantically_reviewed": 10,
+    "replay_limit": "Uniform 2-second scan is complete; continuous playback is not claimed."
+  }
+}

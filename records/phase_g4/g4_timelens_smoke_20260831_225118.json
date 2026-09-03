@@ -1,0 +1,58 @@
+{
+  "run_id": "g4_timelens_smoke_20260831_225118",
+  "video": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/raw/imax.mp4",
+  "query": "a person performing an action",
+  "candidate_windows": [
+    {
+      "start": 0.0,
+      "end": 5.0,
+      "score": 0.5,
+      "candidate_id": "g4-smoke-0"
+    },
+    {
+      "start": 5.0,
+      "end": 10.0,
+      "score": 0.5,
+      "candidate_id": "g4-smoke-1"
+    }
+  ],
+  "predictions": [
+    {
+      "candidate_id": "g4-smoke-0",
+      "raw_start": 0.0,
+      "raw_end": 4.0,
+      "grounding_score": 1.0,
+      "inference_latency_ms": 8687.687470001038,
+      "model_version": "TimeLens-8B",
+      "boundary_confidence": 1.0,
+      "completeness_score": 1.0,
+      "metadata": {
+        "raw_answer": "The event happens in 0.0 - 4.0 seconds.",
+        "window_start": 0.0,
+        "window_end": 5.0,
+        "batch": true,
+        "batch_size": 2
+      }
+    },
+    {
+      "candidate_id": "g4-smoke-1",
+      "raw_start": 5.0,
+      "raw_end": 6.0,
+      "grounding_score": 1.0,
+      "inference_latency_ms": 8687.687470001038,
+      "model_version": "TimeLens-8B",
+      "boundary_confidence": 1.0,
+      "completeness_score": 1.0,
+      "metadata": {
+        "raw_answer": "The event happens in 0.0 - 1.0 seconds.",
+        "window_start": 5.0,
+        "window_end": 10.0,
+        "batch": true,
+        "batch_size": 2
+      }
+    }
+  ],
+  "elapsed_ms": 27400.859527999273,
+  "gpu_peak_memory_allocated_gib": 18.473515033721924,
+  "gpu_peak_memory_reserved_gib": 19.083984375
+}

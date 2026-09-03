@@ -1,0 +1,74 @@
+{
+  "scope": {
+    "manifest": "/home/zjy/projects/videoitg_smart_clip/records/phase1/videoitg40k_media_pilot.jsonl",
+    "sample_count": 50,
+    "task": "target-present temporal grounding pilot",
+    "ground_truth": "clip_num converted to 5-second intervals",
+    "not_in_scope": ["no-match", "ASR/visual conflict", "short-event boundary"],
+    "videoitg_revision": "50a60a822c0e362bfd8747c45ba34e66e9c9d650",
+    "device": "cuda:0",
+    "max_frames": 16,
+    "segment_seconds": 5.0,
+    "output_top_k": 3
+  },
+  "baselines": {
+    "B0": {
+      "definition": "CLIP center-frame scoring over uniform 5-second candidates",
+      "summary": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/outputs/phase2_B0_full_20260714_0145/summary.json",
+      "predictions": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/outputs/phase2_B0_full_20260714_0145/predictions.jsonl",
+      "metrics": {
+        "recall_at_1_iou_0.3": 0.28,
+        "recall_at_1_iou_0.5": 0.28,
+        "topk_hit_iou_0.3": 0.52,
+        "topk_hit_iou_0.5": 0.52,
+        "max_iou_topk": 0.38,
+        "boundary_error_s_topk": 11.444260333333334,
+        "sample_count": 50
+      }
+    },
+    "B1": {
+      "definition": "full-video VideoITG frame scores mapped to non-overlapping 5-second intervals",
+      "summary": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/outputs/phase2_B1_full_20260714_0200/summary.json",
+      "predictions": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/outputs/phase2_B1_full_20260714_0200/predictions.jsonl",
+      "metrics": {
+        "recall_at_1_iou_0.3": 0.58,
+        "recall_at_1_iou_0.5": 0.5,
+        "topk_hit_iou_0.3": 0.8,
+        "topk_hit_iou_0.5": 0.68,
+        "max_iou_topk": 0.536611133558476,
+        "boundary_error_s_topk": 4.238199787787788,
+        "sample_count": 50
+      }
+    },
+    "B2": {
+      "definition": "B0 top-4 retrieval followed by VideoITG candidate reranking",
+      "summary": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/outputs/phase2_B2_full_20260714_0050/summary.json",
+      "predictions": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/outputs/phase2_B2_full_20260714_0050/predictions.jsonl",
+      "metrics": {
+        "recall_at_1_iou_0.3": 0.24,
+        "recall_at_1_iou_0.5": 0.22,
+        "topk_hit_iou_0.3": 0.54,
+        "topk_hit_iou_0.5": 0.52,
+        "max_iou_topk": 0.37666666666666665,
+        "boundary_error_s_topk": 10.75,
+        "sample_count": 50
+      }
+    },
+    "B2-Retrieval-only": {
+      "definition": "B0/ B2 CLIP retrieval stage with Top-4 candidates exposed and no VideoITG reranking",
+      "summary": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/outputs/phase2_B2R_full_20260714_0110/summary.json",
+      "predictions": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/outputs/phase2_B2R_full_20260714_0110/predictions.jsonl",
+      "metrics": {
+        "recall_at_1_iou_0.3": 0.28,
+        "recall_at_1_iou_0.5": 0.28,
+        "topk_hit_iou_0.3": 0.66,
+        "topk_hit_iou_0.5": 0.64,
+        "max_iou_topk": 0.48666666666666664,
+        "boundary_error_s_topk": 7.55,
+        "sample_count": 50,
+        "evaluated_top_k": 4
+      }
+    }
+  },
+  "interpretation": "On this 50-sample target-present media pilot, B1 is the strongest of the three fixed baselines. B2 does not improve over B0 or B1 under retrieval_top_n=4; this is pilot evidence only and is not a full-dataset or deployment claim."
+}

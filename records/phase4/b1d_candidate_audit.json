@@ -1,0 +1,25 @@
+{
+  "candidate": "B1D: max_frames=32 with score-gated 8-second output interval",
+  "implementation_command": "scripts/run_baseline.py --baseline B1D --max-frames 32 --segment-seconds 5 --adaptive-wide-seconds 8 --adaptive-threshold 0.6",
+  "scope": {
+    "pilot_rows": 50,
+    "selected_narrow": 48,
+    "selected_wide": 2,
+    "output": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/outputs/phase4_B1D_full_20260715_0000/summary.json"
+  },
+  "metrics": {
+    "recall_at_1_iou_0.3": 0.68,
+    "recall_at_1_iou_0.5": 0.54,
+    "topk_hit_iou_0.3": 0.90,
+    "topk_hit_iou_0.5": 0.76,
+    "boundary_error_s_topk": 2.7871,
+    "mean_rerank_seconds": 3.1758
+  },
+  "comparison": {
+    "reference": "B1 max_frames=32, 5-second output interval",
+    "prediction_metric_differences": 0,
+    "reference_mean_rerank_seconds": 3.1327
+  },
+  "gate_decision": "retain_candidate_not_default",
+  "reason": "The threshold selected the wider interval for only 2/50 rows and produced no pilot metric change versus fixed 32-frame/5-second output, while retaining the higher 32-frame latency. Do not expand this candidate to clean97 or held-out before a policy with measurable benefit is identified."
+}

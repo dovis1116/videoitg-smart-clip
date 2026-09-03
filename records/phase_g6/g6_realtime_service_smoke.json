@@ -1,0 +1,403 @@
+{
+  "run_id": "g6_real_service_20260901_002737",
+  "task_id": "6ed51f5c9cd54e3db8a43c2540adb5c5",
+  "async_timeout_ms": 120000,
+  "timelens_total_pixels": 4194304,
+  "observations": [
+    {
+      "status": "running",
+      "canonical_status": "INDEXING",
+      "current_stage": "INDEXING",
+      "progress": 0.25,
+      "degraded": false
+    },
+    {
+      "status": "running",
+      "canonical_status": "INDEXING",
+      "current_stage": "INDEXING",
+      "progress": 0.25,
+      "degraded": false
+    },
+    {
+      "status": "running",
+      "canonical_status": "INDEXING",
+      "current_stage": "INDEXING",
+      "progress": 0.25,
+      "degraded": false
+    },
+    {
+      "status": "running",
+      "canonical_status": "INDEXING",
+      "current_stage": "INDEXING",
+      "progress": 0.25,
+      "degraded": false
+    },
+    {
+      "status": "running",
+      "canonical_status": "INDEXING",
+      "current_stage": "INDEXING",
+      "progress": 0.25,
+      "degraded": false
+    },
+    {
+      "status": "running",
+      "canonical_status": "INDEXING",
+      "current_stage": "INDEXING",
+      "progress": 0.25,
+      "degraded": false
+    },
+    {
+      "status": "running",
+      "canonical_status": "INDEXING",
+      "current_stage": "INDEXING",
+      "progress": 0.25,
+      "degraded": false
+    },
+    {
+      "status": "running",
+      "canonical_status": "INDEXING",
+      "current_stage": "INDEXING",
+      "progress": 0.25,
+      "degraded": false
+    },
+    {
+      "status": "running",
+      "canonical_status": "INDEXING",
+      "current_stage": "INDEXING",
+      "progress": 0.25,
+      "degraded": false
+    },
+    {
+      "status": "running",
+      "canonical_status": "INDEXING",
+      "current_stage": "INDEXING",
+      "progress": 0.25,
+      "degraded": false
+    },
+    {
+      "status": "running",
+      "canonical_status": "INDEXING",
+      "current_stage": "INDEXING",
+      "progress": 0.25,
+      "degraded": false
+    },
+    {
+      "status": "running",
+      "canonical_status": "INDEXING",
+      "current_stage": "INDEXING",
+      "progress": 0.25,
+      "degraded": false
+    },
+    {
+      "status": "running",
+      "canonical_status": "RETRIEVING",
+      "current_stage": "RETRIEVING",
+      "progress": 0.4,
+      "degraded": false
+    },
+    {
+      "status": "running",
+      "canonical_status": "GROUNDING",
+      "current_stage": "GROUNDING",
+      "progress": 0.62,
+      "degraded": false
+    },
+    {
+      "status": "running",
+      "canonical_status": "GROUNDING",
+      "current_stage": "GROUNDING",
+      "progress": 0.62,
+      "degraded": false
+    },
+    {
+      "status": "running",
+      "canonical_status": "GROUNDING",
+      "current_stage": "GROUNDING",
+      "progress": 0.62,
+      "degraded": false
+    },
+    {
+      "status": "running",
+      "canonical_status": "GROUNDING",
+      "current_stage": "GROUNDING",
+      "progress": 0.62,
+      "degraded": false
+    },
+    {
+      "status": "running",
+      "canonical_status": "GROUNDING",
+      "current_stage": "GROUNDING",
+      "progress": 0.62,
+      "degraded": false
+    },
+    {
+      "status": "running",
+      "canonical_status": "GROUNDING",
+      "current_stage": "GROUNDING",
+      "progress": 0.62,
+      "degraded": false
+    },
+    {
+      "status": "running",
+      "canonical_status": "GROUNDING",
+      "current_stage": "GROUNDING",
+      "progress": 0.62,
+      "degraded": false
+    },
+    {
+      "status": "running",
+      "canonical_status": "GROUNDING",
+      "current_stage": "GROUNDING",
+      "progress": 0.62,
+      "degraded": false
+    },
+    {
+      "status": "running",
+      "canonical_status": "GROUNDING",
+      "current_stage": "GROUNDING",
+      "progress": 0.62,
+      "degraded": false
+    },
+    {
+      "status": "running",
+      "canonical_status": "GROUNDING",
+      "current_stage": "GROUNDING",
+      "progress": 0.62,
+      "degraded": false
+    },
+    {
+      "status": "running",
+      "canonical_status": "GROUNDING",
+      "current_stage": "GROUNDING",
+      "progress": 0.62,
+      "degraded": false
+    },
+    {
+      "status": "running",
+      "canonical_status": "GROUNDING",
+      "current_stage": "GROUNDING",
+      "progress": 0.62,
+      "degraded": false
+    },
+    {
+      "status": "running",
+      "canonical_status": "GROUNDING",
+      "current_stage": "GROUNDING",
+      "progress": 0.62,
+      "degraded": false
+    },
+    {
+      "status": "running",
+      "canonical_status": "GROUNDING",
+      "current_stage": "GROUNDING",
+      "progress": 0.62,
+      "degraded": false
+    },
+    {
+      "status": "running",
+      "canonical_status": "GROUNDING",
+      "current_stage": "GROUNDING",
+      "progress": 0.62,
+      "degraded": false
+    },
+    {
+      "status": "running",
+      "canonical_status": "GROUNDING",
+      "current_stage": "GROUNDING",
+      "progress": 0.62,
+      "degraded": false
+    },
+    {
+      "status": "running",
+      "canonical_status": "GROUNDING",
+      "current_stage": "GROUNDING",
+      "progress": 0.62,
+      "degraded": false
+    },
+    {
+      "status": "running",
+      "canonical_status": "GROUNDING",
+      "current_stage": "GROUNDING",
+      "progress": 0.62,
+      "degraded": false
+    },
+    {
+      "status": "running",
+      "canonical_status": "GROUNDING",
+      "current_stage": "GROUNDING",
+      "progress": 0.62,
+      "degraded": false
+    },
+    {
+      "status": "running",
+      "canonical_status": "GROUNDING",
+      "current_stage": "GROUNDING",
+      "progress": 0.62,
+      "degraded": false
+    },
+    {
+      "status": "running",
+      "canonical_status": "GROUNDING",
+      "current_stage": "GROUNDING",
+      "progress": 0.62,
+      "degraded": false
+    },
+    {
+      "status": "running",
+      "canonical_status": "GROUNDING",
+      "current_stage": "GROUNDING",
+      "progress": 0.62,
+      "degraded": false
+    },
+    {
+      "status": "running",
+      "canonical_status": "GROUNDING",
+      "current_stage": "GROUNDING",
+      "progress": 0.62,
+      "degraded": false
+    },
+    {
+      "status": "running",
+      "canonical_status": "GROUNDING",
+      "current_stage": "GROUNDING",
+      "progress": 0.62,
+      "degraded": false
+    },
+    {
+      "status": "running",
+      "canonical_status": "GROUNDING",
+      "current_stage": "GROUNDING",
+      "progress": 0.62,
+      "degraded": false
+    },
+    {
+      "status": "running",
+      "canonical_status": "GROUNDING",
+      "current_stage": "GROUNDING",
+      "progress": 0.62,
+      "degraded": false
+    },
+    {
+      "status": "running",
+      "canonical_status": "GROUNDING",
+      "current_stage": "GROUNDING",
+      "progress": 0.62,
+      "degraded": false
+    },
+    {
+      "status": "running",
+      "canonical_status": "GROUNDING",
+      "current_stage": "GROUNDING",
+      "progress": 0.62,
+      "degraded": false
+    },
+    {
+      "status": "running",
+      "canonical_status": "GROUNDING",
+      "current_stage": "GROUNDING",
+      "progress": 0.62,
+      "degraded": false
+    },
+    {
+      "status": "running",
+      "canonical_status": "GROUNDING",
+      "current_stage": "GROUNDING",
+      "progress": 0.62,
+      "degraded": false
+    },
+    {
+      "status": "running",
+      "canonical_status": "GROUNDING",
+      "current_stage": "GROUNDING",
+      "progress": 0.62,
+      "degraded": false
+    },
+    {
+      "status": "succeeded",
+      "canonical_status": "SUCCESS",
+      "current_stage": "SUCCESS",
+      "progress": 1.0,
+      "degraded": false
+    }
+  ],
+  "elapsed_ms": 24999.830089996976,
+  "result": {
+    "task_id": "6ed51f5c9cd54e3db8a43c2540adb5c5",
+    "video_id": "imax10s",
+    "status": "succeeded",
+    "result": {
+      "status": "POSSIBLE",
+      "predictions": [
+        {
+          "candidate_id": "imax10s:r0",
+          "coarse_start": 3.0079994201660156,
+          "coarse_end": 10.01,
+          "retrieval_score": 0.09246249496936798,
+          "raw_start": 3.0079994201660156,
+          "raw_end": 5.007999420166016,
+          "grounding_score": 1.0,
+          "refined_start": 3.0079994201660156,
+          "refined_end": 5.007999420166016,
+          "final_score": 0.7277387484908104,
+          "duplication_penalty": 0.0,
+          "rank": 1,
+          "pre_dedup_rank": null,
+          "retriever_version": "cached-cosine-v1",
+          "grounder_version": "TimeLens-8B",
+          "postprocess_version": "boundary-refinement-v1+ranking-v1+temporal-dedup-v1+no-match-v1",
+          "retrieval_latency_ms": 338.93398999862256,
+          "grounding_latency_ms": 10232.523687998764,
+          "postprocess_latency_ms": 0.0,
+          "degraded": false,
+          "degrade_level": 0,
+          "degrade_reason": null,
+          "deduplicated": false,
+          "boundary_confidence": 1.0,
+          "completeness_score": 1.0
+        }
+      ],
+      "candidates": [
+        {
+          "candidate_id": "imax10s:r0",
+          "coarse_start": 3.0079994201660156,
+          "coarse_end": 10.01,
+          "retrieval_score": 0.09246249496936798,
+          "raw_start": 3.0079994201660156,
+          "raw_end": 5.007999420166016,
+          "grounding_score": 1.0,
+          "refined_start": 3.0079994201660156,
+          "refined_end": 5.007999420166016,
+          "final_score": 0.7277387484908104,
+          "duplication_penalty": 0.0,
+          "rank": 1,
+          "pre_dedup_rank": 1,
+          "retriever_version": "cached-cosine-v1",
+          "grounder_version": "TimeLens-8B",
+          "postprocess_version": "boundary-refinement-v1+ranking-v1+temporal-dedup-v1+no-match-v1",
+          "retrieval_latency_ms": 338.93398999862256,
+          "grounding_latency_ms": 10232.523687998764,
+          "postprocess_latency_ms": 1.1894990020664409,
+          "degraded": false,
+          "degrade_level": 0,
+          "degrade_reason": null,
+          "deduplicated": false,
+          "boundary_confidence": 1.0,
+          "completeness_score": 1.0
+        }
+      ],
+      "degraded": false,
+      "degrade_level": 0,
+      "degrade_reason": null,
+      "video_path": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/processed/g6/imax10s.mp4",
+      "runtime": {
+        "backend": "coarse_to_fine",
+        "device": "cuda:0",
+        "cache_hit": 1,
+        "cache_event": "cache_hit",
+        "retrieval_latency_ms": 338.9232190020266
+      }
+    },
+    "degraded": false
+  },
+  "scope": "single_real_async_http_smoke_or_timeout_contract_not_throughput_or_quality_gate"
+}

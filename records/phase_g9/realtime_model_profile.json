@@ -1,0 +1,67 @@
+{
+  "run_id": "realtime_model_profile_20260831_232150",
+  "video": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/processed/g6/imax10s.mp4",
+  "query": "a person performing an action",
+  "elapsed_ms": 24802.264576999733,
+  "stages": [
+    {
+      "stage": "INDEXING",
+      "elapsed_ms": 5953.4800779983925
+    },
+    {
+      "stage": "RETRIEVING",
+      "elapsed_ms": 21.747742001025472
+    },
+    {
+      "stage": "GROUNDING",
+      "elapsed_ms": 16043.72250799861
+    },
+    {
+      "stage": "POSTPROCESSING",
+      "elapsed_ms": 2438.561082999513
+    }
+  ],
+  "cuda_peak_allocated_gib": 19.260809421539307,
+  "cuda_peak_reserved_gib": 19.69140625,
+  "profiler_top_cuda": "-------------------------------------------------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  \n                                                   Name    Self CPU %      Self CPU   CPU total %     CPU total  CPU time avg     Self CUDA   Self CUDA %    CUDA total  CUDA time avg       CPU Mem  Self CPU Mem      CUDA Mem  Self CUDA Mem    # of Calls  \n-------------------------------------------------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  \n                                               aten::mm         1.54%     233.013ms         2.72%     410.708ms     101.410us        5.940s        43.66%        5.959s       1.471ms           0 b           0 b      11.61 Gb      11.61 Gb          4050  \n                                           Unrecognized         4.58%     691.847ms         4.58%     691.847ms     696.023us        5.384s        39.57%        5.384s       5.416ms           0 b           0 b           0 b           0 b           994  \nampere_bf16_s1688gemm_bf16_64x128_sliced1x2_ldg8_f2f...         0.00%       0.000us         0.00%       0.000us       0.000us        3.564s        26.20%        3.564s      24.750ms           0 b           0 b           0 b           0 b           144  \n                                            aten::copy_         1.12%     169.312ms        21.99%        3.325s     328.455us        3.101s        22.79%        3.103s     306.523us           0 b           0 b           0 b           0 b         10124  \n                       Memcpy HtoD (Pageable -> Device)         0.00%       0.000us         0.00%       0.000us       0.000us        2.861s        21.03%        2.861s       1.692ms           0 b           0 b           0 b           0 b          1691  \n                                            aten::addmm         4.84%     731.943ms         5.93%     896.319ms       1.467ms        1.874s        13.78%        6.531s      10.688ms           0 b           0 b      12.78 Gb      12.18 Gb           611  \nampere_bf16_s1688gemm_bf16_128x64_sliced1x2_ldg8_f2f...         0.00%       0.000us         0.00%       0.000us       0.000us        1.578s        11.60%        1.578s      14.610ms           0 b           0 b           0 b           0 b           108  \n                 flash_attn::_flash_attn_varlen_forward         0.03%       4.159ms         0.09%      13.238ms     210.133us        1.315s         9.66%        1.411s      22.389ms           0 b           0 b       2.26 Gb           0 b            63  \n    ampere_bf16_s16816gemm_bf16_128x64_ldg8_relu_f2f_tn         0.00%       0.000us         0.00%       0.000us       0.000us        1.267s         9.31%        1.267s      11.315ms           0 b           0 b           0 b           0 b           112  \nvoid flash::flash_fwd_kernel<Flash_fwd_kernel_traits...         0.00%       0.000us         0.00%       0.000us       0.000us     754.464ms         5.55%     754.464ms      27.943ms           0 b           0 b           0 b           0 b            27  \nstd::enable_if<!(false), void>::type internal::gemvx...         0.00%       0.000us         0.00%       0.000us       0.000us     602.669ms         4.43%     602.669ms     368.379us           0 b           0 b           0 b           0 b          1636  \nvoid flash::flash_fwd_kernel<Flash_fwd_kernel_traits...         0.00%       0.000us         0.00%       0.000us       0.000us     560.249ms         4.12%     560.249ms      15.562ms           0 b           0 b           0 b           0 b            36  \n    ampere_fp16_s16816gemm_fp16_128x64_ldg8_relu_f2f_tn         0.00%       0.000us         0.00%       0.000us       0.000us     457.274ms         3.36%     457.274ms       2.419ms           0 b           0 b           0 b           0 b           189  \n                                              aten::cat         0.58%      88.267ms         0.70%     105.508ms      42.959us     291.017ms         2.14%     292.077ms     118.924us     303.95 Mb     303.95 Mb      15.34 Gb      15.34 Gb          2456  \n                                              aten::mul         0.47%      71.688ms         0.83%     124.980ms      16.197us     280.436ms         2.06%     281.318ms      36.459us      45.68 Kb      45.64 Kb      26.72 Gb      26.72 Gb          7716  \nstd::enable_if<!(false), void>::type internal::gemvx...         0.00%       0.000us         0.00%       0.000us       0.000us     191.816ms         1.41%     191.816ms      88.804us           0 b           0 b           0 b           0 b          2160  \nvoid at::native::(anonymous namespace)::CatArrayBatc...         0.00%       0.000us         0.00%       0.000us       0.000us     180.773ms         1.33%     180.773ms     167.383us           0 b           0 b           0 b           0 b          1080  \n                        flash_attn::_flash_attn_forward         0.22%      33.460ms         0.57%      86.030ms     159.315us     142.876ms         1.05%     143.739ms     266.184us           0 b           0 b       4.75 Mb    -153.19 Mb           540  \n                                              aten::add         0.39%      59.072ms         0.64%      96.254ms      17.237us     142.660ms         1.05%     143.065ms      25.620us     250.35 Kb     250.34 Kb      11.03 Gb      11.03 Gb          5584  \nvoid at::native::elementwise_kernel<128, 4, at::nati...         0.00%       0.000us         0.00%       0.000us       0.000us     128.929ms         0.95%     128.929ms      36.524us           0 b           0 b           0 b           0 b          3530  \n-------------------------------------------------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  \nSelf CPU time total: 15.120s\nSelf CUDA time total: 13.605s\n",
+  "result": {
+    "status": "POSSIBLE",
+    "predictions": [
+      {
+        "candidate_id": "imax10s:r0",
+        "coarse_start": 3.0079994201660156,
+        "coarse_end": 10.01,
+        "retrieval_score": 0.09246249496936798,
+        "raw_start": 3.0079994201660156,
+        "raw_end": 5.007999420166016,
+        "grounding_score": 1.0,
+        "refined_start": 3.0079994201660156,
+        "refined_end": 5.007999420166016,
+        "final_score": 0.7277387484908104,
+        "rank": 1,
+        "retriever_version": "cached-cosine-v1",
+        "grounder_version": "TimeLens-8B",
+        "postprocess_version": "boundary-refinement-v1+ranking-v1+temporal-dedup-v1+no-match-v1",
+        "retrieval_latency_ms": 21.733104000304593,
+        "grounding_latency_ms": 11174.577571000555,
+        "postprocess_latency_ms": 0.07516399637097493,
+        "degraded": false,
+        "degrade_level": 0,
+        "degrade_reason": null,
+        "boundary_confidence": 1.0,
+        "completeness_score": 1.0
+      }
+    ],
+    "degraded": false,
+    "degrade_level": 0,
+    "degrade_reason": null,
+    "video_path": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/processed/g6/imax10s.mp4",
+    "runtime": {
+      "backend": "coarse_to_fine",
+      "device": "cuda:0",
+      "cache_hit": 0,
+      "retrieval_latency_ms": 21.725237998907687
+    }
+  },
+  "scope": "single_real_model_request_profiler_not_throughput_or_quality_gate"
+}

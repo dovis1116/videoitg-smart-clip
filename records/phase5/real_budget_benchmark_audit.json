@@ -1,0 +1,39 @@
+{
+  "gate": "G5 real single-GPU benchmark audit",
+  "status": "completed_but_not_passed",
+  "scope": {
+    "rows": 50,
+    "workers": 1,
+    "deadline_ms": 5000,
+    "policies": ["E0_fixed16", "E3_queue_bypass"],
+    "arrival_patterns": ["burst", "steady_1s"],
+    "all_requests_executed_locally": true,
+    "service_implementation": false
+  },
+  "policy": {
+    "E0_fixed16": "always run VideoITG max_frames=16",
+    "E3_queue_bypass": "run max_frames=16 for the first request, then use retrieval-only whenever the single worker is occupied"
+  },
+  "results": {
+    "burst": {
+      "source_e0": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/outputs/phase5_real_benchmark_50_burst_20260715/e0.json",
+      "source_e3": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/outputs/phase5_real_benchmark_50_burst_20260715/e3.json",
+      "e0": {"p95_service_ms": 3537.22397913225, "p95_total_ms": 114824.38634661958, "timeout_count": 50, "topk_iou_0.5": 0.68},
+      "e3": {"p95_service_ms": 2768.270079046488, "p95_total_ms": 55631.830382626504, "timeout_count": 50, "topk_iou_0.5": 0.54, "retrieval_only_rows": 49},
+      "p95_service_relative_delta": -0.2174,
+      "p95_total_relative_delta": -0.5155,
+      "quality_delta_topk_iou_0.5": -0.14
+    },
+    "steady_1s": {
+      "source_e0": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/outputs/phase5_real_benchmark_50_steady1s_20260715/e0.json",
+      "source_e3": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/outputs/phase5_real_benchmark_50_steady1s_20260715/e3.json",
+      "e0": {"p95_service_ms": 3581.8856849800795, "p95_total_ms": 70289.0257940162, "timeout_count": 50, "topk_iou_0.5": 0.68},
+      "e3": {"p95_service_ms": 2833.7871050462127, "p95_total_ms": 15101.261232979596, "timeout_count": 50, "topk_iou_0.5": 0.54, "retrieval_only_rows": 49},
+      "p95_service_relative_delta": -0.2088,
+      "p95_total_relative_delta": -0.785,
+      "quality_delta_topk_iou_0.5": -0.14
+    }
+  },
+  "gate_decision": "G5 not passed",
+  "reason": "E3 improves measured service P95 by about 21% and reduces queueing tail latency, but it bypasses VideoITG for 49/50 rows and loses 14 percentage points of Top-k@0.5; all 50 requests still exceed the 5-second deadline in both arrival patterns. That quality loss is incompatible with the project's quality-preservation requirement for a safe promotion. Keep E0 fixed16 and do not start service pressure testing."
+}

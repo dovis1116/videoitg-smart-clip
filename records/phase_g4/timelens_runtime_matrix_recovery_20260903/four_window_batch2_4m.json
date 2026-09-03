@@ -1,0 +1,43 @@
+{
+  "run_id": "g4_timelens_smoke_20260903_191229",
+  "video": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/processed/g6/imax10s.mp4",
+  "query": "a person performing an action",
+  "candidate_windows": [
+    {
+      "start": 0.0,
+      "end": 10.0,
+      "score": 0.5,
+      "candidate_id": "g4-smoke-0"
+    },
+    {
+      "start": 10.0,
+      "end": 20.0,
+      "score": 0.5,
+      "candidate_id": "g4-smoke-1"
+    },
+    {
+      "start": 20.0,
+      "end": 30.0,
+      "score": 0.5,
+      "candidate_id": "g4-smoke-2"
+    },
+    {
+      "start": 30.0,
+      "end": 40.0,
+      "score": 0.5,
+      "candidate_id": "g4-smoke-3"
+    }
+  ],
+  "batch_size": 2,
+  "max_new_tokens": 128,
+  "total_pixels": 4194304,
+  "predictions": [],
+  "error": {
+    "type": "AttributeError",
+    "message": "module 'torchvision.io' has no attribute 'read_video'"
+  },
+  "status": "failed",
+  "elapsed_ms": 16458.99173799262,
+  "gpu_peak_memory_allocated_gib": 18.64846658706665,
+  "gpu_peak_memory_reserved_gib": 18.9375
+}

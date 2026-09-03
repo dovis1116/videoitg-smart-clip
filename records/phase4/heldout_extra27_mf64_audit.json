@@ -1,0 +1,83 @@
+{
+  "scope": {
+    "sample_count": 27,
+    "base": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/outputs/phase4_heldout_extra27_mf16_20260715/predictions.jsonl",
+    "candidate": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/outputs/phase4_heldout_extra27_mf64_20260715/predictions.jsonl"
+  },
+  "metrics": {
+    "recall_at_1_iou_0.3": {
+      "mf16": 0.6666666666666666,
+      "mf64": 0.6666666666666666,
+      "delta": 0.0,
+      "paired_gains": 2,
+      "paired_losses": 2,
+      "unchanged": 23
+    },
+    "recall_at_1_iou_0.5": {
+      "mf16": 0.5185185185185185,
+      "mf64": 0.5925925925925926,
+      "delta": 0.07407407407407407,
+      "paired_gains": 2,
+      "paired_losses": 0,
+      "unchanged": 25
+    },
+    "topk_hit_iou_0.3": {
+      "mf16": 0.9629629629629629,
+      "mf64": 0.9629629629629629,
+      "delta": 0.0,
+      "paired_gains": 0,
+      "paired_losses": 0,
+      "unchanged": 27
+    },
+    "topk_hit_iou_0.5": {
+      "mf16": 0.7777777777777778,
+      "mf64": 0.8148148148148148,
+      "delta": 0.03703703703703698,
+      "paired_gains": 4,
+      "paired_losses": 3,
+      "unchanged": 20
+    }
+  },
+  "by_source_group": {
+    "30_60_s_activitynetqa": {
+      "sample_count": 15,
+      "topk_hit_iou_0.5": {
+        "mf16": 0.8,
+        "mf64": 1.0,
+        "delta": 0.19999999999999996
+      }
+    },
+    "30_60_s_nextqa": {
+      "sample_count": 12,
+      "topk_hit_iou_0.5": {
+        "mf16": 0.75,
+        "mf64": 0.5833333333333334,
+        "delta": -0.16666666666666663
+      }
+    }
+  },
+  "latency": {
+    "mf16": {
+      "mean_s": 2.5937518472524568,
+      "p95_s": 2.7561306769493967
+    },
+    "mf64": {
+      "mean_s": 3.656691275847455,
+      "p95_s": 4.493078518891707
+    },
+    "relative_mean_increase": 0.40980768060790496
+  },
+  "manual_review": {
+    "pool": "records/phase4/heldout_extra27_regression_pool.jsonl",
+    "review": "records/phase4/heldout_extra27_manual_review.json",
+    "sampled_2s_full_video_scan": 27,
+    "codes": {"boundary_shift": 7, "control_correct": 18, "other_or_uncertain": 2},
+    "topk_hit_iou_0.5": {
+      "boundary_shift": {"mf16": 0.5714285714, "mf64": 0.5714285714, "delta": 0.0},
+      "control_correct": {"mf16": 0.8333333333, "mf64": 0.8888888889, "delta": 0.0555555556},
+      "other_or_uncertain": {"mf16": 1.0, "mf64": 1.0, "delta": 0.0}
+    },
+    "decision": "64_frame_candidate_does_not_improve_the_manually_confirmed_boundary_shift_category"
+  },
+  "decision": "quality_difference_is_paired_and_not_policy_tuned"
+}

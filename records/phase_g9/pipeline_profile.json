@@ -1,0 +1,21 @@
+{
+  "run_id": "pipeline_profile_20260831_230937",
+  "elapsed_ms": 1.9420500029809773,
+  "stages": [
+    {
+      "stage": "RETRIEVING",
+      "elapsed_ms": 0.418890002038097
+    },
+    {
+      "stage": "GROUNDING",
+      "elapsed_ms": 0.3004440004588105
+    },
+    {
+      "stage": "POSTPROCESSING",
+      "elapsed_ms": 0.5828139983350411
+    }
+  ],
+  "top_functions": "         1226 function calls in 0.001 seconds\n\n   Ordered by: cumulative time\n   List reduced from 49 to 12 due to restriction <12>\n\n   ncalls  tottime  percall  cumtime  percall filename:lineno(function)\n        1    0.000    0.000    0.001    0.001 /home/zjy/projects/videoitg_smart_clip/src/videoitg_smart_clip/pipeline/service.py:24(search)\n        1    0.000    0.000    0.001    0.001 /home/zjy/projects/videoitg_smart_clip/src/videoitg_smart_clip/pipeline/postprocess.py:58(apply)\n       20    0.000    0.000    0.000    0.000 {built-in method builtins.any}\n      121    0.000    0.000    0.000    0.000 /home/zjy/projects/videoitg_smart_clip/src/videoitg_smart_clip/pipeline/postprocess.py:62(<genexpr>)\n        1    0.000    0.000    0.000    0.000 /home/zjy/projects/videoitg_smart_clip/src/videoitg_smart_clip/retrieval/temporal.py:53(retrieve)\n      108    0.000    0.000    0.000    0.000 /home/zjy/projects/videoitg_smart_clip/src/videoitg_smart_clip/pipeline/postprocess.py:44(temporal_iou)\n      346    0.000    0.000    0.000    0.000 {built-in method builtins.max}\n        1    0.000    0.000    0.000    0.000 /home/zjy/projects/videoitg_smart_clip/src/videoitg_smart_clip/grounding/timelens.py:19(predict)\n      237    0.000    0.000    0.000    0.000 {built-in method builtins.min}\n        2    0.000    0.000    0.000    0.000 /home/hdd-2t/zjy_dataset/videoitg_smart_clip/envs/videoitg312/lib/python3.12/site-packages/numpy/linalg/linalg.py:2383(norm)\n       20    0.000    0.000    0.000    0.000 <string>:2(__init__)\n       20    0.000    0.000    0.000    0.000 /home/zjy/projects/videoitg_smart_clip/src/videoitg_smart_clip/pipeline/postprocess.py:93(build_candidate_record)\n\n\n",
+  "result_status": "POSSIBLE",
+  "scope": "orchestration_profile_with_stub_grounder_not_model_benchmark"
+}

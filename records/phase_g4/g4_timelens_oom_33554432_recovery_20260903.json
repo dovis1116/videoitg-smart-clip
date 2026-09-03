@@ -1,0 +1,40 @@
+{
+  "run_id": "g4_timelens_smoke_20260903_184133",
+  "video": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/processed/g6/imax10s.mp4",
+  "query": "a person performing an action",
+  "candidate_windows": [
+    {
+      "start": 0.0,
+      "end": 10.0,
+      "score": 0.5,
+      "candidate_id": "g4-smoke-0"
+    }
+  ],
+  "batch_size": 1,
+  "max_new_tokens": 128,
+  "total_pixels": 33554432,
+  "predictions": [
+    {
+      "candidate_id": "g4-smoke-0",
+      "raw_start": 0.0,
+      "raw_end": 2.0,
+      "grounding_score": 1.0,
+      "inference_latency_ms": 3456.3457159965765,
+      "model_version": "TimeLens-8B",
+      "boundary_confidence": 1.0,
+      "completeness_score": 1.0,
+      "metadata": {
+        "raw_answer": "The event happens in 0.0 - 2.0 seconds.",
+        "window_start": 0.0,
+        "window_end": 10.0,
+        "batch": false,
+        "batch_size": 1
+      }
+    }
+  ],
+  "error": null,
+  "status": "succeeded",
+  "elapsed_ms": 18861.370978993364,
+  "gpu_peak_memory_allocated_gib": 18.64846658706665,
+  "gpu_peak_memory_reserved_gib": 18.943359375
+}

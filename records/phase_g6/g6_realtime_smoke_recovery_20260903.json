@@ -1,0 +1,102 @@
+{
+  "run_id": "g6_realtime_smoke_20260903_183844",
+  "video": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/processed/g6/imax10s.mp4",
+  "query": "a person performing an action",
+  "stages": [
+    {
+      "stage": "INDEXING",
+      "progress": 0.25,
+      "elapsed_ms": 0.0036370038287714124
+    },
+    {
+      "stage": "RETRIEVING",
+      "progress": 0.4,
+      "elapsed_ms": 11790.878020008677
+    },
+    {
+      "stage": "GROUNDING",
+      "progress": 0.62,
+      "elapsed_ms": 11803.813592006918
+    },
+    {
+      "stage": "POSTPROCESSING",
+      "progress": 0.86,
+      "elapsed_ms": 20121.47683299554
+    }
+  ],
+  "elapsed_ms": 20121.54093600111,
+  "result": {
+    "status": "POSSIBLE",
+    "predictions": [
+      {
+        "candidate_id": "imax10s:r0",
+        "coarse_start": 3.0079994201660156,
+        "coarse_end": 10.01,
+        "retrieval_score": 0.09245160967111588,
+        "raw_start": 3.0079994201660156,
+        "raw_end": 5.007999420166016,
+        "grounding_score": 1.0,
+        "refined_start": 3.0079994201660156,
+        "refined_end": 5.007999420166016,
+        "final_score": 0.7277354829013347,
+        "duplication_penalty": 0.0,
+        "rank": 1,
+        "pre_dedup_rank": null,
+        "retriever_version": "cached-cosine-v1",
+        "grounder_version": "TimeLens-8B",
+        "postprocess_version": "boundary-refinement-v1+ranking-v1+temporal-dedup-v1+no-match-v1",
+        "retrieval_latency_ms": 12.933256992255338,
+        "grounding_latency_ms": 2232.2580680047395,
+        "postprocess_latency_ms": 0.0,
+        "degraded": false,
+        "degrade_level": 0,
+        "degrade_reason": null,
+        "deduplicated": false,
+        "boundary_confidence": 1.0,
+        "completeness_score": 1.0
+      }
+    ],
+    "candidates": [
+      {
+        "candidate_id": "imax10s:r0",
+        "coarse_start": 3.0079994201660156,
+        "coarse_end": 10.01,
+        "retrieval_score": 0.09245160967111588,
+        "raw_start": 3.0079994201660156,
+        "raw_end": 5.007999420166016,
+        "grounding_score": 1.0,
+        "refined_start": 3.0079994201660156,
+        "refined_end": 5.007999420166016,
+        "final_score": 0.7277354829013347,
+        "duplication_penalty": 0.0,
+        "rank": 1,
+        "pre_dedup_rank": 1,
+        "retriever_version": "cached-cosine-v1",
+        "grounder_version": "TimeLens-8B",
+        "postprocess_version": "boundary-refinement-v1+ranking-v1+temporal-dedup-v1+no-match-v1",
+        "retrieval_latency_ms": 12.933256992255338,
+        "grounding_latency_ms": 2232.2580680047395,
+        "postprocess_latency_ms": 0.043513005948625505,
+        "degraded": false,
+        "degrade_level": 0,
+        "degrade_reason": null,
+        "deduplicated": false,
+        "boundary_confidence": 1.0,
+        "completeness_score": 1.0
+      }
+    ],
+    "degraded": false,
+    "degrade_level": 0,
+    "degrade_reason": null,
+    "video_path": "/home/hdd-2t/zjy_dataset/videoitg_smart_clip/processed/g6/imax10s.mp4",
+    "runtime": {
+      "backend": "coarse_to_fine",
+      "device": "cuda:0",
+      "cache_hit": 0,
+      "cache_event": "cache_miss",
+      "retrieval_latency_ms": 12.918217995320447,
+      "grounder_attention_implementation": "sdpa"
+    }
+  },
+  "scope": "single_local_request_smoke_not_throughput_or_quality_gate"
+}

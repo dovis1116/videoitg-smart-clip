@@ -1,0 +1,72 @@
+{
+  "run_id": "g4_timelens_contract_matrix_20260901_152155",
+  "scope": "adapter_contract_only_fake_inference_no_cuda",
+  "cases": [
+    {
+      "case": "serial_batch_size_1",
+      "status": "passed",
+      "prediction_count": 2,
+      "bounds": [
+        {
+          "candidate_id": "a",
+          "start": 11.0,
+          "end": 13.0
+        },
+        {
+          "candidate_id": "b",
+          "start": 30.5,
+          "end": 32.0
+        }
+      ]
+    },
+    {
+      "case": "true_batch_size_2",
+      "status": "passed",
+      "prediction_count": 2,
+      "bounds": [
+        {
+          "candidate_id": "a",
+          "start": 11.0,
+          "end": 13.0
+        },
+        {
+          "candidate_id": "b",
+          "start": 30.5,
+          "end": 32.0
+        }
+      ]
+    },
+    {
+      "case": "local_timestamp_clamp",
+      "status": "passed",
+      "prediction_count": 1,
+      "bounds": [
+        {
+          "candidate_id": "clamp",
+          "start": 42.0,
+          "end": 45.0
+        }
+      ]
+    },
+    {
+      "case": "invalid_range",
+      "status": "expected_error",
+      "error_type": "ValueError",
+      "error": "TimeLens output has invalid timestamp range: '5 - 2 seconds'"
+    },
+    {
+      "case": "wrong_batch_output_count",
+      "status": "expected_error",
+      "error_type": "RuntimeError",
+      "error": "TimeLens returned 1 answers for 2 candidate windows"
+    }
+  ],
+  "expected_error_cases": [
+    "invalid_range",
+    "wrong_batch_output_count"
+  ],
+  "limitations": [
+    "Fake inference bypasses checkpoint loading, video decoding, GPU memory, latency, and real model failure behavior.",
+    "Real TimeLens failure/timeout/OOM/window-budget matrix remains pending GPU recovery."
+  ]
+}

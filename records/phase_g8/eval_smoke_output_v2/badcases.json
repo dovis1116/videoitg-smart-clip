@@ -1,0 +1,55 @@
+[
+  {
+    "sample_id": "negative_no_event",
+    "ground_truth": [],
+    "coarse_windows": [
+      {
+        "start": 0.0,
+        "end": 10.0,
+        "score": 0.2
+      }
+    ],
+    "predictions": [],
+    "output_top_k": 1,
+    "status": "NO_MATCH",
+    "actual_match": false,
+    "retrieval_latency_ms": 10.0,
+    "grounding_latency_ms": 0.0,
+    "postprocess_latency_ms": 0.4,
+    "end_to_end_latency_ms": 20.0,
+    "gpu_memory_gib": 1.0,
+    "degraded": false,
+    "badcase_type": "unclassified"
+  },
+  {
+    "sample_id": "negative_wrong_action",
+    "ground_truth": [],
+    "coarse_windows": [
+      {
+        "start": 40.0,
+        "end": 50.0,
+        "score": 0.6
+      }
+    ],
+    "predictions": [
+      {
+        "start_s": 40.0,
+        "end_s": 45.0,
+        "refined_start": 40.0,
+        "refined_end": 45.0,
+        "retrieval_score": 0.6,
+        "grounding_score": 0.4
+      }
+    ],
+    "output_top_k": 1,
+    "status": "POSSIBLE",
+    "actual_match": false,
+    "badcase_type": "wrong_event",
+    "retrieval_latency_ms": 11.0,
+    "grounding_latency_ms": 800.0,
+    "postprocess_latency_ms": 0.8,
+    "end_to_end_latency_ms": 830.0,
+    "gpu_memory_gib": 18.2,
+    "degraded": false
+  }
+]

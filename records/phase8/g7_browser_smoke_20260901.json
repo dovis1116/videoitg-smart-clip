@@ -1,0 +1,10 @@
+{
+  "frontend_url": "http://127.0.0.1:8080",
+  "title": "VideoITG Smart Clip",
+  "task_meta": "task_id=6f439229a2c54ede9135a60d6c4a6835 · SUCCESS · 100% · model=stub-v1 · policy=E0_fixed16",
+  "prediction_count": 1,
+  "feedback_message": "反馈已保存（feedback-v1）。",
+  "elapsed_ms": 1555.65,
+  "human_user_test": false,
+  "scope": "automated_headless_browser_smoke"
+}
